@@ -1,0 +1,37 @@
+# Jekyll configuration
+# Use _config.build.yml to override these settings on `grunt build`.
+
+# Note: Grunt handles some Jekyll configuration. If you set something here and
+# it doesn't work, check if it is set in the Gruntfile.
+
+title: Webworke.rs
+url: http://webworke.rs
+tagline: Life and Craft in Columbus, Ohio
+description: This is the site description
+twitter: Wbwrkrs
+facebook: https://www.facebook.com/webworkers
+tumblr: http://webworkers.tumblr.com
+feed: atom.xml
+newsletter: http://path/to/newsletter
+
+author:
+  name: David Ensinger
+  email: david@webworke.rs
+  github: davidensinger
+  twitter: DavidEnsinger
+
+permalink: /:year/:month/:title/
+
+exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg']
+
+# Publish posts with future date.
+# _config.build.yml sets this to false on `grunt build`
+future: true
+
+# Compile posts in the _drafts directory.
+# _config.build.yml sets this to false on `grunt build`
+show_drafts: true
+
+# Use Pygments to highlight code blocks
+pygments: false

@@ -1,0 +1,65 @@
+// ==========================================================================
+//
+//  Images
+//
+// ==========================================================================
+
+
+img {
+  border: 0; // Removes border when inside 'a' element in IE6/7/8/9, FF3
+  max-width: 100%;
+  width: auto;
+  vertical-align: middle;
+}
+
+// Non-fluid images
+img[width],
+img[height] {
+  max-width: none;
+}
+
+// Images in figure elements.
+figure > img {
+  display: block;
+}
+
+// Addresses margin not present in IE6/7/8/9, S5, O11
+figure {
+  margin: 0;
+}
+
+// Corrects overflow displayed oddly in IE9
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+// -------------------------------------
+//  Image placement variations
+// -------------------------------------
+
+.img-right {
+  float: right;
+  @include rem(margin, 0.5 0 $base-spacing-unit $base-spacing-unit)
+}
+
+.img-left {
+  float: left;
+  @include rem(margin, 0.5 $base-spacing-unit $base-spacing-unit 0)
+}
+
+// Remove float and center image on small mobile
+.img-right,
+.img-left {
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    display: block;
+    float: none;
+    @include rem(margin, 0 auto $base-spacing-unit)
+  }
+}
+
+.img-center {
+  display: block;
+  @include rem(margin, 0 auto $base-spacing-unit)
+}
+

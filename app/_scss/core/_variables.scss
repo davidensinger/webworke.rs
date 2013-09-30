@@ -1,0 +1,90 @@
+// ==========================================================================
+//
+//  Variables
+//
+// ==========================================================================
+
+
+// -------------------------------------
+//  Debug
+// -------------------------------------
+
+$debug: false;
+
+
+// -------------------------------------
+//  Colors
+//  http://sassme.arc90.com/
+// -------------------------------------
+
+// White through black
+$white:           #fff;
+$white-dark:      darken($white, 3);    // #f7f7f7
+$white-darker:    darken($white, 6);    // #f0f0f0
+$white-darkest:   darken($white, 9);    // #e8e8e8
+$gray-lightest:   darken($white, 12);   // #e0e0e0
+$gray-lighter:    darken($white, 18);   // #d1d1d1
+$gray-light:      darken($white, 24);   // #c2c2c2
+$gray:            darken($white, 30);   // #b3b3b3
+$gray-dark:       darken($white, 36);   // #a3a3a3
+$gray-darker:     darken($white, 42);   // #949494
+$gray-darkest:    darken($white, 48);   // #858585
+$black-lightest:  darken($white, 60);   // #666666
+$black-lighter:   darken($white, 72);   // #474747
+$black-light:     darken($white, 84);   // #292929
+$black:           darken($white, 100);  // #000000
+
+
+// -------------------------------------
+//  Scaffolding
+// -------------------------------------
+
+$base-background: $white-dark;
+$base-color: $black-light;
+
+$container-background: $white;
+
+
+// -------------------------------------
+//  Links
+// -------------------------------------
+
+$base-link-color: red;
+$base-link-color-hover: blue;
+$base-link-color-focus: green;
+
+
+// -------------------------------------
+//  Typography
+// -------------------------------------
+
+$base-font-size:    16px;
+$base-line-height:  24px;
+
+$base-font-family: 'Lato', sans-serif;
+$base-font-weight: 400;
+$base-font-weight-bold: 700;
+
+$base-spacing-unit: 1.5; // only use with margin
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$line-height-ratio: $base-line-height / $base-font-size;
+
+
+// -------------------------------------
+//  Fonts
+// -------------------------------------
+
+$giga-size:   96px;
+$mega-size:   72px;
+$kilo-size:   48px;
+
+$h1-size:     36px; // .alpha
+$h2-size:     30px; // .beta
+$h3-size:     24px; // .gamma
+$h4-size:     20px; // .delta
+$h5-size:     16px; // .epsilon
+$h6-size:     14px; // .zeta
+
+$milli-size:  12px;
+$micro-size:  10px;

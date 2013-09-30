@@ -1,0 +1,44 @@
+// ==========================================================================
+//
+//  Primary
+//  See _includes/header.html, _layouts/post.html, and _layouts/page.html
+//
+// ==========================================================================
+
+
+.site-primary {
+  padding: 5% 6%;
+  background-color: $container-background;
+
+  .two-column & {
+    float: left;
+    width: 66%;
+
+    @include breakpoint(all-mobile) {
+      float: none;
+      width: 100%;
+      background-color: transparent;
+    }
+  }
+}
+
+.entry-header {
+  @include rem(margin-bottom, $base-spacing-unit);
+}
+
+.entry-link {
+
+  .page-home & { // when on Home
+    color: inherit;
+    &:hover {
+      color: red;
+    }
+  }
+
+  .layout-post & { // when normal post
+    color: red;
+    &:hover {
+      color: blue;
+    }
+  }
+}

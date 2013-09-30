@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="lt-ie10"> <![endif]-->
+<!--[if gt IE 10]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width" name="viewport">
+
+    <link href="//fonts.googleapis.com" rel="dns-prefetch">
+    <link href="//themes.googleusercontent.com" rel="dns-prefetch">
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+
+    {% if page.title %}
+      <title>{{ page.title }} &ndash; {{ site.title }}</title>
+      <meta content="{{ page.title }} &ndash; {{ site.title }}" property="og:title">
+      <meta content="{{ page.title }} &ndash; {{ site.title }}" name="twitter:title">
+    {% else %}
+      <title>{{ site.title }} &ndash; {{ site.tagline }}</title>
+      <meta content="{{ site.title }} &ndash; {{ site.tagline }}" property="og:title">
+      <meta content="{{ site.title }} &ndash; {{ site.tagline }}" name="twitter:title">
+    {% endif %}
+
+    {% if page.description %}
+      <meta content="{{ page.description }}" name="description">
+      <meta content="{{ page.description }}" property="og:description">
+      <meta content="{{ page.description }}" name="twitter:description">
+    {% else %}
+      <meta content="{{ site.description }}" name="description">
+      <meta content="{{ site.description }}" property="og:description">
+      <meta content="{{ site.description }}" name="twitter:description">
+    {% endif %}
+
+    <link href="/{{ site.feed }}" rel="alternate" title="ATOM Feed" type="application/atom+xml">
+    <link href="/favicon.ico" rel="shortcut icon">
+
+    <meta content="website" property="og:type">
+    <meta content="summary" name="twitter:card">
+    <meta content="{{ site.title }}" property="og:site_name">
+    <meta content="@{{ site.twitter }}" name="twitter:site">
+
+    {% if page.page-class == "page-home" %}
+    <meta content="{{ site.url }}/" property="og:url">
+    <meta content="{{ site.url }}/" name="twitter:url">
+    {% else %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+      <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">
+    {% endif %}
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
+
+    <!-- build:css({app,.tmp}) /assets/styles/application.css -->
+    <!-- Custom CSS -->
+    <link href="/assets/styles/application.css" rel="stylesheet">
+    <!-- endbuild -->
+
+  </head>
+
+  <body id="top" class="layout-default {{ page.layout-class }} {{ page.page-class }} {% if page.page-class == "page-home" or page.layout-class == "layout-post" %}two-column{% else %}one-column{% endif %}">
+
+    <!--[if lt IE 9]><div class="chromeframe">
+      <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    </div><![endif]-->
+
+    <div id="page" class="hfeed site-container">
+
+      <header id="masthead" class="site-header" role="banner">
+
+        <a class="site-logo" href="/">Logo here.</a>
+
+        <nav id="site-navigation" class="navigation navigation-header" role="navigation">
+          <h1 class="visuallyhidden">Menu</h1>
+          <div class="visuallyhidden">
+            <a href="#content">Skip to content</a>
+          </div>
+          <ul class="main-navigation-list list-inline">
+            <li class="main-navigation-item">
+              <a class="main-navigation-link nav-about" href="/about/">About</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link nav-archives" href="/archives/">Archives</a>
+            </li>
+          </ul>
+        </nav><!-- #site-navigation .main-navigation -->
+
+      </header> <!-- #masthead .site-header -->
+
+      <div id="content" class="site-content clearfix">
+        <div id="primary" class="site-primary">

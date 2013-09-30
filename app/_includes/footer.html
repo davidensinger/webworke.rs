@@ -1,0 +1,81 @@
+        </div> <!-- #primary .site-primary -->
+
+        {% if page.page-class == "page-home" %}
+          {% assign post = site.posts.first %}
+          {% include sidebar.html %}
+        {% elsif page.layout-class == "layout-post" %}
+          {% include sidebar.html %}
+        {% endif %}
+
+      </div> <!-- #content .site-content .clearfix -->
+
+      <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info text-center clearfix">
+
+          <nav id="colophon-navigation" class="navigation navigation-footer" role="navigation">
+            <ul class="footer-navigation-list list-inline">
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="/about/">About</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="/colophon/">Colophon</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a class="footer-navigation-link" href="/archive/">Archive</a>
+              </li>
+            </ul>
+          </nav><!-- #colophon-navigation .navigation .navigation-footer -->
+
+          <ul class="site-footer-icons-list list-inline">
+            <li class="site-footer-icons-item">
+              <a class="site-footer-icons-link site-footer-icon icon-twitter" href="http://twitter.com/{{ site.twitter }}" title="Follow us on Twitter">
+                <span class="site-footer-icons-title">Twitter</span>
+              </a>
+            </li>
+            <li class="site-footer-icons-item">
+              <a class="site-footer-icons-link site-footer-icon icon-facebook" href="{{ site.facebook }}" title="Like us on Facebook">
+                <span class="site-footer-icons-title">Facebook</span>
+              </a>
+            </li>
+            <li class="site-footer-icons-item">
+              <a class="site-footer-icons-link site-footer-icon icon-tumblr" href="{{ site.tumblr }}" title="Follow us on Tumblr">
+                <span class="site-footer-icons-title">Tumblr</span>
+              </a>
+            </li>
+            <li class="site-footer-icons-item">
+              <a class="site-footer-icons-link site-footer-icon icon-feed" href="/{{ site.feed }}" title="Subscribe to our ATOM Feed">
+                <span class="site-footer-icons-title">ATOM feed</span>
+              </a>
+            </li>
+            <li class="site-footer-icons-item">
+              <a class="site-footer-icons-link site-footer-icon icon-newsletter" href="{{ site.newsletter }}" title="View our Newsletter">
+                <span class="site-footer-icons-title">Newsletter</span>
+              </a>
+            </li>
+          </ul> <!-- .site-footer-icons-list -->
+
+          <small class="site-footer-copyright">
+            &copy; {{ site.time | date: "%Y" }} <a href="{{ site.url}}" class="site-footer-copyright-link">{{ site.title }}</a>. All rights reserved.
+          </small>
+
+        </div> <!-- .site-info -->
+      </footer> <!-- #colophon .site-footer -->
+
+    </div> <!-- #page .site-container -->
+
+    <!-- build:js(app) /assets/scripts/application.js -->
+    <script src="/assets/scripts/application.js"></script>
+    <script src="/assets/scripts/_vendor/zepto.min.js"></script>
+    <script src="/assets/scripts/_vendor/zepto-slide-transition.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      var _gaq=[["_setAccount","UA-26697016-1"],["_trackPageview"],["_trackPageLoadTime"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
+    </script>
+
+  </body>
+
+</html>

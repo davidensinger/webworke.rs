@@ -1,0 +1,320 @@
+// ==========================================================================
+//
+//  Base
+//
+// ==========================================================================
+
+
+// Corrects block display not defined in IE6/7/8/9 & FF3
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+// apply a natural box layout model to all elements via http://paulirish.com/2012/box-sizing-border-box-ftw/
+// universal selector doesn't apply to pseudo-elements, so: http://jsfiddle.net/grewis/nHaxL/4/
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+// 1. Prevents iOS text size adjust after orientation change, without disabling user zoom
+//    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+html {
+  background: $base-background;
+  overflow-y: scroll;
+  height: 100%;
+  font: #{($base-font-size/16px)*100%}/#{$line-height-ratio} $base-font-family; // 16px
+  -webkit-text-size-adjust: 100%; // 1
+  -ms-text-size-adjust: 100%; // 1
+  @include breakpoint(desktop) {
+    font-size: 106.25%; // 17px
+  }
+  @include breakpoint(large-desktop) {
+    font-size: 112.5%; // 18px
+  }
+  @include breakpoint(extra-large-desktop) {
+    font-size: 118.75%; // 19px
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  border-top: 5px solid red;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: $line-height-ratio;
+  color: $base-color;
+}
+
+// Remove text-shadow in selection highlight: h5bp.com/i
+// These selection declarations have to be separate.
+// Customize the background color to match your design.
+::-moz-selection {
+  // color:;
+  // background:;
+  text-shadow: none;
+}
+
+::selection {
+  // color:;
+  // background:;
+  text-shadow: none;
+}
+
+// -------------------------------------
+//  Block Content
+// -------------------------------------
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  font-weight: $base-font-weight-bold;
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    &:focus,
+    &:active {
+      // color:;
+    }
+  }
+}
+
+h1,
+.alpha {
+  @include vertical-rhythm($h1-size, 30px, 18px);
+}
+
+h2,
+.beta {
+  @include vertical-rhythm($h2-size, 32px, 16px);
+}
+
+h3,
+.gamma {
+  @include vertical-rhythm($h3-size, 32px, 16px);
+}
+
+h4,
+.delta {
+  @include vertical-rhythm($h4-size, 32px, 16px);
+}
+
+h5,
+.epsilon {
+  @include vertical-rhythm($h5-size, 34px, 14px);
+}
+
+h6,
+.zeta {
+  @include vertical-rhythm($h6-size, 34px, 14px);
+}
+
+// Paragraphs and lists
+p,
+ul,
+ol {
+  @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
+}
+
+.lead {
+  @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul,
+ol {
+  padding: 0;
+  @include rem(margin-left, $base-spacing-unit);
+}
+
+.list-unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  @extend .list-unstyled;
+  > li {
+    display: inline-block;
+    @include rem(margin-left, $half-spacing-unit);
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// No top margins on first children or bottom margins on last children
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+pre,
+.grid {
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// No margins on nested elements
+li {
+  p,
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// -------------------------------------
+//  Inline Content
+// -------------------------------------
+
+// 1. Addresses outline displayed oddly in Chrome
+// 2. Improves readability when focused and also mouse hovered in all browsers
+//    people.opera.com/patrickl/experiments/keyboard/test
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  &:focus { // 1
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active { // 2
+    outline: 0;
+  }
+}
+
+// Font weights
+b,
+strong,
+th {
+  font-weight: $base-font-weight-bold;
+}
+
+// Font styles
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+// Corrects font family set oddly in IE6, S4/5, Chrome
+// en.wikipedia.org/wiki/User:Davidgothberg/Test59
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+strike,
+s,
+del {
+  text-decoration: line-through;
+  text-shadow: none;
+}
+
+// Improves readability of pre-formatted text in all browsers
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// Set consistent quote types.
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  &:before,
+  &:after { // Addresses quote property not supported in S4
+    content: '';
+    content: none;
+  }
+}
+
+// Address inconsistent and variable font size in all browsers.
+%text-small,
+small {
+  font-size: 80%;
+}
+
+// Prevents sub and sup affecting line-height in all browsers
+// gist.github.com/413930
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}

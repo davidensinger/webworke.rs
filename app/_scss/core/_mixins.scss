@@ -1,0 +1,277 @@
+// ==========================================================================
+//
+//  Mixins
+//
+// ==========================================================================
+
+
+// -------------------------------------
+//  Box sizing
+// -------------------------------------
+
+// Usage:
+// @include box-sizing(border-box);
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+// -------------------------------------
+//  Offsets
+//  https://github.com/HugoGiraudel/Sass-snippets/blob/master/offsets/_offsets.scss
+// -------------------------------------
+
+// Private method
+@mixin _position($position, $args) {
+
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+    @if $i
+    and $i + 1 <= length($args)
+    and type-of( nth($args, $i + 1) ) == number {
+      #{$o}: nth($args, $i + 1);
+    }
+  }
+
+  position: $position;
+}
+
+// Usage:
+// @include absolute(left 10px top 1em);
+
+@mixin absolute($args) {
+  @include _position(absolute, $args);
+}
+
+@mixin relative($args) {
+  @include _position(relative, $args);
+}
+
+@mixin fixed($args) {
+  @include _position(fixed, $args);
+}
+
+// -------------------------------------
+//  Breakpoint
+// -------------------------------------
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media only screen and (min-width: 1281px) {
+      @content;
+    }
+  }
+  @else if $point == large-desktop {
+    @media only screen and (min-width: 1441px) {
+      @content;
+    }
+  }
+  @else if $point == extra-large-desktop {
+    @media only screen and (min-width: 1601px) {
+      @content;
+    }
+  }
+  @else if $point == extra-extra-large-desktop {
+    @media only screen and (min-width: 1921px) {
+      @content;
+    }
+  }
+  @else if $point == smaller-than-small-desktop {
+    @media only screen and (max-width: 959px) {
+      @content;
+    }
+  }
+  @else if $point == tablet-portrait-to-small-desktop {
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      @content;
+    }
+  }
+  @else if $point == all-mobile {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $point == mobile-landscape-to-tablet-portrait {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $point == mobile-portrait-to-mobile-landscape {
+    @media only screen and (max-width: 479px) {
+      @content;
+    }
+  }
+  @else if $point == small-mobile {
+    @media only screen and (max-width: 320px) {
+      @content;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  Image-2x
+//  https://gist.github.com/marcedwards/3446599
+// -------------------------------------
+
+// Usage:
+// background: url("logo.png") no-repeat;
+// @include image-2x("logo2x.png", 100px, 25px);
+
+@mixin image-2x($image, $width, $height) {
+  @media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+          only screen and (-o-min-device-pixel-ratio: 13/10),
+          only screen and (min-resolution: 120dpi) {
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+
+// -------------------------------------
+//  Opacity
+// -------------------------------------
+
+// Usage:
+// @include opacity(0.8);
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); // IE8
+}
+
+
+// -------------------------------------
+//  Rem
+// -------------------------------------
+
+// Usage:
+// @include rem(font-size, 14px);
+// @include rem(margin, 0 12px 2 1.2);
+// @include rem(padding, 1.5 24px);
+
+@mixin rem($property, $values) {
+  // Create a couple of empty lists as output buffers.
+  $font-size: $base-font-size;
+  $px-values: ();
+  $rem-values: ();
+
+  // Loop through the $values list
+  @each $value in $values {
+    // For each property value, if it's in rem or px, derive both rem and
+    // px values for it and add those to the end of the appropriate buffer.
+    // Ensure all pixel values are rounded to the nearest pixel.
+    @if $value == 0 or $value == 0px {
+      // 0 -- use it without a unit
+      $px-values: join($px-values, 0);
+      $rem-values: join($rem-values, 0);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
+      // px value given - calculate rem value from font-size
+      $new-rem-value: $value / $font-size;
+      $px-values: join($px-values, round($value));
+      $rem-values: join($rem-values, #{$new-rem-value}rem);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+      // % value given - don't add px or rem
+      $px-values: join($px-values, #{$value});
+      $rem-values: join($rem-values, #{$value});
+    } @else if $value == auto {
+      // auto - don't add px or rem
+      $px-values: join($px-values, auto);
+      $rem-values: join($rem-values, auto);
+    } @else {
+      // unitless value - use those directly as rem and calculate the px-fallback
+      $px-values: join($px-values, round($value * $font-size));
+      $rem-values: join($rem-values, #{$value}rem);
+    }
+  }
+
+  // output the converted rules
+  #{$property}: $px-values;
+  #{$property}: $rem-values;
+}
+
+
+// -------------------------------------
+//  Vertical Rhythm
+// -------------------------------------
+
+// Usage:
+// @include vertical-rhythm(20px, 0, 24px, 1.5);
+// @include vertical-rhythm(1.25, 0, 1.5, 1.5);
+
+@mixin vertical-rhythm($font-size: $base-font-size, $margin-top: "", $margin-bottom: "", $line-height: "") {
+
+  @if type-of($font-size) == number and (unit($font-size) == px) {
+    // px value given - calculate rem value from font-size
+    font-size: $font-size;
+    font-size: ($font-size / $base-font-size) * 1rem;
+  } @else {
+    // unitless value - use those directly as rem and calculate the px-fallback
+    font-size: round($font-size * $base-font-size);
+    font-size: $font-size * 1rem;
+  }
+
+  @if $margin-top == "" or $margin-top == 0 or $margin-top == 0px  {
+    // 0 -- use it without a unit
+    margin-top: 0;
+  } @else if type-of($margin-top) == number and (unit($margin-top) == px) {
+    // px value given - calculate rem value from font-size
+    margin-top: $margin-top;
+    margin-top: ($margin-top / $base-font-size) * 1rem;
+  } @else {
+    // unitless value - use those directly as rem and calculate the px-fallback
+    margin-top: round($margin-top * $base-font-size);
+    margin-top: $margin-top * 1rem;
+  }
+
+  @if $margin-bottom == "" or $margin-bottom == 0 or $margin-bottom == 0px  {
+    // 0 -- use it without a unit
+    margin-bottom: 0;
+  } @else if type-of($margin-bottom) == number and (unit($margin-bottom) == px) {
+    // px value given - calculate rem value from font-size
+    margin-bottom: $margin-bottom;
+    margin-bottom: ($margin-bottom / $base-font-size) * 1rem;
+  } @else {
+    // unitless value - use those directly as rem and calculate the px-fallback
+    margin-bottom: round($margin-bottom * $base-font-size);
+    margin-bottom: $margin-bottom * 1rem;
+  }
+
+  @if ($line-height == "") {
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+  } @else if type-of($line-height) == number and (unit($line-height) == px) {
+    line-height: ceil($font-size / $line-height) * ($line-height / $font-size);
+  } @else if type-of($line-height) == number and unitless($line-height) {
+    // unitless value - use those directly as rem and calculate the px-fallback
+    line-height: $line-height;
+  } @else {
+    line-height: 0;
+  }
+}
+
+
+// -------------------------------------
+//  Debug Vertical Alignment
+//  https://github.com/OliverJAsh/VerticalRhythm/blob/gh-pages/css/_vertical-rhythm.scss
+// -------------------------------------
+
+// Usage:
+// @if $debug == true {
+//   @include debug-vertical-alignment($background-color, $line-height);
+// }
+
+@mixin debug-vertical-alignment($background-color: $base-background, $line-height: $base-line-height) {
+  &:after {
+    content: "";
+    height: 1000%;
+    @include absolute(top 0 left 0 right 0 bottom 0);
+    pointer-events: none;
+    background: -webkit-linear-gradient(bottom, rgba(invert($background-color), 0.25) 5%, transparent 5%);
+    background: linear-gradient(bottom, rgba(invert($background-color), 0.25) 5%, transparent 5%);
+    @include rem(background-size, 100% $line-height);
+    background-position: left top;
+  }
+}

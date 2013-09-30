@@ -1,0 +1,9 @@
+---
+layout: default
+page-class: page-home
+---
+
+{% assign post = site.posts.first %}
+{% assign title = post.title %}
+{% assign content = post.content %}
+{% include post-detail.html %}

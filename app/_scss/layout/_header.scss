@@ -1,0 +1,70 @@
+// ==========================================================================
+//
+//  Header
+//  See _includes/header.html
+//
+// ==========================================================================
+
+
+// -------------------------------------
+//  Container
+// -------------------------------------
+
+.site-container {
+  max-width: 94%;
+
+  @include breakpoint(extra-large-desktop) {
+    max-width: 1601px;
+  }
+
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    max-width: 100%;
+  }
+}
+
+
+// -------------------------------------
+//  Header
+// -------------------------------------
+
+.site-header {
+  padding: 2.5% 0 2.5% 6%;
+
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    padding: 2.5% 6%;
+  }
+
+  .two-column & {
+    float: left;
+    width: 66%;
+
+    @include breakpoint(all-mobile) {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  Navigation
+// -------------------------------------
+
+.navigation-header {
+  float: right;
+}
+
+
+// -------------------------------------
+//  Content
+// -------------------------------------
+
+.site-content {
+
+  .two-column & {
+
+    @include breakpoint(all-mobile) {
+      background-color: $container-background;
+    }
+  }
+}

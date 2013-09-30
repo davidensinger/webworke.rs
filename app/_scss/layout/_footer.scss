@@ -1,0 +1,53 @@
+// ==========================================================================
+//
+//  Footer
+//  See _includes/footer.html
+//
+// ==========================================================================
+
+
+.site-footer {
+  padding: 2.5% 0;
+
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    padding: 2.5% 6%;
+  }
+
+  .two-column & {
+    width: 66%;
+
+    @include breakpoint(all-mobile) {
+      width: 100%;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  Navigation & Footer Icons
+// -------------------------------------
+
+.navigation-footer,
+.site-footer-icons-list {
+  @include rem(margin, 0 auto 3);
+}
+
+// All Mobile
+.navigation-footer,
+.site-footer-icons-list {
+
+  @include breakpoint(all-mobile) {
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
+}
+
+
+// -------------------------------------
+//  Copyright
+// -------------------------------------
+
+.site-footer-copyright {
+}
+
+.site-footer-copyright-link {
+}
