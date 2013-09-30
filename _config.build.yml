@@ -4,6 +4,8 @@
 # Note: Grunt handles some Jekyll configuration. If you set something here and
 # it doesn't work, check if it is set in the Gruntfile.
 
+baseurl: http://webworke.rs
+
 # Publish posts with future date.
 future: false
 

@@ -31,8 +31,8 @@
       <meta content="{{ site.description }}" name="twitter:description">
     {% endif %}
 
-    <link href="/{{ site.feed }}" rel="alternate" title="ATOM Feed" type="application/atom+xml">
-    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="{{ site.baseurl }}{{ site.feed }}" rel="alternate" title="ATOM Feed" type="application/atom+xml">
+    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon">
 
     <meta content="website" property="og:type">
     <meta content="summary" name="twitter:card">
@@ -40,11 +40,11 @@
     <meta content="@{{ site.twitter }}" name="twitter:site">
 
     {% if page.page-class == "page-home" %}
-    <meta content="{{ site.url }}/" property="og:url">
-    <meta content="{{ site.url }}/" name="twitter:url">
+    <meta content="{{ site.baseurl }}" property="og:url">
+    <meta content="{{ site.baseurl }}" name="twitter:url">
     {% else %}
-      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-      <meta content="{{ site.url }}{{ page.url }}" name="twitter:url">
+      <meta content="{{ site.baseurl }}{{ page.url }}" property="og:url">
+      <meta content="{{ site.baseurl }}{{ page.url }}" name="twitter:url">
     {% endif %}
 
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
 
       <header id="masthead" class="site-header" role="banner">
 
-        <a class="site-logo" href="/">Logo here.</a>
+        <a class="site-logo" href="{{ site.baseurl }}">Logo here.</a>
 
         <nav id="site-navigation" class="navigation navigation-header" role="navigation">
           <h1 class="visuallyhidden">Menu</h1>
@@ -75,10 +75,10 @@
           </div>
           <ul class="main-navigation-list list-inline">
             <li class="main-navigation-item">
-              <a class="main-navigation-link nav-about" href="/about/">About</a>
+              <a class="main-navigation-link nav-about" href="{{ site.baseurl }}/about/">About</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link nav-archives" href="/archives/">Archives</a>
+              <a class="main-navigation-link nav-archives" href="{{ site.baseurl }}/archives/">Archives</a>
             </li>
           </ul>
         </nav><!-- #site-navigation .main-navigation -->

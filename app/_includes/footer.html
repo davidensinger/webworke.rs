@@ -15,13 +15,13 @@
           <nav id="colophon-navigation" class="navigation navigation-footer" role="navigation">
             <ul class="footer-navigation-list list-inline">
               <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="/about/">About</a>
+                <a class="footer-navigation-link" href="{{ site.baseurl }}/about/">About</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="/colophon/">Colophon</a>
+                <a class="footer-navigation-link" href="{{ site.baseurl }}/colophon/">Colophon</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="/archive/">Archive</a>
+                <a class="footer-navigation-link" href="{{ site.baseurl }}/archive/">Archive</a>
               </li>
             </ul>
           </nav><!-- #colophon-navigation .navigation .navigation-footer -->
@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="site-footer-icons-item">
-              <a class="site-footer-icons-link site-footer-icon icon-feed" href="/{{ site.feed }}" title="Subscribe to our ATOM Feed">
+              <a class="site-footer-icons-link site-footer-icon icon-feed" href="{{ site.baseurl }}/{{ site.feed }}" title="Subscribe to our ATOM Feed">
                 <span class="site-footer-icons-title">ATOM feed</span>
               </a>
             </li>
@@ -55,7 +55,7 @@
           </ul> <!-- .site-footer-icons-list -->
 
           <small class="site-footer-copyright">
-            &copy; {{ site.time | date: "%Y" }} <a href="{{ site.url}}" class="site-footer-copyright-link">{{ site.title }}</a>. All rights reserved.
+            &copy; {{ site.time | date: "%Y" }} <a href="{{ site.baseurl }}" class="site-footer-copyright-link">{{ site.title }}</a>. All rights reserved.
           </small>
 
         </div> <!-- .site-info -->

@@ -7,12 +7,12 @@
     </div> <!-- .entry-meta -->
     <h1 class="entry-title" itemprop="name">
       {% if page.page-class == "page-home" %}
-        <a class="entry-link" href="{{ site.url }}{{ page.url }}" rel="bookmark">
+        <a class="entry-link" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
           {{ title }}
         </a>
       {% elsif page.layout-class == "layout-post" %}
         {{ title }}
-        <a class="entry-link" href="{{ site.url }}{{ page.url }}" rel="bookmark">
+        <a class="entry-link" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
           Infinity link
         </a>
       {% endif %}

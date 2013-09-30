@@ -5,13 +5,13 @@
 # it doesn't work, check if it is set in the Gruntfile.
 
 title: Webworke.rs
-url: http://webworke.rs
+baseurl: http://127.0.0.1:9000
 tagline: Life and Craft in Columbus, Ohio
 description: This is the site description
 twitter: Wbwrkrs
 facebook: https://www.facebook.com/webworkers
 tumblr: http://webworkers.tumblr.com
-feed: atom.xml
+feed: /atom.xml
 newsletter: http://path/to/newsletter
 
 author:
