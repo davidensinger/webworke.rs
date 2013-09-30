@@ -20,6 +20,8 @@ author:
   github: davidensinger
   twitter: DavidEnsinger
 
+relative_permalinks: false
+
 permalink: /:year/:month/:title/
 
 exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts',
