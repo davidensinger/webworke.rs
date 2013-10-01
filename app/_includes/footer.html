@@ -6,13 +6,13 @@
           <nav id="colophon-navigation" class="navigation navigation-footer" role="navigation">
             <ul class="footer-navigation-list list-inline">
               <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="{{ site.baseurl }}/about/">About</a>
+                <a class="footer-navigation-link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="{{ site.baseurl }}/colophon/">Colophon</a>
+                <a class="footer-navigation-link {% if page.title == 'Colophon' %}is-current{% endif %}" href="{{ site.baseurl }}/colophon/">Colophon</a>
               </li>
               <li class="footer-navigation-item">
-                <a class="footer-navigation-link" href="{{ site.baseurl }}/archive/">Archive</a>
+                <a class="footer-navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
               </li>
             </ul>
           </nav><!-- #colophon-navigation .navigation .navigation-footer -->

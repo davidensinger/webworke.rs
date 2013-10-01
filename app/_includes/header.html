@@ -75,10 +75,10 @@
           </div>
           <ul class="main-navigation-list list-inline">
             <li class="main-navigation-item">
-              <a class="main-navigation-link nav-about" href="{{ site.baseurl }}/about/">About</a>
+              <a class="main-navigation-link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
             </li>
             <li class="main-navigation-item">
-              <a class="main-navigation-link nav-archives" href="{{ site.baseurl }}/archives/">Archives</a>
+              <a class="main-navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
             </li>
           </ul>
         </nav><!-- #site-navigation .main-navigation -->
