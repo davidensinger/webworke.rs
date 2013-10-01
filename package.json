@@ -1,6 +1,10 @@
 {
-  "name": "webworkers",
-  "version": "0.0.0",
+  "name": "Webworke.rs",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidensinger/webworke.rs"
+  },
   "description": "Yeoman / Grunt workflow for webworke.rs",
   "dependencies": {},
   "devDependencies": {
