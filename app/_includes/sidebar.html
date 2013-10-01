@@ -1,84 +1,69 @@
-<div id="secondary" class="site-secondary" role="complementary">
-  <div class="site-sidebar vcard" itemscope itemtype="http://schema.org/Person">
+This is the sidebar
+{% if page.secondary.image %}
+  <figure class="" itemscope itemtype="http://schema.org/ImageObject">
+    <img class="" src="{{ page.secondary.image }}" alt="Photo of {{ page.title }}" itemprop="contentURL" />
 
-    {% if post %}
-      {% assign title = post.title %}
-      {% assign secondary = post.secondary %}
-      {% assign secondary-links = post.secondary-links %}
-    {% elsif page %}
-      {% assign title = page.title %}
-      {% assign secondary = page.secondary %}
-      {% assign secondary-links = page.secondary-links %}
-    {% endif %}
+    {% if page.secondary.caption or page.secondary.credit-text %}
+      <figcaption class="" itemprop="description">
+        {{ page.secondary.caption }}
 
-    {% if secondary.image %}
-      <figure class="" itemscope itemtype="http://schema.org/ImageObject">
-        <img class="" src="{{ secondary.image }}" alt="Photo of {{ title }}" itemprop="contentURL" />
+        {% if page.secondary.credit-text %}
 
-        {% if secondary.caption or secondary.credit-text %}
-          <figcaption class="" itemprop="description">
-            {{ secondary.caption }}
+          {% if page.secondary.credit-url %}
+            <a href="{{ page.secondary.credit-url }}" class="">
+          {% endif %}
 
-            {% if secondary.credit-text %}
+          <p>{{ page.secondary.credit-text }}</p>
 
-              {% if secondary.credit-url %}
-                <a href="{{ secondary.credit-url }}" class="">
-              {% endif %}
-
-              <p>{{ secondary.credit-text }}</p>
-
-              {% if secondary.credit-url %}
-                </a>
-              {% endif %}
-
-            {% endif %}
-          </figcaption>
-        {% endif %}
-
-      </figure>
-    {% endif %}
-
-    {% if secondary.title or secondary.organization %}
-      <h3 class="">
-
-        {% if secondary.url %}
-          <a class="url" href="{{ secondary.url }}" itemprop="url">
-        {% endif %}
-
-        {% if secondary.title %}
-          <span itemprop="jobTitle">{{ secondary.title }}</span>
-        {% endif %}
-
-        {% if secondary.preposition %}
-          {{ secondary.preposition }}
-        {% endif %}
-
-        {% if secondary.organization %}
-          <span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
-        {% endif %}
-
-        {% if secondary.url %}
-          </a>
-        {% endif %}
-
-      </h3>
-    {% endif %}
-
-    {% if secondary.description %}
-      <p class="" itemprop="description">{{ secondary.description }}</p>
-    {% endif %}
-
-    {% if secondary-links %}
-      <ul class="">
-        {% for link in secondary-links %}
-          <li class="">
-            <a class="url {{ link.class }}" href="{{ link.url }}" itemprop="url">
-              {{ link.title }}
+          {% if page.secondary.credit-url %}
             </a>
-          </li>
-        {% endfor %}
-      </ul>
+          {% endif %}
+
+        {% endif %}
+      </figcaption>
     {% endif %}
 
-  </div> <!-- .site-sidebar -->
-</div> <!-- #secondary .site-secondary -->
+  </figure>
+{% endif %}
+
+{% if page.secondary.title or page.secondary.organization %}
+  <h3 class="">
+
+    {% if page.secondary.url %}
+      <a class="url" href="{{ page.secondary.url }}" itemprop="url">
+    {% endif %}
+
+    {% if page.secondary.title %}
+      <span itemprop="jobTitle">{{ page.secondary.title }}</span>
+    {% endif %}
+
+    {% if page.secondary.preposition %}
+      {{ page.secondary.preposition }}
+    {% endif %}
+
+    {% if page.secondary.organization %}
+      <span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ page.secondary.organization }}</span>
+    {% endif %}
+
+    {% if page.secondary.url %}
+      </a>
+    {% endif %}
+
+  </h3>
+{% endif %}
+
+{% if page.secondary.description %}
+  <p class="" itemprop="description">{{ page.secondary.description }}</p>
+{% endif %}
+
+{% if page.secondary-links %}
+  <ul class="">
+    {% for link in page.secondary-links %}
+      <li class="">
+        <a class="url {{ link.class }}" href="{{ link.url }}" itemprop="url">
+          {{ link.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

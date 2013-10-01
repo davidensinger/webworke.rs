@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 <article class="post hentry" itemscope itemtype="http://schema.org/Article">
   <header class="entry-header">
     <div class="entry-meta">
@@ -6,13 +10,14 @@
       </small>
     </div> <!-- .entry-meta -->
     <h1 class="entry-title" itemprop="name">
-      <a class="entry-link" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
-        {{ post.title }}
+      {{ page.title }}
+      <a class="entry-link" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
+        Infinity link
       </a>
     </h1>
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {{ content }}
   </div> <!-- .entry-content -->
   <footer class="entry-meta">
   </footer> <!-- .entry-meta -->

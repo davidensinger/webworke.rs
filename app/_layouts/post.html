@@ -3,6 +3,11 @@ layout: default
 layout-class: layout-post
 ---
 
-{% assign title = page.title %}
-{% assign content = page.content %}
-{% include post-detail.html %}
+<div id="primary" class="site-primary">
+  {{ content }}
+</div> <!-- #primary .site-primary -->
+<div id="secondary" class="site-secondary" role="complementary">
+  <div class="site-sidebar vcard" itemscope itemtype="http://schema.org/Person">
+    {% include sidebar.html %}
+  </div> <!-- .site-sidebar -->
+</div> <!-- #secondary .site-secondary -->

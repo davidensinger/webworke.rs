@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: post
 page-class: page-home
 ---
 
-{% assign post = site.posts.first %}
-{% assign title = post.title %}
-{% assign content = post.content %}
-{% include post-detail.html %}
+{% for post in site.posts limit:1 %}
+  {% include post-detail.html %}
+{% endfor %}
