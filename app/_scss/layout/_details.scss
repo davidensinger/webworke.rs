@@ -1,0 +1,42 @@
+// ==========================================================================
+//
+//  Details
+//  See _layouts/post-detail.html, _includes/post-detail.html, and _includes/page-detail.html
+//
+// ==========================================================================
+
+.entry-header {
+  @include rem(margin-bottom, $base-spacing-unit);
+}
+
+.entry-link {
+
+  .page-home & { // when on front page
+    color: inherit;
+    &:hover {
+      color: red;
+    }
+  }
+
+  .layout-post & { // when normal post
+    color: red;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+// -------------------------------------
+//  Navigation arrows
+// -------------------------------------
+
+.navigation-entry-meta-link {
+  position: fixed;
+  top: 50%;
+  &.previous {
+    left: 0;
+  }
+  &.next {
+    right: 0;
+  }
+}

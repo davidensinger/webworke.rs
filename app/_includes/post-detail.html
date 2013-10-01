@@ -15,5 +15,16 @@
     {{ post.content }}
   </div> <!-- .entry-content -->
   <footer class="entry-meta">
+    {% if post.previous.url or post.next.url %}
+      <nav class="navigation navigation-entry-meta" role="navigation">
+        <h1 class="visuallyhidden">Post Navigation</h1>
+      {% if post.previous.url %}
+        <a href="{{ post.previous.url }}" title="{{ post.previous.title }}" class="navigation-entry-meta-link previous">&#x276C;</a>
+      {% endif %}
+      {% if post.next.url %}
+        <a href="{{ post.next.url }}" title="{{ post.next.title }}" class="navigation-entry-meta-link next" >&#x276D;</a>
+      {%endif %}
+      </nav><!-- .navigation navigation-entry-meta -->
+    {%endif %}
   </footer> <!-- .entry-meta -->
 </article>
