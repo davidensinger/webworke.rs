@@ -153,22 +153,21 @@ ol {
   @include vertical-rhythm(18px, 0, 0, 1.5);
 }
 
-.text-left {
+.text--left {
   text-align: left;
 }
 
-.text-center {
+.text--center {
   text-align: center;
 }
 
-.text-right {
+.text--right {
   text-align: right;
 }
 
-.text-justify {
+.text--justify {
   text-align: justify;
 }
-
 
 ul {
   list-style: disc;
@@ -184,13 +183,13 @@ ol {
   @include rem(margin-left, $base-spacing-unit);
 }
 
-.list-unstyled {
+.list--unstyled {
   margin-left: 0;
   list-style: none;
 }
 
-.list-inline {
-  @extend .list-unstyled;
+.list--inline {
+  @extend .list--unstyled;
   > li {
     display: inline-block;
     @include rem(margin-left, $half-spacing-unit);

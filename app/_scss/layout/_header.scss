@@ -39,7 +39,7 @@
     padding: 2.5% 6%;
   }
 
-  .two-column & {
+  .column-two & {
     float: left;
     width: 66%;
 
@@ -66,7 +66,7 @@
 
 .site-content {
 
-  .two-column & {
+  .column-two & {
 
     @include breakpoint(all-mobile) {
       background-color: $container-background;

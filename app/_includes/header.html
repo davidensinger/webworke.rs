@@ -56,7 +56,7 @@
 
   </head>
 
-  <body id="top" class="layout-default {{ page.layout-class }} {{ page.page-class }} {% if page.page-class == "page-home" or page.layout-class == "layout-post" %}two-column{% else %}one-column{% endif %}">
+  <body id="top" class="layout-default {{ page.layout-class }} {{ page.page-class }} {% if page.page-class == "page-home" or page.layout-class == "layout-post" %}column-two{% else %}column-one{% endif %}">
 
     <!--[if lt IE 9]><div>
       <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
@@ -73,12 +73,12 @@
           <div class="visuallyhidden">
             <a href="#content">Skip to content</a>
           </div>
-          <ul class="main-navigation-list list-inline">
-            <li class="main-navigation-item">
-              <a class="main-navigation-link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
+          <ul class="main-navigation--list list--inline">
+            <li class="main-navigation--item">
+              <a class="main-navigation--link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
             </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
+            <li class="main-navigation--item">
+              <a class="main-navigation--link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
             </li>
           </ul>
         </nav><!-- #site-navigation .navigation .navigation-header -->
