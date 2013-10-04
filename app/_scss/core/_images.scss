@@ -38,28 +38,47 @@ svg:not(:root) {
 //  Image placement variations
 // -------------------------------------
 
-.img-right {
+.img--right {
   float: right;
-  @include rem(margin, 0.5 0 $base-spacing-unit $base-spacing-unit)
+  @include rem(margin, 0.5 0 $base-spacing-unit $base-spacing-unit);
 }
 
-.img-left {
+.img--left {
   float: left;
-  @include rem(margin, 0.5 $base-spacing-unit $base-spacing-unit 0)
+  @include rem(margin, 0.5 $base-spacing-unit $base-spacing-unit 0);
 }
 
 // Remove float and center image on small mobile
-.img-right,
-.img-left {
+.img--right,
+.img--left {
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     display: block;
     float: none;
-    @include rem(margin, 0 auto $base-spacing-unit)
+    @include rem(margin, 0 auto $base-spacing-unit);
   }
 }
 
-.img-center {
+.img--center {
   display: block;
-  @include rem(margin, 0 auto $base-spacing-unit)
+  @include rem(margin, 0 auto $base-spacing-unit);
 }
 
+// -------------------------------------
+//  Image with caption
+// -------------------------------------
+
+.img-caption--figure {
+
+}
+
+.img-caption--image {
+  @include rem(margin, 0.5 0);
+}
+
+.img-caption--figcaption {
+  font-style: italic;
+}
+
+.img-caption--link {
+  font-style: normal;
+}
