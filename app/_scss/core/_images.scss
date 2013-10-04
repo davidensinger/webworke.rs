@@ -76,6 +76,7 @@ svg:not(:root) {
 }
 
 .img-caption--figcaption {
+  @extend %text-small;
   font-style: italic;
 }
 
