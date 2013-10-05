@@ -60,7 +60,6 @@
 
 // Classes to collapse the grid. By default the grid collapses
 // on mobile-portrait-to-mobile-landscape (max-width: 479px)
-
 .collapse--tablet-portrait-to-small-desktop {
   [class^="grid-"] {
     @include breakpoint(tablet-portrait-to-small-desktop) {

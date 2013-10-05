@@ -27,6 +27,18 @@
 }
 
 // -------------------------------------
+//  Entry content
+// -------------------------------------
+
+.entry-content {
+
+  .layout-post & { // add space between .entry-content and .entry-meta-footer
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
+}
+
+
+// -------------------------------------
 //  Navigation arrows
 // -------------------------------------
 
