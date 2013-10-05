@@ -2,7 +2,7 @@
   <header class="entry-header">
     <div class="entry-meta">
       <small class="entry-date">
-        <time class="entry-time" datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished" content="{{ site.time | date: "%Y-%m-%d" }}">{{ site.time | date: "%B %d, %Y" }}</time>
+        <time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       </small>
     </div> <!-- .entry-meta -->
     <h1 class="entry-title" itemprop="name">
