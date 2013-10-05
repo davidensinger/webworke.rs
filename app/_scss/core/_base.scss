@@ -142,8 +142,12 @@ ol {
   @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
 }
 
-.lead {
+.lede {
   @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
+}
+
+.lede--location {
+  text-transform: uppercase;
 }
 
 .question {
