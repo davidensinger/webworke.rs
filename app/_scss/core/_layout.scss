@@ -12,9 +12,6 @@
 .grid {
   @extend %clearfix;
   @include rem(margin, 0 (-$half-spacing-unit) $base-spacing-unit);
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    margin-bottom: 0;
-  }
 }
 
 %grid-unit {
@@ -22,8 +19,11 @@
   @include rem(padding, 0 $half-spacing-unit);
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     float: none;
-    width: 100% !important; // to thwart the cascade
-    @include rem(margin-bottom, $base-spacing-unit);
+    width: 100% !important; // to overwrite the cascade
+    @include rem(margin-top, $base-spacing-unit);
+    &:first-child {
+      margin-top: 0
+    }
   }
 }
 
@@ -55,6 +55,49 @@
 .grid-1-8 {
   @extend %grid-unit;
   width: 12.5%;
+}
+
+
+// Classes to collapse the grid. By default the grid collapses
+// on mobile-portrait-to-mobile-landscape (max-width: 479px)
+
+.collapse--tablet-portrait-to-small-desktop {
+  [class^="grid-"] {
+    @include breakpoint(tablet-portrait-to-small-desktop) {
+      float: none;
+      width: 100%;
+      @include rem(margin-top, $base-spacing-unit);
+      &:first-child {
+        margin-top: 0
+      }
+    }
+  }
+}
+
+.collapse--all-mobile {
+  [class^="grid-"] {
+    @include breakpoint(all-mobile) {
+      float: none;
+      width: 100%;
+      @include rem(margin-top, $base-spacing-unit);
+      &:first-child {
+        margin-top: 0
+      }
+    }
+  }
+}
+
+.collapse--mobile-landscape-to-tablet-portrait {
+  [class^="grid-"] {
+    @include breakpoint(mobile-landscape-to-tablet-portrait) {
+      float: none;
+      width: 100%;
+      @include rem(margin-top, $base-spacing-unit);
+      &:first-child {
+        margin-top: 0
+      }
+    }
+  }
 }
 
 
