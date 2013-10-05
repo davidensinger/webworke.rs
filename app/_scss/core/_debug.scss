@@ -11,7 +11,7 @@
 
     // debug media queries
     &:before {
-      @include absolute(top 0 left 0 right 0);
+      @include fixed(top 0 left 0 right 0);
       z-index: 10;
       content: "Default Small Desktop";
       font-weight: bold;
@@ -49,7 +49,6 @@
         content: "Small Mobile: max-width: 320px";
       }
     }
-
   }
 
 }
