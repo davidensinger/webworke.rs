@@ -15,7 +15,7 @@
     {{ post.content }}
   </div> <!-- .entry-content -->
   <footer class="entry-meta entry-meta-footer">
-    <p class="entry-meta-footer--posted">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">David Ensinger</a> on <span class="entry-meta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
+    <p class="entry-meta-footer--posted">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
       {% if post.categories != empty %}
         {% for category in post.categories %}
           {% if forloop.length == 2 %}
