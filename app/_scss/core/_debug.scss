@@ -9,9 +9,6 @@
 
   body {
 
-    // debug vertical alignment
-    @include debug-vertical-alignment();
-
     // debug media queries
     &:before {
       @include absolute(top 0 left 0 right 0);
