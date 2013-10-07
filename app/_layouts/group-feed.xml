@@ -1,0 +1,6 @@
+---
+layout: feed
+---
+{% for post in page.posts %}
+  {% include feed-detail.xml %}
+{% endfor %}

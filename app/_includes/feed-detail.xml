@@ -1,0 +1,9 @@
+<entry>
+  <title type="html"><![CDATA[{{ post.title }}]]></title>
+  <link rel="alternate" type="text/html" href="{{ site.baseurl }}{{ post.url }}" />
+  <id>{{ site.baseurl }}/{{ post.id }}</id>
+  <updated>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
+  <content type="html">
+    <![CDATA[{{ post.content | xml_escape | cdata_escape }}]]>
+  </content>
+</entry>

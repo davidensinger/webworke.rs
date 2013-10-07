@@ -8,10 +8,10 @@ title: Webworke.rs
 baseurl: http://127.0.0.1:9000
 tagline: Life and Craft in Columbus, Ohio
 description: This is the site description
-twitter: Wbwrkrs
+twitter: Webwrkrs
 facebook: https://www.facebook.com/webworkers
-tumblr: http://webworkers.tumblr.com
-feed: /atom.xml
+tumblr: http://webwrkrs.tumblr.com
+feed: /feed.xml
 newsletter: http://path/to/newsletter
 
 author:
@@ -23,9 +23,9 @@ author:
 relative_permalinks: false
 
 permalink: /:year/:month/:title/
+paginate: 5
 
-exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg']
+exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg']
 
 # Publish posts with future date.
 # _config.build.yml sets this to false on `grunt build`
