@@ -1,9 +1,8 @@
 <entry>
-  <title type="html"><![CDATA[{{ post.title }}]]></title>
+  <title type="text">{{ post.title | xml_escape }}</title>
   <link rel="alternate" type="text/html" href="{{ site.baseurl }}{{ post.url }}" />
-  <id>{{ site.baseurl }}/{{ post.id }}</id>
-  <updated>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
-  <content type="html">
-    <![CDATA[{{ post.content | xml_escape | cdata_escape }}]]>
-  </content>
+  <id>{{ site.baseurl }}{{ post.id }}</id>
+  <published>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</published>
+  <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <content type="html"><![CDATA[ {{ post.content }} ]]></content>
 </entry>

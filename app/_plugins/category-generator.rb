@@ -46,7 +46,7 @@ module Jekyll
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "group-index.html")
+      self.read_yaml(File.join(base, '_layouts'), "category-index.html")
       self.data["grouptype"] = type
       self.data[type] = val
     end
@@ -60,7 +60,7 @@ module Jekyll
       @name = 'feed.xml'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "group-feed.xml")
+      self.read_yaml(File.join(base, '_layouts'), "category-feed.xml")
       self.data[type] = val
       self.data["grouptype"] = type
       self.data["posts"] = posts[0..9]
