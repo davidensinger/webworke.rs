@@ -24,9 +24,9 @@ layout: post
       {% if page.categories != empty %}
         {% for category in page.categories %}
           {% if forloop.length == 2 %}
-            <a class="" href="#" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
+            <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
           {% else %}
-            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="" href="#" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
+            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}
