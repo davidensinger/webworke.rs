@@ -3,3 +3,5 @@
 dist
 node_modules
 .tmp
+
+/app/_scss/application.css
