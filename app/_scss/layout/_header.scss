@@ -11,11 +11,11 @@
 // -------------------------------------
 
 .site-container {
-  max-width: 94%;
+  max-width: 90%;
 
-  @include breakpoint(extra-large-desktop) {
+  @include breakpoint(desktop) {
     margin: 0 auto;
-    max-width: 1601px;
+    max-width: 1281px;
   }
 
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
