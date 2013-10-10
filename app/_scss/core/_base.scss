@@ -294,6 +294,7 @@ pre {
   word-wrap: break-word;
 }
 
+// Quote styles
 blockquote {
   margin: 0;
   @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);

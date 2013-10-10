@@ -7,19 +7,7 @@
 
 
 .site-footer {
-  padding: 2.5% 0;
-
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    padding: 2.5% 6%;
-  }
-
-  .column-two & {
-    width: 66%;
-
-    @include breakpoint(all-mobile) {
-      width: 100%;
-    }
-  }
+  padding: 2.5% 6%;
 }
 
 

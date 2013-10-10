@@ -8,16 +8,5 @@
 
 .site-primary {
   padding: 5% 6%;
-  background-color: $container-background;
-
-  .column-two & {
-    float: left;
-    width: 66%;
-
-    @include breakpoint(all-mobile) {
-      float: none;
-      width: 100%;
-      background-color: transparent;
-    }
-  }
+  background-color: $background-primary;
 }
