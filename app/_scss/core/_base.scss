@@ -294,6 +294,17 @@ pre {
   word-wrap: break-word;
 }
 
+blockquote {
+  margin: 0;
+  @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
+}
+
+.quote {
+}
+
+.quote--big {
+}
+
 // Set consistent quote types.
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
