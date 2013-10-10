@@ -12,4 +12,65 @@
 }
 
 .site-sidebar {
+  overflow: hidden;
+  zoom: 1;
+}
+
+
+// -------------------------------------
+//  Primary sidebar area
+// -------------------------------------
+
+.site-sidebar--primary {
+  @extend .site-sidebar;
+}
+
+.sidebar--heading {
+}
+
+.sidebar--heading-url {
+}
+
+.sidebar--title {
+}
+
+.sidebar--organization {
+}
+
+.sidebar--description {
+}
+
+// links list
+.sidebar--links-list {
+}
+
+.sidebar--links-item {
+}
+
+.sidebar--links-url {
+}
+
+// -------------------------------------
+//  Secondary sidebar are
+// -------------------------------------
+
+.site-sidebar--secondary {
+  float: left;
+  width: 25%;
+  @include rem(margin-right, $base-spacing-unit);
+}
+
+.sidebar--figure {
+}
+
+.sidebar--image {
+}
+
+.sidebar--figcaption {
+}
+
+.sidebar--credit-text {
+}
+
+.sidebar--credit-url {
 }
