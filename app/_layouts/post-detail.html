@@ -20,17 +20,6 @@ layout: post
     {{ content }}
   </div> <!-- .entry-content -->
   <footer class="entry-meta entry-meta-footer">
-    <p class="entry-meta-footer--posted">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ page.date | date: "%B %-d, %Y" }}</span> in
-      {% if page.categories != empty %}
-        {% for category in page.categories %}
-          {% if forloop.length == 2 %}
-            <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
-          {% else %}
-            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </p>
     {% if page.previous.url or page.next.url %}
       <nav class="navigation navigation-entry-meta" role="navigation">
         <h1 class="visuallyhidden">Post Navigation</h1>
@@ -42,5 +31,16 @@ layout: post
       {%endif %}
       </nav><!-- .navigation navigation-entry-meta -->
     {%endif %}
+    <p class="entry-meta-footer--posted">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ page.date | date: "%B %-d, %Y" }}</span> in
+      {% if page.categories != empty %}
+        {% for category in page.categories %}
+          {% if forloop.length == 2 %}
+            <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
+          {% else %}
+            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </p>
   </footer> <!-- .entry-meta -->
 </article>
