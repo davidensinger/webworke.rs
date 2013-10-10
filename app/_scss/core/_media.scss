@@ -65,12 +65,12 @@ svg:not(:root) {
 
 .media--right {
   float: right;
-  @include rem(margin, 0.5 0 $base-spacing-unit $base-spacing-unit);
+  @include rem(margin, $quarter-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
 }
 
 .media--left {
   float: left;
-  @include rem(margin, 0.5 $base-spacing-unit $base-spacing-unit 0);
+  @include rem(margin, $quarter-spacing-unit $base-spacing-unit $base-spacing-unit 0);
 }
 
 // Remove float and center image on small mobile
@@ -97,11 +97,11 @@ svg:not(:root) {
 }
 
 .img-caption--image {
-  @include rem(margin, 0.5 0);
+  @include rem(margin, $quarter-spacing-unit 0);
 }
 
 .img-caption--figcaption {
-  @extend %text-small;
+  @extend %text--small;
   font-style: italic;
 }
 

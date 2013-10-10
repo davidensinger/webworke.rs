@@ -13,7 +13,10 @@
 
 .site-sidebar {
   overflow: hidden;
-  zoom: 1;
+
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    overflow: visible;
+  }
 }
 
 
@@ -50,6 +53,7 @@
 .sidebar--links-url {
 }
 
+
 // -------------------------------------
 //  Secondary sidebar are
 // -------------------------------------
@@ -58,18 +62,38 @@
   float: left;
   width: 25%;
   @include rem(margin-right, $base-spacing-unit);
+
+  @include breakpoint(tablet-portrait-to-small-desktop) {
+    width: 30%;
+  }
+
+  @include breakpoint(mobile-landscape-to-tablet-portrait) {
+    width: 40%;
+  }
+
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
+
 }
 
 .sidebar--figure {
 }
 
 .sidebar--image {
+  @include rem(margin-bottom, $quarter-spacing-unit);
 }
 
 .sidebar--figcaption {
+  @extend %text--small;
+  font-style: italic;
 }
 
 .sidebar--credit-text {
+  font-style: normal
 }
 
 .sidebar--credit-url {

@@ -18,11 +18,6 @@
 .navigation-footer,
 .site-footer-icons--list {
   @include rem(margin, 0 auto 3);
-}
-
-// All Mobile
-.navigation-footer,
-.site-footer-icons--list {
 
   @include breakpoint(all-mobile) {
     @include rem(margin-bottom, $base-spacing-unit);

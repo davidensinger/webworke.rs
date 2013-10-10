@@ -18,7 +18,7 @@
     max-width: 1281px;
   }
 
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+  @include breakpoint(all-mobile) {
     max-width: 100%;
   }
 }
@@ -31,11 +31,11 @@
 .site-header {
   padding: 2.5% 0 2.5% 6%;
 
-  @include breakpoint(extra-large-desktop) {
+  @include breakpoint(desktop) {
     padding: 2.5% 0;
   }
 
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+  @include breakpoint(all-mobile) {
     padding: 2.5% 6%;
   }
 }
