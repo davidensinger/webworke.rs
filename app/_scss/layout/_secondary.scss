@@ -12,23 +12,32 @@
 }
 
 .site-sidebar {
-  overflow: hidden;
+}
 
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    overflow: visible;
+
+// -------------------------------------
+//  Heading
+// -------------------------------------
+
+.sidebar--heading {
+}
+
+.sidebar--heading-top {
+  @extend %hidden;
+
+  @include breakpoint(mobile-landscape-to-tablet-portrait) {
+    display: block;
+    visibility: visible;
   }
 }
 
+.sidebar--heading-bottom {
+  margin-top: 0;
 
-// -------------------------------------
-//  Primary sidebar area
-// -------------------------------------
-
-.site-sidebar--primary {
-  @extend .site-sidebar;
-}
-
-.sidebar--heading {
+  @include breakpoint(mobile-landscape-to-tablet-portrait) {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .sidebar--heading-url {
@@ -40,25 +49,28 @@
 .sidebar--organization {
 }
 
+// -------------------------------------
+//  Description
+// -------------------------------------
+
 .sidebar--description {
-}
+  overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebar--figure
 
-// links list
-.sidebar--links-list {
-}
+  @include breakpoint(smaller-than-small-desktop) {
+    margin-bottom: 0;
+  }
 
-.sidebar--links-item {
-}
-
-.sidebar--links-url {
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
 }
 
 
 // -------------------------------------
-//  Secondary sidebar are
+//  Image
 // -------------------------------------
 
-.site-sidebar--secondary {
+.sidebar--figure {
   float: left;
   width: 25%;
   @include rem(margin-right, $base-spacing-unit);
@@ -68,7 +80,7 @@
   }
 
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
-    width: 40%;
+    width: 36%;
   }
 
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
@@ -77,10 +89,6 @@
     margin-right: 0;
     @include rem(margin-bottom, $base-spacing-unit);
   }
-
-}
-
-.sidebar--figure {
 }
 
 .sidebar--image {
@@ -97,4 +105,29 @@
 }
 
 .sidebar--credit-url {
+}
+
+
+// -------------------------------------
+//  Links list
+// -------------------------------------
+
+.sidebar--links-list {
+
+  @include breakpoint(smaller-than-small-desktop) {
+    clear: both;
+    float: left;
+    @include rem(margin-top, $base-spacing-unit);
+    width: 100%;
+  }
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.sidebar--links-item {
+}
+
+.sidebar--links-url {
 }
