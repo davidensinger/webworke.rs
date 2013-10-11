@@ -253,7 +253,7 @@ module.exports = function (grunt) {
         'Gruntfile.js',
         '<%= yeoman.app %>/assets/scripts/**/*.js',
         'test/spec/**/*.js',
-        '!<%= yeoman.app %>/assets/scripts/vendor/**/*'
+        '!<%= yeoman.app %>/assets/scripts/_vendor/**/*'
       ]
     },
     csscss: {
