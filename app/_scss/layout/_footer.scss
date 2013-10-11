@@ -7,7 +7,7 @@
 
 
 .site-footer {
-  padding: 2.5% 6%;
+  @include rem(padding, $base-spacing-unit 6%);
 }
 
 

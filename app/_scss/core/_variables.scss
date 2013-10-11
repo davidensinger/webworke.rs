@@ -66,9 +66,10 @@ $base-font-family: 'Lato', sans-serif;
 $base-font-weight: 400;
 $base-font-weight-bold: 700;
 
-$base-spacing-unit: 1.5; // only use with margin
+$base-spacing-unit: 1.5;
 $half-spacing-unit: $base-spacing-unit / 2;
 $quarter-spacing-unit: $base-spacing-unit / 4;
+$double-spacing-unit: $base-spacing-unit * 2;
 
 $line-height-ratio: $base-line-height / $base-font-size;
 

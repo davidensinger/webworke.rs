@@ -7,6 +7,6 @@
 
 
 .site-primary {
-  padding: 5% 6%;
+  @include rem(padding, $double-spacing-unit 6%);
   background-color: $background-primary;
 }

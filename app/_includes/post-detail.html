@@ -26,7 +26,7 @@
       {%endif %}
       </nav><!-- .navigation navigation-entry-meta -->
     {%endif %}
-    <p class="entry-meta-footer--posted">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
+    <p class="entry-meta-footer--posted text--center">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
       {% if post.categories != empty %}
         {% for category in post.categories %}
           {% if forloop.length == 2 %}
@@ -36,6 +36,7 @@
           {% endif %}
         {% endfor %}
       {% endif %}
-    </p>
+    </p> <!-- .entry-meta-footer--posted .text--center -->
+    <a href="#top" class="entry-meta-footer--back-to-top text--right">&uarr; Back to top</a>
   </footer> <!-- .entry-meta -->
 </article>

@@ -29,14 +29,14 @@
 // -------------------------------------
 
 .site-header {
-  padding: 2.5% 0 2.5% 6%;
+  @include rem(padding, $base-spacing-unit 0 $base-spacing-unit 6%);
 
   @include breakpoint(desktop) {
-    padding: 2.5% 0;
+    @include rem(padding, $base-spacing-unit 0);
   }
 
   @include breakpoint(all-mobile) {
-    padding: 2.5% 6%;
+    @include rem(padding, $base-spacing-unit 6%);
   }
 }
 
