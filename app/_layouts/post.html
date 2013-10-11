@@ -6,11 +6,13 @@ layout-class: layout-post
 <div id="primary" class="site-primary">
   {{ content }}
 </div> <!-- #primary .site-primary -->
-<div id="secondary" class="site-secondary" role="complementary">
-  <div class="site-sidebar clearfix vcard" itemscope itemtype="http://schema.org/Person">
-    {% if page.page-class == "page-home" %}
-      {% assign post = site.posts.first %}
-    {% endif %}
-    {% include sidebar.html %}
-  </div> <!-- .site-sidebar -->
-</div> <!-- #secondary .site-secondary -->
+{% if page.secondary or post.secondary %}
+  <div id="secondary" class="site-secondary" role="complementary">
+    <div class="site-sidebar clearfix vcard" itemscope itemtype="http://schema.org/Person">
+      {% if page.page-class == "page-home" %}
+        {% assign post = site.posts.first %}
+      {% endif %}
+      {% include sidebar.html %}
+    </div> <!-- .site-sidebar -->
+  </div> <!-- #secondary .site-secondary -->
+{% endif %}
