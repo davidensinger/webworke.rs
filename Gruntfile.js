@@ -211,6 +211,16 @@ module.exports = function (grunt) {
         }]
       }
     },
+    xmlmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.dist %>',
+          src: '**/*.xml',
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
     copy: {
       dist: {
         files: [{
@@ -336,7 +346,8 @@ module.exports = function (grunt) {
     'svgmin',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'xmlmin'
     ]);
 
   grunt.registerTask('default', [
