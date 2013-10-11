@@ -24,10 +24,10 @@ layout: post
       <nav class="navigation navigation-entry-meta" role="navigation">
         <h1 class="visuallyhidden">Post Navigation</h1>
       {% if page.previous.url %}
-        <a href="{{ page.previous.url }}" title="Link to {{ page.previous.title }}" class="navigation-entry-meta-link previous">&#x276C;</a>
+        <a id="js-navigation-previous" href="{{ page.previous.url }}" title="Link to {{ page.previous.title }}" class="navigation-entry-meta-link previous">&#x276C;</a>
       {% endif %}
       {% if page.next.url %}
-        <a href="{{ page.next.url }}" title="Link to {{ page.next.title }}" class="navigation-entry-meta-link next">&#x276D;</a>
+        <a id="js-navigation-next" href="{{ page.next.url }}" title="Link to {{ page.next.title }}" class="navigation-entry-meta-link next">&#x276D;</a>
       {%endif %}
       </nav><!-- .navigation navigation-entry-meta -->
     {%endif %}

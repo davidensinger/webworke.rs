@@ -19,10 +19,10 @@
       <nav class="navigation navigation-entry-meta" role="navigation">
         <h1 class="visuallyhidden">Post Navigation</h1>
       {% if post.previous.url %}
-        <a href="{{ post.previous.url }}" title="Link to {{ post.previous.title }}" class="navigation-entry-meta-link previous">&#x276C;</a>
+        <a id="js-navigation-previous" href="{{ post.previous.url }}" title="Link to {{ post.previous.title }}" class="navigation-entry-meta-link previous">&#x276C;</a>
       {% endif %}
       {% if post.next.url %}
-        <a href="{{ post.next.url }}" title="Link to {{ post.next.title }}" class="navigation-entry-meta-link next">&#x276D;</a>
+        <a id="js-navigation-next" href="{{ post.next.url }}" title="Link to {{ post.next.title }}" class="navigation-entry-meta-link next">&#x276D;</a>
       {%endif %}
       </nav><!-- .navigation navigation-entry-meta -->
     {%endif %}
