@@ -291,6 +291,14 @@ module.exports = function (grunt) {
         ]
       }
     },
+    modernizr: {
+      devFile: '<%= yeoman.app %>/assets/scripts/_vendor/modernizr-latest.js',
+      outputFile: '<%= yeoman.dist %>/assets/scripts/vendor/modernizr.js',
+      files: [
+        '<%= yeoman.dist %>/assets/scripts/{,*/}*.js',
+        '<%= yeoman.dist %>/assets/styles/{,*/}*.css'
+      ]
+    },
     concurrent: {
       server: [
         'sass:server',
@@ -342,6 +350,7 @@ module.exports = function (grunt) {
     'concat',
     'cssmin',
     'uglify',
+    'modernizr',
     'imagemin',
     'svgmin',
     'rev',
