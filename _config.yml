@@ -25,6 +25,9 @@ relative_permalinks: false
 permalink: /:year/:month/:title/
 paginate: 5
 
+# Use redcarpet for jekyll-picture-tag plugin
+markdown: redcarpet
+
 exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg']
 
 # Publish posts with future date.
