@@ -292,11 +292,12 @@ module.exports = function (grunt) {
       }
     },
     modernizr: {
-      devFile: '<%= yeoman.app %>/assets/scripts/_vendor/modernizr-latest.js',
+      devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
       outputFile: '<%= yeoman.dist %>/assets/scripts/vendor/modernizr.js',
       files: [
         '<%= yeoman.dist %>/assets/scripts/{,*/}*.js',
-        '<%= yeoman.dist %>/assets/styles/{,*/}*.css'
+        '<%= yeoman.dist %>/assets/styles/{,*/}*.css',
+        '!<%= yeoman.dist %>/assets/scripts/vendor/*'
       ]
     },
     concurrent: {

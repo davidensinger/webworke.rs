@@ -54,12 +54,12 @@
 
     </div> <!-- #page .site-container -->
 
-    {% if page.layout-class != "layout-page" %}
-      <!-- build:js(app) /assets/scripts/application.js -->
-      <script src="/assets/scripts/_vendor/mousetrap.min.js"></script>
-      <script src="/assets/scripts/application.js"></script>
-      <!-- endbuild -->
-    {% endif %}
+    <!-- build:js(app) /assets/scripts/application.js -->
+    <script src="/_bower_components/mousetrap/mousetrap.js"></script>
+    <script src="/_bower_components/picturefill/picturefill.js"></script>
+    <script src="/_bower_components/media-match/media.match.js"></script>
+    <script src="/assets/scripts/application.js"></script>
+    <!-- endbuild -->
 
     <script>
       var _gaq=[["_setAccount","UA-26697016-1"],["_trackPageview"],["_trackPageLoadTime"]];
