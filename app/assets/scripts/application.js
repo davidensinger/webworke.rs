@@ -1,23 +1,11 @@
-function leftArrowPressed() {
-  var element = document.getElementById('js-navigation-previous');
-  var anchor = element.getAttribute('href');
-  window.location.href = anchor;
- }
+Mousetrap.bind('left', keyboardNavigation.bind(null, 'previous'))
+Mousetrap.bind('right', keyboardNavigation.bind(null, 'next'))
 
-function rightArrowPressed() {
-  var element = document.getElementById('js-navigation-next');
-  var anchor = element.getAttribute('href');
-  window.location.href = anchor;
-}
-
-document.onkeydown = function(event) {
-  event = event || window.event;
-  switch (event.keyCode) {
-    case 37:
-      leftArrowPressed();
-      break;
-    case 39:
-      rightArrowPressed();
-      break;
+function keyboardNavigation(ID) {
+  var element = document.getElementById('js-navigation-' + ID);
+  if (element) {
+    var anchor = element.getAttribute('href');
+    window.location.href = anchor;
+    return false
   }
-};
+}
