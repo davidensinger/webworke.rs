@@ -294,6 +294,9 @@ module.exports = function (grunt) {
     modernizr: {
       devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
       outputFile: '<%= yeoman.dist %>/assets/scripts/vendor/modernizr.js',
+      extra: {
+        'mq': true
+      },
       files: [
         '<%= yeoman.dist %>/assets/scripts/{,*/}*.js',
         '<%= yeoman.dist %>/assets/styles/{,*/}*.css',
