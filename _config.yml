@@ -28,7 +28,7 @@ paginate: 5
 # Use redcarpet for jekyll-picture-tag plugin
 markdown: redcarpet
 
-exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg']
+exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
 
 # Publish posts with future date.
 # _config.build.yml sets this to false on `grunt build`
@@ -44,16 +44,17 @@ pygments: false
 # https://github.com/robwierzbowski/jekyll-picture-tag
 picture:
   source: assets/images/_fullsize
-  output: assets/images/generated
+  output: generated
+  markup: "picturefill"
   presets:
     default:
       ppi: [1, 1.5]
       attr:
         class: "gallery-pict"
         itemprop: "image"
-      source_medium:
-        media: "(min-width: 40em)"
-        width: "600"
-        height: "300"
+      source_med:
+        media: "(min-width: 30em)"
+        width: 450
       source_default:
-        width: "300"
+        width: 350
+        height: 200
