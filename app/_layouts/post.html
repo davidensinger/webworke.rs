@@ -6,7 +6,7 @@ layout-class: layout-post
 <div id="primary" class="site-primary">
   {{ content }}
 </div> <!-- #primary .site-primary -->
-{% if page.secondary != null or post.secondary != null %}
+{% if page.layout-class != "layout-page" %}
   <div id="secondary" class="site-secondary" role="complementary">
     <div class="site-sidebar clearfix vcard" itemscope itemtype="http://schema.org/Person">
       {% if page.page-class == "page-home" %}
