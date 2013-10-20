@@ -36,7 +36,8 @@
 
 {% if secondary.image %}
   <figure class="sidebar--figure" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="sidebar--image" src="{{ secondary.image }}" alt="Photo of {{ title }}" itemprop="contentURL" />
+
+    {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
 
     {% if secondary.caption or secondary.credit-text %}
       <figcaption class="sidebar--figcaption" itemprop="description">
