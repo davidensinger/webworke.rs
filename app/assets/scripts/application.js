@@ -10,3 +10,12 @@ function keyboardNavigation(ID) {
     return false
   }
 }
+
+// Detect WebKit and add class to <html>
+var isWebkit = /webkit/.test( navigator.userAgent );
+var root = document.documentElement;
+
+if (isWebkit) {
+  root.className += " webkit";
+  return false
+}
