@@ -4,7 +4,7 @@
 ## Getting Started
 Check that the following are installed and up-to-date:
 - [Node.js](http://nodejs.org/)
-- [Ruby](http://www.ruby-lang.org/): Note that you may want to manage this with [RVM](https://rvm.io/) or [rbenv](https://github.com/sstephenson/rbenv))
+- [Ruby](http://www.ruby-lang.org/): Note that you may want to manage this with [RVM](https://rvm.io/) or [rbenv](https://github.com/sstephenson/rbenv)
 - [Bower](http://bower.io/): Manage most (but not all) of the front-end dependencies
 - [Bundler](http://gembundler.com/): Manage Jekyll dependencies
 - [Grunt](http://gruntjs.com/): Automate Jekyll development and build tasks
