@@ -77,14 +77,12 @@ textarea {
 // These selection declarations have to be separate.
 // Customize the background color to match your design.
 ::-moz-selection {
-  // color:;
-  // background:;
+  background: $yellow;
   text-shadow: none;
 }
 
 ::selection {
-  // color:;
-  // background:;
+  background: $yellow;
   text-shadow: none;
 }
 
