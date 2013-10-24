@@ -17,25 +17,25 @@ $debug: false;
 //  http://sassme.arc90.com/
 // -------------------------------------
 
-// White through black
-$white:           #fff;
-$white-dark:      darken($white, 3);    // #f7f7f7
-$white-darker:    darken($white, 6);    // #f0f0f0
-$white-darkest:   darken($white, 9);    // #e8e8e8
-$gray-lightest:   darken($white, 12);   // #e0e0e0
-$gray-lighter:    darken($white, 18);   // #d1d1d1
-$gray-light:      darken($white, 24);   // #c2c2c2
-$gray:            darken($white, 30);   // #b3b3b3
-$gray-dark:       darken($white, 36);   // #a3a3a3
-$gray-darker:     darken($white, 42);   // #949494
-$gray-darkest:    darken($white, 48);   // #858585
-$black-lightest:  darken($white, 60);   // #666666
-$black-lighter:   darken($white, 72);   // #474747
-$black-light:     darken($white, 84);   // #292929
-$black:           darken($white, 100);  // #000000
-
 $yellow:          #fddd00;
 $red:             #dc220d;
+
+// White through black
+$white:           #fff;
+$white-dark:      mix($yellow, darken($white, 3), 10%);    // #f7f7f7
+$white-darker:    mix($yellow, darken($white, 6), 10%);    // #f0f0f0
+$white-darkest:   mix($yellow, darken($white, 9), 10%);    // #e8e8e8
+$gray-lightest:   mix($yellow, darken($white, 12), 10%);   // #e0e0e0
+$gray-lighter:    mix($yellow, darken($white, 18), 10%);   // #d1d1d1
+$gray-light:      mix($yellow, darken($white, 24), 10%);   // #c2c2c2
+$gray:            mix($yellow, darken($white, 30), 10%);   // #b3b3b3
+$gray-dark:       mix($yellow, darken($white, 36), 10%);   // #a3a3a3
+$gray-darker:     mix($yellow, darken($white, 42), 10%);   // #949494
+$gray-darkest:    mix($yellow, darken($white, 48), 10%);   // #858585
+$black-lightest:  mix($yellow, darken($white, 60), 10%);   // #666666
+$black-lighter:   mix($yellow, darken($white, 72), 10%);   // #474747
+$black-light:     mix($yellow, darken($white, 84), 10%);   // #292929
+$black:           darken($white, 100);  // #000000
 
 
 // -------------------------------------
