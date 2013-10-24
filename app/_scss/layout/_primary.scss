@@ -8,5 +8,14 @@
 
 .site-primary {
   @include rem(padding, $double-spacing-unit 6%);
+  @include rem(border-radius, 0 $eighth-spacing-unit);
   background-color: $background-primary;
+
+  @include breakpoint(desktop) {
+    @include rem(border-radius, $eighth-spacing-unit $eighth-spacing-unit 0 0);
+  }
+
+  @include breakpoint(all-mobile) {
+    border-radius: 0;
+  }
 }

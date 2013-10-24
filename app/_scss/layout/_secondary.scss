@@ -9,6 +9,16 @@
 .site-secondary {
   @include rem(padding, $double-spacing-unit 6%);
   background-color: $background-secondary;
+  @include rem(border-radius, 0 0 $eighth-spacing-unit);
+
+  @include breakpoint(desktop) {
+    @include rem(border-radius, 0 0 $eighth-spacing-unit $eighth-spacing-unit);
+  }
+
+  @include breakpoint(all-mobile) {
+    border-radius: 0;
+  }
+
 }
 
 .site-sidebar {
