@@ -33,7 +33,7 @@ summary {
 // 2. Remove webkit tap highlight color
 //    http://davidwalsh.name/mobile-highlight-color
 html {
-  background: $base-background;
+  background-color: $base-background;
   overflow-y: scroll;
   height: 100%;
   font: #{($base-font-size/16px)*100%}/#{$line-height-ratio} $base-font-family; // 16px
@@ -52,8 +52,11 @@ html {
 }
 
 body {
+  position: relative; // to support the :after
+  z-index: 0;
   margin: 0;
   min-height: 100%;
+
   // background: url("../images/background-base.svg");
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=");
   border-top: 5px solid $yellow;
@@ -62,6 +65,27 @@ body {
   .no-svg & {
     // background: url("../images/background-base.png");
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAAAAADFp7CUAAAAAnRSTlMAAHaTzTgAAAAMSURBVHgBYyAWXAQAAPsA0gUpJaUAAAAASUVORK5CYII=");
+  }
+
+  // white gradient overlay
+  &:after {
+    content: "";
+    @include absolute(top 0 right 0 left 0);
+    z-index: -1;
+    height: 300px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    .lt-ie10 & {
+      filter: none;
+    }
   }
 }
 
@@ -254,21 +278,23 @@ li {
 //  Inline Content
 // -------------------------------------
 
-// 1. Addresses outline displayed oddly in Chrome
-// 2. Improves readability when focused and also mouse hovered in all browsers
+// 1. Improves readability when focused and also mouse hovered in all browsers
 //    people.opera.com/patrickl/experiments/keyboard/test
 a {
   color: $base-link-color;
   text-decoration: none;
   &:hover,
   &:focus {
-    text-decoration: underline;
   }
-  &:focus { // 1
-    outline: thin dotted;
+  &:hover {
+    color: $base-link-color-hover;
+  }
+  &:focus {
+    color: $base-link-color-focus;
   }
   &:hover,
-  &:active { // 2
+  &:focus,
+  &:active { // 1
     outline: 0;
   }
 }

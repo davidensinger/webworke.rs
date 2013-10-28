@@ -51,11 +51,42 @@
 
 
 // -------------------------------------
+//  Logo
+// -------------------------------------
+
+.site-logo {
+  &:hover,
+  &:focus {
+  }
+  &:active {
+    @include relative(top 1px);
+  }
+}
+
+
+// -------------------------------------
 //  Navigation
 // -------------------------------------
 
 .navigation-header {
   float: right;
+}
+
+.main-navigation--item {
+}
+
+.main-navigation--link {
+  @include rem(padding, $quarter-spacing-unit $half-spacing-unit);
+  @include rem(border-radius, $eighth-spacing-unit);
+  color: $black-light;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $yellow;
+  }
+  &:active {
+    @include relative(top 1px);
+  }
 }
 
 
