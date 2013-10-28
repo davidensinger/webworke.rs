@@ -30,6 +30,8 @@ summary {
 
 // 1. Prevents iOS text size adjust after orientation change, without disabling user zoom
 //    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+// 2. Remove webkit tap highlight color
+//    http://davidwalsh.name/mobile-highlight-color
 html {
   background: $base-background;
   overflow-y: scroll;
@@ -37,6 +39,7 @@ html {
   font: #{($base-font-size/16px)*100%}/#{$line-height-ratio} $base-font-family; // 16px
   -webkit-text-size-adjust: 100%; // 1
   -ms-text-size-adjust: 100%; // 1
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 2
   @include breakpoint(desktop) {
     font-size: 106.25%; // 17px
   }
@@ -71,6 +74,14 @@ textarea {
   font-weight: $base-font-weight;
   line-height: $line-height-ratio;
   color: $base-color;
+}
+
+// Apply -webkit-tap-highlight-color to form elements only
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);
 }
 
 // Remove text-shadow in selection highlight: h5bp.com/i
