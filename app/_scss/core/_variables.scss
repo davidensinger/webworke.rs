@@ -27,14 +27,14 @@ $white-darker:    mix($yellow, darken($white, 6), 3%);    // #f0f0f0, #f7f7f7
 $white-darkest:   mix($yellow, darken($white, 9), 3%);    // #e8e8e8, #e8e7e1
 $gray-lightest:   mix($yellow, darken($white, 12), 3%);   // #e0e0e0, #e0dfd9
 $gray-lighter:    mix($yellow, darken($white, 18), 3%);   // #d1d1d1, #d2d1ca
-$gray-light:      mix($yellow, darken($white, 24), 6%);   // #c2c2c2, #c5c3b6
-$gray:            mix($yellow, darken($white, 30), 6%);   // #b3b3b3, #b7b5a8
-$gray-dark:       mix($yellow, darken($white, 36), 6%);   // #a3a3a3, #a8a699
-$gray-darker:     mix($yellow, darken($white, 42), 6%);   // #949494, #9a988b
-$gray-darkest:    mix($yellow, darken($white, 48), 9%);   // #858585, #8f8c79
-$black-lightest:  mix($yellow, darken($white, 60), 9%);   // #666666, #73705c
-$black-lighter:   mix($yellow, darken($white, 72), 9%);   // #474747, #575440
-$black-light:     mix($yellow, darken($white, 84), 9%);   // #292929, #3c3925
+$gray-light:      mix($yellow, darken($white, 24), 3%);   // #c2c2c2, #c3c2bc
+$gray:            mix($yellow, darken($white, 30), 3%);   // #b3b3b3, #b5b4ad
+$gray-dark:       mix($yellow, darken($white, 36), 3%);   // #a3a3a3, #a5a49e
+$gray-darker:     mix($yellow, darken($white, 42), 3%);   // #949494, #97968f
+$gray-darkest:    mix($yellow, darken($white, 48), 3%);   // #858585, #888781
+$black-lightest:  mix($yellow, darken($white, 60), 3%);   // #666666, #6a6962
+$black-lighter:   mix($yellow, darken($white, 72), 3%);   // #474747, #4c4b44
+$black-light:     mix($yellow, darken($white, 84), 3%);   // #292929, #2f2e27
 $black:           darken($white, 100);  // #000000
 
 
