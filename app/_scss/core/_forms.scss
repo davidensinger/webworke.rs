@@ -24,6 +24,7 @@ legend {
 // 1. Correct font family not being inherited in all browsers.
 // 2. Corrects font size not being inherited in all browsers
 // 3. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+// 4. Apply -webkit-tap-highlight-color to form elements only
 button,
 input,
 select,
@@ -31,7 +32,7 @@ textarea {
   font-family: inherit; // 1
   font-size: 100%; // 2
   margin: 0; // 3
-  vertical-align: baseline; // 4
+  -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8); // 4
 }
 
 // Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet

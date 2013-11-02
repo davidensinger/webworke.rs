@@ -79,14 +79,6 @@ textarea {
   color: $base-color;
 }
 
-// Apply -webkit-tap-highlight-color to form elements only
-button,
-input,
-select,
-textarea {
-  -webkit-tap-highlight-color: rgba(201, 224, 253, 0.8);
-}
-
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection declarations have to be separate.
 // Customize the background color to match your design.
