@@ -19,6 +19,7 @@
 .site-footer-icons--list {
   @include rem(margin, 0 auto 3);
 
+  // start breakpoints
   @include breakpoint(all-mobile) {
     @include rem(margin-bottom, $base-spacing-unit);
   }

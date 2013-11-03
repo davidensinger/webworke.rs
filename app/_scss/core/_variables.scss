@@ -17,8 +17,10 @@ $debug: false;
 //  http://sassme.arc90.com/
 // -------------------------------------
 
-$yellow:          #fddd00;
+// Primary colors
 $red:             #dc220d;
+$yellow:          #fddd00;
+$blue:            #1e2154;
 
 // White through black
 $white:           #fff;
@@ -54,9 +56,9 @@ $secondary-color: $white;
 //  Links
 // -------------------------------------
 
-$base-link-color: red;
+$base-link-color: $red;
 $base-link-color-hover: blue;
-$base-link-color-focus: green;
+$base-link-color-focus: $yellow;
 
 
 // -------------------------------------

@@ -12,6 +12,7 @@
   color: $secondary-color;
   background: $background-secondary;
 
+  // start breakpoints
   @include breakpoint(desktop) {
     @include rem(border-radius, 0 0 $eighth-spacing-unit $eighth-spacing-unit);
   }
@@ -35,6 +36,7 @@
 .sidebar--heading-top {
   @extend %hidden;
 
+  // start breakpoints
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
     display: block;
     visibility: visible;
@@ -44,6 +46,7 @@
 .sidebar--heading-bottom {
   margin-top: 0;
 
+  // start breakpoints
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
     display: none;
     visibility: hidden;
@@ -66,6 +69,7 @@
 .sidebar--description {
   overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebar--figure
 
+  // start breakpoints
   @include breakpoint(smaller-than-small-desktop) {
     margin-bottom: 0;
   }
@@ -85,6 +89,7 @@
   width: 25%;
   @include rem(margin-right, $base-spacing-unit);
 
+  // start breakpoints
   @include breakpoint(tablet-portrait-to-small-desktop) {
     width: 30%;
   }
@@ -124,6 +129,7 @@
 
 .sidebar--links-list {
 
+  // start breakpoints
   @include breakpoint(smaller-than-small-desktop) {
     clear: both;
     float: left;

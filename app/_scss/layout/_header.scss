@@ -22,6 +22,7 @@
 .site-container {
   max-width: 90%;
 
+  // start breakpoints
   @include breakpoint(desktop) {
     margin: 0 auto;
     max-width: 1281px;
@@ -37,30 +38,75 @@
 //  Header
 // -------------------------------------
 
-.site-header {
-  @include rem(padding, $base-spacing-unit 0 $base-spacing-unit 6%);
+.site-header--outer {
+  @include rem(padding, $base-spacing-unit 6% 2.25);
 
+  // start breakpoints
   @include breakpoint(desktop) {
-    @include rem(padding, $base-spacing-unit 0);
-  }
-
-  @include breakpoint(all-mobile) {
-    @include rem(padding, $base-spacing-unit 6%);
+    @include rem(padding, $base-spacing-unit 0 2.25);
   }
 }
 
+.site-header--inner {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.site-header--primary {
+  display: table-cell;
+  width: 33.34%;
+
+  // start breakpoints
+  @include breakpoint(smaller-than-small-desktop) {
+    width: 41.67%;
+  }
+  @include breakpoint(all-mobile) {
+    width: 50%;
+  }
+}
+
+.site-header--secondary {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.site-header--primary,
+.site-header--secondary {
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 // -------------------------------------
 //  Logo
 // -------------------------------------
 
 .site-logo {
-  &:hover,
-  &:focus {
-  }
+  @extend %FlexEmbed;
+  display: block;
+  padding-bottom: 30.22%; // this needs to be the logo ratio
+
   &:active {
     @include relative(top 1px);
   }
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
+
+}
+
+.site-logo--image {
+  @extend %FlexEmbed-item;
+  background: url("../images/site-logo--image.png") no-repeat;
+  background-size: cover;
 }
 
 
@@ -68,20 +114,19 @@
 //  Navigation
 // -------------------------------------
 
-.navigation-header {
-  float: right;
-}
-
 .main-navigation--item {
+  text-transform: uppercase;
+  font-weight: $base-font-weight-bold;
 }
 
 .main-navigation--link {
-  @include rem(padding, $quarter-spacing-unit $half-spacing-unit);
-  @include rem(border-radius, $eighth-spacing-unit);
+  padding: 2px 3px 1px;
   color: $black-light;
+  background-color: $white;
+  border-bottom: 2px solid $black-lighter;
   &:hover,
   &:focus {
-    color: $white;
+    color: inherit;
     background-color: $yellow;
   }
   &:active {
@@ -98,6 +143,7 @@
   @include rem(border-radius, 0 $eighth-spacing-unit $eighth-spacing-unit 0);
   box-shadow: 0 1px 10px 1px rgba($black-light, 0.125);
 
+  // start breakpoints
   @include breakpoint(desktop) {
     @include rem(border-radius, $eighth-spacing-unit);
   }

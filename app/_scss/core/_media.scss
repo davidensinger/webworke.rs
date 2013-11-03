@@ -53,6 +53,8 @@ svg:not(:root) {
 .media--1-4,
 .media--1-3,
 .media--1-2 {
+
+  // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     width: 100%;
   }
@@ -76,6 +78,8 @@ svg:not(:root) {
 // Remove float and center image on small mobile
 .media--right,
 .media--left {
+
+  // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     display: block;
     float: none;
@@ -87,6 +91,7 @@ svg:not(:root) {
   display: block;
   @include rem(margin, 0 auto $base-spacing-unit);
 }
+
 
 // -------------------------------------
 //  Image with caption
@@ -106,4 +111,42 @@ svg:not(:root) {
 
 .img-caption--link {
   font-style: normal;
+}
+
+
+// -------------------------------------
+//  Flex Embed
+//  https://github.com/suitcss/flex-embed/blob/master/flex-embed.css
+// -------------------------------------
+
+// For use with media embeds – such as videos, slideshows, or even images –
+// that need to retain a specific aspect ratio but adapt to the width of their
+// containing element.
+//
+// Example HTML:
+//
+// <div class="FlexEmbed FlexEmbed--16by9">
+//     <iframe class="FlexEmbed-item" src="…"></iframe>
+// </div>
+//
+// <div class="FlexEmbed FlexEmbed--16by9">
+//     [iframe|object|embed|img]
+// </div>
+
+%FlexEmbed {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+}
+
+// The use of an explicit descendant class makes this component more flexible.
+// However, it will work automatically for iframes, embeds, and objects to
+// account for times when you cannot modify the attributes for 3rd party widget
+// code.
+
+%FlexEmbed-item {
+  @include absolute(left 0 top 0);
+  width: 100%;
+  height: 100%;
 }
