@@ -20,7 +20,7 @@ Run the following commands to install the dependencies:
 - `bower install`
 
 ## Grunt Workflow
-- `grunt server`: Compiles all files and opens the site in your default browser. A watch task watches for changes to files, recompiles if necessary, and injects the changes into the browser with LiveReload
+- `grunt serve`: Compiles all files and opens the site in your default browser. A watch task watches for changes to files, recompiles if necessary, and injects the changes into the browser with LiveReload
 - `grunt check`: Checks code quality with Jshint, CSS Lint and CSSCSS, and Jekyll health with `jekyll doctor`
 - `grunt build`: Builds an optimized site to the dist directory.
 
