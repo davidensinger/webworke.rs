@@ -24,16 +24,16 @@ $blue:            #1e2154;
 
 // White through black
 $white:           #fff;
-$white-dark:      darken($white, 3);    // #f7f7f7,
-$white-darker:    mix($yellow, darken($white, 6), 3%);    // #f0f0f0, #f7f7f7
-$white-darkest:   mix($yellow, darken($white, 9), 3%);    // #e8e8e8, #e8e7e1
-$gray-lightest:   mix($yellow, darken($white, 12), 3%);   // #e0e0e0, #e0dfd9
-$gray-lighter:    mix($yellow, darken($white, 18), 3%);   // #d1d1d1, #d2d1ca
-$gray-light:      mix($yellow, darken($white, 24), 3%);   // #c2c2c2, #c3c2bc
-$gray:            mix($yellow, darken($white, 30), 3%);   // #b3b3b3, #b5b4ad
-$gray-dark:       mix($yellow, darken($white, 36), 3%);   // #a3a3a3, #a5a49e
-$gray-darker:     mix($yellow, darken($white, 42), 3%);   // #949494, #97968f
-$gray-darkest:    mix($yellow, darken($white, 48), 3%);   // #858585, #888781
+$white-dark:      mix($yellow, darken($white, 3), 1%);    // #f7f7f7, #f7f6f4
+$white-darker:    mix($yellow, darken($white, 6), 1%);    // #f0f0f0, #f0efed
+$white-darkest:   mix($yellow, darken($white, 9), 1%);    // #e8e8e8, #e8e7e5
+$gray-lightest:   mix($yellow, darken($white, 12), 2%);   // #e0e0e0, #e0dfdb
+$gray-lighter:    mix($yellow, darken($white, 18), 2%);   // #d1d1d1, #d1d1cc
+$gray-light:      mix($yellow, darken($white, 24), 2%);   // #c2c2c2, #c3c2be
+$gray:            mix($yellow, darken($white, 30), 2%);   // #b3b3b3, #b4b3af
+$gray-dark:       mix($yellow, darken($white, 36), 2%);   // #a3a3a3, #a4a49f
+$gray-darker:     mix($yellow, darken($white, 42), 2%);   // #949494, #969591
+$gray-darkest:    mix($yellow, darken($white, 48), 2%);   // #858585, #878682
 $black-lightest:  mix($yellow, darken($white, 60), 3%);   // #666666, #6a6962
 $black-lighter:   mix($yellow, darken($white, 72), 3%);   // #474747, #4c4b44
 $black-light:     mix($yellow, darken($white, 84), 3%);   // #292929, #2f2e27
@@ -44,12 +44,14 @@ $black:           darken($white, 100);  // #000000
 //  Scaffolding
 // -------------------------------------
 
-$base-background: $white;
+$base-background: $white-darker;
 $base-color: $black-light;
 
-$background-primary: $white;
-$background-secondary: $black-light;
+// primary content area
+$primary-background: $white;
 
+// secondary content area
+$secondary-background: $black-light;
 $secondary-color: $white;
 
 // -------------------------------------

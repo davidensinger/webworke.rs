@@ -35,15 +35,40 @@
 
 
 // -------------------------------------
+//  Main
+// -------------------------------------
+
+.site-main {
+  @include rem(border-radius, 0 $eighth-spacing-unit $eighth-spacing-unit 0);
+  border-top: 5px solid $black-light;
+  background-color: $primary-background;
+  box-shadow: 0 1px 10px 1px rgba($black-light, 0.125);
+
+  // start breakpoints
+  @include breakpoint(desktop) {
+    @include rem(border-radius, $eighth-spacing-unit);
+  }
+
+  @include breakpoint(all-mobile) {
+    border-radius: 0;
+  }
+}
+
+
+// -------------------------------------
 //  Header
 // -------------------------------------
 
 .site-header--outer {
-  @include rem(padding, $base-spacing-unit 6% 2.25);
+  @include rem(padding, $double-spacing-unit 6%);
 
-  // start breakpoints
-  @include breakpoint(desktop) {
-    @include rem(padding, $base-spacing-unit 0 2.25);
+  // background: url("../images/background-base.svg");
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPjxyZWN0IHg9IjUiIHk9IjUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=");
+
+  // For browsers that don’t support SVG
+  .no-svg & {
+    // background: url("../images/background-base.png");
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAAAAADFp7CUAAAAAnRSTlMAAHaTzTgAAAAMSURBVHgBYyAWXAQAAPsA0gUpJaUAAAAASUVORK5CYII=");
   }
 }
 
@@ -100,7 +125,6 @@
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     @include rem(margin-bottom, $base-spacing-unit);
   }
-
 }
 
 .site-logo--image {
@@ -115,15 +139,22 @@
 // -------------------------------------
 
 .main-navigation--item {
-  text-transform: uppercase;
   font-weight: $base-font-weight-bold;
+  &:before {
+    display: inherit; // need this for the vertical-align to work
+    @include rem(margin-right, 0.66);
+    content: "/";
+  }
+  &:first-child {
+    &:before {
+      content: "";
+    }
+  }
 }
 
 .main-navigation--link {
-  padding: 2px 3px 1px;
-  color: $black-light;
-  background-color: $white;
-  border-bottom: 2px solid $black-lighter;
+  padding: 2px 5px 3px;
+  color: inherit;
   &:hover,
   &:focus {
     color: inherit;
@@ -132,6 +163,12 @@
   &:active {
     @include relative(top 1px);
   }
+
+  // current page
+  &.is-current {
+    border-bottom: 2px solid $black-lighter;
+  }
+
 }
 
 
@@ -140,15 +177,5 @@
 // -------------------------------------
 
 .site-content {
-  @include rem(border-radius, 0 $eighth-spacing-unit $eighth-spacing-unit 0);
-  box-shadow: 0 1px 10px 1px rgba($black-light, 0.125);
 
-  // start breakpoints
-  @include breakpoint(desktop) {
-    @include rem(border-radius, $eighth-spacing-unit);
-  }
-
-  @include breakpoint(all-mobile) {
-    border-radius: 0;
-  }
 }

@@ -10,7 +10,7 @@
   @include rem(padding, $double-spacing-unit 6%);
   @include rem(border-radius, 0 0 $eighth-spacing-unit);
   color: $secondary-color;
-  background: $background-secondary;
+  background: $secondary-background;
 
   // start breakpoints
   @include breakpoint(desktop) {

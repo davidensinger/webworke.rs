@@ -9,21 +9,19 @@
   @include rem(margin-bottom, $base-spacing-unit);
 }
 
+.entry-time {
+}
+
 .entry-link {
-  color: $black;
   &:hover {
-    color: $black;
   }
   &:active {
-    color: $white;
-    background: $yellow;
   }
 
   .page-home & { // when on front page
   }
 
   .layout-post & { // when normal post
-
   }
 }
 
