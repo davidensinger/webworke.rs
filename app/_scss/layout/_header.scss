@@ -144,6 +144,7 @@
     display: inherit; // need this for the vertical-align to work
     @include rem(margin-right, 0.66);
     content: "/";
+    font-weight: normal;
   }
   &:first-child {
     &:before {
