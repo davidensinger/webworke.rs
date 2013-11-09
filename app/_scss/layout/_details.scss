@@ -13,7 +13,10 @@
 }
 
 .entry-link {
-  &:hover {
+  color: $black-light;
+  &:hover,
+  &:focus {
+    color: inherit;
   }
   &:active {
   }

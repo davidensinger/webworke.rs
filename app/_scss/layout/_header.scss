@@ -39,19 +39,8 @@
 // -------------------------------------
 
 .site-main {
-  @include rem(border-radius, 0 $eighth-spacing-unit $eighth-spacing-unit 0);
-  border-top: 5px solid $black-light;
   background-color: $primary-background;
-  box-shadow: 0 1px 10px 1px rgba($black-light, 0.125);
-
-  // start breakpoints
-  @include breakpoint(desktop) {
-    @include rem(border-radius, $eighth-spacing-unit);
-  }
-
-  @include breakpoint(all-mobile) {
-    border-radius: 0;
-  }
+  box-shadow: 6px 6px 0 rgba($black-light, 0.125);
 }
 
 
