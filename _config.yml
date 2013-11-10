@@ -29,6 +29,9 @@ paginate: 5
 # Use redcarpet for jekyll-picture-tag plugin
 markdown: redcarpet
 
+# disable this with ""
+excerpt_separator: ""
+
 exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
 
 # Publish posts with future date.
