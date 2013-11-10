@@ -33,6 +33,7 @@ summary {
 // 2. Remove webkit tap highlight color
 //    http://davidwalsh.name/mobile-highlight-color
 html {
+  @include rem(padding-top, $quarter-spacing-unit);
   background-color: $base-background;
   overflow-y: scroll;
   height: 100%;
@@ -46,7 +47,7 @@ html {
   &:before {
     @include absolute(top 0 right 0 left 0);
     content: "";
-    height: 6px;
+    @include rem(height, $quarter-spacing-unit);
 
     background: $blue;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxOCUiIHN0b3AtY29sb3I9IiMxZTIxNTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNkYzIyMGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4MiUiIHN0b3AtY29sb3I9IiNmZGRkMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -78,7 +79,7 @@ html {
 
 body {
   margin: 0;
-  @include rem(padding, $base-spacing-unit 0 0);
+  @include rem(padding-top, $base-spacing-unit);
   min-height: 100%;
 
   // start breakpoints
