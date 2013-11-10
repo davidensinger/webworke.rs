@@ -111,6 +111,7 @@
 
 .main-navigation--item {
   font-weight: $base-font-weight-bold;
+  text-transform: uppercase;
   &:before {
     display: inherit; // need this for the vertical-align to work
     @include rem(margin-right, 0.66);
