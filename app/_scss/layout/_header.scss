@@ -40,7 +40,7 @@
 
 .site-main {
   background-color: $primary-background;
-  box-shadow: 6px 6px 0 rgba($black-light, 0.125);
+  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 rgba($black-light, 0.125);
 }
 
 
