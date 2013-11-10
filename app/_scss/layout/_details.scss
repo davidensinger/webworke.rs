@@ -6,7 +6,7 @@
 // ==========================================================================
 
 .entry-header {
-  @include rem(margin-bottom, $base-spacing-unit);
+  @include rem(margin-bottom, $base-spacing-unit + 1);
 }
 
 .entry-time {

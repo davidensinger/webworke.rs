@@ -94,13 +94,8 @@ html {
 
 body {
   margin: 0;
-  @include rem(padding-top, $base-spacing-unit);
+  padding: 0;
   min-height: 100%;
-
-  // start breakpoints
-  @include breakpoint(all-mobile) {
-    padding: 0;
-  }
 }
 
 body,

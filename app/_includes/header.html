@@ -67,37 +67,35 @@
 
     <div id="page" class="hfeed site-container">
 
-      <div class="site-main">
+      <header id="masthead" class="site-header--outer" role="banner">
 
-        <header id="masthead" class="site-header--outer" role="banner">
+        <div class="site-header--inner">
 
-          <div class="site-header--inner">
+          <div class="site-header--primary">
+            <a href="{{ site.baseurl }}" title="Return to homepage" class="site-logo">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="{{ site.title }}" class="site-logo--image" />
+            </a> <!-- .site-logo -->
+          </div> <!-- .site-header--primary -->
 
-            <div class="site-header--primary">
-              <a href="{{ site.baseurl }}" title="Return to homepage" class="site-logo">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="{{ site.title }}" class="site-logo--image" />
-              </a> <!-- .site-logo -->
-            </div> <!-- .site-header--primary -->
+          <div class="site-header--secondary">
+            <nav id="site-navigation" class="navigation navigation-header" role="navigation">
+              <h1 class="visuallyhidden">Menu</h1>
+              <div class="visuallyhidden">
+                <a href="#content">Skip to content</a>
+              </div>
+              <ul class="main-navigation--list list--inline">
+                <li class="main-navigation--item">
+                  <a class="main-navigation--link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
+                </li>
+                <li class="main-navigation--item">
+                  <a class="main-navigation--link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
+                </li>
+              </ul> <!-- .main-navigation--list .list--inline -->
+            </nav> <!-- #site-navigation .navigation .navigation-header -->
+          </div> <!-- .site-header--secondary -->
 
-            <div class="site-header--secondary">
-              <nav id="site-navigation" class="navigation navigation-header" role="navigation">
-                <h1 class="visuallyhidden">Menu</h1>
-                <div class="visuallyhidden">
-                  <a href="#content">Skip to content</a>
-                </div>
-                <ul class="main-navigation--list list--inline">
-                  <li class="main-navigation--item">
-                    <a class="main-navigation--link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
-                  </li>
-                  <li class="main-navigation--item">
-                    <a class="main-navigation--link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
-                  </li>
-                </ul> <!-- .main-navigation--list .list--inline -->
-              </nav> <!-- #site-navigation .navigation .navigation-header -->
-            </div> <!-- .site-header--secondary -->
+        </div> <!-- .site-header--inner -->
 
-          </div> <!-- .site-header--inner -->
+      </header> <!-- #masthead .site-header--outer -->
 
-        </header> <!-- #masthead .site-header--outer -->
-
-        <div id="content" class="site-content clearfix">
+      <div id="content" class="site-content clearfix">
