@@ -6,19 +6,33 @@
 // ==========================================================================
 
 .entry-header {
-  @include rem(margin-bottom, $base-spacing-unit + 1);
+  @include rem(margin-bottom, $one-half-spacing-unit);
+  @include rem(padding-bottom, $half-spacing-unit);
+  text-transform: uppercase;
+  border-bottom: 3px solid $black-light;
 }
 
-.entry-time {
+.entry-date {
+  @include rem(padding, $eighth-spacing-unit);
+  background-color: $white-dark;
+  font-weight: $base-font-weight-bold;
+}
+
+.entry-title {
 }
 
 .entry-link {
   color: $black-light;
+  background: -webkit-linear-gradient($black-light 0%, $black-light 50%, $black 51%, $black 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   &:hover,
   &:focus {
-    color: inherit;
+    color: $black;
+    -webkit-text-fill-color: $black-light;
   }
   &:active {
+    background-color: $yellow;
   }
 
   .page-home & { // when on front page

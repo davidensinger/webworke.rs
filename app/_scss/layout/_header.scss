@@ -125,12 +125,12 @@
 }
 
 .main-navigation--link {
-  padding: 2px 4px 3px;
+  padding: 2px 3px 3px;
   color: inherit;
   &:hover,
   &:focus {
     color: inherit;
-    border-bottom: 2px solid $black-lighter;
+    border-bottom: 2px solid $black-light;
   }
   &:active {
     @include relative(top 1px);
@@ -139,7 +139,7 @@
 
   // current page
   &.is-current {
-    border-bottom: 2px solid $black-lighter;
+    border-bottom: 2px solid $black-light;
   }
 }
 

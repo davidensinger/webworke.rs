@@ -78,7 +78,9 @@ $base-spacing-unit: 1.5;
 $half-spacing-unit: $base-spacing-unit / 2;
 $quarter-spacing-unit: $base-spacing-unit / 4;
 $eighth-spacing-unit: $base-spacing-unit / 8;
+$one-half-spacing-unit: $base-spacing-unit * 1.5;
 $double-spacing-unit: $base-spacing-unit * 2;
+$triple-spacing-unit: $base-spacing-unit * 3;
 $quadruple-spacing-unit: $base-spacing-unit * 4;
 
 $line-height-ratio: $base-line-height / $base-font-size;
