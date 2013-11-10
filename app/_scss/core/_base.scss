@@ -60,6 +60,7 @@ html {
     background: -ms-linear-gradient(left, $blue 18%,$red 50%,$yellow 82%);
     background: linear-gradient(to right, $blue 18%,$red 50%,$yellow 82%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e2154", endColorstr="#fddd00",GradientType=1 );
+    box-shadow: 0 0 #{$double-spacing-unit}rem $gray-darkest;
 
     // Support for full multi-stop gradients with IE9 (using SVG).
     .lt-ie10 & {
