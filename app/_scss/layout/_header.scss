@@ -142,15 +142,16 @@
 }
 
 .main-navigation--link {
-  padding: 2px 5px 3px;
+  padding: 2px 4px 3px;
   color: inherit;
   &:hover,
   &:focus {
     color: inherit;
-    background-color: $yellow;
+    border-bottom: 2px solid $black-lighter;
   }
   &:active {
     @include relative(top 1px);
+    background-color: $yellow;
   }
 
   // current page
