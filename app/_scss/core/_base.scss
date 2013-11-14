@@ -223,7 +223,6 @@ ol {
 .list--inline {
   @extend .list--unstyled;
   > li {
-    @include rem(margin-left, $half-spacing-unit);
     display: inline-block;
     vertical-align: middle;
     &:first-child {
