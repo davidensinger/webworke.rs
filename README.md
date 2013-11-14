@@ -37,5 +37,5 @@ Run the following commands to install the dependencies:
 - `grunt check`: Checks code quality with Jshint, CSS Lint and CSSCSS, and Jekyll health with `jekyll doctor`
 - `grunt build`: Builds an optimized site to the dist directory.
 
-## Big Thanks
-This site has been scaffolded courtesy of [Yeoman](http://yeoman.io/) and [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb) by [@robwierzbowski](https://github.com/robwierzbowski).
+## Hat Tip
+This site was scaffolded by [Yeoman](http://yeoman.io/) and [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb), the latter being a project of [@robwierzbowski](https://github.com/robwierzbowski). I’ve subsequently customized the organization of the site to my liking, but I still keep an eye on [@robwierzbowski’s](https://github.com/robwierzbowski) commits and update accordingly.
