@@ -53,11 +53,7 @@ html {
 
     background: $blue;
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxOCUiIHN0b3AtY29sb3I9IiMxZTIxNTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNkYzIyMGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4MiUiIHN0b3AtY29sb3I9IiNmZGRkMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+");
-    background: -moz-linear-gradient(left, $blue 18%, $red 50%, $yellow 82%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(18%,$blue), color-stop(50%,$red), color-stop(82%,$yellow));
     background: -webkit-linear-gradient(left, $blue 18%,$red 50%,$yellow 82%);
-    background: -o-linear-gradient(left, $blue 18%,$red 50%,$yellow 82%);
-    background: -ms-linear-gradient(left, $blue 18%,$red 50%,$yellow 82%);
     background: linear-gradient(to right, $blue 18%,$red 50%,$yellow 82%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#1e2154", endColorstr="#fddd00",GradientType=1 );
 
