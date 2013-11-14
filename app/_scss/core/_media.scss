@@ -101,6 +101,7 @@ svg:not(:root) {
 }
 
 .img-caption--image {
+  display: block;
   @include rem(margin, $quarter-spacing-unit 0);
 }
 
