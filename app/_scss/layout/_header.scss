@@ -110,36 +110,26 @@
 // -------------------------------------
 
 .main-navigation--item {
+  @include rem(margin-left, $base-spacing-unit);
   font-weight: $base-font-weight-bold;
   text-transform: uppercase;
-  &:before {
-    display: inherit; // need this for the vertical-align to work
-    @include rem(margin-right, 0.66);
-    content: "/";
-  }
-  &:first-child {
-    &:before {
-      content: "";
-    }
-  }
 }
 
 .main-navigation--link {
-  padding: 2px 3px 3px;
-  color: inherit;
+  padding: 0 0 3px;
+  color: $black-lighter;
   &:hover,
   &:focus {
-    color: inherit;
-    border-bottom: 2px solid $black-light;
+    color: $black-light;
+    border-bottom: 2px solid $gray-lighter;
   }
   &:active {
     @include relative(top 1px);
-    background-color: $yellow;
   }
 
   // current page
   &.is-current {
-    border-bottom: 2px solid $black-light;
+    border-bottom: 2px solid $gray-lighter;
   }
 }
 
@@ -150,5 +140,5 @@
 
 .site-content {
   background-color: $primary-background;
-  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 rgba($black-light, 0.125);
+  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 $gray-lightest;
 }
