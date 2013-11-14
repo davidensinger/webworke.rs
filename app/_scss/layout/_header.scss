@@ -126,7 +126,7 @@
   &:hover,
   &:focus {
     color: $black-light;
-    border-bottom: 2px solid $gray-lighter;
+    border-bottom: 2px solid rgba($black-light, 0.125);
   }
   &:active {
     @include relative(top 1px);
@@ -135,7 +135,7 @@
   // current page
   &.is-current {
     color: $black-light;
-    border-bottom: 2px solid $gray-lighter;
+    border-bottom: 2px solid rgba($black-light, 0.125);
   }
 }
 
@@ -146,5 +146,5 @@
 
 .site-content {
   background-color: $primary-background;
-  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 $gray-lightest;
+  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 rgba($black-light, 0.125);
 }
