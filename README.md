@@ -1,23 +1,36 @@
-# webworke.rs
+# Webworke.rs
 **Life and Craft in Columbus, Ohio**
 
-## Getting Started
-Check that the following are installed and up-to-date:
-- [Node.js](http://nodejs.org/)
-- [Ruby](http://www.ruby-lang.org/): Note that you may want to manage this with [RVM](https://rvm.io/) or [rbenv](https://github.com/sstephenson/rbenv)
-- [Bower](http://bower.io/): Manage most (but not all) of the front-end dependencies
-- [Bundler](http://gembundler.com/): Manage Jekyll dependencies
-- [Grunt](http://gruntjs.com/): Automate Jekyll development and build tasks
-- [ImageMagick](http://www.imagemagick.org/script/): For [Jekyll Picture Tag](https://github.com/robwierzbowski/jekyll-picture-tag). Note that I found success installing this with [Homebrew](http://brew.sh/) `brew install imagemagick`.
+Webworke.rs runs on [Jekyll](http://jekyllrb.com/), a blog-aware, static site generator in Ruby, with some help from [Grunt](http://gruntjs.com/), the JavaScript Task Runner.
 
-### Optional, but Recommended
-You may also want to ensure that your [Xcode](https://developer.apple.com/xcode/) Command Line Tools are up to date, as well as [Homebrew](http://brew.sh/) (run `brew update` first and then `brew doctor`).
+## The Stack
+- [Node.js](http://nodejs.org/) and [NPM](https://npmjs.org/): Required for Grunt and Bower
+- [Ruby](http://www.ruby-lang.org/): Required for Jekyll
+- [Bower](http://bower.io/): Manage most (but not all) of the front-end dependencies
+- [Bundler](http://gembundler.com/): Manage Ruby dependencies
+- [Grunt](http://gruntjs.com/): Automate Jekyll development and build tasks
+- [ImageMagick](http://www.imagemagick.org/script/): For [Jekyll Picture Tag](https://github.com/robwierzbowski/jekyll-picture-tag).
+
+### Recommended Setup
+- Ensure that [Command Line Tools for Xcode](https://developer.apple.com/xcode/) is installed and up-to-date
+    - To install: `xcode-select --install`
+- Manage your ruby enviroments with [RVM](https://rvm.io/) or [rbenv](https://github.com/sstephenson/rbenv)
+- Use [Homebrew](http://brew.sh/) to manage [Node.js](http://nodejs.org/) and [ImageMagick](http://www.imagemagick.org/script/)
+    - To install Homebrew: `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
+    - To install Node.js: `brew install node`
+    - To install ImageMagick:`brew install imagemagick`
+    - To update: `brew update`
+    - To check for known issues: `brew doctor`
+- Install the command line interface for Grunt (please note that Grunt is actually managed by NPM)
+    - To install: `npm install -g grunt-cli`
+- Install Bower
+    - To install: `npm install -g bower`
 
 ## Install Dependencies
 Run the following commands to install the dependencies:
-- `npm cache clean` and then `npm install`
-- `bundle`
-- `bower install`
+- NPM: `npm cache clean` and then `npm install`
+- Bundler: `bundle`
+- Bower: `bower install`
 
 ## Grunt Workflow
 - `grunt serve`: Compiles all files and opens the site in your default browser. A watch task watches for changes to files, recompiles if necessary, and injects the changes into the browser with LiveReload
