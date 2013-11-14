@@ -129,6 +129,7 @@
 
   // current page
   &.is-current {
+    color: $black-light;
     border-bottom: 2px solid $gray-lighter;
   }
 }
