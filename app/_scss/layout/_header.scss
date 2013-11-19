@@ -123,10 +123,11 @@
 .main-navigation--link {
   padding: 0 0 3px;
   color: $black-lighter;
+  border-bottom: 3px solid $white;
   &:hover,
   &:focus {
     color: $black-light;
-    border-bottom: 2px solid rgba($black-light, 0.125);
+    border-bottom: 3px solid rgba($black-light, 0.125);
   }
   &:active {
     @include relative(top 1px);
@@ -135,7 +136,7 @@
   // current page
   &.is-current {
     color: $black-light;
-    border-bottom: 2px solid rgba($black-light, 0.125);
+    border-bottom: 3px solid rgba($black-light, 0.125);
   }
 }
 
