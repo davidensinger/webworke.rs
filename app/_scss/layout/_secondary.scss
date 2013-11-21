@@ -8,8 +8,8 @@
 
 .site-secondary {
   @include rem(padding, $double-spacing-unit 6%);
-  color: $secondary-color;
-  background: $secondary-background;
+  color: $white;
+  background: $black-light;
 }
 
 .site-sidebar {

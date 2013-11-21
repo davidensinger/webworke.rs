@@ -74,7 +74,7 @@
   color: $black-light;
   &:hover,
   &:focus {
-    @include rem(padding, $quarter-spacing-unit $half-spacing-unit);
+    @include rem(padding, $quarter-spacing-unit);
     color: $white;
     background-color: $black-light;
 

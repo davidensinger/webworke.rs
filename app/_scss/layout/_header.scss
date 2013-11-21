@@ -16,10 +16,10 @@
 
 
 // -------------------------------------
-//  Container
+//  Scaffolding
 // -------------------------------------
 
-.site-container {
+.site-scaffolding {
   margin: 0 auto;
   max-width: 90%;
 
@@ -36,10 +36,28 @@
 
 
 // -------------------------------------
+//  Google Map
+// -------------------------------------
+
+.google-map--container {
+  @include absolute(top 0 right 0 bottom -26px left 0);
+  z-index: -1;
+  background-color: $black-light;
+}
+
+.gm-style {
+  @include opacity(0.75);
+}
+
+
+// -------------------------------------
 //  Header
 // -------------------------------------
 
 .site-header--outer {
+  position: relative; // for .google-map--container
+  overflow: hidden; // for .google-map--container
+  @include rem(margin-bottom, $double-spacing-unit);
   @include rem(padding, $double-spacing-unit 0);
 
   // start breakpoints
@@ -56,7 +74,7 @@
 
 .site-header--primary {
   display: table-cell;
-  width: 33.34%;
+  width: 12.5%;
 
   // start breakpoints
   @include breakpoint(smaller-than-small-desktop) {
@@ -116,17 +134,18 @@
 
 .main-nav--item {
   @include rem(margin-left, $base-spacing-unit);
+  color: $white-dark;
   font-weight: $base-font-weight-bold;
   text-transform: uppercase;
 }
 
 .main-nav--link {
   padding: 0 0 3px;
-  color: $black-lighter;
+  color: inherit;
   &:hover,
   &:focus {
-    color: $black-light;
-    border-bottom: 3px solid rgba($black-light, 0.125);
+    color: inherit;
+    border-bottom: 3px solid $white-dark;
   }
   &:active {
     @include relative(top 1px);
@@ -134,17 +153,16 @@
 
   // current page
   &.is-current {
-    color: $black-light;
-    border-bottom: 3px solid rgba($black-light, 0.125);
+    border-bottom: 3px solid $white-dark;
   }
 }
 
 
 // -------------------------------------
-//  Content
+//  Main
 // -------------------------------------
 
-.site-content {
-  background-color: $primary-background;
+.site-main {
+  background-color: $white;
   box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 rgba($black-light, 0.125);
 }

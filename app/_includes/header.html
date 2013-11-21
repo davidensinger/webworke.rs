@@ -61,41 +61,47 @@
 
   <body id="top" class="layout-default {{ page.layout-class }} {{ page.page-class }}">
 
-    <!--[if lt IE 9]><div class="browse-happy text--center">
-      <small>Your browser is <em>ancient!</em> Please <a href="http://browsehappy.com/">upgrade to a different browser</a> to properly experience this site.</small>
-    </div><![endif]-->
-
-    <div id="page" class="hfeed site-container">
+    <div id="page" class="hfeed">
 
       <header id="masthead" class="site-header--outer" role="banner">
 
-        <div class="site-header--inner">
+        <div class="site-scaffolding">
 
-          <div class="site-header--primary">
-            <a href="{{ site.baseurl }}" title="Return to homepage" class="site-logo">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="{{ site.title }}" class="site-logo--image" />
-            </a> <!-- .site-logo -->
-          </div> <!-- .site-header--primary -->
+          <!--[if lt IE 9]><div class="browse-happy text--center">
+            <small>Your browser is <em>ancient!</em> Please <a href="http://browsehappy.com/">upgrade to a different browser</a> to properly experience this site.</small>
+          </div><![endif]-->
 
-          <div class="site-header--secondary">
-            <nav id="site-navigation" class="navigation nav-header" role="navigation">
-              <h1 class="visuallyhidden">Menu</h1>
-              <div class="visuallyhidden">
-                <a href="#content">Skip to content</a>
-              </div>
-              <ul class="main-nav--list list--inline">
-                <li class="main-nav--item">
-                  <a class="main-nav--link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
-                </li>
-                <li class="main-nav--item">
-                  <a class="main-nav--link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
-                </li>
-              </ul> <!-- .main-nav--list .list--inline -->
-            </nav> <!-- #site-navigation .navigation .nav-header -->
-          </div> <!-- .site-header--secondary -->
+          <div class="site-header--inner">
 
-        </div> <!-- .site-header--inner -->
+            <div class="site-header--primary">
+              <!--<a href="{{ site.baseurl }}" title="Return to homepage" class="site-logo">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="{{ site.title }}" class="site-logo--image" />
+              </a> <!-- .site-logo -->
+            </div> <!-- .site-header--primary -->
+
+            <div class="site-header--secondary">
+              <nav id="site-navigation" class="navigation nav-header" role="navigation">
+                <h1 class="visuallyhidden">Menu</h1>
+                <div class="visuallyhidden">
+                  <a href="#content">Skip to content</a>
+                </div>
+                <ul class="main-nav--list list--inline">
+                  <li class="main-nav--item">
+                    <a class="main-nav--link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
+                  </li>
+                  <li class="main-nav--item">
+                    <a class="main-nav--link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
+                  </li>
+                </ul> <!-- .main-nav--list .list--inline -->
+              </nav> <!-- #site-navigation .navigation .nav-header -->
+            </div> <!-- .site-header--secondary -->
+
+          </div> <!-- .site-header--inner -->
+
+        </div> <!-- .site-scaffolding -->
+
+        <div id="js-google-map" class="google-map--container"></div>
 
       </header> <!-- #masthead .site-header--outer -->
 
-      <div id="content" class="site-content clearfix">
+      <main id="main" class="site-main site-scaffolding" role="main">
