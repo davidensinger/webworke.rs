@@ -34,7 +34,7 @@ summary {
 // 2. Remove webkit tap highlight color
 //    http://davidwalsh.name/mobile-highlight-color
 html {
-  border-top: 3px solid lighten($yellow, 10);
+  border-top: 3px solid $yellow;
   overflow-y: scroll;
   font: #{($base-font-size/16px)*100%}/#{$line-height-ratio} $base-font-family; // 16px
   -webkit-text-size-adjust: 100%; // 1
