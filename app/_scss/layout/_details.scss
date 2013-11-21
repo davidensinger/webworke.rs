@@ -66,14 +66,96 @@
   @extend %text--small;
 }
 
-// navigation arrows
-.navigation-entry-meta-link {
+// navigation arrows link
+.nav-entry-meta--link {
+  display: block;
   position: fixed;
   top: 50%;
+  color: $black-light;
+  &:hover,
+  &:focus {
+    @include rem(padding, $quarter-spacing-unit $half-spacing-unit);
+    color: $white;
+    background-color: $black-light;
+
+    // navigation arrows text when :hover or :focus
+    .nav-entry-meta--link__text {
+      position: static;
+      visibility: visible;
+      @include opacity(1);
+    }
+
+    // navigation arrows arrow when :hover or :focus
+    .nav-entry-meta--link__arrow {
+      background-color: transparent;
+    }
+
+    // shared styles
+    .nav-entry-meta--link__text,
+    .nav-entry-meta--link__arrow {
+      padding: 0;
+    }
+  }
+  &:active {
+    margin-top: 1px;
+  }
   &.previous {
-    left: 5px;
+    left: 0;
+
+    // navigation arrows text
+    .nav-entry-meta--link__text {
+      -ms-transform: translateX(-200px);
+      -webkit-transform: translateX(-200px);
+      transform: translateX(-200px);
+    }
+    &:hover,
+    &:focus {
+
+      // navigation arrows text
+      .nav-entry-meta--link__text {
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
   }
   &.next {
-    right: 5px;
+    right: 0;
+
+    // navigation arrows text
+    .nav-entry-meta--link__text {
+      -ms-transform: translateX(200px);
+      -webkit-transform: translateX(200px);
+      transform: translateX(200px);
+    }
+    &:hover,
+    &:focus {
+
+      // navigation arrows text
+      .nav-entry-meta--link__text {
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
   }
+}
+
+// navigation arrows text
+.nav-entry-meta--link__text {
+  position: absolute;
+  visibility: hidden;
+  @include opacity(0);
+}
+
+// navigation arrows arrow
+.nav-entry-meta--link__arrow {
+  background-color: $white;
+}
+
+// shared styles
+.nav-entry-meta--link__text,
+.nav-entry-meta--link__arrow {
+  display: inline-block;
+  @include rem(padding, $quarter-spacing-unit);
 }

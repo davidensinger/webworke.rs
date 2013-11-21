@@ -114,13 +114,13 @@
 //  Navigation
 // -------------------------------------
 
-.main-navigation--item {
+.main-nav--item {
   @include rem(margin-left, $base-spacing-unit);
   font-weight: $base-font-weight-bold;
   text-transform: uppercase;
 }
 
-.main-navigation--link {
+.main-nav--link {
   padding: 0 0 3px;
   color: $black-lighter;
   &:hover,

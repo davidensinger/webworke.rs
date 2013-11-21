@@ -14,17 +14,17 @@
   <div class="entry-content">
     {{ post.content }}
   </div> <!-- .entry-content -->
-  <footer class="entry-meta entry-meta-footer">
+  <footer class="entry-meta entry-meta--footer">
     {% if post.previous.url or post.next.url %}
-      <nav class="navigation navigation-entry-meta" role="navigation">
+      <nav class="navigation nav-entry-meta" role="navigation">
         <h1 class="visuallyhidden">Post Navigation</h1>
       {% if post.previous.url %}
-        <a id="js-navigation-previous" href="{{ post.previous.url }}" title="Link to {{ post.previous.title }}" class="navigation-entry-meta-link previous">&#x276C;</a>
+        <a id="js-nav-previous" href="{{ post.previous.url }}" title="Link to {{ post.previous.title }}" class="nav-entry-meta--link previous"><span class="nav-entry-meta--link__arrow">&larr;&nbsp;</span> <span class="nav-entry-meta--link__text">{{ post.previous.title }}</span></a>
       {% endif %}
       {% if post.next.url %}
-        <a id="js-navigation-next" href="{{ post.next.url }}" title="Link to {{ post.next.title }}" class="navigation-entry-meta-link next">&#x276D;</a>
+        <a id="js-nav-next" href="{{ post.next.url }}" title="Link to {{ post.next.title }}" class="nav-entry-meta--link next"><span class="nav-entry-meta--link__text">{{ post.next.title }}</span> <span class="nav-entry-meta--link__arrow">&nbsp;&rarr;</span></a>
       {%endif %}
-      </nav><!-- .navigation navigation-entry-meta -->
+      </nav><!-- .navigation nav-entry-meta -->
     {%endif %}
     <p class="entry-meta-footer--posted text--center">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
       {% if post.categories != empty %}
