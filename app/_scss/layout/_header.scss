@@ -42,7 +42,8 @@
 .site-header--outer {
   @include rem(margin-bottom, $double-spacing-unit);
   @include rem(padding, $double-spacing-unit 0);
-  background-color: $black-light;
+  background-color: $white;
+  //box-shadow: 0 #{$quarter-spacing-unit}rem 0 rgba($black-light, 0.125);
 
   // start breakpoints
   @include breakpoint(all-mobile) {
@@ -119,18 +120,17 @@
 
 .main-nav--item {
   @include rem(margin-left, $base-spacing-unit);
-  color: $white-dark;
   font-weight: $base-font-weight-bold;
   text-transform: uppercase;
 }
 
 .main-nav--link {
-  padding: 0 0 3px;
+  padding: 0 0 2px;
   color: inherit;
   &:hover,
   &:focus {
     color: inherit;
-    border-bottom: 3px solid $white-dark;
+    border-bottom: 2px solid $black-light;
   }
   &:active {
     @include relative(top 1px);
@@ -138,7 +138,7 @@
 
   // current page
   &.is-current {
-    border-bottom: 3px solid $white-dark;
+    border-bottom: 2px solid $black-light;
   }
 }
 
