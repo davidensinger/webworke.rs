@@ -36,29 +36,13 @@
 
 
 // -------------------------------------
-//  Google Map
-// -------------------------------------
-
-.google-map--container {
-  @include absolute(top 0 right 0 bottom -26px left 0);
-  z-index: -1;
-  background-color: $black-light;
-}
-
-.gm-style {
-  @include opacity(0.66);
-}
-
-
-// -------------------------------------
 //  Header
 // -------------------------------------
 
 .site-header--outer {
-  position: relative; // for .google-map--container
-  overflow: hidden; // for .google-map--container
   @include rem(margin-bottom, $double-spacing-unit);
   @include rem(padding, $double-spacing-unit 0);
+  background-color: $black-light;
 
   // start breakpoints
   @include breakpoint(all-mobile) {
