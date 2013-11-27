@@ -11,3 +11,95 @@ future: false
 
 # Compile posts in the _drafts directory.
 show_drafts: false
+
+# https://github.com/robwierzbowski/jekyll-picture-tag
+picture:
+  source: assets/images/_fullsize
+  output: generated
+  markup: "picturefill"
+  presets:
+    default:
+      ppi: [1, 1.5]
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_mobile-portrait-to-mobile-landscape:
+        media: "(max-width: 479px)"
+        width: 479
+      source_all-mobile:
+        media: "(max-width: 767px)"
+        width: 767
+      source_smaller-than-small-desktop:
+        media: "(max-width: 959px)"
+        width: 959
+      source_default:
+        width: 1280
+    sidebar:
+      ppi: [1, 1.5]
+      attr:
+        class: "image sidebar--image"
+        itemprop: "contentURL"
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_mobile-portrait-to-mobile-landscape:
+        media: "(max-width: 479px)"
+        width: 479
+      source_default:
+        width: 320
+    image--3-4:
+      ppi: [1, 1.5]
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_mobile-portrait-to-mobile-landscape:
+        media: "(max-width: 479px)"
+        width: 479
+      source_desktop:
+        media: "(min-width: 1281px)"
+        width: 959
+      source_default:
+        width: 767
+    image--2-3:
+      ppi: [1, 1.5]
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_all-mobile:
+        media: "(max-width: 767px)"
+        width: 479
+      source_default:
+        width: 767
+    image--1-2:
+      ppi: [1, 1.5]
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_smaller-than-small-desktop:
+        media: "(max-width: 959px)"
+        width: 479
+      source_default:
+        width: 767
+    image--1-3:
+      ppi: [1, 1.5]
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_mobile-portrait-to-mobile-landscape:
+        media: "(max-width: 479px)"
+        width: 479
+      source_smaller-than-small-desktop:
+        media: "(max-width: 959px)"
+        width: 320
+      source_default:
+        width: 479
+    image--1-4:
+      ppi: [1, 1.5]
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 320
+      source_mobile-portrait-to-mobile-landscape:
+        media: "(max-width: 479px)"
+        width: 479
+      source_default:
+        width: 320
