@@ -63,6 +63,11 @@
 //  Entry footer
 // -------------------------------------
 
+.entryMeta-footer {
+  @include rem(padding-top, $base-spacing-unit);
+  border-top: 1px solid $black-light;
+}
+
 // back to top link
 .entryMeta-footer--backToTop {
   display: block;
@@ -75,11 +80,16 @@
   position: fixed;
   top: 50%;
   color: $black-light;
+  &:hover {
+    color: $white;
+    background-color: $black-light;
+  }
+  &:focus {
+    background-color: $yellow;
+  }
   &:hover,
   &:focus {
     @include rem(padding, $quarter-spacing-unit);
-    color: $white;
-    background-color: $black-light;
 
     // navigation arrows text when :hover or :focus
     .entryMeta-navigation--link__text {
@@ -163,4 +173,9 @@
 .entryMeta-navigation--link__arrow {
   display: inline-block;
   @include rem(padding, $quarter-spacing-unit);
+}
+
+// posted on
+.entryMeta-footer--posted {
+
 }
