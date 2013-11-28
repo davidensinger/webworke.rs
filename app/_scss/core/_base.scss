@@ -87,6 +87,7 @@ textarea {
   text-shadow: none;
 }
 
+
 // -------------------------------------
 //  Block Content
 // -------------------------------------
@@ -240,24 +241,14 @@ li {
   }
 }
 
+
 // -------------------------------------
 //  Inline Content
 // -------------------------------------
 
 // 1. Improves readability when focused and also mouse hovered in all browsers
-//    people.opera.com/patrickl/experiments/keyboard/test
 a {
-  color: $base-link-color;
   text-decoration: none;
-  &:hover,
-  &:focus {
-  }
-  &:hover {
-    color: $base-link-color-hover;
-  }
-  &:focus {
-    color: $base-link-color-focus;
-  }
   &:hover,
   &:focus,
   &:active { // 1
