@@ -310,6 +310,15 @@ blockquote {
 .quote-big {
 }
 
+.citation-small {
+  @extend .text-small;
+  font-style: italic;
+}
+
+.citation-small--link {
+  font-style: normal;
+}
+
 // Set consistent quote types.
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
@@ -321,7 +330,7 @@ q {
 }
 
 // Address inconsistent and variable font size in all browsers.
-%text-small,
+.text-small,
 small {
   font-size: 80%;
 }

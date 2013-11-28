@@ -42,15 +42,19 @@
 //  Entry content
 // -------------------------------------
 
+%entryContent-link {
+  border-bottom: 1px solid;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
 .entryContent {
   @include rem(margin-bottom, $double-spacing-unit); // add space between .entryContent and .entryMeta-footer
 
   // inline links
   a {
-    border-bottom: 1px solid;
-    &:hover {
-      border-bottom: none;
-    }
+    @extend %entryContent-link;
   }
 }
 
@@ -62,7 +66,7 @@
 // back to top link
 .entryMeta-footer--backToTop {
   display: block;
-  @extend %text-small;
+  @extend .text-small;
 }
 
 // navigation arrows link

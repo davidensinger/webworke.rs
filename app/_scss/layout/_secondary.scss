@@ -40,7 +40,7 @@
   }
 }
 
-.sidebar-heading--url {
+.sidebar-heading--link {
 }
 
 .sidebar-title {
@@ -94,19 +94,16 @@
 }
 
 .sidebar-image {
-  @include rem(margin-bottom, $quarter-spacing-unit);
+  @extend .imageCaption-image; // core/_media.scss
 }
 
-.sidebar-figcaption {
-  @extend %text-small;
-  font-style: italic;
+.sidebar-caption {
+  @extend .citation-small; // core/_base.scss
 }
 
-.sidebar-credit--text {
-  font-style: normal
-}
-
-.sidebar-credit--url {
+.sidebar-caption--link {
+  @extend .citation-small--link; // core/_base.scss
+  @extend %entryContent-link; // layout/_details.scss
 }
 
 
@@ -132,5 +129,5 @@
 .sidebar-links--item {
 }
 
-.sidebar-links--url {
+.sidebar-links--link {
 }

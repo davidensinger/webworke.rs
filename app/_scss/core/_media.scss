@@ -106,12 +106,11 @@ svg:not(:root) {
 }
 
 .imageCaption-figcaption {
-  @extend %text-small;
-  font-style: italic;
+  @extend .citation-small;
 }
 
 .imageCaption-link {
-  font-style: normal;
+  @extend .citation-small--link;
 }
 
 

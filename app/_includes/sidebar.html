@@ -12,7 +12,7 @@
   <h3 class="sidebar-heading sidebar-heading--top">
 
     {% if secondary.url %}
-      <a class="sidebar-heading--url url" href="{{ secondary.url }}" itemprop="url">
+      <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
     {% endif %}
 
     {% if secondary.title %}
@@ -39,24 +39,16 @@
 
     {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
 
-    {% if secondary.caption or secondary.credit-text %}
-      <figcaption class="sidebar-figcaption" itemprop="description">
+    {% if secondary.caption %}
+      <figcaption class="sidebar-caption" itemprop="description">
         {{ secondary.caption }}
 
-        {% if secondary.credit-text %}
-          <span class="sidebar-credit--text">
+        {% if secondary.caption-link %}
+          <a href="{{ secondary.caption-link }}" class="sidebar-caption--link">
 
-            {% if secondary.credit-url %}
-              <a href="{{ secondary.credit-url }}" class="sidebar-credit--url">
-            {% endif %}
+          {{ secondary.caption-link--text }}
 
-            {{ secondary.credit-text }}
-
-            {% if secondary.credit-url %}
-              </a>
-            {% endif %}
-
-          </span>
+          </a>
         {% endif %}
 
       </figcaption>
@@ -69,7 +61,7 @@
   <h3 class="sidebar-heading sidebar-heading--bottom">
 
     {% if secondary.url %}
-      <a class="sidebar-heading--url url" href="{{ secondary.url }}" itemprop="url">
+      <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
     {% endif %}
 
     {% if secondary.title %}
@@ -99,7 +91,7 @@
   <ul class="sidebar-links--list list-inline">
     {% for link in secondary-links %}
       <li class="sidebar-links--item">
-        <a class="sidebar-links--url url {{ link.class }}" href="{{ link.url }}" itemprop="url">
+        <a class="sidebar-links--link url {{ link.class }}" href="{{ link.url }}" itemprop="url">
           {{ link.title }}
         </a>
       </li>
