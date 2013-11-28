@@ -98,6 +98,7 @@
 
     // navigation arrows text
     .nav-entry-meta--link__text {
+      @include rem(padding-right, $quarter-spacing-unit);
       -ms-transform: translateX(-200px);
       -webkit-transform: translateX(-200px);
       transform: translateX(-200px);
@@ -118,6 +119,7 @@
 
     // navigation arrows text
     .nav-entry-meta--link__text {
+      @include rem(padding-left, $quarter-spacing-unit);
       -ms-transform: translateX(200px);
       -webkit-transform: translateX(200px);
       transform: translateX(200px);
