@@ -9,14 +9,14 @@
 {% endif %}
 
 {% if secondary.title or secondary.organization %}
-  <h3 class="sidebar--heading sidebar--heading-top">
+  <h3 class="sidebar-heading sidebar-heading--top">
 
     {% if secondary.url %}
-      <a class="sidebar--heading-url url" href="{{ secondary.url }}" itemprop="url">
+      <a class="sidebar-heading--url url" href="{{ secondary.url }}" itemprop="url">
     {% endif %}
 
     {% if secondary.title %}
-      <span class="sidebar--title" itemprop="jobTitle">{{ secondary.title }}</span>
+      <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}</span>
     {% endif %}
 
     {% if secondary.preposition %}
@@ -24,7 +24,7 @@
     {% endif %}
 
     {% if secondary.organization %}
-      <span class="sidebar--organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
+      <span class="sidebar-organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
     {% endif %}
 
     {% if secondary.url %}
@@ -35,19 +35,19 @@
 {% endif %}
 
 {% if secondary.image %}
-  <figure class="sidebar--figure" itemscope itemtype="http://schema.org/ImageObject">
+  <figure class="sidebar-figure" itemscope itemtype="http://schema.org/ImageObject">
 
     {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
 
     {% if secondary.caption or secondary.credit-text %}
-      <figcaption class="sidebar--figcaption" itemprop="description">
+      <figcaption class="sidebar-figcaption" itemprop="description">
         {{ secondary.caption }}
 
         {% if secondary.credit-text %}
-          <span class="sidebar--credit-text">
+          <span class="sidebar-credit--text">
 
             {% if secondary.credit-url %}
-              <a href="{{ secondary.credit-url }}" class="sidebar--credit-url">
+              <a href="{{ secondary.credit-url }}" class="sidebar-credit--url">
             {% endif %}
 
             {{ secondary.credit-text }}
@@ -66,14 +66,14 @@
 {% endif %}
 
 {% if secondary.title or secondary.organization %}
-  <h3 class="sidebar--heading sidebar--heading-bottom">
+  <h3 class="sidebar-heading sidebar-heading--bottom">
 
     {% if secondary.url %}
-      <a class="sidebar--heading-url url" href="{{ secondary.url }}" itemprop="url">
+      <a class="sidebar-heading--url url" href="{{ secondary.url }}" itemprop="url">
     {% endif %}
 
     {% if secondary.title %}
-      <span class="sidebar--title" itemprop="jobTitle">{{ secondary.title }}</span>
+      <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}</span>
     {% endif %}
 
     {% if secondary.preposition %}
@@ -81,7 +81,7 @@
     {% endif %}
 
     {% if secondary.organization %}
-      <span class="sidebar--organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
+      <span class="sidebar-organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
     {% endif %}
 
     {% if secondary.url %}
@@ -92,14 +92,14 @@
 {% endif %}
 
 {% if secondary.description %}
-  <p class="sidebar--description" itemprop="description">{{ secondary.description }}</p>
+  <p class="sidebar-description" itemprop="description">{{ secondary.description }}</p>
 {% endif %}
 
 {% if secondary-links %}
-  <ul class="sidebar--links-list list--inline">
+  <ul class="sidebar-links--list list-inline">
     {% for link in secondary-links %}
-      <li class="sidebar--links-item">
-        <a class="sidebar--links-url url {{ link.class }}" href="{{ link.url }}" itemprop="url">
+      <li class="sidebar-links--item">
+        <a class="sidebar-links--url url {{ link.class }}" href="{{ link.url }}" itemprop="url">
           {{ link.title }}
         </a>
       </li>

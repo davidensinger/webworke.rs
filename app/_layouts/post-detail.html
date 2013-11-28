@@ -3,44 +3,44 @@ layout: post
 ---
 
 <article class="post hentry" itemscope itemtype="http://schema.org/Article">
-  <header class="entry-header">
-    <div class="entry-meta">
-      <small class="entry-date">
-        <time class="entry-time" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  <header class="entryHeader">
+    <div class="entryMeta">
+      <small class="entryDate">
+        <time class="entryTime" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       </small>
-    </div> <!-- .entry-meta -->
-    <h1 class="entry-title" itemprop="name">
-      <a class="entry-link" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
-        {{ page.title }} <span class="entry-link--character">&infin;</span>
+    </div> <!-- .entryMeta -->
+    <h1 class="entryTitle" itemprop="name">
+      <a class="entryLink" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
+        {{ page.title }} <span class="entryLink-character">&infin;</span>
       </a>
     </h1>
   </header>
-  <div class="entry-content">
+  <div class="entryContent">
     {{ content }}
-  </div> <!-- .entry-content -->
-  <footer class="entry-meta entry-meta--footer">
+  </div> <!-- .entryContent -->
+  <footer class="entryMeta entryMeta-footer">
     {% if page.previous.url or page.next.url %}
-      <nav class="navigation nav-entry-meta" role="navigation">
-        <h1 class="visuallyhidden">Post Navigation</h1>
+      <nav class="entryMeta-navigation" role="navigation">
+        <h1 class="visuallyHidden">Post Navigation</h1>
       {% if page.previous.url %}
-        <a id="js-nav-previous" href="{{ page.previous.url }}" title="Link to {{ page.previous.title }}" class="nav-entry-meta--link previous"><span class="nav-entry-meta--link__arrow">&larr;&nbsp;</span> <span class="nav-entry-meta--link__text">{{ page.previous.title }}</span></a>
+        <a id="js-navigation--previous" href="{{ page.previous.url }}" title="Link to {{ page.previous.title }}" class="entryMeta-navigation--link previous"><span class="entryMeta-navigation--link__arrow">&larr;&nbsp;</span> <span class="entryMeta-navigation--link__text">{{ page.previous.title }}</span></a>
       {% endif %}
       {% if page.next.url %}
-        <a id="js-nav-next" href="{{ page.next.url }}" title="Link to {{ page.next.title }}" class="nav-entry-meta--link next"><span class="nav-entry-meta--link__text">{{ page.next.title }}</span> <span class="nav-entry-meta--link__arrow">&nbsp;&rarr;</span></a>
+        <a id="js-navigation--next" href="{{ page.next.url }}" title="Link to {{ page.next.title }}" class="entryMeta-navigation--link next"><span class="entryMeta-navigation--link__text">{{ page.next.title }}</span> <span class="entryMeta-navigation--link__arrow">&nbsp;&rarr;</span></a>
       {%endif %}
-      </nav><!-- .navigation nav-entry-meta -->
+      </nav><!--  entryMeta-navigation -->
     {%endif %}
-    <p class="entry-meta-footer--posted text--center">Posted by <a href="{{ site.baseurl }}/about/" class="entry-meta-footer--posted-link">{{ site.author.name }}</a> on <span class="entry-meta-footer--posted-date">{{ page.date | date: "%B %-d, %Y" }}</span> in
+    <p class="entryMeta-footer--posted text-center">Posted by <a href="{{ site.baseurl }}/about/" class="entryMeta-footer--posted-link">{{ site.author.name }}</a> on <span class="entryMeta-footer--posted-date">{{ page.date | date: "%B %-d, %Y" }}</span> in
       {% if page.categories != empty %}
         {% for category in page.categories %}
           {% if forloop.length == 2 %}
-            <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
+            <a class="entryMeta-footer--category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
           {% else %}
-            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entry-meta-footer-category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
+            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entryMeta-footer--category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}
-    </p> <!-- .entry-meta-footer--posted .text--center -->
-    <a href="#top" class="entry-meta-footer--back-to-top float-right">&uarr; Back to top</a>
-  </footer> <!-- .entry-meta .entry-meta-footer-->
+    </p> <!-- .entryMeta-footer--posted .text-center -->
+    <a href="#top" class="entryMeta-footer--backToTop float-right">&uarr; Back to top</a>
+  </footer> <!-- .entryMeta .entryMeta-footer-->
 </article>

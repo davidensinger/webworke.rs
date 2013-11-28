@@ -5,38 +5,35 @@
 //
 // ==========================================================================
 
-.entry-header {
+.entryHeader {
   @include rem(margin-bottom, $one-half-spacing-unit);
   @include rem(padding-bottom, $half-spacing-unit);
   text-transform: uppercase;
   border-bottom: 3px solid $black-light;
 }
 
-.entry-date {
+.entryDate {
   @include rem(padding, $eighth-spacing-unit);
   font-weight: $base-font-weight-bold;
 }
 
-.entry-title {
+.entryTitle {
   color: $black-light;
 }
 
-.entry-link {
-  color: inherit;
+.entryLink {
   &:hover,
   &:focus {
-    color: inherit;
 
-    .entry-link--character {
+    // accompanying unicode character
+    .entryLink-character {
       color: inherit;
     }
   }
-  &:active {
-    background-color: $yellow;
-  }
 }
 
-.entry-link--character {
+// accompanying unicode character
+.entryLink-character {
   color: $white-darker;
 }
 
@@ -45,8 +42,16 @@
 //  Entry content
 // -------------------------------------
 
-.entry-content {
-  @include rem(margin-bottom, $double-spacing-unit); // add space between .entry-content and .entry-meta-footer
+.entryContent {
+  @include rem(margin-bottom, $double-spacing-unit); // add space between .entryContent and .entryMeta-footer
+
+  // inline links
+  a {
+    border-bottom: 1px solid;
+    &:hover {
+      border-bottom: none;
+    }
+  }
 }
 
 
@@ -55,13 +60,13 @@
 // -------------------------------------
 
 // back to top link
-.entry-meta-footer--back-to-top {
+.entryMeta-footer--backToTop {
   display: block;
-  @extend %text--small;
+  @extend %text-small;
 }
 
 // navigation arrows link
-.nav-entry-meta--link {
+.entryMeta-navigation--link {
   display: block;
   position: fixed;
   top: 50%;
@@ -73,20 +78,20 @@
     background-color: $black-light;
 
     // navigation arrows text when :hover or :focus
-    .nav-entry-meta--link__text {
+    .entryMeta-navigation--link__text {
       position: static;
       visibility: visible;
       @include opacity(1);
     }
 
     // navigation arrows arrow when :hover or :focus
-    .nav-entry-meta--link__arrow {
+    .entryMeta-navigation--link__arrow {
       background-color: transparent;
     }
 
     // shared styles
-    .nav-entry-meta--link__text,
-    .nav-entry-meta--link__arrow {
+    .entryMeta-navigation--link__text,
+    .entryMeta-navigation--link__arrow {
       padding: 0;
     }
   }
@@ -97,7 +102,7 @@
     left: 0;
 
     // navigation arrows text
-    .nav-entry-meta--link__text {
+    .entryMeta-navigation--link__text {
       @include rem(padding-right, $quarter-spacing-unit);
       -ms-transform: translateX(-200px);
       -webkit-transform: translateX(-200px);
@@ -107,7 +112,7 @@
     &:focus {
 
       // navigation arrows text
-      .nav-entry-meta--link__text {
+      .entryMeta-navigation--link__text {
         -ms-transform: translateX(0);
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -118,7 +123,7 @@
     right: 0;
 
     // navigation arrows text
-    .nav-entry-meta--link__text {
+    .entryMeta-navigation--link__text {
       @include rem(padding-left, $quarter-spacing-unit);
       -ms-transform: translateX(200px);
       -webkit-transform: translateX(200px);
@@ -128,7 +133,7 @@
     &:focus {
 
       // navigation arrows text
-      .nav-entry-meta--link__text {
+      .entryMeta-navigation--link__text {
         -ms-transform: translateX(0);
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -138,20 +143,20 @@
 }
 
 // navigation arrows text
-.nav-entry-meta--link__text {
+.entryMeta-navigation--link__text {
   position: absolute;
   visibility: hidden;
   @include opacity(0);
 }
 
 // navigation arrows arrow
-.nav-entry-meta--link__arrow {
+.entryMeta-navigation--link__arrow {
   background-color: $white;
 }
 
 // shared styles
-.nav-entry-meta--link__text,
-.nav-entry-meta--link__arrow {
+.entryMeta-navigation--link__text,
+.entryMeta-navigation--link__arrow {
   display: inline-block;
   @include rem(padding, $quarter-spacing-unit);
 }

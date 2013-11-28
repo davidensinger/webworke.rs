@@ -6,13 +6,10 @@
 // ==========================================================================
 
 
-.site-secondary {
+.siteSecondary {
   @include rem(padding, $double-spacing-unit 6%);
   color: $white;
   background: $black-light;
-}
-
-.site-sidebar {
 }
 
 
@@ -20,10 +17,10 @@
 //  Heading
 // -------------------------------------
 
-.sidebar--heading {
+.sidebar-heading {
 }
 
-.sidebar--heading-top {
+.sidebar-heading--top {
   @extend %hidden;
 
   // start breakpoints
@@ -33,7 +30,7 @@
   }
 }
 
-.sidebar--heading-bottom {
+.sidebar-heading--bottom {
   margin-top: 0;
 
   // start breakpoints
@@ -43,21 +40,21 @@
   }
 }
 
-.sidebar--heading-url {
+.sidebar-heading--url {
 }
 
-.sidebar--title {
+.sidebar-title {
 }
 
-.sidebar--organization {
+.sidebar-organization {
 }
 
 // -------------------------------------
 //  Description
 // -------------------------------------
 
-.sidebar--description {
-  overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebar--figure
+.sidebar-description {
+  overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebar-figure
 
   // start breakpoints
   @include breakpoint(smaller-than-small-desktop) {
@@ -74,7 +71,7 @@
 //  Image
 // -------------------------------------
 
-.sidebar--figure {
+.sidebar-figure {
   float: left;
   width: 25%;
   @include rem(margin-right, $base-spacing-unit);
@@ -96,20 +93,20 @@
   }
 }
 
-.sidebar--image {
+.sidebar-image {
   @include rem(margin-bottom, $quarter-spacing-unit);
 }
 
-.sidebar--figcaption {
-  @extend %text--small;
+.sidebar-figcaption {
+  @extend %text-small;
   font-style: italic;
 }
 
-.sidebar--credit-text {
+.sidebar-credit--text {
   font-style: normal
 }
 
-.sidebar--credit-url {
+.sidebar-credit--url {
 }
 
 
@@ -117,7 +114,7 @@
 //  Links list
 // -------------------------------------
 
-.sidebar--links-list {
+.sidebar-links--list {
 
   // start breakpoints
   @include breakpoint(smaller-than-small-desktop) {
@@ -132,8 +129,8 @@
   }
 }
 
-.sidebar--links-item {
+.sidebar-links--item {
 }
 
-.sidebar--links-url {
+.sidebar-links--url {
 }

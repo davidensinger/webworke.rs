@@ -154,7 +154,7 @@ ol {
   @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
 }
 
-.lede--location {
+.lede-location {
   text-transform: uppercase;
 }
 
@@ -164,19 +164,19 @@ ol {
   font-style: italic;
 }
 
-.text--left {
+.text-left {
   text-align: left;
 }
 
-.text--center {
+.text-center {
   text-align: center;
 }
 
-.text--right {
+.text-right {
   text-align: right;
 }
 
-.text--justify {
+.text-justify {
   text-align: justify;
 }
 
@@ -194,13 +194,13 @@ ol {
   @include rem(margin-left, $base-spacing-unit);
 }
 
-.list--unstyled {
+.list-unstyled {
   margin-left: 0;
   list-style: none;
 }
 
-.list--inline {
-  @extend .list--unstyled;
+.list-inline {
+  @extend .list-unstyled;
   > li {
     display: inline-block;
     vertical-align: middle;
@@ -248,7 +248,11 @@ li {
 
 // 1. Improves readability when focused and also mouse hovered in all browsers
 a {
+  color: inherit;
   text-decoration: none;
+  &:focus {
+    background-color: $yellow;
+  }
   &:hover,
   &:focus,
   &:active { // 1
@@ -303,7 +307,7 @@ blockquote {
 .quote {
 }
 
-.quote--big {
+.quote-big {
 }
 
 // Set consistent quote types.
@@ -317,7 +321,7 @@ q {
 }
 
 // Address inconsistent and variable font size in all browsers.
-%text--small,
+%text-small,
 small {
   font-size: 80%;
 }

@@ -3,16 +3,16 @@ layout: default
 layout-class: layout-post
 ---
 
-<div id="primary" class="site-primary">
+<div id="primary" class="sitePrimary">
   {{ content }}
-</div> <!-- #primary .site-primary -->
+</div> <!-- #primary .sitePrimary -->
 {% if page.layout-class != "layout-page" %}
-  <div id="secondary" class="site-secondary" role="complementary">
+  <div id="secondary" class="siteSecondary" role="complementary">
     <div class="site-sidebar clearfix vcard" itemscope itemtype="http://schema.org/Person">
       {% if page.page-class == "page-home" %}
         {% assign post = site.posts.first %}
       {% endif %}
       {% include sidebar.html %}
     </div> <!-- .site-sidebar -->
-  </div> <!-- #secondary .site-secondary -->
+  </div> <!-- #secondary .siteSecondary -->
 {% endif %}

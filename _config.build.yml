@@ -37,7 +37,7 @@ picture:
     sidebar:
       ppi: [1, 1.5]
       attr:
-        class: "image sidebar--image"
+        class: "image sidebar-image"
         itemprop: "contentURL"
       source_small-mobile:
         media: "(max-width: 320px)"

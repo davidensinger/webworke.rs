@@ -6,7 +6,7 @@
 // ==========================================================================
 
 
-.site-footer {
+.siteFooter {
   @include rem(padding, $base-spacing-unit 6%);
 }
 
@@ -15,8 +15,8 @@
 //  Navigation & Footer Icons
 // -------------------------------------
 
-.nav-footer,
-.site-footer-icons--list {
+.footerNavigation,
+.siteFooter-icons--list {
   @include rem(margin, 0 auto 3);
 
   // start breakpoints
@@ -30,8 +30,8 @@
 //  Copyright
 // -------------------------------------
 
-.site-footer-copyright {
+.siteFooter-copyright {
 }
 
-.site-footer-copyright--link {
+.siteFooter-copyright--link {
 }

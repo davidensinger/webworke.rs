@@ -97,20 +97,20 @@ svg:not(:root) {
 //  Image with caption
 // -------------------------------------
 
-.img-caption--figure {
+.imageCaption-figure {
 }
 
-.img-caption--image {
+.imageCaption-image {
   display: block;
   @include rem(margin, $quarter-spacing-unit 0);
 }
 
-.img-caption--figcaption {
-  @extend %text--small;
+.imageCaption-figcaption {
+  @extend %text-small;
   font-style: italic;
 }
 
-.img-caption--link {
+.imageCaption-link {
   font-style: normal;
 }
 
@@ -126,15 +126,15 @@ svg:not(:root) {
 //
 // Example HTML:
 //
-// <div class="FlexEmbed FlexEmbed--16by9">
-//     <iframe class="FlexEmbed-item" src="…"></iframe>
+// <div class="flexEmbed flexEmbed--16by9">
+//     <iframe class="flexEmbed-item" src="…"></iframe>
 // </div>
 //
-// <div class="FlexEmbed FlexEmbed--16by9">
+// <div class="flexEmbed flexEmbed--16by9">
 //     [iframe|object|embed|img]
 // </div>
 
-%FlexEmbed {
+%flexEmbed {
   position: relative;
   overflow: hidden;
   height: 0;
@@ -146,7 +146,7 @@ svg:not(:root) {
 // account for times when you cannot modify the attributes for 3rd party widget
 // code.
 
-%FlexEmbed-item {
+%flexEmbed-item {
   @include absolute(left 0 top 0);
   width: 100%;
   height: 100%;
