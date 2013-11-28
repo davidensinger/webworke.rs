@@ -23,27 +23,22 @@
 }
 
 .entry-link {
-
-  .layout-post & { // when normal post
-    color: $white-darker;
-    &:hover,
-    &:focus {
-      color: $black-light;
-    }
-    &:active {
-      color: $yellow;
-    }
-  }
-  .page-home & { // when on front page
+  color: inherit;
+  &:hover,
+  &:focus {
     color: inherit;
-    &:hover,
-    &:focus {
-      color: $black;
-    }
-    &:active {
-      background-color: $yellow;
+
+    .entry-link--character {
+      color: inherit;
     }
   }
+  &:active {
+    background-color: $yellow;
+  }
+}
+
+.entry-link--character {
+  color: $white-darker;
 }
 
 
