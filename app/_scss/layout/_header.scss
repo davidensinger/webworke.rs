@@ -39,11 +39,10 @@
 //  Header
 // -------------------------------------
 
-.siteHeader-outer {
+.siteHeader {
   @include rem(margin-bottom, $double-spacing-unit);
   @include rem(padding, $double-spacing-unit 0);
   background-color: $white;
-  //box-shadow: 0 #{$quarter-spacing-unit}rem 0 rgba($black-light, 0.125);
 
   // start breakpoints
   @include breakpoint(all-mobile) {

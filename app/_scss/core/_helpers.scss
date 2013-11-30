@@ -70,3 +70,11 @@
     clear: both;
   }
 }
+
+// Link with bottom border
+%link-border--bottom {
+  border-bottom: 1px solid;
+  &:hover {
+    border-bottom: none;
+  }
+}

@@ -20,7 +20,9 @@
     {% endif %}
 
     {% if secondary.preposition %}
-      {{ secondary.preposition }}
+      <span class="sidebar-preposition">
+        {{ secondary.preposition }}
+      </span>
     {% endif %}
 
     {% if secondary.organization %}
@@ -28,6 +30,7 @@
     {% endif %}
 
     {% if secondary.url %}
+        <span class="sidebar-character">&rarr;</span>
       </a>
     {% endif %}
 
@@ -40,7 +43,7 @@
     {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
 
     {% if secondary.caption %}
-      <figcaption class="sidebar-caption" itemprop="description">
+      <figcaption class="sidebar-caption text-center" itemprop="description">
         {{ secondary.caption }}
 
         {% if secondary.caption-link %}
@@ -69,7 +72,9 @@
     {% endif %}
 
     {% if secondary.preposition %}
-      {{ secondary.preposition }}
+      <span class="sidebar-preposition">
+        {{ secondary.preposition }}
+      </span>
     {% endif %}
 
     {% if secondary.organization %}
@@ -77,6 +82,7 @@
     {% endif %}
 
     {% if secondary.url %}
+        <span class="sidebar-character">&rarr;</span>
       </a>
     {% endif %}
 

@@ -101,16 +101,6 @@ h5,
 h6 {
   padding: 0;
   font-weight: $base-font-weight-bold;
-  a {
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-    &:focus,
-    &:active {
-      // color:;
-    }
-  }
 }
 
 h1,
@@ -251,7 +241,13 @@ a {
   color: inherit;
   text-decoration: none;
   &:focus {
-    background-color: $yellow;
+    .siteHeader,
+    .sitePrimary & {
+      background-color: $focus;
+    }
+    .siteSecondary & {
+      color: $focus;
+    }
   }
   &:hover,
   &:focus,
@@ -311,7 +307,7 @@ blockquote {
 }
 
 .citation-small {
-  @extend .text-small;
+  @extend small;
   font-style: italic;
 }
 
@@ -330,7 +326,6 @@ q {
 }
 
 // Address inconsistent and variable font size in all browsers.
-.text-small,
 small {
   font-size: 80%;
 }

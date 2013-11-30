@@ -7,9 +7,19 @@
 
 
 .siteSecondary {
+  position: relative;
+  z-index: 0;
   @include rem(padding, $double-spacing-unit 6%);
-  color: $white;
+  color: $white-dark;
   background: $black-light;
+
+  &:before {
+    @include absolute(top 0 right 0 left 0 bottom 0);
+    z-index: -1;
+    content: "";
+    background-image: -webkit-radial-gradient(14% 10rem, circle farthest-corner, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+    background-image: radial-gradient(14% 10rem, circle farthest-corner, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
+  }
 }
 
 
@@ -18,6 +28,9 @@
 // -------------------------------------
 
 .sidebar-heading {
+  @include rem(padding-bottom, $half-spacing-unit);
+  overflow: hidden;
+  border-bottom: 2px solid;
 }
 
 .sidebar-heading--top {
@@ -41,12 +54,37 @@
 }
 
 .sidebar-heading--link {
+  &:hover {
+
+    // accompanying character entity
+    .sidebar-character {
+      color: inherit;
+    }
+  }
+
+  &:focus {
+
+    // accompanying character entity
+    .sidebar-character {
+      color: $focus;
+    }
+  }
 }
 
 .sidebar-title {
+  text-transform: uppercase;
+}
+
+.sidebar-preposition {
 }
 
 .sidebar-organization {
+  @extend .sidebar-title;
+}
+
+// accompanying character entity
+.sidebar-character {
+  color: $black-lighter;
 }
 
 // -------------------------------------
@@ -73,16 +111,16 @@
 
 .sidebar-figure {
   float: left;
-  width: 25%;
+  width: 20%;
   @include rem(margin-right, $base-spacing-unit);
 
   // start breakpoints
   @include breakpoint(tablet-portrait-to-small-desktop) {
-    width: 30%;
+    width: 25%;
   }
 
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
-    width: 36%;
+    width: 30%;
   }
 
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
@@ -94,7 +132,18 @@
 }
 
 .sidebar-image {
-  @extend .imageCaption-image; // core/_media.scss
+  display: block;
+  @include rem(margin, $quarter-spacing-unit 0 $half-spacing-unit);
+
+  // image tag within .sidebar-image
+  img {
+    border-radius: 50%;
+  }
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    @include rem(margin, 0 0 $base-spacing-unit);
+  }
 }
 
 .sidebar-caption {
@@ -103,7 +152,7 @@
 
 .sidebar-caption--link {
   @extend .citation-small--link; // core/_base.scss
-  @extend %entryContent-link; // layout/_details.scss
+  @extend %link-border--bottom; // layout/_details.scss
 }
 
 

@@ -34,4 +34,11 @@
 }
 
 .siteFooter-copyright--link {
+  border-bottom: 1px solid;
+  &:hover {
+    border-bottom: none;
+  }
+  &:focus {
+    background-color: $focus;
+  }
 }

@@ -9,7 +9,7 @@
   @include rem(margin-bottom, $one-half-spacing-unit);
   @include rem(padding-bottom, $half-spacing-unit);
   text-transform: uppercase;
-  border-bottom: 3px solid $black-light;
+  border-bottom: 3px solid;
 }
 
 .entryDate {
@@ -25,14 +25,14 @@
   &:hover,
   &:focus {
 
-    // accompanying unicode character
+    // accompanying character entity
     .entryLink-character {
       color: inherit;
     }
   }
 }
 
-// accompanying unicode character
+// accompanying character entity
 .entryLink-character {
   color: $white-darker;
 }
@@ -42,19 +42,12 @@
 //  Entry content
 // -------------------------------------
 
-%entryContent-link {
-  border-bottom: 1px solid;
-  &:hover {
-    border-bottom: none;
-  }
-}
-
 .entryContent {
   @include rem(margin-bottom, $double-spacing-unit); // add space between .entryContent and .entryMeta-footer
 
   // inline links
   a {
-    @extend %entryContent-link;
+    @extend %link-border--bottom;
   }
 }
 
@@ -64,14 +57,14 @@
 // -------------------------------------
 
 .entryMeta-footer {
-  @include rem(padding-top, $base-spacing-unit);
-  border-top: 1px solid $black-light;
+  @include rem(padding-top, $double-spacing-unit);
+  border-top: 2px solid;
 }
 
-// back to top link
-.entryMeta-footer--backToTop {
-  display: block;
-  @extend .text-small;
+// navigation arrows <nav> container
+.entryMeta-navigation {
+  position: relative;
+  z-index: 1;
 }
 
 // navigation arrows link
@@ -83,9 +76,6 @@
   &:hover {
     color: $white;
     background-color: $black-light;
-  }
-  &:focus {
-    background-color: $yellow;
   }
   &:hover,
   &:focus {
@@ -175,7 +165,21 @@
   @include rem(padding, $quarter-spacing-unit);
 }
 
-// posted on
+// posted on paragraph
 .entryMeta-footer--posted {
+}
 
+// posted on link
+.entryMeta-footer--posted-link {
+  @extend %link-border--bottom;
+}
+
+// category the post is within
+.entryMeta-footer--category {
+  @extend %link-border--bottom;
+}
+
+// back to top link
+.entryMeta-footer--backToTop {
+  @extend small;
 }
