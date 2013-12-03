@@ -43,7 +43,7 @@
 // -------------------------------------
 
 .entryContent {
-  @include rem(margin-bottom, $double-spacing-unit); // add space between .entryContent and .entryMeta-footer
+  @include rem(margin-bottom, $triple-spacing-unit); // add space between .entryContent and .entryMeta-footer
 
   // inline links
   a {
@@ -57,7 +57,7 @@
 // -------------------------------------
 
 .entryMeta-footer {
-  @include rem(padding-top, $double-spacing-unit);
+  @include rem(padding-top, $triple-spacing-unit); // might make sense to mirror .entry-content
   border-top: 2px solid;
 }
 
@@ -167,16 +167,19 @@
 
 // posted on paragraph
 .entryMeta-footer--posted {
+  font-style: italic;
 }
 
 // posted on link
 .entryMeta-footer--posted-link {
   @extend %link-border--bottom;
+  @extend .citation-small--link;
 }
 
 // category the post is within
 .entryMeta-footer--category {
   @extend %link-border--bottom;
+  @extend .citation-small--link;
 }
 
 // back to top link
