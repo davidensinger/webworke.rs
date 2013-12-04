@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/davidensinger/webworke.rs"
   },
-  "description": "Yeoman / Grunt workflow for webworke.rs",
+  "description": "Life and Craft in Columbus, Ohio",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
