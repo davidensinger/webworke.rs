@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "matchmedia": "~0.1.0",
-    "modernizr": "~2.7",
+    "modernizr": "~2.7.1",
     "mousetrap": "~1.4.6",
     "picturefill": "~1.2.1"
   },
