@@ -5,7 +5,7 @@ Mousetrap.bind('right', keyboardNavigation.bind(null, 'next'));
 function keyboardNavigation(ID) {
   var element = document.getElementById('js-navigation--' + ID);
   if (element) {
-    element.focus();
+    element.className = element.className + " is-active";
     var anchor = element.getAttribute('href');
     window.location.href = anchor;
     return false;

@@ -73,12 +73,14 @@
   position: fixed;
   top: 50%;
   color: $black-light;
-  &:hover {
+  &:hover,
+  &.is-active {
     color: $white;
     background-color: $black-light;
   }
   &:hover,
-  &:focus {
+  &:focus,
+  &.is-active {
     @include rem(padding, $quarter-spacing-unit);
 
     // navigation arrows text when :hover or :focus
@@ -113,7 +115,8 @@
       transform: translateX(-200px);
     }
     &:hover,
-    &:focus {
+    &:focus,
+    &.is-active {
 
       // navigation arrows text
       .entryMeta-navigation--link__text {
@@ -134,7 +137,8 @@
       transform: translateX(200px);
     }
     &:hover,
-    &:focus {
+    &:focus,
+    &.is-active {
 
       // navigation arrows text
       .entryMeta-navigation--link__text {
