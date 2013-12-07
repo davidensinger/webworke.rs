@@ -35,7 +35,7 @@
 
 .sidebar-heading--top {
   @include rem(margin-bottom, $base-spacing-unit);
-  @extend %hidden; // hide this initially. I know, kinda janky.
+  @extend .hidden; // hide this initially. I know, kinda janky.
 
   // start breakpoints
   @include breakpoint(all-mobile) {

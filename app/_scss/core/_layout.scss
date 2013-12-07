@@ -10,7 +10,7 @@
 // -------------------------------------
 
 .grid {
-  @extend %clearfix;
+  @extend .clearfix;
   @include rem(margin, 0 (-$half-spacing-unit) $base-spacing-unit);
 }
 
