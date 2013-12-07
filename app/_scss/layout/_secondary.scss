@@ -182,4 +182,180 @@
 }
 
 .sidebar-links--link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/sprite-icons--sidebar.svg");
+  background-repeat: no-repeat;
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+
+  // TODO: PNG fallback for browsers that don’t support SVG
+  .no-svg & {
+    background-image: url("../images/sprite-icons--sidebar.png");
+  }
+
+  &.behance {
+    background-position: 0 0;
+
+    &:focus {
+      background-position: 0 -36px;
+    }
+    &:hover {
+      background-position: 0 -72px;
+    }
+  }
+  &.blogger {
+    background-position: -36px 0;
+
+    &:focus {
+      background-position: -36px -36px;
+    }
+    &:hover {
+      background-position: -36px -72px;
+    }
+  }
+  &.dribbble {
+    background-position: -72px 0;
+
+    &:focus {
+      background-position: -72px -36px;
+    }
+    &:hover {
+      background-position: -72px -72px;
+    }
+  }
+  &.email {
+    background-position: -108px 0;
+
+    &:focus {
+      background-position: -108px -36px;
+    }
+    &:hover {
+      background-position: -108px -72px;
+    }
+  }
+  &.facebook {
+    background-position: -144px 0;
+
+    &:focus {
+      background-position: -144px -36px;
+    }
+    &:hover {
+      background-position: -144px -72px;
+    }
+  }
+  &.flickr {
+    background-position: -180px 0;
+
+    &:focus {
+      background-position: -180px -36px;
+    }
+    &:hover {
+      background-position: -180px -72px;
+    }
+  }
+  &.github {
+    background-position: -216px 0;
+
+    &:focus {
+      background-position: -216px -36px;
+    }
+    &:hover {
+      background-position: -216px -72px;
+    }
+  }
+  &.googleplus {
+    background-position: -252px 0;
+
+    &:focus {
+      background-position: -252px -36px;
+    }
+    &:hover {
+      background-position: -252px -72px;
+    }
+  }
+  &.instagram {
+    background-position: -288px 0;
+
+    &:focus {
+      background-position: -288px -36px;
+    }
+    &:hover {
+      background-position: -288px -72px;
+    }
+  }
+  &.linkedin {
+    background-position: -324px 0;
+
+    &:focus {
+      background-position: -324px -36px;
+    }
+    &:hover {
+      background-position: -324px -72px;
+    }
+  }
+  &.pinterest {
+    background-position: -360px 0;
+
+    &:focus {
+      background-position: -360px -36px;
+    }
+    &:hover {
+      background-position: -360px -72px;
+    }
+  }
+  &.tumblr {
+    background-position: -396px 0;
+
+    &:focus {
+      background-position: -396px -36px;
+    }
+    &:hover {
+      background-position: -396px -72px;
+    }
+  }
+  &.twitter {
+    background-position: -432px 0;
+
+    &:focus {
+      background-position: -432px -36px;
+    }
+    &:hover {
+      background-position: -432px -72px;
+    }
+  }
+  &.youtube {
+    background-position: -468px 0;
+
+    &:focus {
+      background-position: -468px -36px;
+    }
+    &:hover {
+      background-position: -468px -72px;
+    }
+  }
+  &.vimeo {
+    background-position: -504px 0;
+
+    &:focus {
+      background-position: -504px -36px;
+    }
+    &:hover {
+      background-position: -504px -72px;
+    }
+  }
+  &.website {
+    background-position: -540px 0;
+
+    &:focus {
+      background-position: -540px -36px;
+    }
+    &:hover {
+      background-position: -540px -72px;
+    }
+  }
 }
