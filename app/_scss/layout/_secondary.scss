@@ -172,8 +172,7 @@
   background-repeat: no-repeat;
 
   &:active {
-    position: relative;
-    top: 1px;
+    @extend %link-active--depressed;
   }
 
   // TODO: PNG fallback for browsers that don’t support SVG

@@ -97,7 +97,7 @@
   padding-bottom: 30.22%; // this needs to be the logo ratio
 
   &:active {
-    @include relative(top 1px);
+    @extend %link-active--depressed;
   }
 
   // start breakpoints
@@ -132,7 +132,7 @@
     background-color: $yellow;
   }
   &:active {
-    @include relative(top 1px);
+    @extend %link-active--depressed;
   }
 
   // current page

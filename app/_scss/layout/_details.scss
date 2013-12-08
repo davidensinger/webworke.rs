@@ -169,6 +169,7 @@
 
 // posted on paragraph
 .entryMeta-footer--posted {
+  @include rem(margin-bottom, $double-spacing-unit);
   font-style: italic;
 }
 
@@ -186,5 +187,13 @@
 
 // back to top link
 .entryMeta-footer--backToTop {
+  @include rem(padding, $eighth-spacing-unit $quarter-spacing-unit);
   @extend small;
+  background-color: $white-darker;
+  &:hover {
+    background-color: $white-darkest;
+  }
+  &:active {
+    @extend %link-active--depressed;
+  }
 }

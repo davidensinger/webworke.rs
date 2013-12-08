@@ -79,3 +79,8 @@
     border-bottom: none;
   }
 }
+
+// Link with :active state depressed by 1px
+%link-active--depressed {
+  @include relative(top 1px);
+}
