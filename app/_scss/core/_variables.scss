@@ -39,7 +39,9 @@ $black-lighter:   mix($yellow, darken($white, 72), 1%);   // #474747, #484846
 $black-light:     mix($yellow, darken($white, 84), 1%);   // #292929, #2b2a28
 $black:           darken($white, 100);  // #000000
 
+// pseudo classes colors
 $focus:           $yellow;
+
 
 // -------------------------------------
 //  Typography

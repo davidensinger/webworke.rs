@@ -23,6 +23,7 @@
 }
 
 .sidebarPrimary {
+  width: auto;
   overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebarSecondary
 }
 
@@ -338,6 +339,60 @@
     }
     &:hover {
       background-position: -540px -72px;
+    }
+  }
+}
+
+
+// -------------------------------------
+//  Tooltip
+//  Hat tip to https://github.com/chinchang/hint.css
+// -------------------------------------
+
+[data-tooltip] {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    @include opacity(0);
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  &:before {
+    content: "";
+    top: -4px;
+    left: 13px;
+    background-color: transparent;
+    border-top: 5px solid $white;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  &:after {
+    content: attr(data-tooltip);
+    top: -28px;
+    left: 1px;
+    @include rem(padding, $eighth-spacing-unit $quarter-spacing-unit);
+    font-size: $milli-size;
+    font-weight: $base-font-weight-bold;
+    color: $black;
+    background-color: $white;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  &:hover {
+    &:before,
+    &:after {
+      visibility: visible;
+      @include opacity(1);
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      transform: translateY(-4px);
     }
   }
 }

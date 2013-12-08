@@ -99,7 +99,7 @@
   {% if secondary-links %}
     <ul class="sidebar-links--list list-inline">
       {% for link in secondary-links %}
-        <li class="sidebar-links--item">
+        <li class="sidebar-links--item" data-tooltip="{{ link.title }}">
           <a class="sidebar-links--link url {{ link.class }} ir" href="{{ link.url }}" itemprop="url">
             {{ link.title }}
           </a>
