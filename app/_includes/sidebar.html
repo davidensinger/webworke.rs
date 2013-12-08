@@ -38,69 +38,73 @@
 {% endif %}
 
 {% if secondary.image %}
-  <figure class="sidebar-figure" itemscope itemtype="http://schema.org/ImageObject">
+  <div class="sidebarSecondary">
+    <figure class="sidebar-figure" itemscope itemtype="http://schema.org/ImageObject">
 
-    {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
+      {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
 
-    {% if secondary.caption %}
-      <figcaption class="sidebar-caption text-center" itemprop="description">
-        {{ secondary.caption }}
+      {% if secondary.caption %}
+        <figcaption class="sidebar-caption text-center" itemprop="description">
+          {{ secondary.caption }}
 
-        {% if secondary.caption-link %}
-          <a href="{{ secondary.caption-link }}" class="sidebar-caption--link">
+          {% if secondary.caption-link %}
+            <a href="{{ secondary.caption-link }}" class="sidebar-caption--link">
 
-          {{ secondary.caption-link--text }}
+            {{ secondary.caption-link--text }}
 
-          </a>
-        {% endif %}
+            </a>
+          {% endif %}
 
-      </figcaption>
-    {% endif %}
+        </figcaption>
+      {% endif %}
 
-  </figure>
+    </figure>
+  </div>
 {% endif %}
 
-{% if secondary.title or secondary.organization %}
-  <h3 class="sidebar-heading sidebar-heading--bottom">
+<div class="sidebarPrimary">
+  {% if secondary.title or secondary.organization %}
+    <h3 class="sidebar-heading sidebar-heading--bottom">
 
-    {% if secondary.url %}
-      <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
-    {% endif %}
+      {% if secondary.url %}
+        <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
+      {% endif %}
 
-    {% if secondary.title %}
-      <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}</span>
-    {% endif %}
+      {% if secondary.title %}
+        <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}</span>
+      {% endif %}
 
-    {% if secondary.preposition %}
-      <span class="sidebar-preposition">
-        {{ secondary.preposition }}
-      </span>
-    {% endif %}
+      {% if secondary.preposition %}
+        <span class="sidebar-preposition">
+          {{ secondary.preposition }}
+        </span>
+      {% endif %}
 
-    {% if secondary.organization %}
-      <span class="sidebar-organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
-    {% endif %}
+      {% if secondary.organization %}
+        <span class="sidebar-organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
+      {% endif %}
 
-    {% if secondary.url %}
-        <span class="sidebar-character">&rarr;</span>
-      </a>
-    {% endif %}
-
-  </h3>
-{% endif %}
-
-{% if secondary.description %}
-  <p class="sidebar-description" itemprop="description">{{ secondary.description }}</p>
-{% endif %}
-
-{% if secondary-links %}
-  <ul class="sidebar-links--list list-inline">
-    {% for link in secondary-links %}
-      <li class="sidebar-links--item">
-        <a class="sidebar-links--link url {{ link.class }} ir" href="{{ link.url }}" itemprop="url">
-          {{ link.title }}
+      {% if secondary.url %}
+          <span class="sidebar-character">&rarr;</span>
         </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+      {% endif %}
+
+    </h3>
+  {% endif %}
+
+  {% if secondary.description %}
+    <p class="sidebar-description" itemprop="description">{{ secondary.description }}</p>
+  {% endif %}
+
+  {% if secondary-links %}
+    <ul class="sidebar-links--list list-inline">
+      {% for link in secondary-links %}
+        <li class="sidebar-links--item">
+          <a class="sidebar-links--link url {{ link.class }} ir" href="{{ link.url }}" itemprop="url">
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

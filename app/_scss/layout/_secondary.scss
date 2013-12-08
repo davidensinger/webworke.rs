@@ -22,6 +22,31 @@
   }
 }
 
+.sidebarPrimary {
+  overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebarSecondary
+}
+
+.sidebarSecondary {
+  float: left;
+  @include rem(margin-right, $double-spacing-unit);
+  width: 20%;
+
+  // start breakpoints
+  @include breakpoint(tablet-portrait-to-small-desktop) {
+    width: 25%;
+  }
+
+  @include breakpoint(mobile-landscape-to-tablet-portrait) {
+    width: 30%;
+  }
+
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    float: none;
+    width: 75%;
+    @include rem(margin, 0 auto $base-spacing-unit);
+  }
+}
+
 
 // -------------------------------------
 //  Heading
@@ -29,7 +54,6 @@
 
 .sidebar-heading {
   @include rem(padding-bottom, $half-spacing-unit);
-  overflow: hidden;
   border-bottom: 2px solid;
 }
 
@@ -91,48 +115,19 @@
   color: $black-lighter;
 }
 
+
 // -------------------------------------
 //  Description
 // -------------------------------------
 
 .sidebar-description {
-  overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebar-figure
-
-  // start breakpoints
-  @include breakpoint(smaller-than-small-desktop) {
-    margin-bottom: 0;
-  }
-
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    @include rem(margin-bottom, $base-spacing-unit);
-  }
+  margin-bottom: 0;
 }
 
 
 // -------------------------------------
 //  Image
 // -------------------------------------
-
-.sidebar-figure {
-  float: left;
-  @include rem(margin-right, $double-spacing-unit);
-  width: 20%;
-
-  // start breakpoints
-  @include breakpoint(tablet-portrait-to-small-desktop) {
-    width: 25%;
-  }
-
-  @include breakpoint(mobile-landscape-to-tablet-portrait) {
-    width: 30%;
-  }
-
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    float: none;
-    width: 75%;
-    @include rem(margin, 0 auto $base-spacing-unit);
-  }
-}
 
 .sidebar-image {
   display: block;
@@ -160,28 +155,15 @@
 
 
 // -------------------------------------
-//  Links list
+//  Links
 // -------------------------------------
 
 .sidebar-links--list {
-
-  // start breakpoints
-  @include breakpoint(smaller-than-small-desktop) {
-    clear: both;
-    float: left;
-    @include rem(margin-top, $base-spacing-unit);
-    width: 100%;
-  }
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    margin-top: 0;
-    width: auto;
-  }
-}
-
-.sidebar-links--item {
+  @include rem(margin-top, $base-spacing-unit);
 }
 
 .sidebar-links--link {
+  @include rem(margin-bottom, $half-spacing-unit);
   display: block;
   width: 36px;
   height: 36px;
