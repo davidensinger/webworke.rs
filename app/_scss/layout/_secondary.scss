@@ -354,15 +354,14 @@
   &:before,
   &:after {
     position: absolute;
+    @extend .invisible; // core/_helpers.scss
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    visibility: hidden;
-    @include opacity(0);
-    pointer-events: none;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     transition: 0.3s ease;
+    pointer-events: none;
   }
   &:before {
     content: "";
@@ -388,8 +387,7 @@
   &:hover {
     &:before,
     &:after {
-      visibility: visible;
-      @include opacity(1);
+      @extend .visible; // core/_helpers.scss
       -webkit-transform: translateY(-4px);
       -moz-transform: translateY(-4px);
       transform: translateY(-4px);

@@ -86,8 +86,7 @@
     // navigation arrows text when :hover or :focus
     .entryMeta-navigation--link__text {
       position: static;
-      visibility: visible;
-      @include opacity(1);
+      @extend .visible; // core/_helpers.scss
     }
 
     // navigation arrows arrow when :hover or :focus
@@ -153,8 +152,7 @@
 // navigation arrows text
 .entryMeta-navigation--link__text {
   position: absolute;
-  visibility: hidden;
-  @include opacity(0);
+  @extend .invisible; // core/_helpers.scss
 }
 
 // navigation arrows arrow
