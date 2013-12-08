@@ -11,3 +11,8 @@ function keyboardNavigation(ID) {
     return false;
   }
 }
+
+// Smooth Scroll To for ↑ Back to top link
+document.getElementById('js-backToTop').onclick = function(){
+  smoothScrollTo(document.getElementById('top').offsetTop);
+}
