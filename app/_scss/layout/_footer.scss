@@ -7,7 +7,7 @@
 
 
 .siteFooter {
-  @include rem(padding, $base-spacing-unit 6%);
+  @include rem(padding, 0 6% $base-spacing-unit);
 }
 
 
