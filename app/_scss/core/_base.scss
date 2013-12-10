@@ -249,9 +249,13 @@ a {
   &:focus {
     .siteHeader,
     .sitePrimary & {
+      -webkit-transition: background-color 0.3s;
+      transition: background-color 0.3s;
       background-color: $focus;
     }
     .siteSecondary & {
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s;
       color: $focus;
     }
   }

@@ -104,6 +104,8 @@
 // accompanying character entity
 .sidebar-character {
   color: $black-lighter;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 
@@ -136,12 +138,12 @@
 }
 
 .sidebar-caption {
-  @extend .citation-small; // core/_base.scss
+  @extend .citation-small;
 }
 
 .sidebar-caption--link {
-  @extend .citation-small--link; // core/_base.scss
-  @extend %link-border--bottom; // layout/_details.scss
+  @extend .citation-small--link;
+  @extend %link-border--bottom;
 }
 
 
@@ -154,6 +156,7 @@
 }
 
 .sidebar-links--link {
+  position: relative; // for :after pseudo element
   @include rem(margin-bottom, $half-spacing-unit);
   display: block;
   width: 36px;
@@ -170,165 +173,41 @@
     background-image: url("../images/sprite-icons--sidebar.png");
   }
 
-  &.behance {
-    background-position: 0 0;
-
-    &:focus {
-      background-position: 0 -36px;
-    }
-    &:hover {
-      background-position: 0 -72px;
-    }
+  &:after {
+    content: "";
+    @include absolute(top 0 right 0 bottom 0 left 0);
+    @extend .invisible;
+    background-image: url("../images/sprite-icons--sidebar.svg");
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
   }
-  &.blogger {
-    background-position: -36px 0;
 
-    &:focus {
-      background-position: -36px -36px;
-    }
-    &:hover {
-      background-position: -36px -72px;
-    }
-  }
-  &.dribbble {
-    background-position: -72px 0;
+  $icons: behance, blogger, dribbble, email, facebook, flickr, github, googleplus, instagram, linkedin, pinterest, tumblr, twitter, youtube, vimeo, website;
+  $i: 0;
+  $offset: 36px;
 
-    &:focus {
-      background-position: -72px -36px;
-    }
-    &:hover {
-      background-position: -72px -72px;
-    }
-  }
-  &.email {
-    background-position: -108px 0;
+  @each $icon in $icons {
+    &.#{$icon} {
+      background-position: $i 0;
 
-    &:focus {
-      background-position: -108px -36px;
+      &:focus,
+      &:hover {
+        &:after {
+          @extend .visible;
+        }
+      }
+      &:focus {
+        &:after {
+          background-position: $i -#{$offset};
+        }
+      }
+      &:hover {
+        &:after {
+          background-position: $i -#{$offset * 2};
+        }
+      }
     }
-    &:hover {
-      background-position: -108px -72px;
-    }
-  }
-  &.facebook {
-    background-position: -144px 0;
-
-    &:focus {
-      background-position: -144px -36px;
-    }
-    &:hover {
-      background-position: -144px -72px;
-    }
-  }
-  &.flickr {
-    background-position: -180px 0;
-
-    &:focus {
-      background-position: -180px -36px;
-    }
-    &:hover {
-      background-position: -180px -72px;
-    }
-  }
-  &.github {
-    background-position: -216px 0;
-
-    &:focus {
-      background-position: -216px -36px;
-    }
-    &:hover {
-      background-position: -216px -72px;
-    }
-  }
-  &.googleplus {
-    background-position: -252px 0;
-
-    &:focus {
-      background-position: -252px -36px;
-    }
-    &:hover {
-      background-position: -252px -72px;
-    }
-  }
-  &.instagram {
-    background-position: -288px 0;
-
-    &:focus {
-      background-position: -288px -36px;
-    }
-    &:hover {
-      background-position: -288px -72px;
-    }
-  }
-  &.linkedin {
-    background-position: -324px 0;
-
-    &:focus {
-      background-position: -324px -36px;
-    }
-    &:hover {
-      background-position: -324px -72px;
-    }
-  }
-  &.pinterest {
-    background-position: -360px 0;
-
-    &:focus {
-      background-position: -360px -36px;
-    }
-    &:hover {
-      background-position: -360px -72px;
-    }
-  }
-  &.tumblr {
-    background-position: -396px 0;
-
-    &:focus {
-      background-position: -396px -36px;
-    }
-    &:hover {
-      background-position: -396px -72px;
-    }
-  }
-  &.twitter {
-    background-position: -432px 0;
-
-    &:focus {
-      background-position: -432px -36px;
-    }
-    &:hover {
-      background-position: -432px -72px;
-    }
-  }
-  &.youtube {
-    background-position: -468px 0;
-
-    &:focus {
-      background-position: -468px -36px;
-    }
-    &:hover {
-      background-position: -468px -72px;
-    }
-  }
-  &.vimeo {
-    background-position: -504px 0;
-
-    &:focus {
-      background-position: -504px -36px;
-    }
-    &:hover {
-      background-position: -504px -72px;
-    }
-  }
-  &.website {
-    background-position: -540px 0;
-
-    &:focus {
-      background-position: -540px -36px;
-    }
-    &:hover {
-      background-position: -540px -72px;
-    }
+    $i: $i - $offset;
   }
 }
 
@@ -343,13 +222,11 @@
   &:before,
   &:after {
     position: absolute;
-    @extend .invisible; // core/_helpers.scss
+    @extend .invisible;
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    transition: 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     pointer-events: none;
   }
   &:before {
@@ -375,9 +252,8 @@
   &:hover {
     &:before,
     &:after {
-      @extend .visible; // core/_helpers.scss
+      @extend .visible;
       -webkit-transform: translateY(-4px);
-      -moz-transform: translateY(-4px);
       transform: translateY(-4px);
     }
   }

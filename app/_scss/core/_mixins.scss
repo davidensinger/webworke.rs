@@ -18,6 +18,7 @@
           box-sizing: $box-model;
 }
 
+
 // -------------------------------------
 //  Offsets
 //  https://github.com/HugoGiraudel/Sass-snippets/blob/master/offsets/_offsets.scss
@@ -52,6 +53,7 @@
 @mixin fixed($args) {
   @include _position(fixed, $args);
 }
+
 
 // -------------------------------------
 //  Breakpoint

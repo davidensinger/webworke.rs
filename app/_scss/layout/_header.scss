@@ -124,7 +124,9 @@
 }
 
 .mainNavigation-link {
-  padding: 2px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
   &:hover {
     border-bottom: 2px solid;
   }
@@ -138,6 +140,7 @@
   // current page
   &.is-current {
     @extend .mainNavigation-link:hover;
+    cursor: text;
   }
 }
 

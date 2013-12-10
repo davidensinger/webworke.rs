@@ -35,6 +35,8 @@
 // accompanying character entity
 .entryLink-character {
   color: $white-darker;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 
@@ -73,6 +75,8 @@
   position: fixed;
   top: 50%;
   color: $black-light;
+  -webkit-transition: color 0.3s, background-color 0.3s, position 1s;
+  transition: color 0.3s, background-color 0.3s, position 1s;
   &:hover,
   &.is-active {
     color: $white;
@@ -86,7 +90,7 @@
     // navigation arrows text when :hover or :focus
     .entryMeta-navigation--link__text {
       position: static;
-      @extend .visible; // core/_helpers.scss
+      @extend .visible;
     }
 
     // navigation arrows arrow when :hover or :focus
@@ -152,7 +156,7 @@
 // navigation arrows text
 .entryMeta-navigation--link__text {
   position: absolute;
-  @extend .invisible; // core/_helpers.scss
+  @extend .invisible;
 }
 
 // navigation arrows arrow
@@ -190,6 +194,8 @@
   @include rem(padding, $eighth-spacing-unit $quarter-spacing-unit);
   @extend small;
   background-color: $white-darker;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   &:hover {
     background-color: $white-darkest;
   }
