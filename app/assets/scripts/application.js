@@ -5,7 +5,7 @@ Mousetrap.bind('right', keyboardNavigation.bind(null, 'next'));
 function keyboardNavigation(ID) {
   var element = document.getElementById('js-navigation--' + ID);
   if (element) {
-    element.className = element.className + " is-active";
+    element.className = element.className + ' is-active';
     var anchor = element.getAttribute('href');
     window.location.href = anchor;
     return false;
@@ -15,4 +15,4 @@ function keyboardNavigation(ID) {
 // Smooth Scroll To for ↑ Back to top link
 document.getElementById('js-backToTop').onclick = function(){
   smoothScrollTo(document.getElementById('top').offsetTop);
-}
+};
