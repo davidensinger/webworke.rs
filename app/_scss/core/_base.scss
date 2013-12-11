@@ -26,7 +26,7 @@ summary {
 *,
 *:before,
 *:after {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 // 1. Prevents iOS text size adjust after orientation change, without disabling user zoom
@@ -37,7 +37,7 @@ html {
   overflow-y: scroll;
   font: #{($base-font-size/16px)*100%}/#{$line-height-ratio} $base-font-family; // 16px
   -webkit-text-size-adjust: 100%; // 1
-  -ms-text-size-adjust: 100%; // 1
+  text-size-adjust: 100%; // 1
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 2
 
   // http://svgeneration.com/generate/Diagonal-Stripes?scale=10&stripe=e8e7e5&stripe-width=.5&background=ffffff&
@@ -83,11 +83,6 @@ textarea {
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection declarations have to be separate.
 // Customize the background color to match your design.
-::-moz-selection {
-  background: $yellow;
-  text-shadow: none;
-}
-
 ::selection {
   background: $yellow;
   text-shadow: none;
@@ -249,12 +244,10 @@ a {
   &:focus {
     .siteHeader,
     .sitePrimary & {
-      -webkit-transition: background-color 0.3s;
       transition: background-color 0.3s;
       background-color: $focus;
     }
     .siteSecondary & {
-      -webkit-transition: color 0.3s;
       transition: color 0.3s;
       color: $focus;
     }

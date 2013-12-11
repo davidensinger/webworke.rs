@@ -35,7 +35,6 @@
 // accompanying character entity
 .entryLink-character {
   color: $white-darker;
-  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -75,7 +74,6 @@
   position: fixed;
   top: 50%;
   color: $black-light;
-  -webkit-transition: color 0.3s, background-color 0.3s, position 1s;
   transition: color 0.3s, background-color 0.3s, position 1s;
   &:hover,
   &.is-active {
@@ -113,8 +111,6 @@
     // navigation arrows text
     .entryMeta-navigation--link__text {
       @include rem(padding-right, $quarter-spacing-unit);
-      -ms-transform: translateX(-200px);
-      -webkit-transform: translateX(-200px);
       transform: translateX(-200px);
     }
     &:hover,
@@ -123,8 +119,6 @@
 
       // navigation arrows text
       .entryMeta-navigation--link__text {
-        -ms-transform: translateX(0);
-        -webkit-transform: translateX(0);
         transform: translateX(0);
       }
     }
@@ -135,8 +129,6 @@
     // navigation arrows text
     .entryMeta-navigation--link__text {
       @include rem(padding-left, $quarter-spacing-unit);
-      -ms-transform: translateX(200px);
-      -webkit-transform: translateX(200px);
       transform: translateX(200px);
     }
     &:hover,
@@ -145,8 +137,6 @@
 
       // navigation arrows text
       .entryMeta-navigation--link__text {
-        -ms-transform: translateX(0);
-        -webkit-transform: translateX(0);
         transform: translateX(0);
       }
     }
@@ -194,7 +184,6 @@
   @include rem(padding, $eighth-spacing-unit $quarter-spacing-unit);
   @extend small;
   background-color: $white-darker;
-  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   &:hover {
     background-color: $white-darkest;

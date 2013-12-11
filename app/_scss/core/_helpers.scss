@@ -75,7 +75,6 @@
 // Link with bottom border
 %link-border--bottom {
   border-bottom: 1px solid;
-  -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
   &:hover {
     border-bottom: 1px transparent;

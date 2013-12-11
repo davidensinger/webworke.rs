@@ -6,20 +6,6 @@
 
 
 // -------------------------------------
-//  Box sizing
-// -------------------------------------
-
-// Usage:
-// @include box-sizing(border-box);
-
-@mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-     -moz-box-sizing: $box-model; // Firefox <= 19
-          box-sizing: $box-model;
-}
-
-
-// -------------------------------------
 //  Offsets
 //  https://github.com/HugoGiraudel/Sass-snippets/blob/master/offsets/_offsets.scss
 // -------------------------------------
@@ -252,7 +238,6 @@
     height: 1000%;
     @include absolute(top 0 left 0 right 0 bottom 0);
     pointer-events: none;
-    background: -webkit-linear-gradient(bottom, rgba(invert($background-color), 0.25) 5%, transparent 5%);
     background: linear-gradient(bottom, rgba(invert($background-color), 0.25) 5%, transparent 5%);
     @include rem(background-size, 100% $line-height);
     background-position: left top;

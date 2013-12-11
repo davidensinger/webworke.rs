@@ -104,7 +104,6 @@
 // accompanying character entity
 .sidebar-character {
   color: $black-lighter;
-  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -178,7 +177,6 @@
     @include absolute(top 0 right 0 bottom 0 left 0);
     @extend .invisible;
     background-image: url("../images/sprite-icons--sidebar.svg");
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
 
@@ -223,9 +221,7 @@
   &:after {
     position: absolute;
     @extend .invisible;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     pointer-events: none;
   }
@@ -253,7 +249,6 @@
     &:before,
     &:after {
       @extend .visible;
-      -webkit-transform: translateY(-4px);
       transform: translateY(-4px);
     }
   }
