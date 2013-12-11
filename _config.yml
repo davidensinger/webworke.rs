@@ -32,7 +32,7 @@ markdown: redcarpet
 # disable this with ""
 excerpt_separator: ""
 
-exclude: ['assets/images', 'assets/styles', 'assets/scripts', 'assets/fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
+exclude: ['images', 'styles', 'scripts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
 
 # Publish posts with future date.
 # _config.build.yml sets this to false on `grunt build`
@@ -49,7 +49,7 @@ pygments: false
 # Note that I’ve reduced the number of presets to decrease the build time
 # while doing development. See _config.build.yml for further presets.
 picture:
-  source: assets/images/_fullsize
+  source: images/_fullsize
   output: generated
   markup: "picturefill"
   presets:

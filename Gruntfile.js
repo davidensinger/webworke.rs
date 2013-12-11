@@ -1,11 +1,10 @@
 'use strict';
 
 // Directory reference:
-//   css: assets/styles
+//   css: styles
 //   sass: _scss
-//   javascript: assets/scripts
-//   images: assets/images
-//   fonts: assets/fonts
+//   javascript: scripts
+//   images: images
 
 module.exports = function (grunt) {
   // Show elapsed time after tasks run
@@ -25,7 +24,7 @@ module.exports = function (grunt) {
         tasks: ['sass:server', 'autoprefixer:server']
       },
       autoprefixer: {
-        files: ['<%= yeoman.app %>/assets/styles/**/*.css'],
+        files: ['<%= yeoman.app %>/styles/**/*.css'],
         tasks: ['copy:stageCss', 'autoprefixer:server']
       },
       jekyll: {
@@ -42,9 +41,9 @@ module.exports = function (grunt) {
         },
         files: [
           '.jekyll/**/*.{html,xml}',
-          '.tmp/assets/styles/**/*.css',
+          '.tmp/styles/**/*.css',
           '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
-          '<%= yeoman.app %>/assets/images/**/*.{gif,jpg,jpeg,png,svg}'
+          '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg}'
         ]
       }
     },
@@ -107,42 +106,57 @@ module.exports = function (grunt) {
     sass: {
       options: {
         bundleExec: true,
+        debugInfo: false,
         lineNumbers: false
       },
       dist: {
         files: [{
-          src: '<%= yeoman.app %>/_scss/application.scss',
-          dest: '.tmp/assets/styles/application.css'
+          expand: true,
+          cwd: '<%= yeoman.app %>/_scss',
+          src: '**/*.scss',
+          dest: '.tmp/styles',
+          ext: '.css'
         }]
       },
       server: {
         options: {
+          debugInfo: true,
           lineNumbers: true
         },
         files: [{
-          src: '<%= yeoman.app %>/_scss/application.scss',
-          dest: '.tmp/assets/styles/application.css'
+          expand: true,
+          cwd: '<%= yeoman.app %>/_scss',
+          src: '**/*.scss',
+          dest: '.tmp/styles',
+          ext: '.css'
         }]
       }
     },
     autoprefixer: {
       options: {
-        browsers: ['last 2 versions']
+        browsers: [
+          'last 2 version',
+          'safari 6',
+          'ie 9',
+          'opera 12.1',
+          'ios 6',
+          'android 4'
+        ]
       },
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.dist %>/assets/styles/',
+          cwd: '.tmp/concat/styles',
           src: '**/*.css',
-          dest: '<%= yeoman.dist %>/assets/styles/'
+          dest: '.tmp/concat/styles'
         }]
       },
       server: {
         files: [{
           expand: true,
-          cwd: '.tmp/assets/styles/',
+          cwd: '.tmp/styles',
           src: '**/*.css',
-          dest: '.tmp/assets/styles/'
+          dest: '.tmp/styles'
         }]
       }
     },
@@ -184,7 +198,7 @@ module.exports = function (grunt) {
         dirs: ['<%= yeoman.dist %>/**/*']
       },
       html: ['<%= yeoman.dist %>/**/*.html'],
-      css: ['<%= yeoman.dist %>/assets/styles/**/*.css']
+      css: ['<%= yeoman.dist %>/styles/**/*.css']
     },
     htmlmin: {
       dist: {
@@ -256,10 +270,12 @@ module.exports = function (grunt) {
             // Jekyll processes and moves HTML and text files
             // Usemin moves CSS and javascript inside of Usemin blocks
             // Copy moves asset files and directories
-            'assets/images/**/*',
-            'assets/fonts/**/*',
+            'images/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore
             '!**/_*{,/**}'
+            // Explicitly add any files your site needs for distribution here.
+            //'favicon.ico',
+            //'apple-touch*.png'
           ],
           dest: '<%= yeoman.dist %>'
         }]
@@ -269,9 +285,9 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '<%= yeoman.app %>/assets/styles/',
+          cwd: '<%= yeoman.app %>/styles',
           src: '**/*.css',
-          dest: '.tmp/assets/styles/'
+          dest: '.tmp/styles'
         }]
       }
     },
@@ -282,10 +298,9 @@ module.exports = function (grunt) {
       dist: {
         files: {
           src: [
-            '<%= yeoman.dist %>/assets/scripts/**/*.js',
-            '<%= yeoman.dist %>/assets/styles/**/*.css',
-            '<%= yeoman.dist %>/assets/images/**/*.{gif,jpg,jpeg,png,svg}',
-            '<%= yeoman.dist %>/assets/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+            '<%= yeoman.dist %>/scripts/**/*.js',
+            '<%= yeoman.dist %>/styles/**/*.css',
+            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg}'
           ]
         }
       }
@@ -297,9 +312,9 @@ module.exports = function (grunt) {
       },
       all: [
         'Gruntfile.js',
-        '<%= yeoman.app %>/assets/scripts/**/*.js',
+        '<%= yeoman.app %>/scripts/**/*.js',
         'test/spec/**/*.js',
-        '!<%= yeoman.app %>/assets/scripts/_vendor/**/*'
+        '!<%= yeoman.app %>/scripts/_vendor/**/*'
       ]
     },
     csscss: {
@@ -312,8 +327,8 @@ module.exports = function (grunt) {
         verbose: true
       },
       check: {
-       src: ['<%= yeoman.app %>/assets/styles/**/*.css',
-             '<%= yeoman.app %>/_scss/application.scss']
+       src: ['<%= yeoman.app %>/styles/**/*.css',
+             '<%= yeoman.app %>/_scss/**/*.scss']
       }
     },
     csslint: {
@@ -322,18 +337,18 @@ module.exports = function (grunt) {
       },
       check: {
         src: [
-          '<%= yeoman.app %>}/assets/styles/**/*.css',
-          '<%= yeoman.app %>}/_scss/application.scss'
+          '<%= yeoman.app %>}/styles/**/*.css',
+          '<%= yeoman.app %>}/_scss/**/*.scss'
         ]
       }
     },
     modernizr: {
       devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
-      outputFile: '<%= yeoman.dist %>/assets/scripts/vendor/modernizr.js',
+      outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
       files: [
-        '<%= yeoman.dist %>/assets/scripts/{,*/}*.js',
-        '<%= yeoman.dist %>/assets/styles/{,*/}*.css',
-        '!<%= yeoman.dist %>/assets/scripts/vendor/*'
+        '<%= yeoman.dist %>/scripts/{,*/}*.js',
+        '<%= yeoman.dist %>/styles/{,*/}*.css',
+        '!<%= yeoman.dist %>/scripts/vendor/*'
       ]
     },
     concurrent: {

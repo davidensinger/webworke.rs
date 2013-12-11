@@ -14,7 +14,7 @@ show_drafts: false
 
 # https://github.com/robwierzbowski/jekyll-picture-tag
 picture:
-  source: assets/images/_fullsize
+  source: images/_fullsize
   output: generated
   markup: "picturefill"
   presets:
