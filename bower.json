@@ -1,6 +1,7 @@
 {
   "name": "Webworke.rs",
   "version": "1.0.0",
+  "private": true,
   "dependencies": {
     "matchmedia": "~0.1.0",
     "modernizr": "~2.7.1",

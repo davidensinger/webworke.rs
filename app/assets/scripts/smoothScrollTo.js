@@ -55,4 +55,4 @@ function smoothScrollTo(target, duration) {
   var start = window.pageYOffset;
   duration = duration || 1000;
   animation(function (position) { window.scroll(0,position); }, duration, start, target);
-};
+}

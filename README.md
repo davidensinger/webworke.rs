@@ -1,4 +1,4 @@
-# Webworke.rs
+# Webworke.rs [![devDependency Status](https://david-dm.org/davidensinger/webworke.rs/dev-status.png)](https://david-dm.org/davidensinger/webworke.rs#info=devDependencies)
 **Life and Craft in Columbus, Ohio**
 
 Webworke.rs runs on [Jekyll](http://jekyllrb.com/), a blog-aware, static site generator in Ruby, with some help from [Grunt](http://gruntjs.com/), the JavaScript Task Runner.
