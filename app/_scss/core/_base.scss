@@ -242,11 +242,14 @@ a {
   color: inherit;
   text-decoration: none;
   &:focus {
-    .siteHeader,
-    .sitePrimary & {
+    .siteHeader &,
+    .sitePrimary &,
+    .siteFooter & {
+      transition: background-color 0.3s;
       background-color: $focus;
     }
     .siteSecondary & {
+      transition: color 0.3s;
       color: $focus;
     }
   }
