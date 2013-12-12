@@ -65,7 +65,27 @@
 // navigation arrows <nav> container
 .entryMeta-navigation {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+}
+
+@keyframes animation-slide--left {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-slide--right {
+  0% {
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 // navigation arrows link
@@ -74,32 +94,46 @@
   position: fixed;
   top: 50%;
   color: $black-light;
-  transition: color 0.3s, background-color 0.3s, position 1s;
+  pointer-events: none;
   &:hover,
   &.is-active {
     color: $white;
-    background-color: $black-light;
-  }
-  &:hover,
-  &:focus,
-  &.is-active {
-    @include rem(padding, $quarter-spacing-unit);
-
-    // navigation arrows text when :hover or :focus
-    .entryMeta-navigation--link__text {
-      position: static;
-      @extend .visible;
-    }
-
-    // navigation arrows arrow when :hover or :focus
-    .entryMeta-navigation--link__arrow {
-      background-color: transparent;
-    }
 
     // shared styles
     .entryMeta-navigation--link__text,
     .entryMeta-navigation--link__arrow {
-      padding: 0;
+      background-color: $black-light;
+    }
+  }
+  &:focus {
+    color: inherit;
+
+    // shared styles
+    .entryMeta-navigation--link__text,
+    .entryMeta-navigation--link__arrow {
+      background-color: $focus;
+    }
+  }
+  &:hover {
+
+    // navigation arrows text when :hover or :focus
+    .entryMeta-navigation--link__text {
+      animation-fill-mode: both;
+      animation-duration: 0.25s;
+    }
+    // shared styles
+    .entryMeta-navigation--link__text,
+    .entryMeta-navigation--link__arrow {
+      pointer-events: auto;
+    }
+  }
+  &:hover,
+  &:focus,
+  &.is-active {
+
+    // navigation arrows text when :hover, :focus, or .is-active via keyboard
+    .entryMeta-navigation--link__text {
+      @extend .visible;
     }
   }
   &:active {
@@ -110,16 +144,16 @@
 
     // navigation arrows text
     .entryMeta-navigation--link__text {
-      @include rem(padding-right, $quarter-spacing-unit);
-      transform: translateX(-200px);
+      @include rem(padding, $quarter-spacing-unit $half-spacing-unit $quarter-spacing-unit 0);
     }
+
     &:hover,
     &:focus,
     &.is-active {
 
       // navigation arrows text
       .entryMeta-navigation--link__text {
-        transform: translateX(0);
+        animation-name: animation-slide--left;
       }
     }
   }
@@ -128,16 +162,21 @@
 
     // navigation arrows text
     .entryMeta-navigation--link__text {
-      @include rem(padding-left, $quarter-spacing-unit);
-      transform: translateX(200px);
+      @include rem(padding, $quarter-spacing-unit 0 $quarter-spacing-unit $half-spacing-unit);
     }
+
+    // navigation arrows arrow
+    .entryMeta-navigation--link__arrow {
+      float: right;
+    }
+
     &:hover,
     &:focus,
     &.is-active {
 
       // navigation arrows text
       .entryMeta-navigation--link__text {
-        transform: translateX(0);
+        animation-name: animation-slide--right;
       }
     }
   }
@@ -145,20 +184,24 @@
 
 // navigation arrows text
 .entryMeta-navigation--link__text {
-  position: absolute;
+  z-index: 1;
   @extend .invisible;
+  pointer-events: none;
 }
 
 // navigation arrows arrow
 .entryMeta-navigation--link__arrow {
+  z-index: 2; // needs to be above .entryMeta-navigation--link__text
   background-color: $white;
+  @include rem(padding, $quarter-spacing-unit);
+  pointer-events: auto;
 }
 
 // shared styles
 .entryMeta-navigation--link__text,
 .entryMeta-navigation--link__arrow {
-  display: inline-block;
-  @include rem(padding, $quarter-spacing-unit);
+  position: relative;
+  float: left;
 }
 
 // posted on paragraph

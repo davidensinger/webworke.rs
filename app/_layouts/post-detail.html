@@ -23,10 +23,10 @@ layout: post
       <nav class="entryMeta-navigation" role="navigation">
         <h1 class="visuallyHidden">Post Navigation</h1>
       {% if page.previous.url %}
-        <a id="js-navigation--previous" href="{{ page.previous.url }}" title="Link to {{ page.previous.title }}" class="entryMeta-navigation--link previous"><span class="entryMeta-navigation--link__arrow">&larr;&nbsp;</span> <span class="entryMeta-navigation--link__text">{{ page.previous.title }}</span></a>
+        <a id="js-navigation--previous" href="{{ page.previous.url }}" title="Link to {{ page.previous.title }}" class="entryMeta-navigation--link previous clearfix"><span class="entryMeta-navigation--link__arrow">&larr;&nbsp;</span> <span class="entryMeta-navigation--link__text">{{ page.previous.title }}</span></a>
       {% endif %}
       {% if page.next.url %}
-        <a id="js-navigation--next" href="{{ page.next.url }}" title="Link to {{ page.next.title }}" class="entryMeta-navigation--link next"><span class="entryMeta-navigation--link__text">{{ page.next.title }}</span> <span class="entryMeta-navigation--link__arrow">&nbsp;&rarr;</span></a>
+        <a id="js-navigation--next" href="{{ page.next.url }}" title="Link to {{ page.next.title }}" class="entryMeta-navigation--link next clearfix"><span class="entryMeta-navigation--link__text">{{ page.next.title }}</span> <span class="entryMeta-navigation--link__arrow">&nbsp;&rarr;</span></a>
       {%endif %}
       </nav><!--  entryMeta-navigation -->
     {%endif %}
