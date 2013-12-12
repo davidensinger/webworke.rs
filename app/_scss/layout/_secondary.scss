@@ -8,8 +8,8 @@
 
 .siteSecondary {
   @include rem(padding, $triple-spacing-unit 6%);
-  color: $white-dark;
-  background: $black-light;
+  color: $white;
+  background-color: $black-light;
 }
 
 .sidebarPrimary {
@@ -177,7 +177,7 @@
     @include absolute(top 0 right 0 bottom 0 left 0);
     @extend .invisible;
     background-image: url("../images/sprite-icons--sidebar.svg");
-    transition: opacity 0.3s;
+    transition: opacity 0.2s;
   }
 
   $icons: behance, blogger, dribbble, email, facebook, flickr, github, googleplus, instagram, linkedin, pinterest, tumblr, twitter, youtube, vimeo, website;
