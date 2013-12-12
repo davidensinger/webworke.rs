@@ -204,6 +204,11 @@
           background-position: $i -#{$offset * 2};
         }
       }
+      &:active {
+        &:after {
+          background-position: $i -#{$offset * 3};
+        }
+      }
     }
     $i: $i - $offset;
   }
