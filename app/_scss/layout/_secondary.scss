@@ -121,6 +121,10 @@
 //  Image
 // -------------------------------------
 
+.sidebar-image--link {
+  display: block;
+}
+
 .sidebar-image {
   display: block;
   @include rem(margin, $quarter-spacing-unit 0 $half-spacing-unit);
