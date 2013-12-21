@@ -25,35 +25,6 @@
   }
 }
 
-.footerNavigation-item {
-  @extend small;
-  &:before {
-    content: "/";
-    @include rem(padding, 0 $half-spacing-unit);
-  }
-  &:first-child {
-    &:before {
-      content: none;
-      padding: 0;
-    }
-  }
-}
-
-.footerNavigation-link {
-  font-weight: $base-font-weight-bold;
-  text-transform: uppercase;
-  transition: border-color 0.3s;
-
-  &:hover {
-    border-bottom: 1px solid;
-  }
-
-  // current page
-  &.is-current {
-    @extend .footerNavigation-link:hover;
-    cursor: text;
-  }
-}
 
 // -------------------------------------
 //  Copyright

@@ -117,13 +117,13 @@
 //  Navigation
 // -------------------------------------
 
-.mainNavigation-item {
+.navigation-item {
   @include rem(margin-left, $base-spacing-unit);
   font-weight: $base-font-weight-bold;
   text-transform: uppercase;
 }
 
-.mainNavigation-link {
+.navigation-link {
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
   &:hover {
@@ -135,7 +135,7 @@
 
   // current page
   &.is-current {
-    @extend .mainNavigation-link:hover;
+    @extend .navigation-link:hover;
     cursor: text;
   }
 }
