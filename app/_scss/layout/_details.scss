@@ -66,6 +66,11 @@
 .entryMeta-navigation {
   position: relative;
   z-index: 2;
+
+  // start breakpoints
+  @include breakpoint(all-mobile) {
+    display: none; // hide the left and right arrows on narrower viewports
+  }
 }
 
 @keyframes animation-slide--left {
@@ -107,11 +112,21 @@
   }
   &:focus {
     color: inherit;
+    background-color: transparent !important; // override default :focus styles in _base.scss
 
     // shared styles
     .entryMeta-navigation--link__text,
     .entryMeta-navigation--link__arrow {
       background-color: $focus;
+    }
+  }
+  &:focus,
+  &:hover {
+
+    // navigation arrows text when :hover or :focus
+    .entryMeta-navigation--link__text {
+      animation-fill-mode: both;
+      animation-duration: 0.25s;
     }
   }
   &:hover {
