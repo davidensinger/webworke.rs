@@ -23,18 +23,22 @@
   width: 20%;
 
   // start breakpoints
+  @include breakpoint(smaller-than-small-desktop) {
+    @include rem(margin-right, $base-spacing-unit);
+  }
   @include breakpoint(tablet-portrait-to-small-desktop) {
     width: 25%;
   }
-
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
     width: 30%;
   }
-
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     float: none;
     width: 75%;
     @include rem(margin, 0 auto $base-spacing-unit);
+  }
+  @include breakpoint(small-mobile) {
+    width: 100%;
   }
 }
 
@@ -123,15 +127,34 @@
 
 .sidebar-image--link {
   display: block;
+
+  &:hover {
+    .sidebar-image {
+      img {
+        background-color: $white;
+      }
+    }
+  }
+  &:focus {
+    .sidebar-image {
+      img {
+        background-color: $focus;
+      }
+    }
+  }
 }
 
 .sidebar-image {
   display: block;
-  @include rem(margin, $quarter-spacing-unit 0 $half-spacing-unit);
+  @include rem(margin, 0 0 $half-spacing-unit);
 
   // image tag within .sidebar-image
   img {
+    display: block;
+    padding: 3px;
     border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.2s;
   }
 
   // start breakpoints
