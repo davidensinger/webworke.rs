@@ -31,13 +31,15 @@
 
 .siteFooter-icons--link {
   display: block;
-  width: 36px;
-  height: 36px;
+  @include rem(height, $base-spacing-unit);
+  @include rem(width, $base-spacing-unit);
   line-height: 0;
+}
 
-  svg {
-    margin: 0 auto;
-  }
+.siteFooter-icons--svg {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 // -------------------------------------
