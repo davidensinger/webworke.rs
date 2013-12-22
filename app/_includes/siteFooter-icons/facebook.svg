@@ -1,0 +1,9 @@
+<svg class="siteFooter-icons--svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 36">
+  <switch>
+    <g>
+      <style>.icon{fill-rule:evenodd;fill:#2b2a28;}.icon:hover{fill:#000000;}.icon:focus{fill:#fddd00;}</style>
+      <path d="M18 7.42h-5.11c-0.34 0-0.64 0.18-0.9 0.54 -0.26 0.36-0.4 0.8-0.4 1.33v3.67H18v5.33h-6.41V34.2h-6.12V18.29H0V12.96h5.47V9.86c0-2.26 0.71-4.16 2.12-5.72s3.18-2.34 5.29-2.34H18V7.42L18 7.42" class="icon" />
+    </g>
+    <foreignObject width="0" height="0" overflow="hidden"></foreignObject>
+  </switch>
+</svg>

@@ -5,13 +5,13 @@
 
           <nav id="colophonNavigation" class="footerNavigation" role="navigation">
             <ul class="footerNavigation-list list-inline">
-              <li class="navigation-item">
+              <li class="footerNavigation-item navigation-item">
                 <a class="navigation-link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
               </li>
-              <li class="navigation-item">
+              <li class="footerNavigation-item navigation-item">
                 <a class="navigation-link {% if page.title == 'Colophon' %}is-current{% endif %}" href="{{ site.baseurl }}/colophon/">Colophon</a>
               </li>
-              <li class="navigation-item">
+              <li class="footerNavigation-item navigation-item">
                 <a class="navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
               </li>
             </ul>
@@ -19,28 +19,33 @@
 
           <ul class="siteFooter-icons--list list-inline">
             <li class="siteFooter-icons--item">
-              <a class="siteFooter-icons--link siteFooter-icon icon-twitter" href="http://twitter.com/{{ site.twitter }}" title="Follow us on Twitter">
-                <span class="siteFooter-icons--title">Twitter</span>
+              <a class="siteFooter-icons--link icon-twitter--link" href="http://twitter.com/{{ site.twitter }}" title="Follow us on Twitter">
+                {% include siteFooter-icons/twitter.svg %}
+                <span class="siteFooter-icons--title visuallyHidden">Twitter</span>
               </a>
             </li>
             <li class="siteFooter-icons--item">
-              <a class="siteFooter-icons--link siteFooter-icon icon-facebook" href="{{ site.facebook }}" title="Like us on Facebook">
-                <span class="siteFooter-icons--title">Facebook</span>
+              <a class="siteFooter-icons--link icon-facebook--link" href="{{ site.facebook }}" title="Like us on Facebook">
+                {% include siteFooter-icons/facebook.svg %}
+                <span class="siteFooter-icons--title visuallyHidden">Facebook</span>
               </a>
             </li>
             <li class="siteFooter-icons--item">
-              <a class="siteFooter-icons--link siteFooter-icon icon-tumblr" href="{{ site.tumblr }}" title="Follow us on Tumblr">
-                <span class="siteFooter-icons--title">Tumblr</span>
+              <a class="siteFooter-icons--link icon-tumblr--link" href="{{ site.tumblr }}" title="Follow us on Tumblr">
+                {% include siteFooter-icons/tumblr.svg %}
+                <span class="siteFooter-icons--title visuallyHidden">Tumblr</span>
               </a>
             </li>
             <li class="siteFooter-icons--item">
-              <a class="siteFooter-icons--link siteFooter-icon icon-feed" href="{{ site.baseurl }}{{ site.feed }}" title="Subscribe to our ATOM Feed">
-                <span class="siteFooter-icons--title">ATOM feed</span>
+              <a class="siteFooter-icons--link icon-feed--link" href="{{ site.baseurl }}{{ site.feed }}" title="Subscribe to our Feed">
+                {% include siteFooter-icons/feed.svg %}
+                <span class="siteFooter-icons--title visuallyHidden">Feed</span>
               </a>
             </li>
             <li class="siteFooter-icons--item">
-              <a class="siteFooter-icons--link siteFooter-icon icon-newsletter" href="{{ site.newsletter }}" title="View our Newsletter">
-                <span class="siteFooter-icons--title">Newsletter</span>
+              <a class="siteFooter-icons--link icon-newsletter--link" href="{{ site.newsletter }}" title="View our Newsletter">
+                {% include siteFooter-icons/newsletter.svg %}
+                <span class="siteFooter-icons--title visuallyHidden">Newsletter</span>
               </a>
             </li>
           </ul> <!-- .siteFooter-icons--list -->

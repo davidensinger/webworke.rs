@@ -25,6 +25,20 @@
   }
 }
 
+.siteFooter-icons--item {
+  @include rem(margin-left, $base-spacing-unit);
+}
+
+.siteFooter-icons--link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 0;
+
+  svg {
+    margin: 0 auto;
+  }
+}
 
 // -------------------------------------
 //  Copyright
