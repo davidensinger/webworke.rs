@@ -33,9 +33,9 @@
     width: 30%;
   }
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    @include rem(margin, 0 auto $base-spacing-unit);
     float: none;
     width: 75%;
-    @include rem(margin, 0 auto $base-spacing-unit);
   }
   @include breakpoint(small-mobile) {
     width: 100%;
