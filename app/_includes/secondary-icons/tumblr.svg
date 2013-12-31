@@ -1,0 +1,11 @@
+<svg class="sidebar-links--svg sidebar-links--svg__tumblr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" focusable="true">
+  <switch>
+    <g>
+      <path class="sidebar-links--svg__circle" d="M16.001,32c8.836,0,16-7.162,16-16c0-8.836-7.164-16-16-16S0,7.164,0,16C0,24.837,7.165,32,16.001,32" />
+      <path class="sidebar-links--svg__mark" d="M16.389,7.996v4.046h3.799v2.512h-3.799v4.105c0,0.929,0.05,1.522,0.146,1.786 c0.1,0.266,0.28,0.476,0.55,0.632c0.354,0.213,0.759,0.317,1.216,0.317c0.811,0,1.613-0.265,2.417-0.791v2.525 c-0.687,0.321-1.305,0.548-1.856,0.677c-0.556,0.13-1.154,0.196-1.799,0.196c-0.732,0-1.381-0.094-1.94-0.277 c-0.562-0.188-1.042-0.448-1.438-0.791c-0.396-0.34-0.673-0.708-0.825-1.091c-0.153-0.386-0.229-0.943-0.229-1.677v-5.614h-1.771 V12.29c0.631-0.206,1.169-0.499,1.616-0.879c0.446-0.38,0.81-0.839,1.079-1.375c0.271-0.533,0.457-1.215,0.562-2.041h2.274 L16.389,7.996L16.389,7.996z" />
+    </g>
+    <foreignObject width="0" height="0" overflow="hidden">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="sidebar-links--png" />
+    </foreignObject>
+  </switch>
+</svg>

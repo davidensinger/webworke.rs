@@ -1,0 +1,11 @@
+<svg class="sidebar-links--svg sidebar-links--svg__youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" focusable="true">
+  <switch>
+    <g>
+      <path class="sidebar-links--svg__circle" d="M16.002,32c8.835,0,15.999-7.164,15.999-16c0-8.835-7.164-16-15.999-16C7.163,0,0,7.164,0,16 C0,24.836,7.164,32,16.002,32" />
+      <path class="sidebar-links--svg__mark" d="M19.108,16.008l-5.238,3.079V12.93L19.108,16.008z M24.005,18.861v-5.724c0,0,0-2.759-2.762-2.759H10.755 c0,0-2.761,0-2.761,2.759v5.724c0,0,0,2.758,2.761,2.758h10.488C21.244,21.619,24.005,21.619,24.005,18.861" />
+    </g>
+    <foreignObject width="0" height="0" overflow="hidden">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="sidebar-links--png" />
+    </foreignObject>
+  </switch>
+</svg>

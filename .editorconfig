@@ -13,7 +13,7 @@ insert_final_newline = true
 
 # Use 2 spaces for indentation in HTML, JavaScript, Ruby, SCSS, and XML
 
-[*.{html,js,rb,scss,xml}]
+[*.{html,js,rb,scss,svg,xml}]
 indent_size = 2
 
 [Gemfile*]

@@ -1,0 +1,11 @@
+<svg class="sidebar-links--svg sidebar-links--svg__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" focusable="true">
+  <switch>
+    <g>
+      <path class="sidebar-links--svg__circle" d="M16,32c8.838,0,16-7.164,16-16c0-8.835-7.162-16-16-16C7.164,0,0,7.164,0,16C0,24.836,7.164,32,16,32" />
+      <path class="sidebar-links--svg__mark" d="M11.703,13.29h1.654v-1.607c0-0.709,0.019-1.803,0.533-2.481c0.542-0.718,1.287-1.205,2.568-1.205 c2.088,0,2.967,0.297,2.967,0.297l-0.413,2.452c0,0-0.688-0.2-1.333-0.2s-1.22,0.231-1.22,0.875v1.87h2.64l-0.184,2.394H16.46 v8.319h-3.103v-8.319h-1.654V13.29L11.703,13.29z" />
+    </g>
+    <foreignObject width="0" height="0" overflow="hidden">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="sidebar-links--png" />
+    </foreignObject>
+  </switch>
+</svg>
