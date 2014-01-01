@@ -181,11 +181,15 @@
   @include rem(margin-top, $base-spacing-unit);
 }
 
+.sidebar-links--item {
+  @include rem(margin, 0 $sixteenth-spacing-unit);
+}
+
 .sidebar-links--link {
   display: block;
   @include rem(margin-bottom, $half-spacing-unit);
-  @include rem(height, $base-spacing-unit);
-  @include rem(width, $base-spacing-unit);
+  @include rem(height, $one-half-spacing-unit);
+  @include rem(width, $one-half-spacing-unit);
   line-height: 0;
 
   &:hover,
