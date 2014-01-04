@@ -193,10 +193,14 @@
   line-height: 0;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     .sidebar-links--svg {
       transform: scale(1.1);
     }
+  }
+  &:hover,
+  &:focus {
     .sidebar-links--svg__mark {
       fill: $black;
     }
@@ -210,7 +214,169 @@
     @extend %link-active--depressed;
   }
 
-  // TODO: Add color specific :active states
+  &.behance {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #005cff;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.blogger {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #fc4f08;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.dribbble {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #ea4c89;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.email {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: $yellow;
+      }
+    }
+  }
+  &.facebook {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #3b5998;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.flickr {
+    &:active {
+
+      .sidebar-links--svg__mark {
+        &.svg-mark--left {
+          fill: #0063dc;
+        }
+      }
+      .sidebar-links--svg__mark {
+        &.svg-mark--right {
+          fill: #ff0084;
+        }
+      }
+    }
+  }
+  &.googleplus {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #dd4b39;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.instagram {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #3f729b;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.linkedin {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #0e76a8;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.pinterest {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #c8232c;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.tumblr {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #34526f;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.twitter {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #00acee;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.vimeo {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #44bbff;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
+  &.website {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: $yellow;
+      }
+    }
+  }
+  &.youtube {
+    &:active {
+
+      .sidebar-links--svg__circle {
+        fill: #c4302b;
+      }
+      .sidebar-links--svg__mark {
+        fill: $white;
+      }
+    }
+  }
 }
 
 .sidebar-links--svg {
