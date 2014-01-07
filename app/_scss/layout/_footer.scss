@@ -27,6 +27,10 @@
 
 .siteFooter-icons--item {
   @include rem(margin-left, $base-spacing-unit);
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .siteFooter-icons--link {
