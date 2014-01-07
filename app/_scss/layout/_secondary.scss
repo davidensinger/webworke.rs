@@ -13,19 +13,28 @@
 }
 
 .sidebarPrimary {
-  width: auto;
-  overflow: hidden; // create new block formatting context so text doesn’t wrap under .sidebarSecondary
+  float: right;
+  width: 77%;
+
+  // start breakpoints
+  @include breakpoint(tablet-portrait-to-small-desktop) {
+    width: 71%;
+  }
+  @include breakpoint(mobile-landscape-to-tablet-portrait) {
+    width: 67%;
+  }
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    width: 100%;
+    float: none;
+  }
 }
 
 .sidebarSecondary {
   float: left;
-  @include rem(margin-right, $double-spacing-unit);
+  margin-right: 3%;
   width: 20%;
 
   // start breakpoints
-  @include breakpoint(smaller-than-small-desktop) {
-    @include rem(margin-right, $base-spacing-unit);
-  }
   @include breakpoint(tablet-portrait-to-small-desktop) {
     width: 25%;
   }
@@ -182,13 +191,11 @@
 }
 
 .sidebar-links--item {
-  @include rem(margin, 0 $sixteenth-spacing-unit);
+  @include rem(margin, 0 $sixteenth-spacing-unit $half-spacing-unit);
 }
 
 .sidebar-links--link {
   display: block;
-  @include rem(margin-bottom, $half-spacing-unit);
-  @include rem(height, $one-half-spacing-unit);
   @include rem(width, $one-half-spacing-unit);
   line-height: 0;
 
@@ -214,6 +221,7 @@
     @extend %link-active--depressed;
   }
 
+  // start brand specific colors
   &.behance {
     &:active {
 

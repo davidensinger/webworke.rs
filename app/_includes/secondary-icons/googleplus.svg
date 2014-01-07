@@ -1,4 +1,4 @@
-<svg class="sidebar-links--svg sidebar-links--svg__googleplus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" focusable="true">
+<svg class="sidebar-links--svg sidebar-links--svg__googleplus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin meet" focusable="true">
   <switch>
     <g>
       <path class="sidebar-links--svg__circle" d="M16,31.999c8.838,0,16-7.164,16-15.999c0-8.836-7.16-16-16-16C7.165,0,0,7.164,0,16 C0,24.835,7.165,31.999,16,31.999" />
