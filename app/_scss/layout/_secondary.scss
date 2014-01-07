@@ -10,6 +10,7 @@
   @include rem(padding, $triple-spacing-unit 6%);
   color: $white;
   background-color: $black-light;
+  background: linear-gradient(160deg, $black-light 50%, mix($black-light, $black, 95%) 50%);
 }
 
 .sidebarPrimary {
