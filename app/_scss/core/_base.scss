@@ -298,21 +298,47 @@ pre {
 // Quote styles
 blockquote {
   margin: 0;
-  @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
 }
 
 .quote {
+  @include rem(padding, $base-spacing-unit);
+  @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
 }
 
-.quote-big {
+.quote-text {
+  font-style: italic;
+}
+
+.quote-full {
+  text-align: center;
+  border-top: 3px solid $white-darker;
+  border-bottom: 3px solid $white-darker;
+}
+
+.quote-small {
+  border-left: 3px solid $white-darker;
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    border-left: none;
+
+    // copied from .quote-full
+    text-align: center;
+    border-top: 3px solid $white-darker;
+    border-bottom: 3px solid $white-darker;
+  }
 }
 
 .citation-small {
   @extend small;
-  font-style: italic;
+  font-style: normal;
+
+  &:before {
+    content: "\2015\00A0";
+  }
 }
 
-.citation-small--link {
+%citation-small--link {
   font-style: normal;
 }
 

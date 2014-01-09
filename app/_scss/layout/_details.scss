@@ -228,13 +228,13 @@
 // posted on link
 .entryMeta-footer--posted-link {
   @extend %link-border--bottom;
-  @extend .citation-small--link;
+  @extend %citation-small--link;
 }
 
 // category the post is within
 .entryMeta-footer--category {
   @extend %link-border--bottom;
-  @extend .citation-small--link;
+  @extend %citation-small--link;
 }
 
 // back to top link

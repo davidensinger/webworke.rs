@@ -110,7 +110,7 @@ svg:not(:root) {
 }
 
 .imageCaption-link {
-  @extend .citation-small--link;
+  @extend %citation-small--link;
 }
 
 

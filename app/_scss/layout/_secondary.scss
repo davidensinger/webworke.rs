@@ -178,7 +178,7 @@
 }
 
 .sidebar-caption--link {
-  @extend .citation-small--link;
+  @extend %citation-small--link;
   @extend %link-border--bottom;
 }
 
