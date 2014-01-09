@@ -34,7 +34,7 @@
 
 // accompanying character entity
 .entryLink-character {
-  color: $white-darker;
+  color: $white-darkest;
   transition: color 0.3s;
 }
 
@@ -241,10 +241,10 @@
 .entryMeta-footer--backToTop {
   @include rem(padding, $eighth-spacing-unit $quarter-spacing-unit);
   @extend small;
-  background-color: $white-darker;
+  background-color: $white-darkest;
   transition: background-color 0.3s;
   &:hover {
-    background-color: $white-darkest;
+    background-color: $gray-lightest;
   }
   &:active {
     @extend %link-active--depressed;

@@ -163,7 +163,7 @@
 .siteMain {
   @include rem(margin-bottom, $double-spacing-unit);
   background-color: $white;
-  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 $white-darker;
+  box-shadow: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem 0 $white-darkest;
 
   // start breakpoints
   @include breakpoint(all-mobile) {

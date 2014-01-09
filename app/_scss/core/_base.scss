@@ -301,44 +301,71 @@ blockquote {
 }
 
 .quote {
-  @include rem(padding, $base-spacing-unit);
   @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
 }
 
 .quote-text {
-  font-style: italic;
+  @extend .delta;
+  font-weight: $base-font-weight-bold;
 }
 
 .quote-full {
+  position: relative;
+  @include rem(padding, $base-spacing-unit);
   text-align: center;
-  border-top: 3px solid $white-darker;
-  border-bottom: 3px solid $white-darker;
-}
 
-.quote-small {
-  border-left: 3px solid $white-darker;
+  &:before,
+  &:after {
+    @include absolute(left 43.75%);
+    content : "";
+    width: 12.5%;
+  }
+  &:before {
+    top: 0;
+    border-top: 2px solid $white-darkest;
+  }
+  &:after {
+    bottom: 0;
+    border-bottom: 2px solid $white-darkest;
+  }
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
+
+    &:before,
+    &:after {
+      @include absolute(left 0);
+      width: 100%;
+    }
+  }
+}
+
+.quote-small {
+  @include rem(padding, $half-spacing-unit $base-spacing-unit);
+  border-left: 2px solid $white-darkest;
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    @include rem(padding, $base-spacing-unit);
     border-left: none;
 
     // copied from .quote-full
     text-align: center;
-    border-top: 3px solid $white-darker;
-    border-bottom: 3px solid $white-darker;
+    border-top: 2px solid $white-darkest;
+    border-bottom: 2px solid $white-darkest;
   }
 }
 
 .citation-small {
   @extend small;
-  font-style: normal;
 
   &:before {
     content: "\2015\00A0";
   }
 }
 
-%citation-small--link {
+%citation-small--link,
+.citation-small--link {
   font-style: normal;
 }
 
