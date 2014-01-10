@@ -15,14 +15,14 @@
 
 .sidebarPrimary {
   float: right;
-  width: 77%;
+  width: 75%;
 
   // start breakpoints
   @include breakpoint(tablet-portrait-to-small-desktop) {
-    width: 71%;
+    width: 70%;
   }
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
-    width: 67%;
+    width: 65%;
   }
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     width: 100%;
@@ -32,7 +32,6 @@
 
 .sidebarSecondary {
   float: left;
-  margin-right: 3%;
   width: 20%;
 
   // start breakpoints
@@ -58,31 +57,25 @@
 // -------------------------------------
 
 .sidebar-heading {
+  float: right;
+  width: 75%;
   @include rem(padding-bottom, $half-spacing-unit);
   border-bottom: 2px solid;
-}
-
-.sidebar-heading--top {
-  @include rem(margin-bottom, $base-spacing-unit);
-  @extend .hidden; // hide this initially. I know, kinda janky.
 
   // start breakpoints
+  @include breakpoint(tablet-portrait-to-small-desktop) {
+    width: 70%;
+  }
+  @include breakpoint(mobile-landscape-to-tablet-portrait) {
+    width: 65%;
+  }
   @include breakpoint(all-mobile) {
-    display: block;
-    visibility: visible;
+    @include rem(margin-bottom, $base-spacing-unit);
   }
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     @include rem(margin-bottom, $one-half-spacing-unit);
-  }
-}
-
-.sidebar-heading--bottom {
-  margin-top: 0;
-
-  // start breakpoints
-  @include breakpoint(all-mobile) {
-    display: none;
-    visibility: hidden;
+    width: 100%;
+    float: none;
   }
 }
 

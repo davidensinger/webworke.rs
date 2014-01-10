@@ -9,7 +9,7 @@
 {% endif %}
 
 {% if secondary.title or secondary.organization %}
-  <h3 class="sidebar-heading sidebar-heading--top">
+  <h3 class="sidebar-heading">
 
     {% if secondary.url %}
       <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
@@ -65,34 +65,6 @@
 {% endif %}
 
 <div class="sidebarPrimary">
-  {% if secondary.title or secondary.organization %}
-    <h3 class="sidebar-heading sidebar-heading--bottom">
-
-      {% if secondary.url %}
-        <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
-      {% endif %}
-
-      {% if secondary.title %}
-        <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}</span>
-      {% endif %}
-
-      {% if secondary.preposition %}
-        <span class="sidebar-preposition">
-          {{ secondary.preposition }}
-        </span>
-      {% endif %}
-
-      {% if secondary.organization %}
-        <span class="sidebar-organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>
-      {% endif %}
-
-      {% if secondary.url %}
-          <span class="sidebar-character">&rarr;</span>
-        </a>
-      {% endif %}
-
-    </h3>
-  {% endif %}
 
   {% if secondary.description %}
     <p class="sidebar-description" itemprop="description">{{ secondary.description }}</p>
