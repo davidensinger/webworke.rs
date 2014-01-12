@@ -24,7 +24,7 @@ author:
 relative_permalinks: false
 
 permalink: /:year/:month/:title/
-paginate: 5
+paginate: 25
 
 # Use redcarpet for jekyll-picture-tag plugin
 markdown: redcarpet
@@ -57,13 +57,6 @@ picture:
       ppi: [1]
       source_default:
         width: 1280
-    category:
-      ppi: [1]
-      attr:
-        class: "image category-image"
-        itemprop: "contentURL"
-      source_default:
-        width: 320
     sidebar:
       ppi: [1]
       attr:

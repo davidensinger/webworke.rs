@@ -12,14 +12,6 @@
     @include rem(padding-top, $base-spacing-unit);
   }
 
-  // -------------------------------------
-  //  Primary
-  // -------------------------------------
-
-  .post-primary {
-    overflow: hidden;
-  }
-
   .entryTitle-category {
     @extend %entryHeader;
     @include rem(margin-bottom, $base-spacing-unit);
@@ -27,16 +19,16 @@
 
   .entryHeader {
     @include rem(margin-bottom, $half-spacing-unit);
+    padding: 0;
     border-bottom: 2px solid;
   }
 
   .entryTitle {
     float: left;
-    @extend .gamma;
     margin: 0;
 
     // start breakpoints
-    @include breakpoint(smaller-than-small-desktop) {
+    @include breakpoint(all-mobile) {
       float: none;
       @include rem(margin-bottom, $quarter-spacing-unit);
     }
@@ -44,20 +36,17 @@
 
   .entryMeta-header {
     float: right;
+    @include rem(margin-top, 1);
 
     // start breakpoints
-    @include breakpoint(smaller-than-small-desktop) {
+    @include breakpoint(all-mobile) {
       float: none;
+      margin-top: 0;
     }
   }
 
   .entryContent {
-    @include rem(margin-bottom, $double-spacing-unit);
-
-    // start breakpoints
-    @include breakpoint(desktop) {
-      @include rem(margin-bottom, $triple-spacing-unit);
-    }
+    @include rem(margin-bottom, $base-spacing-unit);
   }
 
   .entryContent-text {
@@ -68,82 +57,12 @@
     @extend small;
   }
 
-
-  // -------------------------------------
-  //  Secondary
-  // -------------------------------------
-
-  .post-secondary {
-    float: left;
-    margin: 0 3% 0 0;
-    width: 15%;
-
-    // start breakpoints
-    @include breakpoint(smaller-than-small-desktop) {
-      width: 20%;
-    }
-    @include breakpoint(mobile-portrait-to-mobile-landscape) {
-      width: 25%;
-    }
-    @include breakpoint(small-mobile) {
-      width: 30%;
-    }
-  }
-
-
-  // -------------------------------------
-  //  Image
-  // -------------------------------------
-
-  .category-image--link {
-    display: block;
-
-    &:hover {
-      .category-image {
-        img {
-          transform: scale(1.05);
-
-          // start breakpoints
-          @include breakpoint(mobile-portrait-to-mobile-landscape) {
-            transform: scale(1.025);
-          }
-        }
-      }
-    }
-    &:focus {
-      background-color: transparent; // to be more specific than .sitePrimary a:focus
-      .category-image {
-        img {
-          background-color: $focus;
-        }
-      }
-    }
-  }
-
-  .category-image {
-    display: block;
-
-    // image tag within .category-image
-    img {
-      display: block;
-      padding: 3px;
-      border-radius: 50%;
-      background-color: transparent;
-      transition: background-color 0.2s, transform 0.2s;
-    }
-
-    // start breakpoints
-    @include breakpoint(mobile-portrait-to-mobile-landscape) {
-      @include rem(margin, 0 0 $base-spacing-unit);
-    }
-  }
-
   // -------------------------------------
   //  Footer
   // -------------------------------------
 
   .entryMeta-footer {
-    @include rem(margin-top, $base-spacing-unit);
+    @include rem(margin-top, $double-spacing-unit);
   }
 
 
