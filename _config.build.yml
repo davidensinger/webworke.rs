@@ -34,6 +34,16 @@ picture:
         width: 959
       source_default:
         width: 1280
+    category:
+      ppi: [1, 1.5]
+      attr:
+        class: "image category-image"
+        itemprop: "contentURL"
+      source_small-mobile:
+        media: "(max-width: 320px)"
+        width: 160
+      source_default:
+        width: 320
     sidebar:
       ppi: [1, 1.5]
       attr:

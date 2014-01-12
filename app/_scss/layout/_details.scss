@@ -5,7 +5,8 @@
 //
 // ==========================================================================
 
-.entryHeader {
+.entryHeader,
+%entryHeader {
   @include rem(margin-bottom, $one-half-spacing-unit);
   @include rem(padding-bottom, $half-spacing-unit);
   text-transform: uppercase;

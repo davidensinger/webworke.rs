@@ -57,6 +57,13 @@ picture:
       ppi: [1]
       source_default:
         width: 1280
+    category:
+      ppi: [1]
+      attr:
+        class: "image category-image"
+        itemprop: "contentURL"
+      source_default:
+        width: 320
     sidebar:
       ppi: [1]
       attr:

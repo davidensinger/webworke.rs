@@ -1,7 +1,84 @@
 ---
 layout: default
-layout-class: layout-page
+layout-class: layout-page layout-category
 ---
 <div id="primary" class="sitePrimary">
-  <p>Posts Categorized <strong>“{{ page.category | titlecase }}”</strong></p>
+  <h1 class="entryTitle-category">
+    <a class="entryLink" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
+      Posts Categorized “{{ page.category | titlecase }}”&nbsp;<span class="entryLink-character">&infin;</span>
+    </a>
+  </h1>
+
+  {% for post in paginator.posts %}
+    <article class="post hentry clearfix" itemscope itemtype="http://schema.org/Article">
+
+      {% assign secondary = post.secondary %}
+
+      {% if secondary.image %}
+        <div class="post-secondary">
+          <figure class="category-figure" itemscope itemtype="http://schema.org/ImageObject">
+            <a class="category-image--link" href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+              {% picture category {{ secondary.image }} alt="Photo of {{ title }}" %}
+            </a>
+          </figure>
+        </div>
+      {% endif %}
+
+      <div class="post-primary">
+        <header class="entryHeader clearfix">
+          <h2 class="entryTitle" itemprop="name">
+            <a class="entryLink" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+              {{ post.title }}&nbsp;<span class="entryLink-character">&rarr;</span>
+            </a>
+          </h2>
+          <div class="entryMeta entryMeta-header">
+            <small class="entryDate">
+              <time class="entryTime" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            </small>
+          </div> <!-- .entryMeta .entryMeta-header -->
+        </header>
+        <div class="entryContent">
+          {% if post.description %}
+            <p class="entryContent-text">{{ post.description }}</p>
+            <a class="entryContent-link" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">Read More</a>
+          {% else %}
+            {{ post.content }}
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+
+  <footer class="entryMeta entryMeta-footer">
+    {% if page.grouptype == 'category' %}
+      {% capture paging_root %}/category/{{ page.category | replace:' ','-' | downcase }}/{% endcapture %}
+    {% else %}
+      {% capture paging_root %}/{% endcapture %}
+    {% endif %}
+
+    <nav class="paging-navigation clearfix" role="navigation">
+      <h1 class="visuallyHidden">Post navigation</h1>
+      {% if paginator.previous_page %}
+        <div class="paging-previous">
+          {% if paginator.previous_page == 1 %}
+          <a id="js-navigation--previous" href="{{ paging_root }}" class="paging-link paging-previous--link">&larr;&nbsp;Newer Posts</a>
+          {% else %}
+          <a id="js-navigation--previous" href="{{ paging_root }}page{{ paginator.previous_page }}" class="paging-link paging-previous--link">&larr;&nbsp;Newer Posts</a>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <div class="paging-next">
+        <a id="js-navigation--next" href="{{ paging_root }}page{{ paginator.next_page }}" class="paging-link paging-next--link">Older Posts&nbsp;&rarr;</a>
+      </div>
+      {% endif %}
+    </nav>
+
+    {% assign type = nil %}
+    {% assign paging_root = nil %}
+
+    <a id="js-backToTop" href="#top" class="entryMeta-footer--backToTop float-right">&uarr; Back to top</a>
+  </footer> <!-- .entryMeta .entryMeta-footer-->
+
 </div> <!-- #primary .sitePrimary -->
