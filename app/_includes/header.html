@@ -15,6 +15,10 @@
       <title>{{ page.title }} &mdash; {{ site.title }}</title>
       <meta content="{{ page.title }} &mdash; {{ site.title }}" property="og:title">
       <meta content="{{ page.title }} &mdash; {{ site.title }}" name="twitter:title">
+    {% elsif page.grouptype == 'category' %}
+      <title>Posts Categorized &ldquo;{{ page.category | titlecase }}&rdquo; &mdash; {{ site.title }}</title>
+      <meta content="Posts Categorized &ldquo;{{ page.category | titlecase }}&rdquo; &mdash; {{ site.title }}" property="og:title">
+      <meta content="Posts Categorized &ldquo;{{ page.category | titlecase }}&rdquo; &mdash; {{ site.title }}" name="twitter:title">
     {% else %}
       <title>{{ site.title }} &mdash; {{ site.tagline }}</title>
       <meta content="{{ site.title }} &mdash; {{ site.tagline }}" property="og:title">
@@ -25,13 +29,22 @@
       <meta content="{{ page.description }}" name="description">
       <meta content="{{ page.description }}" property="og:description">
       <meta content="{{ page.description }}" name="twitter:description">
+    {% elsif page.grouptype == 'category' %}
+      <meta content="A listing of all posts that are categorized as &ldquo;{{ page.category | titlecase }}&rdquo;" name="description">
+      <meta content="A listing of all posts that are categorized as &ldquo;{{ page.category | titlecase }}&rdquo;" property="og:description">
+      <meta content="A listing of all posts that are categorized as &ldquo;{{ page.category | titlecase }}&rdquo;" name="twitter:description">
     {% else %}
       <meta content="{{ site.description }}" name="description">
       <meta content="{{ site.description }}" property="og:description">
       <meta content="{{ site.description }}" name="twitter:description">
     {% endif %}
 
-    <link href="{{ site.baseurl }}{{ site.feed }}" rel="alternate" title="ATOM Feed" type="application/atom+xml">
+    <link href="{{ site.baseurl }}{{ site.feed }}" rel="alternate" title="Feed for all posts on {{ site.title }}" type="application/atom+xml">
+
+    {% if page.grouptype == 'category' %}
+      <link href="{{ site.baseurl }}/category/{{ page.category | replace:' ','-' | downcase }}{{ site.feed }}" rel="alternate" title="Feed for all posts categorized as &ldquo;{{ page.category | titlecase }}&rdquo; on {{ site.title }}" type="application/atom+xml">
+    {% endif %}
+
     <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon">
 
     <meta content="website" property="og:type">

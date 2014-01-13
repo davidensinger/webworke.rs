@@ -4,14 +4,14 @@ layout: post
 
 <article class="post hentry" itemscope itemtype="http://schema.org/Article">
   <header class="entryHeader">
-    <div class="entryMeta">
+    <div class="entryMeta entryMeta-header">
       <small class="entryDate">
         <time class="entryTime" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       </small>
-    </div> <!-- .entryMeta -->
+    </div> <!-- .entryMeta .entryMeta-header -->
     <h1 class="entryTitle" itemprop="name">
       <a class="entryLink" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">
-        {{ page.title }} <span class="entryLink-character">&infin;</span>
+        {{ page.title }}&nbsp;<span class="entryLink-character">&infin;</span>
       </a>
     </h1>
   </header>
