@@ -24,7 +24,7 @@ author:
 relative_permalinks: false
 
 permalink: /:year/:month/:title/
-paginate: 25
+paginate: 999
 
 # Use redcarpet for jekyll-picture-tag plugin
 markdown: redcarpet

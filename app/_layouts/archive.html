@@ -1,10 +1,9 @@
 ---
 layout: default
 layout-class: layout-archive
-page-class: page-category
 ---
 <div id="primary" class="sitePrimary">
-  <h1 class="archive-title">Posts Categorized “{{ page.category | titlecase }}”</h1>
+  <h1 class="archive-title">Archive</h1>
 
   {% for post in site.posts %}
     <article class="post hentry clearfix" itemscope itemtype="http://schema.org/Article">
@@ -18,6 +17,13 @@ page-class: page-category
           <small class="entryDate">
             <time class="entryTime" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
           </small>
+          {% if post.categories != empty %}
+            <small class="entryMeta-header--categories">
+              {% for category in post.categories %}
+                <a class="entryMeta-header--category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>
+              {% endfor %}
+            </small>
+          {% endif %}
         </div> <!-- .entryMeta .entryMeta-header -->
       </header>
       <div class="entryContent">

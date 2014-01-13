@@ -1,0 +1,128 @@
+// ==========================================================================
+//
+//  Archive
+//  See _layouts/category-index.html and _layouts/archive.html
+//
+// ==========================================================================
+
+.archive-title {
+  @extend %entryHeader;
+  @include rem(margin-bottom, $base-spacing-unit);
+}
+
+.layout-archive {
+
+  .post {
+    clear: both;
+    @include rem(padding-top, $base-spacing-unit);
+  }
+
+  .entryHeader {
+    @include rem(margin-bottom, $half-spacing-unit);
+    padding: 0;
+    border-bottom: 2px solid;
+  }
+
+  &.page-archive .entryHeader {
+
+    // start breakpoints
+    @include breakpoint(smaller-than-small-desktop) {
+      @include rem(padding-bottom, $quarter-spacing-unit);
+    }
+  }
+
+  &.page-category .entryHeader {
+
+    // start breakpoints
+    @include breakpoint(all-mobile) {
+      @include rem(padding-bottom, $quarter-spacing-unit);
+    }
+  }
+
+  .entryTitle {
+    float: left;
+    margin: 0;
+  }
+
+  &.page-archive .entryTitle {
+
+    // start breakpoints
+    @include breakpoint(smaller-than-small-desktop) {
+      float: none;
+    }
+  }
+
+  &.page-category .entryTitle {
+
+    // start breakpoints
+    @include breakpoint(all-mobile) {
+      float: none;
+    }
+  }
+
+  .entryMeta-header {
+    float: right;
+    @include rem(margin-top, 1);
+  }
+
+  &.page-archive .entryMeta-header {
+
+    // start breakpoints
+    @include breakpoint(smaller-than-small-desktop) {
+      float: none;
+      margin-top: 0;
+    }
+  }
+
+  &.page-category .entryMeta-header {
+
+    // start breakpoints
+    @include breakpoint(all-mobile) {
+      float: none;
+      margin-top: 0;
+    }
+  }
+
+  .entryMeta-header--categories {
+    @include rem(margin-left, $half-spacing-unit);
+  }
+
+  .entryMeta-header--category {
+    @include rem(margin-right, $half-spacing-unit);
+    font-weight: $base-font-weight-bold;
+
+    &:before {
+      content: "\0023";
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+
+  .entryContent {
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
+
+  .entryContent-text {
+    @include rem(margin-bottom, $quarter-spacing-unit);
+  }
+
+  .entryContent-link {
+    //@extend small;
+  }
+
+  // -------------------------------------
+  //  Footer
+  // -------------------------------------
+
+  .entryMeta-footer {
+    @include rem(margin-top, $double-spacing-unit);
+  }
+
+}
+
