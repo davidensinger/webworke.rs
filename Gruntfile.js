@@ -227,15 +227,31 @@ module.exports = function (grunt) {
         }
       }
     },
-    imagemin: {
-      dist: {
+    imageoptim: {
+      options: {
+        quitAfter: false
+      },
+      distLossless: {
         options: {
-          progressive: true
+          jpegMini: false,
+          imageAlpha: true
         },
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: '**/*.{gif,jpg,jpeg,png}',
+          src: '**/*.{gif,png}',
+          dest: '<%= yeoman.dist %>'
+        }]
+      },
+      distLossy: {
+        options: {
+          jpegMini: true,
+          imageAlpha: false
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.dist %>',
+          src: '**/*.{jpg,jpeg}',
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -406,7 +422,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'modernizr',
-    'imagemin',
+    'imageoptim',
     'svgmin',
     'rev',
     'usemin',
