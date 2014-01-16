@@ -6,31 +6,6 @@ page-class: page-category
 <div id="primary" class="sitePrimary">
   <h1 class="archive-title">Posts Categorized “{{ page.category | titlecase }}”</h1>
 
-  {% for post in site.posts %}
-    <article class="post hentry clearfix" itemscope itemtype="http://schema.org/Article">
-      <header class="entryHeader clearfix">
-        <h2 class="entryTitle" itemprop="name">
-          <a class="entryLink" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
-            {{ post.title }}&nbsp;<span class="entryLink-character">&rarr;</span>
-          </a>
-        </h2>
-        <div class="entryMeta entryMeta-header">
-          <small class="entryDate">
-            <time class="entryTime" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-          </small>
-        </div> <!-- .entryMeta .entryMeta-header -->
-      </header>
-      <div class="entryContent">
-        {% if post.description %}
-          <p class="entryContent-text">{{ post.description }}</p>
-          <a class="entryContent-link" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">Read More</a>
-        {% endif %}
-      </div>
-    </article>
-  {% endfor %}
-
-  <footer class="entryMeta entryMeta-footer">
-    <a id="js-backToTop" href="#top" class="entryMeta-footer--backToTop float-right">&uarr; Back to top</a>
-  </footer> <!-- .entryMeta .entryMeta-footer-->
+  {% include archive.html %}
 
 </div> <!-- #primary .sitePrimary -->
