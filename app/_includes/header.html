@@ -52,13 +52,20 @@
     <meta content="summary" name="twitter:card">
     <meta content="{{ site.title }}" property="og:site_name">
     <meta content="@{{ site.twitter }}" name="twitter:site">
+    <meta content="@{{ site.author.twitter }}" name="twitter:creator">
 
     {% if page.page-class == "page-home" %}
-    <meta content="{{ site.baseurl }}" property="og:url">
-    <meta content="{{ site.baseurl }}" name="twitter:url">
+      <meta content="{{ site.baseurl }}" property="og:url">
+      <meta content="{{ site.baseurl }}" name="twitter:url">
     {% else %}
       <meta content="{{ site.baseurl }}{{ page.url }}" property="og:url">
       <meta content="{{ site.baseurl }}{{ page.url }}" name="twitter:url">
+    {% endif %}
+
+    {% if page.image %}
+      <meta property="og:image" content="{{ site.baseurl }}/{{ site.picture.output }}/{{ page.image }}">
+      <meta name="twitter:image:src" content="{{ site.baseurl }}/{{ site.picture.output }}/{{ page.image }}">
+    {% else %}
     {% endif %}
 
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
