@@ -333,20 +333,6 @@ module.exports = function (grunt) {
         '!<%= yeoman.app %>/scripts/_vendor/**/*'
       ]
     },
-    csscss: {
-      options: {
-        bundleExec: true,
-        minMatch: 2,
-        ignoreSassMixins: false,
-        colorize: true,
-        shorthand: false,
-        verbose: true
-      },
-      check: {
-       src: ['<%= yeoman.app %>/styles/**/*.css',
-             '<%= yeoman.app %>/_scss/**/*.scss']
-      }
-    },
     csslint: {
       options: {
         csslintrc: '.csslintrc'
@@ -407,7 +393,6 @@ module.exports = function (grunt) {
     'jekyll:check',
     'sass:server',
     'jshint:all',
-    'csscss:check',
     'csslint:check'
   ]);
 
