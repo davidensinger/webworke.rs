@@ -307,18 +307,18 @@ module.exports = function (grunt) {
         }]
       }
     },
-    rev: {
+    filerev: {
       options: {
         length: 4
       },
       dist: {
-        files: {
+        files: [{
           src: [
             '<%= yeoman.dist %>/scripts/**/*.js',
             '<%= yeoman.dist %>/styles/**/*.css',
             '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg}'
           ]
-        }
+        }]
       }
     },
     jshint: {
@@ -409,7 +409,7 @@ module.exports = function (grunt) {
     'modernizr',
     'imageoptim',
     'svgmin',
-    'rev',
+    'filerev',
     'usemin',
     'htmlmin',
     'xmlmin'
