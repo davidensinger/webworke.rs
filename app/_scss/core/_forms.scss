@@ -95,6 +95,29 @@ input[type="search"]::-webkit-search-decoration {
 // www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
 button,
 input {
+  display: inline-block;
+  @include rem(padding, $half-spacing-unit);
+  text-transform: uppercase;
+  font-weight: $base-font-weight;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  color: $white;
+  background-color: $black-light;
+  transition: background-color 0.3s, color 0.3s;
+  outline-color: transparent;
+  outline-style: none;
+  &:hover {
+    background-color: $black;
+  }
+  &:focus {
+    color: $black-light;
+    background-color: $focus;
+  }
+  &:active {
+    @extend %link-active--depressed;
+  }
+
   &::-moz-focus-inner {
     border: 0;
     padding: 0;
@@ -106,4 +129,52 @@ input {
 textarea {
   overflow: auto; // 1
   vertical-align: top; // 2
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  display: block;
+  @include rem(padding, $half-spacing-unit);
+  background-color: $white;
+  border: 1px solid $gray-light;
+  outline-color: transparent;
+  outline-style: none;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: $gray;
+  }
+  &:focus {
+    border-color: $focus;
+  }
+  &:active {
+    border-color: $gray-dark;
+  }
+}
+
+
+// -------------------------------------
+//  Google 404 Widget
+// -------------------------------------
+
+#goog-fixurl {
+
+  .other-things {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  form {
+    @include rem(margin-top, $half-spacing-unit);
+  }
+}
+
+#goog-wm-qt {
+  @include rem(margin-bottom, $half-spacing-unit);
 }
