@@ -48,7 +48,28 @@
     <link href="{{ site.baseurl }}/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
     <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon">
 
-    <meta content="website" property="og:type">
+    {% if page.secondary %}
+      <meta content="article" property="og:type">
+      <meta content="{{ site.baseurl }}/about/" property="article:author">
+
+      {% if page.date %}
+        <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+      {% endif %}
+
+      {% if page.sitemap.lastmod %}
+        <meta content="{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}" property="article:modified_time">
+      {% endif %}
+
+      {% if page.categories %}
+        {% for category in page.categories limit:1 %}
+        <meta property="article:section" content="{{ category }}">
+        {% endfor %}
+      {% endif %}
+
+    {% else %}
+      <meta content="website" property="og:type">
+    {% endif %}
+
     <meta content="summary" name="twitter:card">
     <meta content="{{ site.title }}" property="og:site_name">
     <meta content="@{{ site.twitter }}" name="twitter:site">
