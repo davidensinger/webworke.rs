@@ -5,6 +5,7 @@
 //   sass: _scss
 //   javascript: scripts
 //   images: images
+//   fonts: fonts
 
 module.exports = function (grunt) {
   // Show elapsed time after tasks run
@@ -282,6 +283,7 @@ module.exports = function (grunt) {
             // Usemin moves CSS and javascript inside of Usemin blocks
             // Copy moves asset files and directories
             'images/**/*',
+            'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore
             '!**/_*{,/**}'
             // Explicitly add any files your site needs for distribution here.
@@ -311,7 +313,8 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/scripts/**/*.js',
             '<%= yeoman.dist %>/styles/**/*.css',
-            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg}'
+            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg}',
+            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
           ]
         }]
       }
