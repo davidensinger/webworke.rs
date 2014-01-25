@@ -15,7 +15,7 @@
 
 .entryDate {
   @include rem(padding, $eighth-spacing-unit);
-  font-weight: $base-font-weight-bold;
+  @extend %font-industry--demi;
 }
 
 .entryTitle {
@@ -99,6 +99,7 @@
   display: block;
   position: fixed;
   top: 50%;
+  @extend %font-industry--medium;
   color: $black-light;
   pointer-events: none;
   &:hover,
@@ -223,7 +224,7 @@
 // posted on paragraph
 .entryMeta-footer--posted {
   @include rem(margin-bottom, $double-spacing-unit);
-  font-style: italic;
+  @extend %font-industry--medium__italic;
 }
 
 // posted on link
@@ -240,8 +241,9 @@
 
 // back to top link
 .entryMeta-footer--backToTop {
-  @include rem(padding, $eighth-spacing-unit $quarter-spacing-unit);
+  @include rem(padding, $quarter-spacing-unit $quarter-spacing-unit $eighth-spacing-unit);
   @extend small;
+  @extend %font-industry--medium;
   background-color: $white-darkest;
   transition: background-color 0.3s;
   &:hover {

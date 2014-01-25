@@ -1,0 +1,104 @@
+// ==========================================================================
+//
+//  Fonts
+//
+// ==========================================================================
+
+
+// -------------------------------------
+//  Industry
+//
+//  Vendor:      Hold Fast Foundry
+//  URL:         http://holdfastfoundry.com/shop/industry/
+//  License URL: http://www.fontspring.com/fflicense/hold-fast-foundry
+// -------------------------------------
+
+// Industry Medium
+@font-face {
+  font-family: 'industrymedium';
+  src: url('../fonts/Industry-Medium-webfont.eot');
+  src: url('../fonts/Industry-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Industry-Medium-webfont.woff') format('woff'),
+    url('../fonts/Industry-Medium-webfont.ttf') format('truetype'),
+    url('../fonts/Industry-Medium-webfont.svg#industrymedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%font-industry--medium {
+  font-family: 'industrymedium', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Industry Medium Italic
+@font-face {
+  font-family: 'industrymedium_italic';
+  src: url('../fonts/Industry-MediumItalic-webfont.eot');
+  src: url('../fonts/Industry-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Industry-MediumItalic-webfont.woff') format('woff'),
+    url('../fonts/Industry-MediumItalic-webfont.ttf') format('truetype'),
+    url('../fonts/Industry-MediumItalic-webfont.svg#industrymedium_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%font-industry--medium__italic {
+  font-family: 'industrymedium_italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Industry Demi
+@font-face {
+  font-family: 'industrydemi';
+  src: url('../fonts/Industry-Demi-webfont.eot');
+  src: url('../fonts/Industry-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Industry-Demi-webfont.woff') format('woff'),
+    url('../fonts/Industry-Demi-webfont.ttf') format('truetype'),
+    url('../fonts/Industry-Demi-webfont.svg#industrydemi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%font-industry--demi {
+  font-family: 'industrydemi', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Industry Demi Italic
+@font-face {
+  font-family: 'industrydemi_italic';
+  src: url('../fonts/Industry-DemiItalic-webfont.eot');
+  src: url('../fonts/Industry-DemiItalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Industry-DemiItalic-webfont.woff') format('woff'),
+    url('../fonts/Industry-DemiItalic-webfont.ttf') format('truetype'),
+    url('../fonts/Industry-DemiItalic-webfont.svg#industrydemi_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%font-industry--demi__italic {
+  font-family: 'industrydemi_italic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Industry Bold
+@font-face {
+  font-family: 'industrybold';
+  src: url('../fonts/Industry-Bold-webfont.eot');
+  src: url('../fonts/Industry-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Industry-Bold-webfont.woff') format('woff'),
+    url('../fonts/Industry-Bold-webfont.ttf') format('truetype'),
+    url('../fonts/Industry-Bold-webfont.svg#industrybold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%font-industry--bold {
+  font-family: 'industrybold', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}

@@ -103,7 +103,7 @@ h5,
 h6 {
   clear: both;
   padding: 0;
-  font-weight: $base-font-weight-bold;
+  @extend %font-industry--bold;
 }
 
 h1,
@@ -145,6 +145,7 @@ ol {
 
 .lede {
   @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
+  @extend %font-industry--medium;
 }
 
 .lede-location {
@@ -153,8 +154,7 @@ ol {
 
 .question {
   margin-bottom: 0;
-  font-weight: bold;
-  font-style: italic;
+  @extend %font-industry--demi__italic;
 }
 
 .text-left {
@@ -308,7 +308,7 @@ blockquote {
 
 .quote-text {
   @extend .delta;
-  font-weight: $base-font-weight-bold;
+  @extend %font-industry--bold;
 }
 
 .quote-full {
@@ -360,6 +360,7 @@ blockquote {
 
 .citation-small {
   @extend small;
+  @extend %font-industry--medium__italic;
 
   &:before {
     content: "\2015\00A0";
@@ -368,7 +369,7 @@ blockquote {
 
 %citation-small--link,
 .citation-small--link {
-  font-style: normal;
+  @extend %font-industry--medium;
 }
 
 // Set consistent quote types.
@@ -392,7 +393,7 @@ q {
 
 .aside-text {
   width: 25%;
-  font-style: italic;
+  @extend %font-industry--medium__italic;
   @extend small;
   color: $black-lightest;
 

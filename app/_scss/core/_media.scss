@@ -107,6 +107,7 @@ svg:not(:root) {
 
 .imageCaption-figcaption {
   @extend small;
+  @extend %font-industry--medium;
 }
 
 .imageCaption-link {

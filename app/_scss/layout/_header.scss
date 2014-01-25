@@ -103,9 +103,12 @@
 // -------------------------------------
 
 .siteLogo {
-  @extend %flexEmbed;
+  //@extend %flexEmbed;
   display: block;
-  padding-bottom: 30.22%; // this needs to be the logo ratio
+  @extend %font-industry--bold;
+  text-transform: uppercase;
+  font-size: 48px;
+  //padding-bottom: 30.22%; // this needs to be the logo ratio
 
   &:active {
     @extend %link-active--depressed;
@@ -130,8 +133,8 @@
 
 .navigation-item {
   @include rem(margin-left, $base-spacing-unit);
-  font-weight: $base-font-weight-bold;
   text-transform: uppercase;
+  @extend %font-industry--demi;
 
   &:first-child {
     margin-left: 0;

@@ -89,7 +89,7 @@
 
   .entryMeta-header--category {
     @include rem(margin-right, $half-spacing-unit);
-    font-weight: $base-font-weight-bold;
+    @extend %font-industry--demi;
 
     &:before {
       content: "\0023";
@@ -113,7 +113,8 @@
   }
 
   .entryContent-link {
-    //@extend small;
+    @extend %font-industry--demi;
+    @extend small;
   }
 
   // -------------------------------------
