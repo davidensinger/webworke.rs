@@ -69,12 +69,11 @@
 }
 
 .siteHeader-primary {
-  display: table-cell;
-  width: 12.5%;
+  width: 40%;
 
   // start breakpoints
   @include breakpoint(smaller-than-small-desktop) {
-    width: 41.67%;
+    width: 50%;
   }
   @include breakpoint(all-mobile) {
     width: 50%;
@@ -82,13 +81,13 @@
 }
 
 .siteHeader-secondary {
-  display: table-cell;
   text-align: right;
-  vertical-align: middle;
 }
 
 .siteHeader-primary,
 .siteHeader-secondary {
+  display: table-cell;
+  vertical-align: middle;
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
@@ -103,9 +102,8 @@
 // -------------------------------------
 
 .siteLogo {
-  //@extend %flexEmbed;
   display: block;
-  //padding-bottom: 10%; // this needs to be the logo ratio
+  line-height: 0;
 
   &:active {
     @extend %link-active--depressed;
@@ -117,16 +115,19 @@
   }
 }
 
-.siteLogo-svg {
-  //@extend %flexEmbed-item;
+.siteLogo-svg,
+.siteLogo-tagline--svg {
+  height: 100%;
 }
 
-.siteLogo-svg--line {
-  display: none;
-}
+.siteLogo-tagline--svg {
+  @extend .hidden;
 
-.siteLogo-svg--tagline {
-  display: none;
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    visibility: visible;
+    display: inherit;
+  }
 }
 
 
@@ -138,6 +139,15 @@
   @include rem(margin-left, $base-spacing-unit);
   text-transform: uppercase;
   @extend %font-industry--demi;
+
+  .mainNavigation & {
+    margin-top: 4px; // to balance the border-bottom in .navigation-link
+
+    // start breakpoints
+    @include breakpoint(mobile-portrait-to-mobile-landscape) {
+      margin-top: 0;
+    }
+  }
 
   &:first-child {
     margin-left: 0;

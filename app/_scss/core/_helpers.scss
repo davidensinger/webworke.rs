@@ -5,7 +5,8 @@
 // ==========================================================================
 
 
-.ir { // Image replacement
+.ir,
+%ir { // Image replacement
   background-color: transparent;
   border: 0;
   overflow: hidden;
@@ -18,12 +19,14 @@
 }
 
 .hidden,
-[hidden] { // Hide from both screenreaders and browsers: h5bp.com/u
+[hidden],
+%hidden { // Hide from both screenreaders and browsers: h5bp.com/u
   display: none;
   visibility: hidden;
 }
 
-.visuallyHidden { // Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyHidden,
+%visuallyHidden { // Hide only visually, but have it available for screenreaders: h5bp.com/v
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -45,12 +48,14 @@
   }
 }
 
-.invisible { // Hide visually and from screenreaders, but maintain layout
+.invisible,
+%invisible { // Hide visually and from screenreaders, but maintain layout
   visibility: hidden;
   @include opacity(0);
 }
 
-.visible {
+.visible,
+%visible {
   visibility: visible;
   @include opacity(1);
 }
@@ -61,7 +66,8 @@
 //    that receive the `clearfix` class.
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
-.clearfix {
+.clearfix,
+%clearfix {
   &:before,
   &:after {
     content: " "; // 1
