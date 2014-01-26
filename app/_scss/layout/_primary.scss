@@ -8,4 +8,9 @@
 
 .sitePrimary {
   @include rem(padding, $triple-spacing-unit 6%);
+
+  // start breakpoints
+  @include breakpoint(all-mobile) {
+    @include rem(padding, $double-spacing-unit 6%);
+  }
 }

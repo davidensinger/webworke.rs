@@ -105,10 +105,7 @@
 .siteLogo {
   //@extend %flexEmbed;
   display: block;
-  @extend %font-industry--bold;
-  text-transform: uppercase;
-  font-size: 48px;
-  //padding-bottom: 30.22%; // this needs to be the logo ratio
+  //padding-bottom: 10%; // this needs to be the logo ratio
 
   &:active {
     @extend %link-active--depressed;
@@ -120,10 +117,16 @@
   }
 }
 
-.siteLogo-image {
-  @extend %flexEmbed-item;
-  background: url("../images/siteLogo-image.png") no-repeat;
-  background-size: cover;
+.siteLogo-svg {
+  //@extend %flexEmbed-item;
+}
+
+.siteLogo-svg--line {
+  display: none;
+}
+
+.siteLogo-svg--tagline {
+  display: none;
 }
 
 
