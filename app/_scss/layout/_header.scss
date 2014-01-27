@@ -120,6 +120,15 @@
   height: 100%;
 }
 
+.siteLogo-svg {
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .siteLogo-tagline--svg {
   @extend .hidden;
 
