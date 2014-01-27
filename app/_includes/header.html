@@ -83,9 +83,9 @@
       <meta content="{{ site.baseurl }}{{ page.url }}" name="twitter:url">
     {% endif %}
 
-    {% if page.image %}
-      <meta property="og:image" content="{{ site.baseurl }}/{{ site.picture.output }}/{{ page.image }}">
-      <meta name="twitter:image:src" content="{{ site.baseurl }}/{{ site.picture.output }}/{{ page.image }}">
+    {% if page.secondary.image %}
+      <meta property="og:image" content="{{ site.baseurl }}/{{ site.picture.source }}/{{ page.secondary.image }}">
+      <meta name="twitter:image:src" content="{{ site.baseurl }}/{{ site.picture.source }}/{{ page.secondary.image }}">
     {% else %}
     {% endif %}
 
