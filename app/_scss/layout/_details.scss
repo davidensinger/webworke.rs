@@ -161,7 +161,12 @@
 
     // navigation arrows text
     .entryMeta-navigation--link__text {
-      @include rem(padding, $quarter-spacing-unit $half-spacing-unit $quarter-spacing-unit 0);
+      @include rem(padding, $quarter-spacing-unit $half-spacing-unit $eighth-spacing-unit 0);
+    }
+
+    // navigation arrows arrow
+    .entryMeta-navigation--link__arrow {
+      @include rem(padding, $quarter-spacing-unit $sixteenth-spacing-unit $eighth-spacing-unit $quarter-spacing-unit);
     }
 
     &:hover,
@@ -179,12 +184,13 @@
 
     // navigation arrows text
     .entryMeta-navigation--link__text {
-      @include rem(padding, $quarter-spacing-unit 0 $quarter-spacing-unit $half-spacing-unit);
+      @include rem(padding, $quarter-spacing-unit 0 $eighth-spacing-unit $half-spacing-unit);
     }
 
     // navigation arrows arrow
     .entryMeta-navigation--link__arrow {
       float: right;
+      @include rem(padding, $quarter-spacing-unit $quarter-spacing-unit $eighth-spacing-unit $sixteenth-spacing-unit);
     }
 
     &:hover,
@@ -210,7 +216,6 @@
 .entryMeta-navigation--link__arrow {
   z-index: 2; // needs to be above .entryMeta-navigation--link__text
   background-color: $white;
-  @include rem(padding, $quarter-spacing-unit);
   pointer-events: auto;
 }
 
