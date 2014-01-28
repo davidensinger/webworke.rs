@@ -331,17 +331,6 @@ module.exports = function (grunt) {
         '!<%= yeoman.app %>/scripts/_vendor/**/*'
       ]
     },
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>/styles/**/*.css',
-          '<%= yeoman.app %>/_scss/**/*.scss'
-        ]
-      }
-    },
     modernizr: {
       devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
       outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
@@ -389,9 +378,7 @@ module.exports = function (grunt) {
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'sass:server',
-    'jshint:all',
-    'csslint:check'
+    'jshint:all'
   ]);
 
   grunt.registerTask('build', [
