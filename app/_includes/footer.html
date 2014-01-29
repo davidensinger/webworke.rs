@@ -1,6 +1,6 @@
       </main> <!-- #main .siteMain .siteScaffolding -->
 
-      <footer id="colophon" class="siteFooter" role="contentinfo">
+      <footer id="colophon" class="siteFooter siteScaffolding" role="contentinfo">
         <div class="siteInfo text-center clearfix">
 
           <nav id="colophonNavigation" class="footerNavigation" role="navigation">
@@ -15,7 +15,7 @@
                 <a class="navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
               </li>
             </ul>
-          </nav><!-- #colophonNavigation  .footerNavigation -->
+          </nav> <!-- #colophonNavigation  .footerNavigation -->
 
           <ul class="siteFooter-icons--list list-inline">
             <li class="siteFooter-icons--item">
@@ -50,12 +50,13 @@
             </li>
           </ul> <!-- .siteFooter-icons--list -->
 
-          <small class="siteFooter-copyright">
-            &copy; {{ site.time | date: "%Y" }} <a href="{{ site.baseurl }}" class="siteFooter-copyright--link">{{ site.title }}</a>. All rights reserved.
-          </small>
+
+          <a href="{{ site.baseurl }}" title="Return to homepage" class="siteFooter-tagline--link">
+            {% include siteFooter-tagline.svg %}
+          </a> <!-- .siteFooter-tagline--link -->
 
         </div> <!-- .siteInfo -->
-      </footer> <!-- #colophon .siteFooter -->
+      </footer> <!-- #colophon .siteFooter .siteScaffolding -->
 
     </div> <!-- #page .site-container -->
 
