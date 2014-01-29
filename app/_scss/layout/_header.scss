@@ -105,6 +105,13 @@
   display: block;
   line-height: 0;
 
+  &:hover {
+
+    .siteLogo-ohio {
+      fill: $black-light;
+    }
+  }
+
   &:active {
     @extend %link-active--depressed;
   }
@@ -122,6 +129,15 @@
 
 .siteLogo-fill {
   fill: $black-light;
+}
+
+.siteLogo-ohio {
+  fill: $white-darkest;
+  transition: fill 0.3s;
+}
+
+.siteLogo-fill--inverse {
+  fill: $white;
 }
 
 .siteLogo-stroke {
