@@ -1,4 +1,4 @@
-# Webworke.rs [![devDependency Status](https://david-dm.org/davidensinger/webworke.rs/dev-status.png)](https://david-dm.org/davidensinger/webworke.rs#info=devDependencies)
+# Webworke.rs
 **Life and Craft in Columbus, Ohio**
 
 Webworke.rs runs on [Jekyll](http://jekyllrb.com/), a blog-aware, static site generator in Ruby, with some help from [Grunt](http://gruntjs.com/), the JavaScript Task Runner.
@@ -34,7 +34,7 @@ Run the following commands to install the dependencies:
 
 ## Grunt Workflow
 - `grunt serve`: Compiles all files and opens the site in your default browser. A watch task watches for changes to files, recompiles if necessary, and injects the changes into the browser with LiveReload
-- `grunt check`: Checks code quality with Jshint, CSS Lint and CSSCSS, and Jekyll health with `jekyll doctor`
+- `grunt check`: Checks Javascript code quality with JSHint and Jekyll health with `jekyll doctor`
 - `grunt build`: Builds an optimized site to the dist directory.
 
 ## Hat Tip
