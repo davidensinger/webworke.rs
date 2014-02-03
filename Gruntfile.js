@@ -19,6 +19,14 @@ module.exports = function (grunt) {
       app: 'app',
       dist: 'dist'
     },
+    devUpdate: {
+      check: {
+        options: {
+          reportUpdated: false,
+          updateType: 'report'
+        }
+      }
+    },
     watch: {
       sass: {
         files: ['<%= yeoman.app %>/_scss/**/*.scss'],
@@ -384,6 +392,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('check', [
+    'devUpdate',
     'clean:server',
     'jekyll:check',
     'jshint:all'
