@@ -6,13 +6,13 @@
 
 title: Webworke.rs
 baseurl: http://127.0.0.1:9000
-tagline: Life and Craft in Columbus, Ohio
+tagline: Life and Craft in Columbus, OH
 description: This is the site description
 twitter: Webwrkrs
 facebook: https://www.facebook.com/webworkers
 tumblr: http://webwrkrs.tumblr.com
 feed: /feed.xml
-newsletter: http://path/to/newsletter
+newsletter: http://eepurl.com/NGW5j
 analytics: UA-26697016-1
 
 author:
