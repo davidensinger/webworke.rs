@@ -57,34 +57,35 @@
 
   &:hover,
   &:focus {
-    .siteFooter-icons--svg {
+    .social-icons--svg {
       transform: scale(1.1);
     }
   }
   &:hover {
-    .siteFooter-icons--svg__path {
+    .social-icons--svg__path {
       fill: $black;
     }
   }
   &:focus {
     background-color: transparent !important; // override default :focus styles in _base.scss
-    .siteFooter-icons--svg__path {
+    .social-icons--svg__path {
       fill: $focus;
     }
   }
-}
 
-.siteFooter-icons--svg {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s;
-}
+  // _includes/social-icons/
+  .social-icons--svg {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+  }
 
-.siteFooter-icons--svg__path {
-  fill-rule: evenodd;
-  fill: $black-light;
-  transition: fill 0.2s;
+  .social-icons--svg__path {
+    fill-rule: evenodd;
+    fill: $black-light;
+    transition: fill 0.2s;
+  }
 }
 
 
