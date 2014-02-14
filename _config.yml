@@ -8,11 +8,16 @@ title: Webworke.rs
 baseurl: http://127.0.0.1:9000
 tagline: Life and Craft in Columbus, OH
 description: Webworke.rs is a website about folks who make websites in Columbus, OH.
-twitter: Webworkers614
+analytics: UA-26697016-1
+
+# social
 facebook: https://www.facebook.com/Webworkers614
 feed: /feed.xml
+googleplus: what
+linkedin: huh
 newsletter: http://eepurl.com/NGW5j
-analytics: UA-26697016-1
+tumblr: http://webworkers614.tumblr.com
+twitter: Webworkers614
 
 author:
   name: David Ensinger

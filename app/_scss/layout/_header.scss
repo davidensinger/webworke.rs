@@ -105,7 +105,8 @@
   display: block;
   line-height: 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
 
     .siteLogo-ohio {
       fill: $black-light;

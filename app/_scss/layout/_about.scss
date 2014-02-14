@@ -1,0 +1,62 @@
+// ==========================================================================
+//
+//  About
+//  See about.html
+//
+// ==========================================================================
+
+.about-list--title {
+  @extend %epsilon;
+  border-bottom: 2px solid;
+}
+
+.about-list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.about-list--item {
+  @include rem(margin-bottom, $eighth-spacing-unit);
+}
+
+.about-icons--link {
+  display: inline-block;
+  border-bottom: 0 !important; // override default border-bottom in _details.scss
+
+  &:hover,
+  &:focus {
+    .social-icons--svg {
+      transform: scale(1.2);
+    }
+  }
+  &:hover {
+    .social-icons--svg__path {
+      fill: $black;
+    }
+    .about-icons--title {
+      border-bottom: 1px solid;
+    }
+  }
+
+  // _includes/social-icons/
+  .social-icons--svg {
+    display: inline-block;
+    vertical-align: middle;
+    @include rem(margin, 0 $eighth-spacing-unit 0 0);
+    @include rem(height, $half-spacing-unit);
+    @include rem(width, $half-spacing-unit);
+    transition: transform 0.3s;
+  }
+
+  .social-icons--svg__path {
+    fill-rule: evenodd;
+    fill: $black-light;
+    transition: fill 0.2s;
+  }
+}
+
+.about-icons--title {
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid transparent;
+}
