@@ -1,7 +1,7 @@
 # Webworke.rs
 **Life and Craft in Columbus, Ohio**
 
-Webworke.rs runs on [Jekyll](http://jekyllrb.com/), a blog-aware, static site generator in Ruby, with some help from [Grunt](http://gruntjs.com/), the JavaScript Task Runner.
+Webworke.rs runs on [Jekyll](http://jekyllrb.com/), a blog-aware, static site generator, with some help from [Grunt](http://gruntjs.com/).
 
 ## The Stack
 - [Node.js](http://nodejs.org/) and [NPM](https://npmjs.org/): Required for Grunt and Bower
@@ -38,4 +38,4 @@ Run the following commands to install the dependencies:
 - `grunt build`: Builds an optimized site to the dist directory.
 
 ## Hat Tip
-This site was scaffolded by [Yeoman](http://yeoman.io/) and [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb), the latter being a project of [@robwierzbowski](https://github.com/robwierzbowski). I’ve subsequently customized the organization of the site to my liking, but I still keep an eye on [@robwierzbowski’s](https://github.com/robwierzbowski) commits and update accordingly.
+The site was scaffolded by [Yeoman](http://yeoman.io/) and [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb), the latter being a project of [@robwierzbowski](https://github.com/robwierzbowski). Learn more about the site by reading the [Colophon](http://webworke.rs/colophon/).
