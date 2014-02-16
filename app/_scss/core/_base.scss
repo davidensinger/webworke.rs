@@ -69,8 +69,7 @@ button,
 input,
 select,
 textarea {
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
+  @extend %font-vollkorn--regular;
   line-height: $line-height-ratio;
   color: $black-light;
 }
@@ -140,6 +139,10 @@ ol {
 .lede {
   @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
   @extend %font-industry--medium;
+
+  strong {
+    @extend %font-industry--demi;
+  }
 }
 
 .lede-location {
@@ -257,14 +260,22 @@ a {
 b,
 strong,
 th {
-  font-weight: $base-font-weight-bold;
+  @extend %font-vollkorn--semibold;
+
+  em {
+    @extend %font-vollkorn--semibold__italic;
+  }
 }
 
 // Font styles
 cite,
 em,
 i {
-  font-style: italic;
+  @extend %font-vollkorn--regular__italic;
+
+  strong {
+    @extend %font-vollkorn--semibold__italic;
+  }
 }
 
 // Corrects font family set oddly in IE6, S4/5, Chrome

@@ -12,7 +12,7 @@
 
 .browseHappy-container {
   padding: 12px 12px 16px;
-  font-weight: $base-font-weight-bold;
+  @extend %font-vollkorn--semibold;
   background-color: $yellow;
 }
 

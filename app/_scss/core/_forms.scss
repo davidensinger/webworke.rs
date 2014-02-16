@@ -98,7 +98,7 @@ input {
   display: inline-block;
   @include rem(padding, $half-spacing-unit);
   text-transform: uppercase;
-  font-weight: $base-font-weight;
+  @extend %font-vollkorn--regular;
   border-radius: 0;
   border: 0;
   cursor: pointer;
