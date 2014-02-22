@@ -9,33 +9,43 @@ sitemap:
   changefreq: monthly
 ---
 
-<p class="lede"><strong>Webworke.rs</strong> runs on <a href="http://jekyllrb.com/">Jekyll</a>, a blog-aware, static site generator, with some help from <a href="http://gruntjs.com/">Grunt</a>. The site was scaffolded by <a href="http://yeoman.io/">Yeoman</a> and <a href="https://github.com/robwierzbowski/generator-jekyllrb">generator-jekyllrb</a>, the latter being a project of <a href="https://github.com/robwierzbowski">@robwierzbowski</a>. Changes have since been made to the scaffolding of the site, but I still check in on the original project to stay up-to-date on the commits.</p>
+<p class="lede"><strong>Webworke.rs</strong> runs on <a href="http://jekyllrb.com/">Jekyll</a>, with a lot of help from <a href="http://gruntjs.com/">Grunt</a>. The site was scaffolded by <a href="http://yeoman.io/">Yeoman</a> and <a href="https://github.com/robwierzbowski/generator-jekyllrb">generator-jekyllrb</a>, the latter being a project of <a href="https://github.com/robwierzbowski">@robwierzbowski</a>. Changes have since been made to the organization of the site, but an effort is made to stay up-to-date with Rob’s commits on the original project.</p>
 <h2>Grunt Dependencies</h2>
-<p>By default there are more than two dozen dependencies installed with <strong>generator-jekyllrb</strong>, but these are the most noteworthy ones, as well as a couple that I’ve a:</p>
+<p>There are more than two dozen dependencies installed by generator-jekyllrb, as well as additional ones that I’ve added to the project. Here are the ones that are most notable (to me):</p>
 <ul>
-  <li><a href="https://github.com/dannygarcia/grunt-jekyll/">grunt-jekyll</a> by <a href="https://github.com/dannygarcia/">@dannygarcia</a>.</li>
-  <li><a href="https://github.com/nDmitry/grunt-autoprefixer">grunt-autoprefixer</a> by <a href="https://github.com/nDmitry/">@nDmitry</a> based off <a href="https://github.com/ai/autoprefixer">Autoprefixer</a> by <a href="https://github.com/ai/">@ai</a></li>
-  <li><a href="https://github.com/JamieMason/grunt-imageoptim">grunt-imageoptim</a> by <a href="https://github.com/JamieMason/">@JamieMason</a> based off <a href="http://imageoptim.com/">ImageOptim</a>, <a href="http://pngmini.com/">ImageAlpha</a>, <a href="http://www.jpegmini.com/">JPEGmini</a>, the two former by <a href="https://github.com/pornel/">@pornel</a>.</li>
+  <li><a href="https://github.com/nDmitry/grunt-autoprefixer">grunt-autoprefixer</a>, which is based off <a href="https://github.com/ai/autoprefixer">Autoprefixer</a> and ensures that I never worry about browser prefixes again</li>
+  <li><a href="https://github.com/sindresorhus/grunt-concurrent">grunt-concurrent</a> to run Grunt tasks (you guessed it) concurrently, which really speeds up the build</li>
+  <li><a href="https://github.com/gruntjs/grunt-contrib-watch">grunt-contrib-watch</a> to run tasks whenever files change, plus support for <a href="http://livereload.com/">Livereload</a> through <a href="https://github.com/gruntjs/grunt-contrib-connect/">grunt-contrib-connect</a></li>
+  <li><a href="https://github.com/pgilad/grunt-dev-update">grunt-dev-update</a> to automatically determine if a dependency is out-of-date</li>
+  <li><a href="https://github.com/JamieMason/grunt-imageoptim">grunt-imageoptim</a>, which uses <a href="http://imageoptim.com/">ImageOptim</a>, <a href="http://pngmini.com/">ImageAlpha</a>, and <a href="http://www.jpegmini.com/">JPEGmini</a> for even better optimized files than <a href="https://github.com/gruntjs/grunt-contrib-imagemin">grunt-contrib-imagemin</a></li>
+  <li><a href="https://github.com/dannygarcia/grunt-jekyll/">grunt-jekyll</a>, without which this site would be built in a wholly different way</li>
+  <li><a href="https://github.com/yeoman/grunt-usemin">grunt-usemin</a> to concatenate styles and scripts in preparation for being minified, uglified, and revved.</li>
 </ul>
 <h2>Jekyll Plugins</h2>
+<p>The site uses a couple of plugins, which are follows:</p>
 <ul>
-  <li><a href="https://github.com/robwierzbowski/jekyll-picture-tag">jekyll-picture-tag</a> by <a href="https://github.com/robwierzbowski/">@robwierzbowski</a> and based off <a href="https://github.com/scottjehl/picturefill">Picturefill</a> by <a href="https://github.com/scottjehl/">@scottjehl</a>.</li>
-  <li><a href="http://realjenius.com/2012/12/01/jekyll-category-tag-paging-feeds/">Category and Tag Paging and Feeds</a> by <a href="https://github.com/realjenius">@realjenius</a>.</li>
+  <li><a href="https://github.com/robwierzbowski/jekyll-picture-tag">jekyll-picture-tag</a> to easily add responsive images via the proposed picture element, which is based off the <a href="https://github.com/scottjehl/picturefill">Picturefill</a> polyfill</li>
+  <li><a href="http://realjenius.com/2012/12/01/jekyll-category-tag-paging-feeds/">Category and Tag Paging and Feeds</a> to provide just that, a page and feed for each category.</li>
 </ul>
 <h2>Front End Dependencies</h2>
-<p><a href="http://bower.io/">Bower</a>, “A package manager for the web.”</p>
+<p>There are a couple additional dependencies that are managed with <a href="http://bower.io/">Bower</a>:</p>
 <ul>
-  <li><a href="https://github.com/paulirish/matchMedia.js">matchMedia.js</a> by <a href="https://github.com/paulirish/">@paulirish</a></li>
-  <li><a href="http://craig.is/killing/mice">Mousetrap</a> by <a href="https://github.com/ccampbell/">@ccampbell</a></li>
-  <li><a href="https://github.com/scottjehl/picturefill">Picturefill</a> by <a href="https://github.com/scottjehl/">@scottjehl</a></li>
+  <li><a href="https://github.com/paulirish/matchMedia.js">matchMedia.js</a>, a polyfill for testing media queries, which is used in concert with Picturefill</li>
+  <li><a href="https://github.com/scottjehl/picturefill">Picturefill</a> an approach for responsive images that mimics the proposed picture element.</li>
 </ul>
 <h2>Styles</h2>
-<p><a href="http://sass-lang.com/">Sass</a> most recently by <a href="https://github.com/nex3">@nex3</a> and <a href="https://github.com/chriseppstein">@chriseppstein</a></p>
+<p>The CSS is written in <a href="http://sass-lang.com/">Sass</a> and great inspiration is taken from the following projects:</p>
 <ul>
-  <li><a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a> by <a href="https://github.com/necolas/">@necolas</a></li>
-  <li><a href="https://github.com/csswizardry/inuit.css">inuit.css</a> by <a href="https://github.com/csswizardry/">@csswizardry</a></li>
-  <li><a href="https://github.com/HugoGiraudel/KNACSS-Sass">KNACSS-Sass</a> a port of <a href="https://github.com/RaphaelGoetter">@RaphaelGoetter's</a> KNACSS framework by <a href="https://github.com/HugoGiraudel/">@HugoGiraudel</a></li>
-  <li><a href="http://mvcss.github.io">MVCSS</a> by <a href="https://github.com/nickawalsh">@nickawalsh</a> and <a href="https://github.com/drewbarontini">@drewbarontini</a></li>
+  <li><a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a></li>
+  <li><a href="https://github.com/csswizardry/inuit.css">inuit.css</a></li>
+  <li><a href="https://github.com/HugoGiraudel/KNACSS-Sass">KNACSS-Sass</a>, a port of the <a href="https://github.com/raphaelgoetter/KNACSS">KNACSS framework</a></li>
+  <li><a href="http://mvcss.github.io">MVCSS</a>.</li>
 </ul>
-Typography:
-Fonts http://holdfastfoundry.com/shop/industry/, http://vollkorn-typeface.com/
+<h2>Typography</h2>
+<p>The type is set in two typefaces:</p>
+<ul>
+  <li><a href="http://holdfastfoundry.com/shop/industry/">Industry</a> is used for the headings and logotype</li>
+  <li><a href="http://vollkorn-typeface.com/">Vollkorn</a> is used for body type.</li>
+</ul>
+<h2>Hosting</h2>
+<p>The site is hosted by <a href="http://pages.github.com/">GitHub Pages</a>. You can find the source in the site’s <a href="https://github.com/davidensinger/webworke.rs">repository</a>. Please feel free to file an issue, submit a pull request, or fork the project, which has the MIT license.</p>
