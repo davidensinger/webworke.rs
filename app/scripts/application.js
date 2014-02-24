@@ -1,9 +1,6 @@
-/* global Mousetrap, keyboardNavigation, smoothScrollTo */
+/* global smoothScrollTo */
 
-// Keyboard navigation, courtesy of Mousetrap.js (http://craig.is/killing/mice)
-Mousetrap.bind('left', keyboardNavigation.bind(null, 'previous'));
-Mousetrap.bind('right', keyboardNavigation.bind(null, 'next'));
-
+// Keyboard navigation
 function keyboardNavigation(ID) {
   var element = document.getElementById('js-navigation--' + ID);
   if (element) {
@@ -13,6 +10,20 @@ function keyboardNavigation(ID) {
     return false;
   }
 }
+
+document.onkeydown = function(e) {
+  e = e || window.event;
+  switch(e.which || e.keyCode) {
+    case 37: // left
+      keyboardNavigation('previous');
+      break;
+    case 39: // right
+      keyboardNavigation('next');
+      break;
+    default: return;
+  }
+  e.preventDefault();
+};
 
 // Smooth Scroll To for ↑ Back to top link
 document.getElementById('js-backToTop').onclick = function(){
