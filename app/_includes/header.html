@@ -65,7 +65,7 @@
     <meta name="msapplication-wide310x150logo" content="/favicon-558x270-ie11.png"/>
     <meta name="msapplication-square310x310logo" content="/favicon-558x558-ie11.png"/>
 
-    <link rel="shortcut icon" href="/favicon.ico" >
+    <link rel="shortcut icon" href="/favicon.ico">
 
     {% if page.secondary %}
       <meta content="article" property="og:type">
@@ -93,6 +93,8 @@
     <meta content="{{ site.title }}" property="og:site_name">
     <meta content="@{{ site.twitter }}" name="twitter:site">
     <meta content="@{{ site.author.twitter }}" name="twitter:creator">
+
+    <link rel="publisher" href="https://plus.google.com/{{ site.googleplus }}">
 
     {% if page.page-class == "page-home" %}
       <meta content="{{ site.baseurl }}" property="og:url">
