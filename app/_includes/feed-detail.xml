@@ -2,7 +2,15 @@
   <title type="text">{{ post.title | xml_escape }}</title>
   <link rel="alternate" type="text/html" href="{{ site.baseurl }}{{ post.url }}" />
   <id>{{ site.baseurl }}{{ post.id }}</id>
-  <published>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</published>
-  <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
-  <content type="html"><![CDATA[ {{ post.content }} ]]></content>
+  <published>{{ post.date | date_to_xmlschema }}</published>
+  <updated>{{ post.date | date_to_xmlschema }}</updated>
+  {% if post.categories != empty %}
+    {% for category in post.categories %}
+      <category term="{{ category | replace:' ','-' }}" label="{{ category | titlecase }}"/>
+    {% endfor %}
+  {% endif %}
+  {% if post.secondary.description %}
+    <summary type="html"><![CDATA[ {{ post.secondary.description }} ]]></summary>
+  {% endif %}
+  <content type="html"><![CDATA[ {{ post.content }} {% include feed-footer.html %} ]]></content>
 </entry>
