@@ -315,6 +315,16 @@ module.exports = function (grunt) {
         }]
       }
     },
+    buildcontrol: {
+      dist: {
+        options: {
+          remote: 'git@github.com:davidensinger/webworke.rs.git',
+          branch: 'gh-pages',
+          commit: true,
+          push: true
+        }
+      }
+    },
     filerev: {
       options: {
         length: 4
@@ -401,6 +411,11 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'xmlmin'
+    ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    'buildcontrol'
     ]);
 
   grunt.registerTask('default', [
