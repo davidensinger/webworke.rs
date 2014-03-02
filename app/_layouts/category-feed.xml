@@ -1,6 +1,12 @@
 ---
 layout: feed
 ---
-{% for post in page.posts offset:1 limit:10 %}
-  {% include feed-detail.xml %}
-{% endfor %}
+{% if page.posts > 1 %}
+  {% for post in page.posts offset:1 limit:10 %}
+    {% include feed-detail.xml %}
+  {% endfor %}
+{% else %}
+  {% for post in page.posts limit:10 %}
+    {% include feed-detail.xml %}
+  {% endfor %}
+{% endif %}
