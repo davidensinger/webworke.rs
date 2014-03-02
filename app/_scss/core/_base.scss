@@ -152,6 +152,11 @@ ol {
 .question {
   margin-bottom: 0;
   @extend %font-industry--demi__italic;
+
+  strong { // this seems counter-intuitive, but it’s to ensure feed readers emphasis the question text
+    font-family: inherit;
+    font-weight: normal;
+  }
 }
 
 .text-left {
@@ -399,7 +404,6 @@ q {
 .aside-text {
   width: 25%;
   @extend %font-industry--medium__italic;
-  @extend small;
   color: $black-lightest;
 
   &:before {
