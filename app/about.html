@@ -17,12 +17,6 @@ sitemap:
     <h3 class="about-list--title">Stay Current</h3>
     <ul class="about-list">
       <li class="about-list--item">
-        <a class="about-icons--link icon-twitter--link" href="http://twitter.com/{{ site.twitter }}">
-          {% include social-icons/twitter.svg %}
-          <span class="about-icons--title">Twitter</span>
-        </a>
-      </li>
-      <li class="about-list--item">
         <a class="about-icons--link icon-facebook--link" href="{{ site.facebook }}">
           {% include social-icons/facebook.svg %}
           <span class="about-icons--title">Facebook</span>
@@ -31,13 +25,13 @@ sitemap:
       <li class="about-list--item">
         <a class="about-icons--link icon-feed--link" href="{{ site.baseurl }}{{ site.feed }}">
           {% include social-icons/feed.svg %}
-          <span class="about-icons--title">RSS Feed</span>
+          <span class="about-icons--title">Feed</span>
         </a>
       </li>
       <li class="about-list--item">
-        <a class="about-icons--link icon-newsletter--link" href="{{ site.newsletter }}">
-          {% include social-icons/newsletter.svg %}
-          <span class="about-icons--title">Newsletter</span>
+        <a class="about-icons--link icon-github--link" href="{{ site.github }}">
+          {% include social-icons/github.svg %}
+          <span class="about-icons--title">GitHub</span>
         </a>
       </li>
       <li class="about-list--item">
@@ -53,9 +47,21 @@ sitemap:
         </a>
       </li>
       <li class="about-list--item">
-        <a class="about-icons--link icon-github--link" href="{{ site.github }}">
-          {% include social-icons/github.svg %}
-          <span class="about-icons--title">GitHub</span>
+        <a class="about-icons--link icon-newsletter--link" href="{{ site.newsletter }}">
+          {% include social-icons/newsletter.svg %}
+          <span class="about-icons--title">Newsletter</span>
+        </a>
+      </li>
+      <li class="about-list--item">
+        <a class="about-icons--link icon-tumblr--link" href="{{ site.tumblr }}">
+          {% include social-icons/tumblr.svg %}
+          <span class="about-icons--title">Tumblr</span>
+        </a>
+      </li>
+      <li class="about-list--item">
+        <a class="about-icons--link icon-twitter--link" href="http://twitter.com/{{ site.twitter }}">
+          {% include social-icons/twitter.svg %}
+          <span class="about-icons--title">Twitter</span>
         </a>
       </li>
     </ul> <!-- .about-icons--list -->
