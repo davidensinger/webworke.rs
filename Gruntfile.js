@@ -203,21 +203,6 @@ module.exports = function (grunt) {
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/styles/**/*.css']
     },
-    htmlmin: {
-      dist: {
-        options: {
-          removeComments: true,
-          collapseWhitespace: true,
-          removeRedundantAttributes: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.html',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
     // Usemin adds files to concat
     concat: {},
     // Usemin adds files to uglify
@@ -408,7 +393,6 @@ module.exports = function (grunt) {
     'svgmin',
     'filerev',
     'usemin',
-    'htmlmin',
     'xmlmin'
     ]);
 
