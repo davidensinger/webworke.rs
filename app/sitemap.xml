@@ -13,7 +13,7 @@ layout: none
     <url>
       <loc>{{ site.baseurl }}{{ post.url }}</loc>
       {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+        <lastmod>{{ post.sitemap.lastmod | date: '%Y-%m-%d' }}</lastmod>
       {% elsif post.date %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
@@ -32,25 +32,27 @@ layout: none
     </url>
   {% endfor %}
   {% for page in site.pages %}
-  <url>
-    <loc>{{ site.baseurl }}{{ page.url }}</loc>
-    {% if page.sitemap.lastmod %}
-      <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-    {% elsif page.date %}
-      <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-    {% else %}
-      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    {% endif %}
-    {% if page.sitemap.changefreq %}
-      <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-    {% else %}
-      <changefreq>monthly</changefreq>
-    {% endif %}
-    {% if page.sitemap.priority %}
-      <priority>{{ page.sitemap.priority }}</priority>
-    {% else %}
-      <priority>0.3</priority>
-    {% endif %}
-  </url>
+    {% unless page.layout == 'feed' or page.layout == 'none' or page.sitemap.exclude == 'yes' %}
+    <url>
+      <loc>{{ site.baseurl }}{{ page.url | remove: 'index.html' }}</loc>
+      {% if page.sitemap.lastmod %}
+        <lastmod>{{ page.sitemap.lastmod | date: '%Y-%m-%d' }}</lastmod>
+      {% elsif page.date %}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if page.sitemap.changefreq %}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if page.sitemap.priority %}
+        <priority>{{ page.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.3</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
   {% endfor %}
 </urlset>
