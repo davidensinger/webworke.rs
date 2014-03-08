@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "matchmedia": "~0.1.0",
+    "modernizr": "~2.7.2",
     "picturefill": "~1.2.1"
   },
   "devDependencies": {

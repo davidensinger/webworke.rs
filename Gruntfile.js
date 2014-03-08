@@ -335,6 +335,20 @@ module.exports = function (grunt) {
         '!<%= yeoman.app %>/scripts/_vendor/**/*'
       ]
     },
+    modernizr: {
+      dist: {
+        devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
+        outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
+        uglify: true,
+        files: {
+          src: [
+            '<%= yeoman.dist %>/scripts/{,*/}*.js',
+            '<%= yeoman.dist %>/styles/{,*/}*.css',
+            '!<%= yeoman.dist %>/scripts/vendor/*'
+          ]
+        }
+      }
+    },
     concurrent: {
       server: [
         'sass:server',
@@ -389,6 +403,7 @@ module.exports = function (grunt) {
     'uglify',
     'imageoptim',
     'svgmin',
+    'modernizr',
     'filerev',
     'usemin',
     'xmlmin'
