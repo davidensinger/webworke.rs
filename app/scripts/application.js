@@ -1,5 +1,3 @@
-/* global smoothScrollTo */
-
 // Keyboard navigation
 function keyboardNavigation(ID) {
   var element = document.getElementById('js-navigation--' + ID);
@@ -25,7 +23,3 @@ document.onkeydown = function(e) {
   e.preventDefault();
 };
 
-// Smooth Scroll To for ↑ Back to top link
-document.getElementById('js-backToTop').onclick = function(){
-  smoothScrollTo(document.getElementById('top').offsetTop);
-};
