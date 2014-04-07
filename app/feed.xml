@@ -1,5 +1,7 @@
 ---
 layout: feed
+sitemap:
+  exclude: 'yes'
 ---
 {% if site.posts > 1 %}
   {% for post in site.posts offset:1 limit:10 %}
