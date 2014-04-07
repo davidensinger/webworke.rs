@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "matchmedia": "~0.1.0",
+    "matchmedia": "~0.2.0",
     "modernizr": "~2.7.2",
     "picturefill": "~1.2.1"
   },
