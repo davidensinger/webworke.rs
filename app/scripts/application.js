@@ -27,3 +27,37 @@ document.onkeydown = function(e) {
 
 // Smooth Scroll
 smoothScroll.init();
+
+// Responsive footnotes
+var responsiveFootnotes = (function () {
+  var s; // private alias to settings
+
+  return {
+    settings: {
+      asideMarkers: document.getElementsByClassName('aside-marker'),
+      footnotes: document.getElementById('js-footnotes')
+    },
+
+    init: function() {
+      s = this.settings;
+      this.createAsides();
+    },
+
+    createAsides: function() {
+      var markerArray = s.asideMarkers;
+      var footnoteArray = s.footnotes.children;
+
+      if (footnoteArray.length === markerArray.length) {
+        for (var i = 0, n = markerArray.length; i < n; i++) {
+          var child = footnoteArray[i];
+
+          markerArray[i].insertAdjacentHTML('afterend', child.innerHTML);
+        }
+      }
+    }
+  };
+})();
+
+document.addEventListener('DOMContentLoaded', function(){
+  responsiveFootnotes.init();
+});

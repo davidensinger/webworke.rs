@@ -393,22 +393,10 @@ q {
 }
 
 // asides
-.aside {
-  &:after {
-    @extend sup;
-    counter-increment: aside;
-    content: counter(aside);
-  }
-}
-
-.aside-text {
+%aside-text {
   width: 25%;
   @extend %font-industry--medium__italic;
   color: $black-lightest;
-
-  &:before {
-    content: counter(aside)"\002E\00A0"; // #.&nbsp;
-  }
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
@@ -416,28 +404,100 @@ q {
   }
 }
 
-.aside-right {
-  float: right;
-  @include rem(margin, $base-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
-}
+.aside-marker {
+  @extend %font-industry--bold;
+  &:before {
+    content: '\005B';
+  }
+  &:after {
+    content: '\005D';
+  }
 
-.aside-left {
-  float: left;
-  @include rem(margin, $base-spacing-unit $base-spacing-unit $base-spacing-unit 0);
-}
+  .js & {
+    display: none; // initially hide, but only when there’s JS
 
-// Remove float and center image on small mobile
-.aside-right,
-.aside-left {
+    // since the markup is copied from the .footnotes li, apply styles only when immediately after .aside-marker
+    &+.aside-left {
+      @extend %aside-text;
+      float: right;
+      @include rem(margin, $base-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
+    }
 
-  // start breakpoints
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    display: block;
-    float: none;
-    @include rem(margin, $base-spacing-unit auto);
+    &+.aside-right {
+      @extend %aside-text;
+      float: left;
+      @include rem(margin, $base-spacing-unit $base-spacing-unit $base-spacing-unit 0);
+    }
+
+    &+.aside-left,
+    &+.aside-right {
+
+      // start breakpoints
+      @include breakpoint(all-mobile) {
+        display: none; // Hide copied asides on mobile
+      }
+    }
+
+    // start breakpoints
+    @include breakpoint(all-mobile) { // and then display .aside-marker
+      display: inline;
+    }
   }
 }
 
+.aside-marker--link {
+  @include rem(padding, 0 $eighth-spacing-unit);
+
+  .entryContent & { // for the sake of being more specific :(
+    border-bottom: none;
+    transition: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// at the bottom of the post
+.footnotes {
+  @extend %font-industry--medium;
+  color: $black-lightest;
+
+  .js & {
+    display: none; // initially hide, but only when there’s JS
+
+    // start breakpoints
+    @include breakpoint(all-mobile) {
+      display: block;
+    }
+  }
+}
+
+.footnotes-item {
+  @include rem(margin-bottom, $base-spacing-unit);
+}
+
+.footnotes-link {
+
+  .entryContent & { // for the sake of being more specific :(
+
+    .js & {
+      display: none; // initially hide, but only when there’s JS
+      border-bottom: none;
+      transition: color 0.3s;
+
+      &:hover,
+      &:focus {
+        color: $black-light;
+      }
+
+      // start breakpoints
+      @include breakpoint(all-mobile) { // and then display .footnotes-link
+        display: inline;
+      }
+    }
+  }
+}
 
 // Address inconsistent and variable font size in all browsers.
 small {
@@ -448,7 +508,6 @@ small {
 // gist.github.com/413930
 sub,
 sup {
-  font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
