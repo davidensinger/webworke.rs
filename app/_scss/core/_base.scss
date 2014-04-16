@@ -393,7 +393,7 @@ q {
 }
 
 // asides
-%aside-text {
+.aside {
   width: 25%;
   @extend %font-industry--medium__italic;
   color: $black-lightest;
@@ -418,23 +418,28 @@ q {
 
     // since the markup is copied from the .footnotes li, apply styles only when immediately after .aside-marker
     &+.aside-left {
-      @extend %aside-text;
       float: right;
       @include rem(margin, $base-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
     }
 
     &+.aside-right {
-      @extend %aside-text;
       float: left;
       @include rem(margin, $base-spacing-unit $base-spacing-unit $base-spacing-unit 0);
     }
 
-    &+.aside-left,
-    &+.aside-right {
+    &+.aside {
 
       // start breakpoints
       @include breakpoint(all-mobile) {
         display: none; // Hide copied asides on mobile
+      }
+
+      &+.footnotes-link--wrapper {
+
+       // start breakpoints
+       @include breakpoint(all-mobile) {
+         display: none; // Hide copied footnotes link arrow ↑
+       }
       }
     }
 
@@ -477,6 +482,9 @@ q {
   @include rem(margin-bottom, $base-spacing-unit);
 }
 
+.footnotes-link--wrapper {
+
+}
 .footnotes-link {
 
   .entryContent & { // for the sake of being more specific :(
