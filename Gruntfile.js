@@ -30,11 +30,11 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: ['<%= yeoman.app %>/_scss/**/*.scss'],
-        tasks: ['sass:server', 'autoprefixer:server']
+        tasks: ['sass:server', 'autoprefixer:dist']
       },
       autoprefixer: {
         files: ['<%= yeoman.app %>/styles/**/*.css'],
-        tasks: ['copy:stageCss', 'autoprefixer:server']
+        tasks: ['copy:stageCss', 'autoprefixer:dist']
       },
       jekyll: {
         files: [
@@ -151,20 +151,10 @@ module.exports = function (grunt) {
         ]
       },
       dist: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/concat/styles',
-          src: '**/*.css',
-          dest: '.tmp/concat/styles'
-        }]
-      },
-      server: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/styles',
-          src: '**/*.css',
-          dest: '.tmp/styles'
-        }]
+        expand: true,
+        cwd: '.tmp',
+        src: '**/{styles,concat}/*.css',
+        dest: '.tmp'
       }
     },
     jekyll: {
@@ -387,7 +377,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'concurrent:server',
-      'autoprefixer:server',
+      'autoprefixer:dist',
       'connect:livereload',
       'watch'
     ]);
@@ -417,9 +407,9 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
+    'modernizr',
     'imageoptim',
     'svgmin',
-    'modernizr',
     'filerev',
     'usemin',
     'htmlmin',
