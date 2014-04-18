@@ -25,7 +25,7 @@ document.onkeydown = function(e) {
   e.preventDefault();
 };
 
-// Smooth Scroll
+// Smooth scroll
 smoothScroll.init();
 
 // Responsive footnotes
@@ -44,14 +44,19 @@ var responsiveFootnotes = (function () {
     },
 
     createAsides: function() {
-      var markerArray = s.asideMarkers;
-      var footnoteArray = s.footnotes.children;
 
-      if (footnoteArray.length === markerArray.length) {
-        for (var i = 0, n = markerArray.length; i < n; i++) {
-          var child = footnoteArray[i];
+      // Check that the footnotes and aside markers exist
+      if (s.footnotes != null && s.asideMarkers != null) {
+        var markerArray = s.asideMarkers;
+        var footnoteArray = s.footnotes.children;
 
-          markerArray[i].insertAdjacentHTML('afterend', child.innerHTML);
+        // Ensure that we have an equal number of footnotes and aside markers
+        if (footnoteArray.length === markerArray.length) {
+          for (var i = 0, n = markerArray.length; i < n; i++) {
+            var child = footnoteArray[i];
+
+            markerArray[i].insertAdjacentHTML('afterend', child.innerHTML);
+          }
         }
       }
     }
