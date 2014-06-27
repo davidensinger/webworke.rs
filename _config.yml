@@ -46,7 +46,7 @@ paginate_path: 'page:num'
 excerpt_separator: ""
 
 # Use Pygments to highlight code blocks
-pygments: false
+highlighter: pygments
 
 # Use redcarpet for jekyll-picture-tag plugin
 markdown: redcarpet
