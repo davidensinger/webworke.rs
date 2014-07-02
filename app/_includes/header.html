@@ -89,7 +89,8 @@
     <meta content="@{{ site.twitter }}" name="twitter:site">
     <meta content="@{{ site.author.twitter }}" name="twitter:creator">
 
-    <link rel="publisher" href="{{ site.googleplus }}">
+    <link href="{{ site.googleplus }}" rel="publisher">
+    <link href="https://plus.google.com/{{ site.author.googleplus }}/posts" rel="author">
 
     {% if page.page-class == 'page-home' %}
       <meta content="{{ site.url }}" property="og:url">

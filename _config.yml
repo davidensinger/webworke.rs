@@ -25,6 +25,7 @@ author:
   email: david@webworke.rs
   github: davidensinger
   twitter: DavidEnsinger
+  googleplus: 111951762509840042073
 
 exclude: ['images', 'styles', 'scripts', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
 
