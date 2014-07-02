@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   {% if page.grouptype == 'category' %}
     <title type="text" xml:lang="en">Posts Categorized “{{ page.category | titlecase }}” – {{ site.title }}</title>
-    <link type="application/atom+xml" rel="self" href="{{ site.baseurl }}/category/{{ page.category | replace:' ','-' | downcase }}{{ site.feed }}"/>
+    <link type="application/atom+xml" rel="self" href="{{ site.url }}/category/{{ page.category | replace:' ','-' | downcase }}{{ site.feed }}"/>
   {% else %}
     <title type="text" xml:lang="en">{{ site.title }} – {{ site.tagline }}</title>
     <subtitle type="text">{{ site.description }}</subtitle>
-    <link type="application/atom+xml" rel="self" href="{{ site.baseurl }}{{ site.feed }}"/>
+    <link type="application/atom+xml" rel="self" href="{{ site.url }}{{ site.feed }}"/>
   {% endif %}
-  <link href="{{ site.baseurl }}/"/>
-  <id>{{ site.baseurl }}/</id>
-  <icon>{{ site.baseurl }}/favicon-196x196.png</icon>
+  <link href="{{ site.url }}/"/>
+  <id>{{ site.url }}/</id>
+  <icon>{{ site.url }}/favicon-196x196.png</icon>
   <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
   <author>
     <name>{{ site.author.name }}</name>

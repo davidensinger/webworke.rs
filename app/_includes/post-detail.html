@@ -6,7 +6,7 @@
       </small>
     </div> <!-- .entryMeta .entryMeta-header -->
     <h1 class="entryTitle" itemprop="name">
-      <a class="entryLink" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+      <a class="entryLink" href="{{ site.url }}{{ post.url }}" rel="bookmark">
         {{ post.title }}&nbsp;<span class="entryLink-character">&rarr;</span>
       </a>
     </h1>
@@ -26,13 +26,13 @@
       {%endif %}
       </nav><!--  entryMeta-navigation -->
     {%endif %}
-    <p class="entryMeta-footer--posted text-center">Posted by <a href="{{ site.baseurl }}/about/" class="entryMeta-footer--posted-link">{{ site.author.name }}</a> on <span class="entryMeta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
+    <p class="entryMeta-footer--posted text-center">Posted by <a href="{{ site.url }}/about/" class="entryMeta-footer--posted-link">{{ site.author.name }}</a> on <span class="entryMeta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
       {% if post.categories != empty %}
         {% for category in post.categories %}
           {% if forloop.length == 2 %}
-            <a class="entryMeta-footer--category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
+            <a class="entryMeta-footer--category" href="{{ site.url }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %} and {% endif %}{% if forloop.last %}.{% endif %}
           {% else %}
-            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entryMeta-footer--category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
+            {% if forloop.last and forloop.length != 1 %}and {% endif %} <a class="entryMeta-footer--category" href="{{ site.url }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>{% if forloop.last == false %}, {% endif %}{% if forloop.last %}.{% endif %}
           {% endif %}
         {% endfor %}
       {% endif %}

@@ -2,7 +2,7 @@
     <article class="post hentry clearfix" itemscope itemtype="http://schema.org/Article">
       <header class="entryHeader clearfix">
         <h2 class="entryTitle" itemprop="name">
-          <a class="entryLink" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+          <a class="entryLink" href="{{ site.url }}{{ post.url }}" rel="bookmark">
             {{ post.title }}&nbsp;<span class="entryLink-character">&rarr;</span>
           </a>
         </h2>
@@ -13,7 +13,7 @@
           {% if post.categories != empty and page.grouptype != 'category' %}
             <small class="entryMeta-header--categories">
               {% for category in post.categories %}
-                <a class="entryMeta-header--category" href="{{ site.baseurl }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>
+                <a class="entryMeta-header--category" href="{{ site.url }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>
               {% endfor %}
             </small>
           {% endif %}
@@ -22,7 +22,7 @@
       <div class="entryContent">
         {% if post.description %}
           <p class="entryContent-text">{{ post.description }}</p>
-          <a class="entryContent-link" href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">Read More</a>
+          <a class="entryContent-link" href="{{ site.url }}{{ post.url }}" rel="bookmark">Read More</a>
         {% endif %}
       </div>
     </article>

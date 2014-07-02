@@ -6,13 +6,13 @@
           <nav id="colophonNavigation" class="footerNavigation" role="navigation">
             <ul class="footerNavigation-list list-inline">
               <li class="footerNavigation-item navigation-item">
-                <a class="navigation-link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.baseurl }}/about/">About</a>
+                <a class="navigation-link {% if page.title == 'About' %}is-current{% endif %}" href="{{ site.url }}/about/">About</a>
               </li>
               <li class="footerNavigation-item navigation-item">
-                <a class="navigation-link {% if page.title == 'Colophon' %}is-current{% endif %}" href="{{ site.baseurl }}/colophon/">Colophon</a>
+                <a class="navigation-link {% if page.title == 'Colophon' %}is-current{% endif %}" href="{{ site.url }}/colophon/">Colophon</a>
               </li>
               <li class="footerNavigation-item navigation-item">
-                <a class="navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.baseurl }}/archive/">Archive</a>
+                <a class="navigation-link {% if page.title == 'Archive' %}is-current{% endif %}" href="{{ site.url }}/archive/">Archive</a>
               </li>
             </ul>
           </nav> <!-- #colophonNavigation  .footerNavigation -->
@@ -31,7 +31,7 @@
               </a>
             </li>
             <li class="siteFooter-icons--item">
-              <a class="siteFooter-icons--link icon-feed--link" href="{{ site.baseurl }}{{ site.feed }}" title="Subscribe to our RSS Feed">
+              <a class="siteFooter-icons--link icon-feed--link" href="{{ site.url }}{{ site.feed }}" title="Subscribe to our RSS Feed">
                 {% include social-icons/feed.svg %}
                 <span class="siteFooter-icons--title visuallyHidden">Feed</span>
               </a>
@@ -44,7 +44,7 @@
             </li>
           </ul>
 
-          <a href="{{ site.baseurl }}" title="Return to homepage" class="siteFooter-tagline--link">
+          <a href="{{ site.url }}" title="Return to homepage" class="siteFooter-tagline--link">
             {% include siteFooter-tagline.svg %}
           </a>
 
