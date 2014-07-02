@@ -39,11 +39,14 @@ show_drafts: true
 permalink: /:year/:month/:title/
 relative_permalinks: false
 
+category_title_prefix: ''
+category_dir: /
+
 paginate: 999
 paginate_path: 'page:num'
 
-# disable this with ""
-excerpt_separator: ""
+# disable this with ''
+excerpt_separator: ''
 
 # Use Pygments to highlight code blocks
 highlighter: pygments
@@ -66,8 +69,8 @@ picture:
     sidebar:
       ppi: [1]
       attr:
-        class: "image sidebar-image"
-        itemprop: "contentURL"
+        class: 'image sidebar-image'
+        itemprop: 'contentURL'
       source_default:
         width: 479
     image--3-4:

@@ -8,11 +8,11 @@
     <meta content="width=device-width" name="viewport">
     <link href="//www.google-analytics.com" rel="dns-prefetch">
 
-    {% if page.title %}
+    {% if page.title and page.page-class != 'page-category' %}
       <title>{{ page.title }} &mdash; {{ site.title }}</title>
       <meta content="{{ page.title }} &mdash; {{ site.title }}" property="og:title">
       <meta content="{{ page.title }} &mdash; {{ site.title }}" name="twitter:title">
-    {% elsif page.grouptype == 'category' %}
+    {% elsif page.page-class == 'page-category' %}
       <title>Posts Categorized &ldquo;{{ page.category | titlecase }}&rdquo; &mdash; {{ site.title }}</title>
       <meta content="Posts Categorized &ldquo;{{ page.category | titlecase }}&rdquo; &mdash; {{ site.title }}" property="og:title">
       <meta content="Posts Categorized &ldquo;{{ page.category | titlecase }}&rdquo; &mdash; {{ site.title }}" name="twitter:title">
@@ -26,7 +26,7 @@
       <meta content="{{ page.description }}" name="description">
       <meta content="{{ page.description }}" property="og:description">
       <meta content="{{ page.description }}" name="twitter:description">
-    {% elsif page.grouptype == 'category' %}
+    {% elsif page.page-class == 'page-category' %}
       <meta content="A listing of all posts that are categorized as &ldquo;{{ page.category | titlecase }}&rdquo;" name="description">
       <meta content="A listing of all posts that are categorized as &ldquo;{{ page.category | titlecase }}&rdquo;" property="og:description">
       <meta content="A listing of all posts that are categorized as &ldquo;{{ page.category | titlecase }}&rdquo;" name="twitter:description">
@@ -37,11 +37,6 @@
     {% endif %}
 
     <link href="{{ site.url }}{{ site.feed }}" rel="alternate" title="Feed for all posts on {{ site.title }}" type="application/atom+xml">
-
-    {% if page.grouptype == 'category' %}
-      <link href="{{ site.url }}/category/{{ page.category | replace:' ','-' | downcase }}{{ site.feed }}" rel="alternate" title="Feed for all posts categorized as &ldquo;{{ page.category | titlecase }}&rdquo; on {{ site.title }}" type="application/atom+xml">
-    {% endif %}
-
     <link href="{{ site.url }}/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml">
 
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon-152x152.png">
@@ -96,7 +91,7 @@
 
     <link rel="publisher" href="{{ site.googleplus }}">
 
-    {% if page.page-class == "page-home" %}
+    {% if page.page-class == 'page-home' %}
       <meta content="{{ site.url }}" property="og:url">
       <meta content="{{ site.url }}" name="twitter:url">
     {% else %}

@@ -1,53 +1,32 @@
 module Jekyll
 
-  class CategoryGenerator < Generator
-
-    safe true
-
-    def generate(site)
-      site.categories.each do |category|
-        build_subpages(site, "category", category)
-      end
-    end
-
-    def build_subpages(site, type, posts)
-      posts[1] = posts[1].sort_by { |p| -p.date.to_f }
-      atomize(site, type, posts)
-    end
-
-    def atomize(site, type, posts)
-      path = "/#{type}/#{posts[0]}".downcase.strip.gsub(' ', '-')
-      atom = AtomPage.new(site, site.source, path, type, posts[0], posts[1])
-      site.pages << atom
-    end
-  end
-
-  class GroupSubPage < Page
-    def initialize(site, base, dir, type, val)
+  class CategoryPage < Page
+    def initialize(site, base, dir, category)
       @site = site
       @base = base
       @dir = dir
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "category-index.html")
-      self.data["grouptype"] = type
-      self.data[type] = val
+      self.read_yaml(File.join(base, '_layouts'), 'category-index.html')
+      self.data['category'] = category
+
+      category_title_prefix = site.config['category_title_prefix'] || 'Category: '
+      self.data['title'] = "#{category_title_prefix}#{category}"
     end
   end
 
-  class AtomPage < Page
-    def initialize(site, base, dir, type, val, posts)
-      @site = site
-      @base = base
-      @dir = dir
-      @name = 'feed.xml'
+  class CategoryPageGenerator < Generator
+    safe true
 
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), "category-feed.xml")
-      self.data[type] = val
-      self.data["grouptype"] = type
-      self.data["posts"] = posts[0..9]
+    def generate(site)
+      if site.layouts.key? 'category-index'
+        dir = site.config['category_dir'] || 'categories'
+        site.categories.keys.each do |category|
+          site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
+        end
+      end
     end
   end
+
 end

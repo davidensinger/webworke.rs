@@ -10,10 +10,10 @@
           <small class="entryDate">
             <time class="entryTime" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
           </small>
-          {% if post.categories != empty and page.grouptype != 'category' %}
+          {% if post.categories != empty and page.page-class != 'page-category' %}
             <small class="entryMeta-header--categories">
               {% for category in post.categories %}
-                <a class="entryMeta-header--category" href="{{ site.url }}/category/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>
+                <a class="entryMeta-header--category" href="{{ site.url }}/{{ category | replace:' ','-' }}/" rel="category">{{ category | titlecase }}</a>
               {% endfor %}
             </small>
           {% endif %}
