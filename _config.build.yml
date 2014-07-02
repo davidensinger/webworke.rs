@@ -16,7 +16,7 @@ show_drafts: false
 picture:
   source: images/originals
   output: generated
-  markup: "picturefill"
+  markup: picture
   presets:
     default:
       ppi: [1, 1.5]

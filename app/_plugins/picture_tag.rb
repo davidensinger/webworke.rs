@@ -99,6 +99,8 @@ module Jekyll
 
       # Store keys in an array for ordering the instance sources
       source_keys = instance.keys
+      # used to escape markdown parsing rendering below
+      markdown_escape = "\ "
 
       # Raise some exceptions before we start expensive processing
       raise "Picture Tag can't find the \"#{markup[:preset]}\" preset. Check picture: presets in _config.yml for a list of presets." unless preset
@@ -140,52 +142,34 @@ module Jekyll
 
       # Generate resized images
       instance.each { |key, source|
-        instance[key][:generated_src] = generate_image(source, site.source, site.dest, settings['source'], settings['output'])
+        instance[key][:generated_src] = generate_image(source, site.source, site.dest, settings['source'], settings['output'], site.config["baseurl"])
       }
 
       # Construct and return tag
-      if settings['markup'] == 'picturefill'
-
-        source_tags = ''
-        # Picturefill uses reverse source order
-        # Reference: https://github.com/scottjehl/picturefill/issues/79
-        source_keys.reverse.each { |source|
-          media = " data-media=\"#{instance[source]['media']}\"" unless source == 'source_default'
-          source_tags += "<span data-src=\"#{instance[source][:generated_src]}\"#{media}></span>\n"
-        }
-
-        # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
-        picture_tag = "<span #{html_attr_string}>\n"\
-                      "#{source_tags}"\
-                      "<noscript>\n"\
-                      "<img src=\"#{instance['source_default'][:generated_src]}\" alt=\"#{html_attr['data-alt']}\">\n"\
-                      "</noscript>\n"\
-                      "</span>\n"
-
-      elsif settings['markup'] == 'picture'
+      if settings['markup'] == 'picture'
 
         source_tags = ''
         source_keys.each { |source|
-          if source == 'source_default'
-            source_tags += "<img src=\"#{instance[source][:generated_src]}\" alt=\"#{html_attr['alt']}\">\n"
-          else
-            source_tags += "<source src=\"#{instance[source][:generated_src]}\" media=\"#{instance[source]['media']}\">\n"
-          end
+          media = " media=\"#{instance[source]['media']}\"" unless source == 'source_default'
+          source_tags += "#{markdown_escape * 4}<source srcset=\"#{instance[source][:generated_src]}\"#{media}>\n"
         }
 
         # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
-        picture_tag = "<picture #{html_attr_string}>\n"\
+        # Note: Added backslash+space escapes to bypass markdown parsing of indented code below -WD
+        picture_tag = "<picture>\n"\
                       "#{source_tags}"\
-                      "<p>#{html_attr['alt']}</p>\n"\
-                      "</picture>"
+                      "#{markdown_escape * 4}<img srcset=\"#{instance['source_default'][:generated_src]}\" #{html_attr_string}>\n"\
+                      "#{markdown_escape * 2}</picture>\n"
+
+      elsif settings['markup'] == 'img'
+        # TODO implement <img srcset/sizes>
       end
 
         # Return the markup!
         picture_tag
     end
 
-    def generate_image(instance, site_source, site_dest, image_source, image_dest)
-
+    def generate_image(instance, site_source, site_dest, image_source, image_dest, baseurl)
       image = MiniMagick::Image.open(File.join(site_source, image_source, instance[:src]))
       digest = Digest::MD5.hexdigest(image.to_blob).slice!(0..5)
 
@@ -220,7 +204,7 @@ module Jekyll
         gen_height = if orig_ratio > gen_ratio then orig_height else orig_width/gen_ratio end
       end
 
-      gen_name = "#{basename}-#{gen_width.round}*#{gen_height.round}-#{digest}#{ext}"
+      gen_name = "#{basename}-#{gen_width.round}by#{gen_height.round}-#{digest}#{ext}"
       gen_dest_dir = File.join(site_dest, image_dest, image_dir)
       gen_dest_file = File.join(gen_dest_dir, gen_name)
 
@@ -246,7 +230,7 @@ module Jekyll
       end
 
       # Return path relative to the site root for html
-      Pathname.new(File.join('/', image_dest, image_dir, gen_name)).cleanpath
+      Pathname.new(File.join(baseurl, image_dest, image_dir, gen_name)).cleanpath
     end
   end
 end
