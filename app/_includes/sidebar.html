@@ -18,7 +18,7 @@
     <span class="visuallyHidden fn" itemprop="name">{{ title }}</span>
 
     {% if secondary.title %}
-      <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}{% if secondary.url %}{% unless secondary.organization %}&nbsp;<span class="sidebar-character">&rarr;</span>{% endunless %}{% endif %}</span>
+      <span class="sidebar-title"><span class="title" itemprop="jobTitle">{{ secondary.title }}</span>{% if secondary.url %}{% unless secondary.organization %}&nbsp;<span class="sidebar-character">&rarr;</span>{% endunless %}{% endif %}</span>
     {% endif %}
 
     {% if secondary.preposition %}
