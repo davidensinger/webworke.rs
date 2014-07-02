@@ -1,9 +1,9 @@
   {% for post in site.posts %}
     <article class="post hentry clearfix" itemscope itemtype="http://schema.org/Article">
       <header class="entryHeader clearfix">
-        <h2 class="entryTitle" itemprop="name">
+        <h2 class="entryTitle">
           <a class="entryLink" href="{{ site.url }}{{ post.url }}" rel="bookmark">
-            {{ post.title }}&nbsp;<span class="entryLink-character">&rarr;</span>
+            <span class="entry-title author vcard" itemprop="name">{{ post.title }}</span>&nbsp;<span class="entryLink-character">&rarr;</span>
           </a>
         </h2>
         <div class="entryMeta entryMeta-header">

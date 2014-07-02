@@ -15,6 +15,8 @@
       <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
     {% endif %}
 
+    <span class="visuallyHidden fn" itemprop="name">{{ title }}</span>
+
     {% if secondary.title %}
       <span class="sidebar-title" itemprop="jobTitle">{{ secondary.title }}{% if secondary.url %}{% unless secondary.organization %}&nbsp;<span class="sidebar-character">&rarr;</span>{% endunless %}{% endif %}</span>
     {% endif %}
@@ -26,7 +28,7 @@
     {% endif %}
 
     {% if secondary.organization %}
-      <span class="sidebar-organization" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}{% if secondary.url %}&nbsp;<span class="sidebar-character">&rarr;</span>{% endif %}</span>
+      <span class="sidebar-organization"><span class="org" itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">{{ secondary.organization }}</span>{% if secondary.url %}&nbsp;<span class="sidebar-character">&rarr;</span>{% endif %}</span>
     {% endif %}
 
     {% if secondary.url %}
@@ -45,8 +47,9 @@
       </a>
 
       {% if secondary.caption %}
-        <figcaption class="sidebar-caption text-center" itemprop="description">
-          {{ secondary.caption }}
+        <figcaption class="sidebar-caption text-center">
+
+          <span itemprop="description">{{ secondary.caption }}</span>
 
           {% if secondary.caption-link %}
             <a href="{{ secondary.caption-link }}" class="sidebar-caption--link">

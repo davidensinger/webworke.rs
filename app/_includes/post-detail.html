@@ -5,9 +5,9 @@
         <time class="entryTime" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       </small>
     </div> <!-- .entryMeta .entryMeta-header -->
-    <h1 class="entryTitle" itemprop="name">
+    <h1 class="entryTitle">
       <a class="entryLink" href="{{ site.url }}{{ post.url }}" rel="bookmark">
-        {{ post.title }}&nbsp;<span class="entryLink-character">&rarr;</span>
+        <span class="entry-title author vcard" itemprop="name">{{ post.title }}</span>&nbsp;<span class="entryLink-character">&rarr;</span>
       </a>
     </h1>
   </header>
