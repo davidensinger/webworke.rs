@@ -1,4 +1,11 @@
-  {% for post in site.posts %}
+{% if page.page-class == 'page-category' %}
+  {% assign cat = page.category | downcase %}
+  {% assign loop = site.categories.[cat] %}
+{% elsif page %}
+  {% assign loop = site.posts %}
+{% endif %}
+
+  {% for post in loop %}
     <article class="post hentry clearfix" itemscope itemtype="http://schema.org/Article">
       <header class="entryHeader clearfix">
         <h2 class="entryTitle">
