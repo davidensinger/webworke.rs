@@ -179,7 +179,7 @@
 }
 
 .sidebar-links--item {
-  @include rem(margin, 0 $sixteenth-spacing-unit $half-spacing-unit);
+  @include rem(margin, 0 $eighth-spacing-unit $half-spacing-unit);
 }
 
 .sidebar-links--link {
