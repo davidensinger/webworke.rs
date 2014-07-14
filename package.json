@@ -31,9 +31,9 @@
     "grunt-svgmin": "~0.4.0",
     "grunt-usemin": "~2.3.0",
     "grunt-xmlmin": "~0.1.1",
-    "jshint-stylish": "~0.3.0",
+    "jshint-stylish": "~0.4.0",
     "load-grunt-tasks": "~0.6.0",
-    "time-grunt": "~0.3.2"
+    "time-grunt": "~0.4.0"
   },
   "engines": {
     "node": ">=0.10.24"
