@@ -113,8 +113,6 @@ module.exports = function (grunt) {
     sass: {
       options: {
         bundleExec: true,
-        debugInfo: false,
-        lineNumbers: false
       },
       dist: {
         files: [{
@@ -126,10 +124,6 @@ module.exports = function (grunt) {
         }]
       },
       server: {
-        options: {
-          debugInfo: true,
-          lineNumbers: true
-        },
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
