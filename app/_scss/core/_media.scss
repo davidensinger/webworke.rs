@@ -38,6 +38,7 @@ svg:not(:root) {
 //  Media width variations
 // -------------------------------------
 
+// percentage width variations
 .media--1-4 {
   width: 25%;
 }
@@ -58,6 +59,43 @@ svg:not(:root) {
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     width: 100%;
   }
+}
+
+// min-width variations
+.media-min--100 {
+  min-width: 100px;
+}
+
+.media-min--150 {
+  min-width: 150px;
+}
+
+.media-min--200 {
+  min-width: 200px;
+}
+
+.media-min--250 {
+  min-width: 250px;
+}
+
+.media-min--300 {
+  min-width: 300px;
+}
+
+.media-min--350 {
+  min-width: 350px;
+}
+
+.media-min--400 {
+  min-width: 400px;
+}
+
+.media-min--450 {
+  min-width: 450px;
+}
+
+.media-min--500 {
+  min-width: 500px;
 }
 
 
