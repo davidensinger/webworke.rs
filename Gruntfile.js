@@ -133,6 +133,30 @@ module.exports = function (grunt) {
         }]
       }
     },
+    uncss: {
+      options: {
+        htmlroot: '.tmp',
+        // 1. Ignored by PhantomJS because of the conditional IE comments?
+        // 2. Ignored by UnCSS?
+        // 3. Added by Google Search in 404.html
+        // 4. Added by keyboardNavigation function in application.js
+        // 5. Added by Modernizr when JavaScript is enabled
+        ignore: [
+          'b', // 3
+          /\.browseHappy-.+/, // 1
+          'em', // 1
+          /#goog.+/, // 3
+          /h[1-6](.+)?/, // 2
+          /input(.+)?/, // 3
+          /\.is-.+/, // 4
+          /\.js.+/ // 5
+        ],
+        report: 'min'
+      },
+      dist: {
+        files: {'.tmp/concat/styles/application.css': ['<%= yeoman.dist %>/**/*.html']}
+      }
+    },
     autoprefixer: {
       options: {
         browsers: [
@@ -404,6 +428,7 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'useminPrepare',
     'concat',
+    'uncss',
     'autoprefixer:dist',
     'cssmin',
     'uglify',
