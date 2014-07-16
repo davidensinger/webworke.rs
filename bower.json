@@ -5,7 +5,7 @@
   "dependencies": {
     "matchmedia": "~0.2.0",
     "modernizr": "~2.8.3",
-    "picturefill": "~2.1.0-beta",
+    "picturefill": "~2.1.0-beta2",
     "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git"
   },
   "devDependencies": {
