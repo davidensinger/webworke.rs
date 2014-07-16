@@ -369,6 +369,9 @@ module.exports = function (grunt) {
       dist: {
         devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
         outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
+        extra: {
+          shiv: false
+        },
         uglify: true,
         files: {
           src: [
