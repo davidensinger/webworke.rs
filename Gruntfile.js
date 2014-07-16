@@ -442,12 +442,12 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'xmlmin'
-    ]);
+  ]);
 
   grunt.registerTask('deploy', [
     'build',
     'buildcontrol'
-    ]);
+  ]);
 
   grunt.registerTask('default', [
     'check',
