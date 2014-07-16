@@ -61,6 +61,27 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button; // 2
   cursor: pointer; // 3
+  display: inline-block;
+  @include rem(padding, $half-spacing-unit);
+  @extend %font-vollkorn--regular;
+  border-radius: 0;
+  border: 0;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $black-light;
+  transition: background-color 0.3s, color 0.3s;
+  outline-color: transparent;
+  outline-style: none;
+  &:hover {
+    background-color: $black;
+  }
+  &:focus {
+    color: $black-light;
+    background-color: $focus;
+  }
+  &:active {
+    @extend %link-active--depressed;
+  }
 }
 
 // Re-set default cursor for disabled elements
@@ -95,29 +116,6 @@ input[type="search"]::-webkit-search-decoration {
 // www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
 button,
 input {
-  display: inline-block;
-  @include rem(padding, $half-spacing-unit);
-  text-transform: uppercase;
-  @extend %font-vollkorn--regular;
-  border-radius: 0;
-  border: 0;
-  cursor: pointer;
-  color: $white;
-  background-color: $black-light;
-  transition: background-color 0.3s, color 0.3s;
-  outline-color: transparent;
-  outline-style: none;
-  &:hover {
-    background-color: $black;
-  }
-  &:focus {
-    color: $black-light;
-    background-color: $focus;
-  }
-  &:active {
-    @extend %link-active--depressed;
-  }
-
   &::-moz-focus-inner {
     border: 0;
     padding: 0;
@@ -131,11 +129,13 @@ textarea {
   vertical-align: top; // 2
 }
 
+input[type="email"],
 input[type="text"],
 textarea {
   width: 100%;
   display: block;
   @include rem(padding, $half-spacing-unit);
+  color: $black-light;
   background-color: $white;
   border: 1px solid $gray-light;
   outline-color: transparent;
@@ -176,5 +176,13 @@ textarea {
 }
 
 #goog-wm-qt {
+  @include rem(margin-bottom, $half-spacing-unit);
+}
+
+// -------------------------------------
+//  MailChimp Subscription Form
+// -------------------------------------
+
+#mce-EMAIL {
   @include rem(margin-bottom, $half-spacing-unit);
 }
