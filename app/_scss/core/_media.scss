@@ -51,9 +51,14 @@ svg:not(:root) {
   width: 50%;
 }
 
+.media--3-4 {
+  width: 75%;
+}
+
 .media--1-4,
 .media--1-3,
-.media--1-2 {
+.media--1-2,
+.media--3-4 {
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
@@ -62,42 +67,12 @@ svg:not(:root) {
 }
 
 // min-width variations
-.media-min--100 {
-  min-width: 100px;
+$min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
+@each $min-width in $min-widths--list {
+  .media--min-#{$min-width} {
+    min-width: #{$min-width}px;
+  }
 }
-
-.media-min--150 {
-  min-width: 150px;
-}
-
-.media-min--200 {
-  min-width: 200px;
-}
-
-.media-min--250 {
-  min-width: 250px;
-}
-
-.media-min--300 {
-  min-width: 300px;
-}
-
-.media-min--350 {
-  min-width: 350px;
-}
-
-.media-min--400 {
-  min-width: 400px;
-}
-
-.media-min--450 {
-  min-width: 450px;
-}
-
-.media-min--500 {
-  min-width: 500px;
-}
-
 
 // -------------------------------------
 //  Media placement variations
