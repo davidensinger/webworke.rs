@@ -14,7 +14,7 @@
   <div class="entryContent">
     {{ post.content }}
   </div> <!-- .entryContent -->
-  <footer class="entryMeta entryMeta-footer clearfix">
+  <footer class="entryMeta entryMeta-footer entryMeta-footer__post clearfix">
     {% if post.previous.url or post.next.url %}
       <nav class="entryMeta-navigation" role="navigation">
         <h1 class="visuallyHidden">Post Navigation</h1>
@@ -26,6 +26,13 @@
       {%endif %}
       </nav> <!--  entryMeta-navigation -->
     {%endif %}
+    <ul class="socialShare-icons--list list-inline text-center">
+      <li class="socialShare-icons--item"><small>Share:</small></li>
+      <li class="socialShare-icons--item"><a class="socialShare-icons--link icon-twitter--link" target="_blank" href="https://twitter.com/intent/tweet?text={{ site.title | append: ':' | cgi_escape }}+{{ post.title | cgi_escape }}{% if post.social-share.twitter.username %}+{{ post.social-share.twitter.username | prepend: '(@' | append: ')' | cgi_escape }}{%endif %}&amp;url={{ site.url }}{{ post.url }}&amp;via={{ site.twitter }}{% if post.social-share.twitter.related %}&amp;related={{ post.social-share.twitter.related | join: ',' | cgi_escape }}{%endif %}{% if post.social-share.twitter.hashtags %}&amp;hashtags={{ post.social-share.twitter.hashtags | join: ',' | cgi_escape }}{%endif %}" title="Share this profile of {{ post.title }} on Twitter">{% include social-icons/twitter.svg %}<span class="visuallyHidden">Twitter</span></a></li>
+      <li class="socialShare-icons--item"><a class="socialShare-icons--link icon-facebook--link" target="_blank" href="https://www.facebook.com/dialog/share?app_id={{ site.facebookAppID }}&amp;display=popup&amp;href={{ site.url }}{{ post.url }}&amp;redirect_uri={{ site.url }}{{ post.url }}" title="Share this profile of {{ post.title }} on Facebook">{% include social-icons/facebook.svg %}<span class="visuallyHidden">Facebook</span></a></li>
+      <li class="socialShare-icons--item"><a class="socialShare-icons--link icon-pinterest--link" target="_blank" href="http://pinterest.com/pin/create/link/?url=?url={{ site.url }}{{ post.url }}{% if post.secondary.image %}&amp;media={{ site.url }}/{{ site.picture.source }}/{{ post.secondary.image }}{% endif %}&amp;description={{ site.title | append: ': ' | cgi_escape }}{{ post.title | cgi_escape }}" title="Pin this profile of {{ post.title }} on Pinterest">{% include social-icons/pinterest.svg %}<span class="visuallyHidden">Pinterest</span></a></li>
+      <li class="socialShare-icons--item"><a class="socialShare-icons--link icon-googleplus--link" target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Share this profile of {{ post.title }} on Google+">{% include social-icons/googleplus.svg %}<span class="visuallyHidden">Google+</span></a></li>
+    </ul>
     <p class="entryMeta-footer--posted text-center">Posted by <a href="{{ site.url }}/about/" class="entryMeta-footer--posted-link">{{ site.author.name }}</a> on <span class="entryMeta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
       {% if post.categories != empty %}
         {% for category in post.categories %}

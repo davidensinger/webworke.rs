@@ -63,6 +63,13 @@
   border-top: 2px solid;
 }
 
+.entryMeta-footer__post {
+  // start breakpoints
+  @include breakpoint(all-mobile) {
+    @include rem(padding-top, $double-spacing-unit);
+  }
+}
+
 // navigation arrows <nav> container
 .entryMeta-navigation {
   position: relative;
@@ -224,6 +231,62 @@
 .entryMeta-navigation--link__arrow {
   position: relative;
   float: left;
+}
+
+// social share icons
+.socialShare-icons--list {
+  @include rem(margin-bottom, $double-spacing-unit);
+
+  // start breakpoints
+  @include breakpoint(all-mobile) {
+    @include rem(margin-bottom, $base-spacing-unit);
+  }
+}
+
+.socialShare-icons--item {
+  @include rem(margin-left, $quarter-spacing-unit);
+
+  &:first-child {
+    margin-left: 0;
+    @extend %font-industry--medium;
+    @include rem(padding-bottom, $quarter-spacing-unit);
+  }
+}
+
+.socialShare-icons--link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    .social-icons--svg {
+      transform: scale(1.2);
+    }
+  }
+  &:hover {
+    .social-icons--svg__path {
+      fill: $black;
+    }
+  }
+  &:focus {
+    background-color: transparent !important; // override default :focus styles in _base.scss
+    .social-icons--svg__path {
+      fill: $focus;
+    }
+  }
+
+  // _includes/social-icons/
+  .social-icons--svg {
+    margin: 0 auto;
+    @include rem(height, $base-spacing-unit);
+    @include rem(width, $base-spacing-unit);
+    transition: transform 0.3s;
+  }
+
+  .social-icons--svg__path {
+    fill-rule: evenodd;
+    fill: $black-light;
+    transition: fill 0.2s;
+  }
 }
 
 // posted on paragraph
