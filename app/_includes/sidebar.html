@@ -77,7 +77,7 @@
       {% for link in secondary-links %}
         <li class="sidebar-links--item">
           <a class="sidebar-links--link url {{ link.class }}" href="{{ link.url }}" itemprop="url">
-            {% include {{ link.class | prepend: 'secondary-icons/' | append: '.svg' }} %}
+            {% include {{ link.class | prepend: 'social-icons--circled/' | append: '.svg' }} %}
             <span class="sidebar-links--title visuallyHidden">{{ link.title }}</span>
           </a>
         </li>
