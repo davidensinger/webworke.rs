@@ -24,7 +24,7 @@
       {% if post.next.url %}
         <a id="js-navigation--next" href="{{ post.next.url }}" title="Link to {{ post.next.title }}" class="entryMeta-navigation--link next"><span class="entryMeta-navigation--link__text">{{ post.next.title }}</span> <span class="entryMeta-navigation--link__arrow">&nbsp;&rarr;</span></a>
       {%endif %}
-      </nav><!--  entryMeta-navigation -->
+      </nav> <!--  entryMeta-navigation -->
     {%endif %}
     <p class="entryMeta-footer--posted text-center">Posted by <a href="{{ site.url }}/about/" class="entryMeta-footer--posted-link">{{ site.author.name }}</a> on <span class="entryMeta-footer--posted-date">{{ post.date | date: "%B %-d, %Y" }}</span> in
       {% if post.categories != empty %}
