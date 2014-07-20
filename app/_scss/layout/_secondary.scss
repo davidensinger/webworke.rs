@@ -123,6 +123,10 @@
 .sidebar-description {
   margin-bottom: 0;
   @extend %font-industry--medium;
+
+  a {
+    @extend %link-border--bottom;
+  }
 }
 
 
