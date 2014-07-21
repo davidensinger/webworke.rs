@@ -162,6 +162,10 @@ ol {
     font-family: inherit;
     font-weight: normal;
   }
+
+  &+.question {
+    @include rem(margin-top, 1.5);
+  }
 }
 
 .text-left {
