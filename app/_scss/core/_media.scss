@@ -130,7 +130,7 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 
 // -------------------------------------
 //  Flex Embed
-//  https://github.com/suitcss/flex-embed/blob/master/flex-embed.css
+//  https://github.com/suitcss/components-flex-embed
 // -------------------------------------
 
 // For use with media embeds – such as videos, slideshows, or even images –
@@ -139,28 +139,50 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 //
 // Example HTML:
 //
-// <div class="flexEmbed flexEmbed--16by9">
-//     <iframe class="flexEmbed-item" src="…"></iframe>
-// </div>
-//
-// <div class="flexEmbed flexEmbed--16by9">
-//     [iframe|object|embed|img]
+// <div class="FlexEmbed">
+//   <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+//   <div class="FlexEmbed-content">
+//     <!-- child content -->
+//   </div>
 // </div>
 
-%flexEmbed {
-  position: relative;
+.FlexEmbed {
+  display: block;
   overflow: hidden;
-  height: 0;
-  padding: 0;
+  position: relative;
 }
 
-// The use of an explicit descendant class makes this component more flexible.
-// However, it will work automatically for iframes, embeds, and objects to
-// account for times when you cannot modify the attributes for 3rd party widget
-// code.
+// The aspect-ratio hack is applied to an empty element because it allows
+// the component to respect `max-height`. Default aspect ratio is 1:1.
+.FlexEmbed-ratio {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+}
 
-%flexEmbed-item {
-  @include absolute(left 0 top 0);
+// Modifier: 3:1 aspect ratio
+.FlexEmbed-ratio--3by1 {
+  padding-bottom: calc(100% / 3);
+}
+
+// Modifier: 2:1 aspect ratio
+.FlexEmbed-ratio--2by1 {
+  padding-bottom: 50%;
+}
+
+// Modifier: 16:9 aspect ratio
+.FlexEmbed-ratio--16by9 {
+  padding-bottom: 56.25%;
+}
+
+// Modifier: 4:3 aspect ratio
+.FlexEmbed-ratio--4by3 {
+  padding-bottom: 75%;
+}
+
+// Fit the content to the aspect ratio
+.FlexEmbed-content {
+  @include absolute(top 0 bottom 0 left 0);
   width: 100%;
   height: 100%;
 }
