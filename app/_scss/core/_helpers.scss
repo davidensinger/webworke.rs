@@ -78,6 +78,11 @@
   }
 }
 
+// for better control of inline elements that come after floated elements
+.clear {
+  clear: both;
+}
+
 // Link with bottom border
 %link-border--bottom {
   border-bottom: 1px solid;
