@@ -47,9 +47,11 @@
 .entryContent {
   @include rem(margin-bottom, $triple-spacing-unit); // add space between .entryContent and .entryMeta-footer
 
-  // inline links
+  // inline links that don’t have a class
   a {
-    @extend %link-border--bottom;
+    &:not(.media-image--link):not(.aside-marker--link):not(.footnotes-link) {
+      @extend %link-border--bottom;
+    }
   }
 }
 

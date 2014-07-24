@@ -74,6 +74,7 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
   }
 }
 
+
 // -------------------------------------
 //  Media placement variations
 // -------------------------------------
@@ -103,6 +104,43 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 .media--center {
   display: block;
   @include rem(margin, 0 auto $base-spacing-unit);
+}
+
+
+// -------------------------------------
+//  Media link
+// -------------------------------------
+
+.media-image--link {
+  display: block;
+
+  img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition: border-color 0.3s;
+  }
+
+  &:hover {
+    img {
+      border-color: $black-light;
+    }
+  }
+  &:focus {
+    img {
+      border-color: $focus;
+    }
+  }
+}
+
+.media-caption {
+  @include rem(margin-top, $quarter-spacing-unit);
+  @extend small;
+  @extend %font-industry--medium;
+}
+
+.media-link {
+  @extend %citation-small--link;
 }
 
 
