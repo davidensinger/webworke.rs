@@ -39,7 +39,7 @@ future: true
 # _config.build.yml sets this to false on `grunt build`
 show_drafts: true
 
-permalink: /:year/:month/:title/
+permalink: /:title/
 relative_permalinks: false
 
 category_title_prefix: ''
