@@ -321,7 +321,7 @@ blockquote {
 }
 
 .quote {
-  @include vertical-rhythm($base-font-size, 0, $base-spacing-unit);
+  @include vertical-rhythm($base-font-size, 0, $one-half-spacing-unit);
 }
 
 .quote-text {
@@ -331,6 +331,7 @@ blockquote {
 
 .quote-full {
   position: relative;
+  @include rem(margin-top, $one-half-spacing-unit);
   @include rem(padding, $base-spacing-unit);
   text-align: center;
 
