@@ -101,7 +101,7 @@ module.exports = function (grunt) {
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
             '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/generated/*' // Jekyll Picture Tag
+            '!<%= yeoman.dist %>/generated' // Jekyll Picture Tag
           ]
         }]
       },
