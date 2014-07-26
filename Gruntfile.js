@@ -101,7 +101,7 @@ module.exports = function (grunt) {
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
             '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/generated/*' // Jekyll Picture Tag
+            '!<%= yeoman.dist %>/generated' // Jekyll Picture Tag
           ]
         }]
       },
@@ -425,7 +425,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'clean',
+    'clean:dist',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
