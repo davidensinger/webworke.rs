@@ -247,31 +247,21 @@ module.exports = function (grunt) {
     },
     imageoptim: {
       options: {
-        quitAfter: false
+        quitAfter: true
       },
       distLossless: {
         options: {
           jpegMini: false,
           imageAlpha: true
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: ['**/*.{gif,png}'],
-          dest: '<%= yeoman.dist %>'
-        }]
+        src: ['<%= yeoman.dist %>/**/*.{gif,png}']
       },
       distLossy: {
         options: {
           jpegMini: true,
           imageAlpha: false
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: ['**/*.{jpg,jpeg}'],
-          dest: '<%= yeoman.dist %>'
-        }]
+        src: ['<%= yeoman.dist %>/**/*.{jpg,jpeg}']
       }
     },
     svgmin: {
