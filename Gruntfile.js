@@ -300,8 +300,7 @@ module.exports = function (grunt) {
             // Like Jekyll, exclude files & folders prefixed with an underscore
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            'favicon.ico',
-            'favicon*.png'
+            'favicon*.{ico,png}'
           ],
           dest: '<%= yeoman.dist %>'
         }]
