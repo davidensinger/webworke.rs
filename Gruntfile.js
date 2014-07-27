@@ -425,7 +425,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'modernizr',
-    'imageoptim',
+    'newer:imageoptim',
     'svgmin',
     'filerev',
     'usemin',
