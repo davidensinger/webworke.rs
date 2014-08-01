@@ -354,6 +354,23 @@ module.exports = function (grunt) {
         '!<%= yeoman.app %>/scripts/_vendor/**/*'
       ]
     },
+    pagespeed: {
+      options: {
+        locale: 'en_GB',
+        nokey: true,
+        url: 'http://webworke.rs'
+      },
+      desktop: {
+        options: {
+          strategy: 'desktop'
+        }
+      },
+      mobile: {
+        options: {
+          strategy: 'mobile'
+        }
+      }
+    },
     modernizr: {
       dist: {
         devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
@@ -410,7 +427,8 @@ module.exports = function (grunt) {
     'devUpdate',
     'clean:server',
     'jekyll:check',
-    'jshint:all'
+    'jshint:all',
+    'pagespeed'
   ]);
 
   grunt.registerTask('build', [
