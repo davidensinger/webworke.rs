@@ -445,10 +445,10 @@ q {
 
       &+.footnotes-link--wrapper {
 
-       // start breakpoints
-       @include breakpoint(all-mobile) {
-         display: none; // Hide copied footnotes link arrow ↑
-       }
+        // start breakpoints
+        @include breakpoint(all-mobile) {
+          display: none; // Hide copied footnotes link arrow ↑
+        }
       }
     }
 
