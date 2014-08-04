@@ -133,6 +133,15 @@ module.exports = function (grunt) {
         }]
       }
     },
+    penthouse: {
+      server: {
+        outfile: '.tmp/out.css',
+        css: '.tmp/styles/application.css',
+        url: 'http://localhost:9000',
+        width: 400,
+        height: 900
+     }
+    },
     uncss: {
       options: {
         htmlroot: '.tmp',
@@ -412,6 +421,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+      'penthouse:server',
       'watch'
     ]);
   });
