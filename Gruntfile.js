@@ -135,7 +135,7 @@ module.exports = function (grunt) {
     },
     penthouse: {
       server: {
-        outfile: '.tmp/out.css',
+        outfile: '<%= yeoman.app %>/_includes/critical.css',
         css: '.tmp/styles/application.css',
         url: 'http://localhost:9000',
         width: 400,

@@ -59,6 +59,20 @@
 
     </div> <!-- #page .site-container -->
 
+    {% if site.environment == 'production' %}
+      <script>
+        var cb = function() {
+          var l = document.createElement('link'); l.rel = 'stylesheet';
+          l.href = 'styles/application.css';
+          var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+      </script>
+    {% endif %}
+
     <!-- build:js(app) /scripts/application.js -->
     <script src="/_bower_components/matchmedia/matchMedia.js"></script>
     <script src="/_bower_components/picturefill/src/picturefill.js"></script>

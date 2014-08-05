@@ -22,6 +22,12 @@
       <meta content="{{ site.title }} &mdash; {{ site.tagline }}" name="twitter:title">
     {% endif %}
 
+    {% if site.environment == 'production' %}
+      <style>
+        {% include critical.css %}
+      </style>
+    {% endif %}
+
     {% if page.description %}
       <meta content="{{ page.description }}" name="description">
       <meta content="{{ page.description }}" property="og:description">
@@ -113,9 +119,11 @@
       <meta property="og:image:height" content="1024">
     {% endif %}
 
-    <!-- build:css({app,.tmp}) /styles/application.css -->
-    <link href="/styles/application.css" rel="stylesheet">
-    <!-- endbuild -->
+    {% if site.environment == 'development' %}
+      <!-- build:css({app,.tmp}) /styles/application.css -->
+      <link href="/styles/application.css" rel="stylesheet">
+      <!-- endbuild -->
+    {% endif %}
 
     <!-- build:js /scripts/vendor/modernizr.js -->
     <script src="/_bower_components/modernizr/modernizr.js"></script>
