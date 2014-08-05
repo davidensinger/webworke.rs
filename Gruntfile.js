@@ -232,7 +232,9 @@ module.exports = function (grunt) {
           removeComments: true,
           collapseWhitespace: true,
           removeRedundantAttributes: true,
-          keepClosingSlash: true
+          keepClosingSlash: true,
+          minifyCSS: true,
+          minifyJS: true
         },
         files: [{
           expand: true,
