@@ -70,4 +70,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 2.1.1)
   mini_magick (~> 3.7.0)
-  sass (~> 3.3.11)
+  sass (~> 3.3.14)
