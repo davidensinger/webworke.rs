@@ -6,6 +6,8 @@
 
 url: http://webworke.rs
 
+environment: production
+
 # Publish posts with future date.
 future: false
 

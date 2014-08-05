@@ -10,6 +10,8 @@ tagline: Life and Craft in Columbus, OH
 description: Webworke.rs is a website about folks who make websites in Columbus, OH.
 analytics: UA-26697016-1
 
+environment: development
+
 # social
 facebook: https://www.facebook.com/Webworkers614
 facebookAppID: 496132423853856
