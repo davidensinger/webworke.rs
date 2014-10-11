@@ -414,6 +414,7 @@ q {
 }
 
 .aside-marker {
+  display: none; // initially hide
   @extend %font-industry--bold;
   &:before {
     content: '\005B';
@@ -422,40 +423,36 @@ q {
     content: '\005D';
   }
 
-  .js & {
-    display: none; // initially hide, but only when there’s JS
+  // since the markup is copied from the .footnotes li, apply styles only when immediately after .aside-marker
+  &+.aside-left {
+    float: right;
+    @include rem(margin, $base-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
+  }
 
-    // since the markup is copied from the .footnotes li, apply styles only when immediately after .aside-marker
-    &+.aside-left {
-      float: right;
-      @include rem(margin, $base-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
+  &+.aside-right {
+    float: left;
+    @include rem(margin, $base-spacing-unit $base-spacing-unit $base-spacing-unit 0);
+  }
+
+  &+.aside {
+
+    // start breakpoints
+    @include breakpoint(all-mobile) {
+      display: none; // Hide copied asides on mobile
     }
 
-    &+.aside-right {
-      float: left;
-      @include rem(margin, $base-spacing-unit $base-spacing-unit $base-spacing-unit 0);
-    }
-
-    &+.aside {
+    &+.footnotes-link--wrapper {
 
       // start breakpoints
       @include breakpoint(all-mobile) {
-        display: none; // Hide copied asides on mobile
-      }
-
-      &+.footnotes-link--wrapper {
-
-        // start breakpoints
-        @include breakpoint(all-mobile) {
-          display: none; // Hide copied footnotes link arrow ↑
-        }
+        display: none; // Hide copied footnotes link arrow ↑
       }
     }
+  }
 
-    // start breakpoints
-    @include breakpoint(all-mobile) { // and then display .aside-marker
-      display: inline;
-    }
+  // start breakpoints
+  @include breakpoint(all-mobile) { // and then display .aside-marker
+    display: inline;
   }
 }
 
@@ -469,16 +466,13 @@ q {
 
 // at the bottom of the post
 .footnotes {
+  display: none; // initially hide
   @extend %font-industry--medium;
   color: $black-lightest;
 
-  .js & {
-    display: none; // initially hide, but only when there’s JS
-
-    // start breakpoints
-    @include breakpoint(all-mobile) {
-      display: block;
-    }
+  // start breakpoints
+  @include breakpoint(all-mobile) {
+    display: block;
   }
 }
 
@@ -492,21 +486,18 @@ q {
 .footnotes-link {
 
   .entryContent & { // for the sake of being more specific :(
+    display: none; // initially hide
+    border-bottom: none;
+    transition: color 0.3s;
 
-    .js & {
-      display: none; // initially hide, but only when there’s JS
-      border-bottom: none;
-      transition: color 0.3s;
+    &:hover,
+    &:focus {
+      color: $black-light;
+    }
 
-      &:hover,
-      &:focus {
-        color: $black-light;
-      }
-
-      // start breakpoints
-      @include breakpoint(all-mobile) { // and then display .footnotes-link
-        display: inline;
-      }
+    // start breakpoints
+    @include breakpoint(all-mobile) { // and then display .footnotes-link
+      display: inline;
     }
   }
 }

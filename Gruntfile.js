@@ -140,7 +140,6 @@ module.exports = function (grunt) {
         // 2. Ignored by UnCSS?
         // 3. Added by Google Search in 404.html
         // 4. Added by keyboardNavigation function in application.js
-        // 5. Added by Modernizr when JavaScript is enabled
         ignore: [
           'b', // 3
           /\.browseHappy-.+/, // 1
@@ -149,7 +148,6 @@ module.exports = function (grunt) {
           /h[1-6](.+)?/, // 2
           /input(.+)?/, // 3
           /\.is-.+/, // 4
-          /\.js.+/ // 5
         ],
         report: 'min'
       },
@@ -373,23 +371,6 @@ module.exports = function (grunt) {
         }
       }
     },
-    modernizr: {
-      dist: {
-        devFile: '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
-        outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
-        extra: {
-          shiv: false
-        },
-        uglify: true,
-        files: {
-          src: [
-            '<%= yeoman.dist %>/scripts/**/*.js',
-            '<%= yeoman.dist %>/styles/**/*.css',
-            '!<%= yeoman.dist %>/scripts/vendor/*'
-          ]
-        }
-      }
-    },
     concurrent: {
       server: [
         'sass:server',
@@ -444,7 +425,6 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    'modernizr',
     'newer:imageoptim',
     'svgmin',
     'filerev',
