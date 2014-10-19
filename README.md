@@ -15,15 +15,11 @@ Webworke.rs runs on [Jekyll](http://jekyllrb.com/), a blog-aware, static site ge
 - Ensure that [Command Line Tools for Xcode](https://developer.apple.com/xcode/) is installed and up-to-date
     - To install: `xcode-select --install`
 - Manage your Ruby enviroments with [RVM](https://rvm.io/) or [rbenv](https://github.com/sstephenson/rbenv)
-    - To update RVM : `rvm get stable`
-- Use [Homebrew](http://brew.sh/) to manage [Node.js](http://nodejs.org/) and [ImageMagick](http://www.imagemagick.org/script/)
-    - To install Homebrew: `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
-    - To install Node.js: `brew install node`
-    - To install ImageMagick:`brew install imagemagick`
-    - To update: `brew update`
-    - To upgrade: `brew upgrade`
-    - To cleanup: `brew cleanup`
-    - To check for known issues: `brew doctor`
+    - To update RVM: `rvm get stable`
+- Use [Homebrew](http://brew.sh/) to manage [ImageMagick](http://www.imagemagick.org/script/)
+    - To install Homebrew: `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+    - To install ImageMagick: `brew install imagemagick`
+- Make sure your install of [Node.js](http://nodejs.org/) is up-to-date
 - Install the command line interface for Grunt (please note that Grunt is actually managed by NPM)
     - To install: `npm install -g grunt-cli`
 - Install Bower
@@ -37,7 +33,7 @@ Run the following commands to install the dependencies:
 
 ## Grunt Workflow
 - `grunt serve`: Compiles all files and opens the site in your default browser. A watch task watches for changes to files, recompiles if necessary, and injects the changes into the browser with LiveReload
-- `grunt check`: Checks for outdated dependencies with grunt-dev-update, Javascript code quality with JSHint, and Jekyll health with `jekyll doctor`
+- `grunt check`: Checks for outdated dependencies with grunt-dev-update, Javascript code quality with JSHint, Jekyll health with `jekyll doctor`, and then runs the site through Google’s PageSpeed Insights
 - `grunt build`: Builds an optimized site to the dist directory
 - `grunt deploy`: Builds an optimized site to the dist directory and then deploys it.
 
