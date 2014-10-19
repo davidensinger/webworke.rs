@@ -1,12 +1,15 @@
 {
   "name": "Webworke.rs",
-  "private": true,
   "version": "1.0.0",
+  "description": "Life and Craft in Columbus, Ohio",
+  "author": "David Ensinger <david@webworke.rs>",
   "repository": {
     "type": "git",
     "url": "https://github.com/davidensinger/webworke.rs"
   },
-  "description": "Life and Craft in Columbus, Ohio",
+  "bugs": {
+    "url": "https://github.com/davidensinger/webworke.rs/issues"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -37,7 +40,6 @@
     "load-grunt-tasks": "^0.6.0",
     "time-grunt": "^1.0.0"
   },
-  "engines": {
-    "node": ">=0.10.24"
-  }
+  "private": true,
+  "license": "MIT"
 }
