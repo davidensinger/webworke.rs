@@ -31,7 +31,7 @@
 // Industry Medium Italic
 @font-face {
   font-family: 'industrymedium_italic';
-  src: url('/fonts/Industry-MediumItalic-webfont.woff2') format('woff2');
+  src: url('/fonts/Industry-MediumItalic-webfont.woff2') format('woff2'),
        url('/fonts/Industry-MediumItalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -61,7 +61,7 @@
 // Industry Demi Italic
 @font-face {
   font-family: 'industrydemi_italic';
-  src: url('/fonts/Industry-DemiItalic-webfont.woff2') format('woff2');
+  src: url('/fonts/Industry-DemiItalic-webfont.woff2') format('woff2'),
        url('/fonts/Industry-DemiItalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -76,7 +76,7 @@
 // Industry Bold
 @font-face {
   font-family: 'industrybold';
-  src: url('/fonts/Industry-Bold-webfont.woff2') format('woff2');
+  src: url('/fonts/Industry-Bold-webfont.woff2') format('woff2'),
        url('/fonts/Industry-Bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
