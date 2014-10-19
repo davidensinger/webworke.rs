@@ -48,7 +48,7 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '.jekyll/**/*.{html}',
+          '.jekyll/**/*.html',
           '.tmp/styles/**/*.css',
           '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
           '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg}'
@@ -112,7 +112,7 @@ module.exports = function (grunt) {
     },
     sass: {
       options: {
-        bundleExec: true,
+        bundleExec: true
       },
       dist: {
         files: [{
@@ -269,7 +269,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['**/*.svg'],
+          src: '**/*.svg',
           dest: '<%= yeoman.dist %>'
         }]
       }
