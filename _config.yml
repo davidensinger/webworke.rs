@@ -5,7 +5,7 @@
 # it doesn't work, check if it is set in the Gruntfile.
 
 title: Webworke.rs
-url: http://127.0.0.1:9000
+url: http://localhost:3000
 tagline: Life and Craft in Columbus, OH
 description: Webworke.rs is a website about folks who make websites in Columbus, OH.
 analytics: UA-26697016-1

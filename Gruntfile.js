@@ -42,52 +42,54 @@ module.exports = function (grunt) {
           '!<%= yeoman.app %>/_bower_components/**/*'
         ],
         tasks: ['jekyll:server']
-      },
-      livereload: {
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        },
-        files: [
-          '.jekyll/**/*.html',
-          '.tmp/styles/**/*.css',
-          '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
-          '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg}'
-        ]
       }
     },
-    connect: {
-      options: {
-        port: 9000,
-        livereload: 35729,
-        // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
-      },
-      livereload: {
-        options: {
-          open: true,
-          base: [
-            '.tmp',
-            '.jekyll',
-            '<%= yeoman.app %>'
+    browserSync: {
+      server: {
+        bsFiles: {
+          src: [
+            '.jekyll/**/*.html',
+            '.tmp/styles/**/*.css',
+            '{.tmp,<%= yeoman.app %>}/js/**/*.js',
+            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg}'
           ]
+        },
+        options: {
+          server: {
+            baseDir: [
+              '.jekyll',
+              '.tmp',
+              '<%= yeoman.app %>'
+            ]
+          },
+          watchTask: true
         }
       },
       dist: {
         options: {
-          open: true,
-          base: [
-            '<%= yeoman.dist %>'
-          ]
+          server: {
+            baseDir: '<%= yeoman.dist %>'
+          }
         }
       },
       test: {
-        options: {
-          base: [
-            '.tmp',
-            '.jekyll',
-            'test',
-            '<%= yeoman.app %>'
+        bsFiles: {
+          src: [
+            '.jekyll/**/*.html',
+            '.tmp/styles/**/*.css',
+            '{.tmp,<%= yeoman.app %>}/js/**/*.js',
+            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg}'
           ]
+        },
+        options: {
+          server: {
+            baseDir: [
+              '.jekyll',
+              '.tmp',
+              '<%= yeoman.app %>'
+            ]
+          },
+          watchTask: true
         }
       }
     },
@@ -370,14 +372,14 @@ module.exports = function (grunt) {
   // Define Tasks
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
+      return grunt.task.run(['build', 'browserSync:dist']);
     }
 
     grunt.task.run([
       'clean:server',
       'concurrent:server',
       'autoprefixer:server',
-      'connect:livereload',
+      'browserSync:server',
       'watch'
     ]);
   });
