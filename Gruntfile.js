@@ -136,18 +136,15 @@ module.exports = function (grunt) {
     uncss: {
       options: {
         htmlroot: '.tmp',
-        // 1. Ignored by PhantomJS because of the conditional IE comments?
-        // 2. Ignored by UnCSS?
-        // 3. Added by Google Search in 404.html
-        // 4. Added by keyboardNavigation function in application.js
+        // 1. Ignored by UnCSS?
+        // 2. Added by Google Search in 404.html
+        // 3. Added by keyboardNavigation function in application.js
         ignore: [
-          'b', // 3
-          /\.browseHappy-.+/, // 1
-          'em', // 1
-          /#goog.+/, // 3
-          /h[1-6](.+)?/, // 2
-          /input(.+)?/, // 3
-          /\.is-.+/, // 4
+          'b', // 2
+          /#goog.+/, // 2
+          /h[1-6](.+)?/, // 1
+          /input(.+)?/, // 2
+          /\.is-.+/, // 3
         ],
         report: 'min'
       },
