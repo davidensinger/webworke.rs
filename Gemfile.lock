@@ -38,7 +38,7 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.1.1)
       listen (~> 2.7)
-    kramdown (1.4.2)
+    kramdown (1.5.0)
     liquid (2.6.1)
     listen (2.7.11)
       celluloid (>= 0.15.2)
@@ -58,7 +58,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.2.0)
     safe_yaml (1.0.4)
-    sass (3.4.6)
+    sass (3.4.7)
     subexec (0.2.3)
     timers (4.0.1)
       hitimes
@@ -72,4 +72,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 2.4.0)
   mini_magick (~> 3.8.1)
-  sass (~> 3.4.6)
+  sass (~> 3.4.7)
