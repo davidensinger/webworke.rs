@@ -33,6 +33,11 @@ svg:not(:root) {
     overflow: hidden;
 }
 
+// center picture elements in the event they’re not as wide as their container
+picture {
+  text-align: center;
+}
+
 
 // -------------------------------------
 //  Media width variations
