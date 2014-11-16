@@ -103,7 +103,8 @@ module.exports = function (grunt) {
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
             '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/generated' // Jekyll Picture Tag
+            '!<%= yeoman.dist %>/generated', // Jekyll Picture Tag
+            '!<%= yeoman.dist %>/perf'
           ]
         }]
       },
@@ -359,7 +360,7 @@ module.exports = function (grunt) {
     phantomas: {
       site: {
         options: {
-          indexPath: '<%= yeoman.app %>/perf/phantomas/',
+          indexPath: '<%= yeoman.dist %>/perf/phantomas/',
           options   : {
             'film-strip': false,
             'no-externals': true,
