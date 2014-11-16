@@ -71,26 +71,6 @@ module.exports = function (grunt) {
             baseDir: '<%= yeoman.dist %>'
           }
         }
-      },
-      test: {
-        bsFiles: {
-          src: [
-            '.jekyll/**/*.html',
-            '.tmp/styles/**/*.css',
-            '{.tmp,<%= yeoman.app %>}/js/**/*.js',
-            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg}'
-          ]
-        },
-        options: {
-          server: {
-            baseDir: [
-              '.jekyll',
-              '.tmp',
-              '<%= yeoman.app %>'
-            ]
-          },
-          watchTask: true
-        }
       }
     },
     clean: {
@@ -317,7 +297,6 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%= yeoman.app %>/scripts/**/*.js',
-        'test/spec/**/*.js',
         '!<%= yeoman.app %>/scripts/_vendor/**/*'
       ]
     },
@@ -418,7 +397,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'check',
-    'test',
     'build'
   ]);
 };
