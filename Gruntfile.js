@@ -356,6 +356,19 @@ module.exports = function (grunt) {
         }
       }
     },
+    phantomas: {
+      site: {
+        options: {
+          indexPath: '<%= yeoman.app %>/perf/phantomas/',
+          options   : {
+            'no-externals': true,
+            'timeout': 60
+          },
+          url: 'http://webworke.rs/',
+          buildUi: true
+        }
+      }
+    },
     concurrent: {
       server: [
         'sass',
@@ -392,7 +405,8 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('perf', [
-    'pagespeed'
+    'pagespeed',
+    'phantomas'
   ]);
 
   grunt.registerTask('build', [
@@ -415,6 +429,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('deploy', [
+    'perf',
     'build',
     'buildcontrol'
   ]);
