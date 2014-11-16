@@ -361,6 +361,7 @@ module.exports = function (grunt) {
         options: {
           indexPath: '<%= yeoman.app %>/perf/phantomas/',
           options   : {
+            'film-strip': false,
             'no-externals': true,
             'timeout': 60
           },
