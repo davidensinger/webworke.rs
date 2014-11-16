@@ -31,7 +31,8 @@ author:
   twitter: DavidEnsinger
   googleplus: 111951762509840042073
 
-exclude: ['fonts', 'images', 'perf', 'styles', 'scripts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
+exclude: ['fonts', 'images', 'styles', 'scripts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
+keep_files: ['perf']
 
 # Publish posts with future date.
 # _config.build.yml sets this to false on `grunt build`
