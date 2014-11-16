@@ -40,7 +40,7 @@ html {
 //    http://davidwalsh.name/mobile-highlight-color
 html {
   overflow-y: scroll;
-  font: #{($base-font-size/16px)*100%}/#{$line-height-ratio} $base-font-family; // 16px
+  font: #{($base-font-size/16px)*118.75%}/#{$line-height-ratio} $base-font-family; // 19px
   -webkit-text-size-adjust: 100%; // 1
   text-size-adjust: 100%; // 1
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 2
@@ -52,13 +52,16 @@ html {
 
   // start breakpoints
   @include breakpoint(desktop) {
-    font-size: 106.25%; // 17px
+    font-size: 125%; // 20px
   }
-  @include breakpoint(large-desktop) {
+  @include breakpoint(smaller-than-small-desktop) {
     font-size: 112.5%; // 18px
   }
-  @include breakpoint(extra-large-desktop) {
-    font-size: 118.75%; // 19px
+  @include breakpoint(all-mobile) {
+    font-size: 106.25%; // 17px
+  }
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    font-size: 100%; // 16px
   }
 }
 
