@@ -78,7 +78,7 @@ picture:
         class: 'image sidebar-image'
         itemprop: 'contentURL'
       source_default:
-        width: 479
+        width: 480
     image--3-4:
       ppi: [1]
       source_default:
@@ -94,8 +94,8 @@ picture:
     image--1-3:
       ppi: [1]
       source_default:
-        width: 479
+        width: 480
     image--1-4:
       ppi: [1]
       source_default:
-        width: 479
+        width: 480
