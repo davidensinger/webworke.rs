@@ -140,12 +140,12 @@
 
   &:hover {
     .sidebar-image {
-      background-color: $white;
+      border-color: $white;
     }
   }
   &:focus {
     .sidebar-image {
-      background-color: $focus;
+      border-color: $focus;
     }
   }
 }
@@ -153,10 +153,9 @@
 .sidebar-image {
   display: block;
   @include rem(margin, 0 0 $half-spacing-unit);
-  padding: 3px;
-  border-radius: 50%;
-  background-color: transparent;
-  transition: background-color 0.2s;
+  border: solid 3px transparent;
+  border-radius: 100%;
+  transition: border-color 0.2s;
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
