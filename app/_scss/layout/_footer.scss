@@ -96,6 +96,7 @@
 .siteFooter-tagline--link {
   display: block;
   width: 250px;
+  height: 25px;
   @include rem(margin, $triple-spacing-unit auto 0);
   line-height: 0;
 
@@ -111,4 +112,5 @@
 
 .siteFooter-tagline {
   height: 100%;
+  width: 100%;
 }
