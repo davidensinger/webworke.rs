@@ -257,6 +257,9 @@
 
 .socialShare-icons--link {
   display: block;
+  @include rem(height, $base-spacing-unit);
+  @include rem(width, $base-spacing-unit);
+  line-height: 0;
 
   &:hover,
   &:focus {
@@ -279,8 +282,8 @@
   // _includes/social-icons/
   .social-icons--svg {
     margin: 0 auto;
-    @include rem(height, $base-spacing-unit);
-    @include rem(width, $base-spacing-unit);
+    width: 100%;
+    height: 100%;
     transition: transform 0.3s;
   }
 

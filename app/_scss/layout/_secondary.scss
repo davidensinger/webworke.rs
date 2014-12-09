@@ -189,6 +189,7 @@
 .sidebar-links--link {
   display: block;
   @include rem(width, $one-half-spacing-unit);
+  @include rem(height, $one-half-spacing-unit);
   line-height: 0;
 
   &:hover,
