@@ -51,13 +51,13 @@
 .invisible,
 %invisible { // Hide visually and from screenreaders, but maintain layout
   visibility: hidden;
-  @include opacity(0);
+  opacity: 0;
 }
 
 .visible,
 %visible {
   visibility: visible;
-  @include opacity(1);
+  opacity: 1;
 }
 
 // 1. The space content is one way to avoid an Opera bug when the
