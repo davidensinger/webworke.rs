@@ -81,9 +81,17 @@
 //  Logo
 // -------------------------------------
 
+.siteLogo-ratio {
+  padding-bottom: 9.22%;
+
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    padding-bottom: 25.62%;
+  }
+}
+
 .siteLogo {
   display: block;
-  line-height: 0;
 
   &:hover,
   &:focus {
@@ -101,11 +109,6 @@
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     @include rem(margin-bottom, $base-spacing-unit);
   }
-}
-
-.siteLogo-svg,
-.siteLogo-tagline--svg {
-  height: 100%;
 }
 
 .siteLogo-fill {

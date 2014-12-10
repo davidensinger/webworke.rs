@@ -137,8 +137,13 @@
 
             <div class="siteHeader-primary">
               <a href="{{ site.url }}" title="Return to homepage" class="siteLogo">
-                {% include siteLogo.svg %}
-                {% include siteLogo-tagline.svg %}
+                <div class="FlexEmbed">
+                  <div class="FlexEmbed-ratio siteLogo-ratio"></div>
+                  <div class="FlexEmbed-content">
+                    {% include siteLogo.svg %}
+                    {% include siteLogo-tagline.svg %}
+                  </div>
+                </div>
               </a> <!-- .siteLogo -->
             </div> <!-- .siteHeader-primary -->
 
