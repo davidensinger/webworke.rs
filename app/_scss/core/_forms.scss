@@ -62,7 +62,7 @@ input[type="submit"] {
   -webkit-appearance: button; // 2
   cursor: pointer; // 3
   display: inline-block;
-  @include rem(padding, $half-spacing-unit);
+  padding: #{$half-spacing-unit}rem;
   @extend %font-vollkorn--regular;
   border-radius: 0;
   border: 0;
@@ -134,7 +134,7 @@ input[type="text"],
 textarea {
   width: 100%;
   display: block;
-  @include rem(padding, $half-spacing-unit);
+  padding: #{$half-spacing-unit}rem;
   color: $black-light;
   background-color: $white;
   border: 1px solid $gray-light;
@@ -171,18 +171,19 @@ textarea {
   }
 
   form {
-    @include rem(margin-top, $half-spacing-unit);
+    margin-top: #{$half-spacing-unit}rem;
   }
 }
 
 #goog-wm-qt {
-  @include rem(margin-bottom, $half-spacing-unit);
+  margin-bottom: #{$half-spacing-unit}rem;
 }
+
 
 // -------------------------------------
 //  MailChimp Subscription Form
 // -------------------------------------
 
 #mce-EMAIL {
-  @include rem(margin-bottom, $half-spacing-unit);
+  margin-bottom: #{$half-spacing-unit}rem;
 }

@@ -16,7 +16,7 @@
 }
 
 .about-list--item {
-  @include rem(margin-bottom, $eighth-spacing-unit);
+  margin-bottom: #{$eighth-spacing-unit}rem;
 }
 
 .about-icons--link {
@@ -42,9 +42,9 @@
   .social-icons--svg {
     display: inline-block;
     vertical-align: middle;
-    @include rem(margin, 0 $eighth-spacing-unit 0 0);
-    @include rem(height, $half-spacing-unit);
-    @include rem(width, $half-spacing-unit);
+    margin: 0 #{$eighth-spacing-unit}rem 0 0;
+    height: #{$half-spacing-unit}rem;
+    width: #{$half-spacing-unit}rem;
     transition: transform 0.3s;
   }
 

@@ -7,11 +7,11 @@
 
 
 .siteFooter {
-  @include rem(padding, $base-spacing-unit 0);
+  padding: #{$base-spacing-unit}rem 0;
 
   // start breakpoints
   @include breakpoint(all-mobile) {
-    @include rem(padding, $double-spacing-unit 6%);
+    padding: #{$double-spacing-unit}rem 6%;
   }
 }
 
@@ -30,11 +30,11 @@
 
 .footerNavigation,
 .siteFooter-icons--list {
-  @include rem(margin-bottom, $triple-spacing-unit);
+  margin-bottom: #{$triple-spacing-unit}rem;
 
   // start breakpoints
   @include breakpoint(all-mobile) {
-    @include rem(margin-bottom, $double-spacing-unit);
+    margin-bottom: #{$double-spacing-unit}rem;
   }
   @include breakpoint(middle-mobile) {
     float: none;
@@ -42,7 +42,7 @@
 }
 
 .siteFooter-icons--item {
-  @include rem(margin-left, $base-spacing-unit);
+  margin-left: #{$base-spacing-unit}rem;
 
   &:first-child {
     margin-left: 0;
@@ -51,8 +51,8 @@
 
 .siteFooter-icons--link {
   display: block;
-  @include rem(height, $base-spacing-unit);
-  @include rem(width, $base-spacing-unit);
+  height: #{$base-spacing-unit}rem;
+  width: #{$base-spacing-unit}rem;
   line-height: 0;
 
   &:hover,
@@ -97,7 +97,7 @@
   display: block;
   width: 250px;
   height: 25px;
-  @include rem(margin, $triple-spacing-unit auto 0);
+  margin: #{$triple-spacing-unit}rem auto 0;
   line-height: 0;
 
   &:active {

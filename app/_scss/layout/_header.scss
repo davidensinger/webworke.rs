@@ -31,14 +31,14 @@
 // -------------------------------------
 
 .siteHeader {
-  @include rem(margin-bottom, $double-spacing-unit);
-  @include rem(padding, $double-spacing-unit 0);
+  margin-bottom: #{$double-spacing-unit}rem;
+  padding: #{$double-spacing-unit}rem 0;
   background-color: $white;
 
   // start breakpoints
   @include breakpoint(all-mobile) {
     margin: 0;
-    @include rem(padding, $double-spacing-unit 6%);
+    padding: #{$double-spacing-unit}rem 6%;
   }
 }
 
@@ -107,7 +107,7 @@
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    @include rem(margin-bottom, $base-spacing-unit);
+    margin-bottom: #{$base-spacing-unit}rem;
   }
 }
 
@@ -153,7 +153,7 @@
 // -------------------------------------
 
 .navigation-item {
-  @include rem(margin-left, $base-spacing-unit);
+  margin-left: #{$base-spacing-unit}rem;
   text-transform: uppercase;
   @extend %font-industry--demi;
 

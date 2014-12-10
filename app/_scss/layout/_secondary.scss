@@ -7,7 +7,7 @@
 
 
 .siteSecondary {
-  @include rem(padding, $triple-spacing-unit 6%);
+  padding: #{$triple-spacing-unit}rem 6%;
   color: $white;
   background-color: $black-light;
   background: linear-gradient(160deg, $black-light 50%, mix($black-light, $black, 95%) 50%);
@@ -42,7 +42,7 @@
     width: 30%;
   }
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    @include rem(margin, 0 auto $base-spacing-unit);
+    margin: 0 auto #{$base-spacing-unit}rem;
     float: none;
     width: 75%;
   }
@@ -59,7 +59,7 @@
 .sidebar-heading {
   float: right;
   width: 75%;
-  @include rem(padding-bottom, $half-spacing-unit);
+  padding-bottom: #{$half-spacing-unit}rem;
   @extend %font-industry--demi;
   border-bottom: 2px solid;
 
@@ -71,10 +71,10 @@
     width: 65%;
   }
   @include breakpoint(all-mobile) {
-    @include rem(margin-bottom, $base-spacing-unit);
+    margin-bottom: #{$base-spacing-unit}rem;
   }
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    @include rem(margin-bottom, $one-half-spacing-unit);
+    margin-bottom: #{$one-half-spacing-unit}rem;
     width: 100%;
     float: none;
   }
@@ -152,14 +152,14 @@
 
 .sidebar-image {
   display: block;
-  @include rem(margin, 0 0 $half-spacing-unit);
+  margin: 0 0 #{$half-spacing-unit}rem;
   border: solid 3px transparent;
   border-radius: 100%;
   transition: border-color 0.2s;
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    @include rem(margin, 0 0 $base-spacing-unit);
+    margin: 0 0 #{$base-spacing-unit}rem;
   }
 }
 
@@ -179,17 +179,17 @@
 // -------------------------------------
 
 .sidebar-links--list {
-  @include rem(margin-top, $base-spacing-unit);
+  margin-top: #{$base-spacing-unit}rem;
 }
 
 .sidebar-links--item {
-  @include rem(margin, 0 $eighth-spacing-unit $half-spacing-unit);
+  margin: 0 #{$eighth-spacing-unit}rem #{$half-spacing-unit}rem;
 }
 
 .sidebar-links--link {
   display: block;
-  @include rem(width, $one-half-spacing-unit);
-  @include rem(height, $one-half-spacing-unit);
+  width: #{$one-half-spacing-unit}rem;
+  height: #{$one-half-spacing-unit}rem;
   line-height: 0;
 
   &:hover,

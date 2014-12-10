@@ -7,18 +7,18 @@
 
 .archive-title {
   @extend %entryHeader;
-  @include rem(margin-bottom, $base-spacing-unit);
+  margin-bottom: #{$base-spacing-unit}rem;
 }
 
 .layout-archive {
 
   .post {
     clear: both;
-    @include rem(padding-top, $base-spacing-unit);
+    padding-top: #{$base-spacing-unit}rem;
   }
 
   .entryHeader {
-    @include rem(margin-bottom, $half-spacing-unit);
+    margin-bottom: #{$half-spacing-unit}rem;
     padding: 0;
     border-bottom: 2px solid;
   }
@@ -27,7 +27,7 @@
 
     // start breakpoints
     @include breakpoint(smaller-than-small-desktop) {
-      @include rem(padding-bottom, $quarter-spacing-unit);
+      padding-bottom: #{$quarter-spacing-unit}rem;
     }
   }
 
@@ -35,7 +35,7 @@
 
     // start breakpoints
     @include breakpoint(all-mobile) {
-      @include rem(padding-bottom, $quarter-spacing-unit);
+      padding-bottom: #{$quarter-spacing-unit}rem;
     }
   }
 
@@ -62,7 +62,7 @@
 
   .entryMeta-header {
     float: right;
-    @include rem(margin-top, 1);
+    margin-top: 1rem;
   }
 
   &.page-archive .entryMeta-header {
@@ -84,11 +84,11 @@
   }
 
   .entryMeta-header--categories {
-    @include rem(margin-left, $half-spacing-unit);
+    margin-left: #{$half-spacing-unit}rem;
   }
 
   .entryMeta-header--category {
-    @include rem(margin-right, $half-spacing-unit);
+    margin-right: #{$half-spacing-unit}rem;
     @extend %font-industry--demi;
 
     &:before {
@@ -105,11 +105,11 @@
   }
 
   .entryContent {
-    @include rem(margin-bottom, $base-spacing-unit);
+    margin-bottom: #{$base-spacing-unit}rem;
   }
 
   .entryContent-text {
-    @include rem(margin-bottom, $quarter-spacing-unit);
+    margin-bottom: #{$quarter-spacing-unit}rem;
   }
 
   .entryContent-link {
@@ -122,7 +122,7 @@
   // -------------------------------------
 
   .entryMeta-footer {
-    @include rem(margin-top, $double-spacing-unit);
+    margin-top: #{$double-spacing-unit}rem;
   }
 
 }

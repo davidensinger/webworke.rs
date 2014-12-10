@@ -7,14 +7,14 @@
 
 .entryHeader,
 %entryHeader {
-  @include rem(margin-bottom, $one-half-spacing-unit);
-  @include rem(padding-bottom, $half-spacing-unit);
+  margin-bottom: #{$one-half-spacing-unit}rem;
+  padding-bottom: #{$half-spacing-unit}rem;
   text-transform: uppercase;
   border-bottom: 3px solid;
 }
 
 .entryDate {
-  @include rem(padding, $eighth-spacing-unit);
+  padding: #{$eighth-spacing-unit}rem;
   @extend %font-industry--demi;
 }
 
@@ -45,7 +45,7 @@
 // -------------------------------------
 
 .entryContent {
-  @include rem(margin-bottom, $triple-spacing-unit); // add space between .entryContent and .entryMeta-footer
+  margin-bottom: #{$triple-spacing-unit}rem; // add space between .entryContent and .entryMeta-footer
 
   // inline links that don’t have a class
   a {
@@ -61,14 +61,14 @@
 // -------------------------------------
 
 .entryMeta-footer {
-  @include rem(padding-top, $triple-spacing-unit); // might make sense to mirror .entry-content
+  padding-top: #{$triple-spacing-unit}rem; // might make sense to mirror .entry-content
   border-top: 2px solid;
 }
 
 .entryMeta-footer__post {
   // start breakpoints
   @include breakpoint(all-mobile) {
-    @include rem(padding-top, $double-spacing-unit);
+    padding-top: #{$double-spacing-unit}rem;
   }
 }
 
@@ -170,12 +170,12 @@
 
     // navigation arrows text
     .entryMeta-navigation--link__text {
-      @include rem(padding, $quarter-spacing-unit $half-spacing-unit $eighth-spacing-unit 0);
+      padding: #{$quarter-spacing-unit}rem #{$half-spacing-unit}rem #{$eighth-spacing-unit}rem 0;
     }
 
     // navigation arrows arrow
     .entryMeta-navigation--link__arrow {
-      @include rem(padding, $quarter-spacing-unit $sixteenth-spacing-unit $eighth-spacing-unit $quarter-spacing-unit);
+      padding: #{$quarter-spacing-unit}rem #{$sixteenth-spacing-unit}rem #{$eighth-spacing-unit}rem #{$quarter-spacing-unit}rem;
     }
 
     &:hover,
@@ -193,13 +193,13 @@
 
     // navigation arrows text
     .entryMeta-navigation--link__text {
-      @include rem(padding, $quarter-spacing-unit 0 $eighth-spacing-unit $half-spacing-unit);
+      padding: #{$quarter-spacing-unit}rem 0 #{$eighth-spacing-unit}rem #{$half-spacing-unit}rem;
     }
 
     // navigation arrows arrow
     .entryMeta-navigation--link__arrow {
       float: right;
-      @include rem(padding, $quarter-spacing-unit $quarter-spacing-unit $eighth-spacing-unit $sixteenth-spacing-unit);
+      padding: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem #{$eighth-spacing-unit}rem #{$sixteenth-spacing-unit}rem;
     }
 
     &:hover,
@@ -237,28 +237,28 @@
 
 // social share icons
 .socialShare-icons--list {
-  @include rem(margin-bottom, $double-spacing-unit);
+  margin-bottom: #{$double-spacing-unit}rem;
 
   // start breakpoints
   @include breakpoint(all-mobile) {
-    @include rem(margin-bottom, $base-spacing-unit);
+    margin-bottom: #{$base-spacing-unit}rem;
   }
 }
 
 .socialShare-icons--item {
-  @include rem(margin-left, $quarter-spacing-unit);
+  margin-left: #{$quarter-spacing-unit}rem;
 
   &:first-child {
     margin-left: 0;
     @extend %font-industry--medium;
-    @include rem(padding-bottom, $quarter-spacing-unit);
+    padding-bottom: #{$quarter-spacing-unit}rem;
   }
 }
 
 .socialShare-icons--link {
   display: block;
-  @include rem(height, $base-spacing-unit);
-  @include rem(width, $base-spacing-unit);
+  height: #{$base-spacing-unit}rem;
+  width: #{$base-spacing-unit}rem;
   line-height: 0;
 
   &:hover,
@@ -296,7 +296,7 @@
 
 // posted on paragraph
 .entryMeta-footer--posted {
-  @include rem(margin-bottom, $double-spacing-unit);
+  margin-bottom: #{$double-spacing-unit}rem;
   @extend %font-industry--medium__italic;
 }
 
@@ -314,7 +314,7 @@
 
 // back to top link
 .entryMeta-footer--backToTop {
-  @include rem(padding, $quarter-spacing-unit $quarter-spacing-unit $eighth-spacing-unit);
+  padding: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem #{$eighth-spacing-unit}rem;
   @extend small;
   @extend %font-industry--medium;
   background-color: $white-darkest;

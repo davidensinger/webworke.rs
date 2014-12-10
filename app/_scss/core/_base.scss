@@ -167,7 +167,7 @@ ol {
   }
 
   &+.question {
-    @include rem(margin-top, 1.5);
+    margin-top: #{$base-spacing-unit}rem;
   }
 }
 
@@ -198,7 +198,7 @@ ol {
 ul,
 ol {
   padding: 0;
-  @include rem(margin-left, $base-spacing-unit);
+  margin-left: #{$base-spacing-unit}rem;
 }
 
 .list-unstyled {
@@ -334,8 +334,8 @@ blockquote {
 
 .quote-full {
   position: relative;
-  @include rem(margin-top, $one-half-spacing-unit);
-  @include rem(padding, $base-spacing-unit);
+  margin-top: #{$one-half-spacing-unit}rem;
+  padding: #{$base-spacing-unit}rem;
   text-align: center;
 
   &:before,
@@ -365,12 +365,12 @@ blockquote {
 }
 
 .quote-small {
-  @include rem(padding, $half-spacing-unit $base-spacing-unit);
+  padding: #{$half-spacing-unit}rem #{$base-spacing-unit}rem;
   border-left: 2px solid $white-darkest;
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    @include rem(padding, $base-spacing-unit);
+    padding: #{$base-spacing-unit}rem;
     border-left: none;
 
     // copied from .quote-full
@@ -429,12 +429,12 @@ q {
   // since the markup is copied from the .footnotes li, apply styles only when immediately after .aside-marker
   &+.aside-left {
     float: right;
-    @include rem(margin, $base-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
+    margin: #{$base-spacing-unit}rem 0 #{$base-spacing-unit}rem #{$base-spacing-unit}rem;
   }
 
   &+.aside-right {
     float: left;
-    @include rem(margin, $base-spacing-unit $base-spacing-unit $base-spacing-unit 0);
+    margin: #{$base-spacing-unit}rem #{$base-spacing-unit}rem #{$base-spacing-unit}rem 0;
   }
 
   &+.aside {
@@ -460,7 +460,7 @@ q {
 }
 
 .aside-marker--link {
-  @include rem(padding, 0 $eighth-spacing-unit);
+  padding: 0 #{$eighth-spacing-unit}rem;
 
   &:hover {
     text-decoration: underline;
@@ -480,7 +480,7 @@ q {
 }
 
 .footnotes-item {
-  @include rem(margin-bottom, $base-spacing-unit);
+  margin-bottom: #{$base-spacing-unit}rem;
 }
 
 .footnotes-link--wrapper {

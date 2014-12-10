@@ -11,16 +11,16 @@
 
 .grid {
   @extend .clearfix;
-  @include rem(margin, 0 (-$half-spacing-unit) $base-spacing-unit);
+  margin: 0 -#{$half-spacing-unit}rem #{$base-spacing-unit}rem;
 }
 
 %grid-unit {
   float: left;
-  @include rem(padding, 0 $half-spacing-unit);
+  padding: 0 #{$half-spacing-unit}rem;
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     float: none;
     width: 100% !important; // to overwrite the cascade
-    @include rem(margin-top, $base-spacing-unit);
+    margin-top: #{$base-spacing-unit}rem;
     &:first-child {
       margin-top: 0
     }
@@ -66,7 +66,7 @@
     @include breakpoint(tablet-portrait-to-small-desktop) {
       float: none;
       width: 100%;
-      @include rem(margin-top, $base-spacing-unit);
+      margin-top: #{$base-spacing-unit}rem;
       &:first-child {
         margin-top: 0
       }
@@ -79,7 +79,7 @@
     @include breakpoint(all-mobile) {
       float: none;
       width: 100%;
-      @include rem(margin-top, $base-spacing-unit);
+      margin-top: #{$base-spacing-unit}rem;
       &:first-child {
         margin-top: 0
       }
@@ -92,7 +92,7 @@
     @include breakpoint(mobile-landscape-to-tablet-portrait) {
       float: none;
       width: 100%;
-      @include rem(margin-top, $base-spacing-unit);
+      margin-top: #{$base-spacing-unit}rem;
       &:first-child {
         margin-top: 0
       }

@@ -30,7 +30,7 @@ figure {
 
 // Corrects overflow displayed oddly in IE9
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 // center picture elements in the event they’re not as wide as their container
@@ -86,12 +86,12 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 
 .media--right {
   float: right;
-  @include rem(margin, $quarter-spacing-unit 0 $base-spacing-unit $base-spacing-unit);
+  margin: #{$quarter-spacing-unit}rem 0 #{$base-spacing-unit}rem #{$base-spacing-unit}rem;
 }
 
 .media--left {
   float: left;
-  @include rem(margin, $quarter-spacing-unit $base-spacing-unit $base-spacing-unit 0);
+  margin: #{$quarter-spacing-unit}rem #{$base-spacing-unit}rem #{$base-spacing-unit}rem 0;
 }
 
 // Remove float and center image on small mobile
@@ -102,13 +102,13 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     display: block;
     float: none;
-    @include rem(margin, 0 auto $base-spacing-unit);
+    margin: 0 auto #{$base-spacing-unit}rem;
   }
 }
 
 .media--center {
   display: block;
-  @include rem(margin, 0 auto $base-spacing-unit);
+  margin: 0 auto #{$base-spacing-unit}rem;
 }
 
 
@@ -139,7 +139,7 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 }
 
 .media-caption {
-  @include rem(margin-top, $quarter-spacing-unit);
+  margin-top: #{$quarter-spacing-unit}rem;
   @extend small;
   @extend %font-industry--medium;
 }
@@ -158,7 +158,7 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 
 .imageCaption-image {
   display: block;
-  @include rem(margin, $quarter-spacing-unit 0);
+  margin: #{$quarter-spacing-unit}rem 0;
 }
 
 .imageCaption-figcaption {
