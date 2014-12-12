@@ -111,9 +111,22 @@
       <meta property="og:image:height" content="1024">
     {% endif %}
 
+    {% if site.environment == 'production' %}
+      <style>{% include critical.css %}</style>
+      <script>
+        {% include loadCSS.js %}
+        loadCSS("/styles/application.css");
+      </script>
+      <noscript>
+    {% endif %}
+
     <!-- build:css({app,.tmp}) /styles/application.css -->
     <link href="/styles/application.css" rel="stylesheet">
     <!-- endbuild -->
+
+    {% if site.environment == 'production' %}
+      </noscript>
+    {% endif %}
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
