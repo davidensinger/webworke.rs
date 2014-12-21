@@ -10,19 +10,21 @@
 // -------------------------------------
 
 .grid {
-  @extend .clearfix;
+  @extend %clearfix;
   margin: 0 -#{$half-spacing-unit}rem #{$base-spacing-unit}rem;
 }
 
 %grid-unit {
   float: left;
   padding: 0 #{$half-spacing-unit}rem;
+
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     float: none;
     width: 100% !important; // to overwrite the cascade
     margin-top: #{$base-spacing-unit}rem;
+
     &:first-child {
-      margin-top: 0
+      margin-top: 0;
     }
   }
 }
@@ -57,44 +59,48 @@
   width: 12.5%;
 }
 
-
 // Classes to collapse the grid. By default the grid collapses
 // on mobile-portrait-to-mobile-landscape (max-width: 479px)
-
 .collapse--tablet-portrait-to-small-desktop {
-  [class^="grid-"] {
+
+  [class^='grid-'] {
     @include breakpoint(tablet-portrait-to-small-desktop) {
       float: none;
       width: 100%;
       margin-top: #{$base-spacing-unit}rem;
+
       &:first-child {
-        margin-top: 0
+        margin-top: 0;
       }
     }
   }
 }
 
 .collapse--all-mobile {
-  [class^="grid-"] {
+
+  [class^='grid-'] {
     @include breakpoint(all-mobile) {
       float: none;
       width: 100%;
       margin-top: #{$base-spacing-unit}rem;
+
       &:first-child {
-        margin-top: 0
+        margin-top: 0;
       }
     }
   }
 }
 
 .collapse--mobile-landscape-to-tablet-portrait {
-  [class^="grid-"] {
+
+  [class^='grid-'] {
     @include breakpoint(mobile-landscape-to-tablet-portrait) {
       float: none;
       width: 100%;
       margin-top: #{$base-spacing-unit}rem;
+
       &:first-child {
-        margin-top: 0
+        margin-top: 0;
       }
     }
   }

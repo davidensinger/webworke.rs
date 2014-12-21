@@ -25,14 +25,18 @@
 
   &:hover,
   &:focus {
+
     .social-icons--svg {
       transform: scale(1.2);
     }
   }
+
   &:hover {
+
     .social-icons--svg__path {
       fill: $black;
     }
+
     .about-icons--title {
       border-bottom: 1px solid;
     }

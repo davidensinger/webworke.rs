@@ -88,11 +88,11 @@
   }
 
   .entryMeta-header--category {
-    margin-right: #{$half-spacing-unit}rem;
     @extend %font-industry--demi;
+    margin-right: #{$half-spacing-unit}rem;
 
     &:before {
-      content: "\0023";
+      content: '\0023';
     }
 
     &:last-child {
@@ -114,7 +114,7 @@
 
   .entryContent-link {
     @extend %font-industry--demi;
-    @extend small;
+    @extend %small;
   }
 
   // -------------------------------------
@@ -124,6 +124,5 @@
   .entryMeta-footer {
     margin-top: #{$double-spacing-unit}rem;
   }
-
 }
 

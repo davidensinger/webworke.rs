@@ -14,8 +14,8 @@
 }
 
 .entryDate {
-  padding: #{$eighth-spacing-unit}rem;
   @extend %font-industry--demi;
+  padding: #{$eighth-spacing-unit}rem;
 }
 
 .entryTitle {
@@ -49,6 +49,7 @@
 
   // inline links that don’t have a class
   a {
+
     &:not(.media-image--link):not(.aside-marker--link):not(.footnotes-link) {
       @extend %link-border--bottom;
     }
@@ -66,6 +67,7 @@
 }
 
 .entryMeta-footer__post {
+
   // start breakpoints
   @include breakpoint(all-mobile) {
     padding-top: #{$double-spacing-unit}rem;
@@ -105,12 +107,13 @@
 
 // navigation arrows link
 .entryMeta-navigation--link {
+  @extend %font-industry--medium;
   display: block;
   position: fixed;
   top: 50%;
-  @extend %font-industry--medium;
   color: $black-light;
   pointer-events: none;
+
   &:hover,
   &.is-active {
     color: $white;
@@ -121,6 +124,7 @@
       background-color: $black-light;
     }
   }
+
   &:focus {
     color: inherit;
     background-color: transparent !important; // override default :focus styles in _base.scss
@@ -131,6 +135,7 @@
       background-color: $focus;
     }
   }
+
   &:focus,
   &:hover {
 
@@ -140,6 +145,7 @@
       animation-duration: 0.25s;
     }
   }
+
   &:hover {
 
     // navigation arrows text when :hover or :focus
@@ -147,24 +153,28 @@
       animation-fill-mode: both;
       animation-duration: 0.25s;
     }
+
     // shared styles
     .entryMeta-navigation--link__text,
     .entryMeta-navigation--link__arrow {
       pointer-events: auto;
     }
   }
+
   &:hover,
   &:focus,
   &.is-active {
 
     // navigation arrows text when :hover, :focus, or .is-active via keyboard
     .entryMeta-navigation--link__text {
-      @extend .visible;
+      @extend %visible;
     }
   }
+
   &:active {
     margin-top: 1px;
   }
+
   &.previous {
     left: 0;
 
@@ -188,6 +198,7 @@
       }
     }
   }
+
   &.next {
     right: 0;
 
@@ -216,8 +227,8 @@
 
 // navigation arrows text
 .entryMeta-navigation--link__text {
+  @extend %invisible;
   z-index: 1;
-  @extend .invisible;
   pointer-events: none;
 }
 
@@ -249,8 +260,8 @@
   margin-left: #{$quarter-spacing-unit}rem;
 
   &:first-child {
-    margin-left: 0;
     @extend %font-industry--medium;
+    margin-left: 0;
     padding-bottom: #{$quarter-spacing-unit}rem;
   }
 }
@@ -263,17 +274,22 @@
 
   &:hover,
   &:focus {
+
     .social-icons--svg {
       transform: scale(1.2);
     }
   }
+
   &:hover {
+
     .social-icons--svg__path {
       fill: $black;
     }
   }
+
   &:focus {
     background-color: transparent !important; // override default :focus styles in _base.scss
+
     .social-icons--svg__path {
       fill: $focus;
     }
@@ -296,8 +312,8 @@
 
 // posted on paragraph
 .entryMeta-footer--posted {
-  margin-bottom: #{$double-spacing-unit}rem;
   @extend %font-industry--medium__italic;
+  margin-bottom: #{$double-spacing-unit}rem;
 }
 
 // posted on link
@@ -314,14 +330,16 @@
 
 // back to top link
 .entryMeta-footer--backToTop {
-  padding: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem #{$eighth-spacing-unit}rem;
-  @extend small;
+  @extend %small;
   @extend %font-industry--medium;
+  padding: #{$quarter-spacing-unit}rem #{$quarter-spacing-unit}rem #{$eighth-spacing-unit}rem;
   background-color: $white-darkest;
   transition: background-color 0.3s;
+
   &:hover {
     background-color: $gray-lightest;
   }
+
   &:active {
     @extend %link-active--depressed;
   }

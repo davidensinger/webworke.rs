@@ -13,41 +13,50 @@
     &:before {
       @include fixed(top 0 left 0 right 0);
       z-index: 10;
-      content: "Default Small Desktop";
+      content: 'Default Small Desktop';
       text-align: center;
       color: $white;
-      background: rgba($black, .50);
+      background: rgba($black, 0.5);
+
       @include breakpoint(desktop) {
-        content: "Desktop: min-width: 1281px";
+        content: 'Desktop: min-width: 1281px';
       }
+
       @include breakpoint(large-desktop) {
-        content: "Large Desktop: min-width: 1281px";
+        content: 'Large Desktop: min-width: 1281px';
       }
+
       @include breakpoint(extra-large-desktop) {
-        content: "Extra Large Desktop: min-width: 1601px";
+        content: 'Extra Large Desktop: min-width: 1601px';
       }
+
       @include breakpoint(extra-extra-large-desktop) {
-        content: "Extra Extra Large Desktop: min-width: 1921px";
+        content: 'Extra Extra Large Desktop: min-width: 1921px';
       }
+
       @include breakpoint(smaller-than-small-desktop) {
-        content: "Smaller than Small Desktop: max-width: 959px";
+        content: 'Smaller than Small Desktop: max-width: 959px';
       }
+
       @include breakpoint(tablet-portrait-to-small-desktop) {
-        content: "Tablet Portrait to Small Desktop: min-width: 768px to max-width: 959px";
+        content: 'Tablet Portrait to Small Desktop: min-width: 768px to max-width: 959px';
       }
+
       @include breakpoint(all-mobile) {
-        content: "All Mobile: max-width: 767px";
+        content: 'All Mobile: max-width: 767px';
       }
+
       @include breakpoint(mobile-landscape-to-tablet-portrait) {
-        content: "Mobile Landscape to Tablet Portrait: min-width: 480px to max-width: 767px";
+        content: 'Mobile Landscape to Tablet Portrait: min-width: 480px to max-width: 767px';
       }
+
       @include breakpoint(mobile-portrait-to-mobile-landscape) {
-        content: "Mobile Portrait to Mobile Landscape: max-width: 479px";
+        content: 'Mobile Portrait to Mobile Landscape: max-width: 479px';
       }
+
       @include breakpoint(small-mobile) {
-        content: "Small Mobile: max-width: 320px";
+        content: 'Small Mobile: max-width: 320px';
       }
     }
   }
-
 }

@@ -55,6 +55,7 @@
   @include breakpoint(smaller-than-small-desktop) {
     width: 50%;
   }
+
   @include breakpoint(all-mobile) {
     width: 50%;
   }
@@ -93,6 +94,11 @@
 .siteLogo {
   display: block;
 
+  // start breakpoints
+  @include breakpoint(mobile-portrait-to-mobile-landscape) {
+    margin-bottom: #{$base-spacing-unit}rem;
+  }
+
   &:hover,
   &:focus {
 
@@ -103,11 +109,6 @@
 
   &:active {
     @extend %link-active--depressed;
-  }
-
-  // start breakpoints
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-    margin-bottom: #{$base-spacing-unit}rem;
   }
 }
 
@@ -138,7 +139,7 @@
 }
 
 .siteLogo-tagline--svg {
-  @extend .hidden;
+  @extend %hidden;
 
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
@@ -153,9 +154,9 @@
 // -------------------------------------
 
 .navigation-item {
+  @extend %font-industry--demi;
   margin-left: #{$base-spacing-unit}rem;
   text-transform: uppercase;
-  @extend %font-industry--demi;
 
   .mainNavigation & {
     margin-top: 4px; // to balance the border-bottom in .navigation-link
@@ -174,16 +175,18 @@
 .navigation-link {
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
+
   &:hover {
     border-bottom: 2px solid;
   }
+
   &:active {
     @extend %link-active--depressed;
   }
 
   // current page
   &.is-current {
-    @extend .navigation-link:hover;
+    border-bottom: 2px solid;
     cursor: text;
   }
 }

@@ -12,12 +12,6 @@ img {
   vertical-align: middle;
 }
 
-// Non-fluid images
-img[width],
-img[height] {
-  max-width: none;
-}
-
 // Images in figure elements.
 figure > img {
   display: block;
@@ -127,11 +121,14 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
   }
 
   &:hover {
+
     img {
       border-color: $black-light;
     }
   }
+
   &:focus {
+
     img {
       border-color: $focus;
     }
@@ -139,9 +136,9 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 }
 
 .media-caption {
-  margin-top: #{$quarter-spacing-unit}rem;
-  @extend small;
   @extend %font-industry--medium;
+  @extend %small;
+  margin-top: #{$quarter-spacing-unit}rem;
 }
 
 .media-link {
@@ -153,16 +150,13 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
 //  Image with caption
 // -------------------------------------
 
-.imageCaption-figure {
-}
-
 .imageCaption-image {
   display: block;
   margin: #{$quarter-spacing-unit}rem 0;
 }
 
 .imageCaption-figcaption {
-  @extend small;
+  @extend %small;
   @extend %font-industry--medium;
 }
 

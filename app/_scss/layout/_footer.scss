@@ -36,6 +36,7 @@
   @include breakpoint(all-mobile) {
     margin-bottom: #{$double-spacing-unit}rem;
   }
+
   @include breakpoint(middle-mobile) {
     float: none;
   }
@@ -57,17 +58,22 @@
 
   &:hover,
   &:focus {
+
     .social-icons--svg {
       transform: scale(1.1);
     }
   }
+
   &:hover {
+
     .social-icons--svg__path {
       fill: $black;
     }
   }
+
   &:focus {
     background-color: transparent !important; // override default :focus styles in _base.scss
+
     .social-icons--svg__path {
       fill: $focus;
     }
@@ -100,14 +106,15 @@
   margin: #{$triple-spacing-unit}rem auto 0;
   line-height: 0;
 
-  &:active {
-    @extend %link-active--depressed;
-  }
-
   // start breakpoints
   @include breakpoint(all-mobile) {
     margin-top: 0;
   }
+
+  &:active {
+    @extend %link-active--depressed;
+  }
+
 }
 
 .siteFooter-tagline {

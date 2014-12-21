@@ -21,9 +21,11 @@
   @include breakpoint(tablet-portrait-to-small-desktop) {
     width: 70%;
   }
+
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
     width: 65%;
   }
+
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     width: 100%;
     float: none;
@@ -38,14 +40,17 @@
   @include breakpoint(tablet-portrait-to-small-desktop) {
     width: 25%;
   }
+
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
     width: 30%;
   }
+
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     margin: 0 auto #{$base-spacing-unit}rem;
     float: none;
     width: 75%;
   }
+
   @include breakpoint(small-mobile) {
     width: 100%;
   }
@@ -57,22 +62,25 @@
 // -------------------------------------
 
 .sidebar-heading {
+  @extend %font-industry--demi;
   float: right;
   width: 75%;
   padding-bottom: #{$half-spacing-unit}rem;
-  @extend %font-industry--demi;
   border-bottom: 2px solid;
 
   // start breakpoints
   @include breakpoint(tablet-portrait-to-small-desktop) {
     width: 70%;
   }
+
   @include breakpoint(mobile-landscape-to-tablet-portrait) {
     width: 65%;
   }
+
   @include breakpoint(all-mobile) {
     margin-bottom: #{$base-spacing-unit}rem;
   }
+
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     margin-bottom: #{$one-half-spacing-unit}rem;
     width: 100%;
@@ -81,6 +89,7 @@
 }
 
 .sidebar-heading--link {
+
   &:hover {
 
     // accompanying character entity
@@ -98,16 +107,13 @@
   }
 }
 
-.sidebar-title {
+.sidebar-title,
+.sidebar-organization {
   text-transform: uppercase;
 }
 
 .sidebar-preposition {
   text-transform: lowercase;
-}
-
-.sidebar-organization {
-  @extend .sidebar-title;
 }
 
 // accompanying character entity
@@ -122,8 +128,8 @@
 // -------------------------------------
 
 .sidebar-description {
-  margin-bottom: 0;
   @extend %font-industry--medium;
+  margin-bottom: 0;
 
   a {
     @extend %link-border--bottom;
@@ -139,11 +145,14 @@
   display: block;
 
   &:hover {
+
     .sidebar-image {
       border-color: $white;
     }
   }
+
   &:focus {
+
     .sidebar-image {
       border-color: $focus;
     }
@@ -165,7 +174,7 @@
 
 .sidebar-caption {
   @extend %font-industry--medium;
-  @extend small;
+  @extend %small;
 }
 
 .sidebar-caption--link {
@@ -195,60 +204,76 @@
   &:hover,
   &:focus,
   &:active {
+
     .sidebar-links--svg {
       transform: scale(1.1);
     }
   }
+
   &:hover,
   &:focus {
+
     .sidebar-links--svg__mark {
       fill: $black;
     }
   }
+
   &:focus {
+
     .sidebar-links--svg__circle {
       fill: $focus;
     }
   }
+
   &:active {
     @extend %link-active--depressed;
   }
 
   // start brand specific colors
   &.behance {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #005cff;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.blogger {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #fc4f08;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.dribbble {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #ea4c89;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.email {
+
     &:active {
 
       .sidebar-links--svg__circle {
@@ -256,110 +281,143 @@
       }
     }
   }
+
   &.facebook {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #3b5998;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.flickr {
+
     &:active {
 
       .sidebar-links--svg__mark {
+
+        // scss-lint:disable NestingDepth
         &.svg-mark--left {
           fill: #0063dc;
         }
       }
+
       .sidebar-links--svg__mark {
+
+        // scss-lint:disable NestingDepth
         &.svg-mark--right {
           fill: #ff0084;
         }
       }
     }
   }
+
   &.googleplus {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #dd4b39;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.instagram {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #3f729b;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.linkedin {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #0e76a8;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.pinterest {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #c8232c;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.tumblr {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #34526f;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.twitter {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #00acee;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.vimeo {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #44bbff;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }
     }
   }
+
   &.website {
+
     &:active {
 
       .sidebar-links--svg__circle {
@@ -367,12 +425,15 @@
       }
     }
   }
+
   &.youtube {
+
     &:active {
 
       .sidebar-links--svg__circle {
         fill: #c4302b;
       }
+
       .sidebar-links--svg__mark {
         fill: $white;
       }

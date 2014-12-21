@@ -9,42 +9,34 @@
 //  License: GNU General Public License v2 or later
 //  License URI: http://www.gnu.org/licenses/gpl-2.0.html
 //
-//  A big thanks to the following projects for code and inspiration:
-//
-//  HTML5 Boilerplate: https://github.com/h5bp/html5-boilerplate
-//  Idiomatic CSS: https://github.com/necolas/idiomatic-css
-//  inuit.css: https://github.com/csswizardry/inuit.css
-//  KNACSS-Sass: https://github.com/HugoGiraudel/KNACSS-Sass
-//  MVCSS: https://github.com/mvcss/mvcss
-//
 // ==========================================================================
 
-@charset "UTF-8";
+@charset 'UTF-8';
 
 
 // -------------------------------------
 //  Core
 // -------------------------------------
 
-@import "core/variables";
-@import "core/mixins";
-@import "core/debug";
-@import "core/fonts";
-@import "core/base";
-@import "core/layout";
-@import "core/media";
-@import "core/forms";
-@import "core/helpers";
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/debug';
+@import 'core/fonts';
+@import 'core/base';
+@import 'core/layout';
+@import 'core/media';
+@import 'core/forms';
+@import 'core/helpers';
 
 
 // -------------------------------------
 //  Layout
 // -------------------------------------
 
-@import "layout/header";
-@import "layout/primary";
-@import "layout/details";
-@import "layout/secondary";
-@import "layout/about";
-@import "layout/archive";
-@import "layout/footer";
+@import 'layout/header';
+@import 'layout/primary';
+@import 'layout/details';
+@import 'layout/secondary';
+@import 'layout/about';
+@import 'layout/archive';
+@import 'layout/footer';

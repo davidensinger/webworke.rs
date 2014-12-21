@@ -93,6 +93,14 @@ module.exports = function (grunt) {
         '.jekyll'
       ]
     },
+    scsslint: {
+      options: {
+        bundleExec: true,
+        config: '.scss-lint.yml',
+        colorizeOutput: true
+      },
+      server: '<%= yeoman.app %>/_scss/**/*.scss'
+    },
     sass: {
       options: {
         bundleExec: true,
@@ -383,7 +391,8 @@ module.exports = function (grunt) {
     'devUpdate',
     'clean:server',
     'jekyll:check',
-    'jshint:all'
+    'scsslint',
+    'jshint'
   ]);
 
   grunt.registerTask('perf', [

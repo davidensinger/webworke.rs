@@ -17,7 +17,7 @@
     $i: index($args, $o);
     @if $i
     and $i + 1 <= length($args)
-    and type-of( nth($args, $i + 1) ) == number {
+    and type-of(nth($args, $i + 1)) == number {
       #{$o}: nth($args, $i + 1);
     }
   }
@@ -112,75 +112,60 @@
 // @include vertical-rhythm(20px, 0, 24px, 1.5);
 // @include vertical-rhythm(1.25, 0, 1.5, 1.5);
 
-@mixin vertical-rhythm($font-size: $base-font-size, $margin-top: "", $margin-bottom: "", $line-height: "") {
+@mixin vertical-rhythm($font-size: $base-font-size, $margin-top: '', $margin-bottom: '', $line-height: '') {
 
   @if type-of($font-size) == number and (unit($font-size) == px) {
     // px value given - calculate rem value from font-size
     font-size: $font-size;
     font-size: ($font-size / $base-font-size) * 1rem;
-  } @else {
+  }
+  @else {
     // unitless value - use those directly as rem and calculate the px-fallback
     font-size: round($font-size * $base-font-size);
     font-size: $font-size * 1rem;
   }
 
-  @if $margin-top == "" or $margin-top == 0 or $margin-top == 0px  {
+  @if $margin-top == '' or $margin-top == 0 {
     // 0 -- use it without a unit
     margin-top: 0;
-  } @else if type-of($margin-top) == number and (unit($margin-top) == px) {
+  }
+  @else if type-of($margin-top) == number and (unit($margin-top) == px) {
     // px value given - calculate rem value from font-size
     margin-top: $margin-top;
     margin-top: ($margin-top / $base-font-size) * 1rem;
-  } @else {
+  }
+  @else {
     // unitless value - use those directly as rem and calculate the px-fallback
     margin-top: round($margin-top * $base-font-size);
     margin-top: $margin-top * 1rem;
   }
 
-  @if $margin-bottom == "" or $margin-bottom == 0 or $margin-bottom == 0px  {
+  @if $margin-bottom == '' or $margin-bottom == 0 {
     // 0 -- use it without a unit
     margin-bottom: 0;
-  } @else if type-of($margin-bottom) == number and (unit($margin-bottom) == px) {
+  }
+  @else if type-of($margin-bottom) == number and (unit($margin-bottom) == px) {
     // px value given - calculate rem value from font-size
     margin-bottom: $margin-bottom;
     margin-bottom: ($margin-bottom / $base-font-size) * 1rem;
-  } @else {
+  }
+  @else {
     // unitless value - use those directly as rem and calculate the px-fallback
     margin-bottom: round($margin-bottom * $base-font-size);
     margin-bottom: $margin-bottom * 1rem;
   }
 
-  @if ($line-height == "") {
+  @if ($line-height == '') {
     line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
-  } @else if type-of($line-height) == number and (unit($line-height) == px) {
+  }
+  @else if type-of($line-height) == number and (unit($line-height) == px) {
     line-height: ceil($font-size / $line-height) * ($line-height / $font-size);
-  } @else if type-of($line-height) == number and unitless($line-height) {
+  }
+  @else if type-of($line-height) == number and unitless($line-height) {
     // unitless value - use those directly as rem and calculate the px-fallback
     line-height: $line-height;
-  } @else {
-    line-height: 0;
   }
-}
-
-
-// -------------------------------------
-//  Debug Vertical Alignment
-//  https://github.com/OliverJAsh/VerticalRhythm/blob/gh-pages/css/_vertical-rhythm.scss
-// -------------------------------------
-
-// Usage:
-// @if $debug == true {
-//   @include debug-vertical-alignment($background-color, $line-height);
-// }
-
-@mixin debug-vertical-alignment($background-color: $base-background, $line-height: $base-line-height) {
-  &:after {
-    content: "";
-    height: 1000%;
-    @include absolute(top 0 left 0 right 0 bottom 0);
-    pointer-events: none;
-    background: linear-gradient(bottom, rgba(invert($background-color), 0.25) 5%, transparent 5%);
-    @include rem(background-size, 100% $line-height);
-    background-position: left top;
+  @else {
+    line-height: 0;
   }
 }

@@ -10,8 +10,9 @@
   background-color: transparent;
   border: 0;
   overflow: hidden;
+
   &:before {
-    content: "";
+    content: '';
     display: block;
     width: 0;
     height: 100%;
@@ -35,7 +36,9 @@
   padding: 0;
   position: absolute;
   width: 1px;
+
   &.focusable {
+
     &:active, // Extends the .visuallyHidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
     &:focus {
       clip: auto;
@@ -68,11 +71,13 @@
 //    `:before` to contain the top-margins of child elements.
 .clearfix,
 %clearfix {
+
   &:before,
   &:after {
-    content: " "; // 1
+    content: ' '; // 1
     display: table; // 2
   }
+
   &:after {
     clear: both;
   }
@@ -87,6 +92,7 @@
 %link-border--bottom {
   border-bottom: 1px solid;
   transition: border-color 0.3s;
+
   &:hover {
     border-bottom: 1px transparent;
   }

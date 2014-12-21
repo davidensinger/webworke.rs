@@ -28,38 +28,38 @@ summary {
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-// 1. Prevents iOS text size adjust after orientation change, without disabling user zoom
-//    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
-// 2. Remove webkit tap highlight color
-//    http://davidwalsh.name/mobile-highlight-color
 html {
   overflow-y: scroll;
   font: #{($base-font-size/16px)*118.75%}/#{$line-height-ratio} $base-font-family; // 19px
-  -webkit-text-size-adjust: 100%; // 1
-  text-size-adjust: 100%; // 1
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 2
+  // Prevents iOS text size adjust after orientation change, without disabling user zoom
+  // www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+  text-size-adjust: 100%; // scss-lint:disable PropertySpelling
 
   // http://svgeneration.com/generate/Diagonal-Stripes?scale=10&stripe=e8e7e5&stripe-width=.5&background=ffffff&
   background-color: $white;
   // background-image: url("../images/background-base.svg");
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJPHJlY3Qgd2lkdGg9JzExMCUnIHg9Jy01JScgeT0nLTUlJyBoZWlnaHQ9JzExMCUnIGZpbGw9JyNmZmZmZmYnLz4KCTxsaW5lIHgxPSctMicgeTE9JzEnIHgyPSc3JyB5Mj0nMTAnIHN0cm9rZT0nI2U4ZTdlNScgc3Ryb2tlLXdpZHRoPScuNScvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nNicgeDI9JzcnIHkyPScxNScgc3Ryb2tlPScjZThlN2U1JyBzdHJva2Utd2lkdGg9Jy41Jy8+Cgk8bGluZSB4MT0nLTInIHkxPSctNCcgeDI9JzcnIHkyPSc1JyBzdHJva2U9JyNlOGU3ZTUnIHN0cm9rZS13aWR0aD0nLjUnLz4KPC9zdmc+");
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDUgMTAnPgoJPHJlY3Qgd2lkdGg9JzExMCUnIHg9Jy01JScgeT0nLTUlJyBoZWlnaHQ9JzExMCUnIGZpbGw9JyNmZmZmZmYnLz4KCTxsaW5lIHgxPSctMicgeTE9JzEnIHgyPSc3JyB5Mj0nMTAnIHN0cm9rZT0nI2U4ZTdlNScgc3Ryb2tlLXdpZHRoPScuNScvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nNicgeDI9JzcnIHkyPScxNScgc3Ryb2tlPScjZThlN2U1JyBzdHJva2Utd2lkdGg9Jy41Jy8+Cgk8bGluZSB4MT0nLTInIHkxPSctNCcgeDI9JzcnIHkyPSc1JyBzdHJva2U9JyNlOGU3ZTUnIHN0cm9rZS13aWR0aD0nLjUnLz4KPC9zdmc+');
 
   // start breakpoints
   @include breakpoint(desktop) {
     font-size: 125%; // 20px
   }
+
   @include breakpoint(smaller-than-small-desktop) {
     font-size: 112.5%; // 18px
   }
+
   @include breakpoint(all-mobile) {
     font-size: 106.25%; // 17px
   }
+
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     font-size: 100%; // 16px
   }
@@ -102,9 +102,9 @@ h3,
 h4,
 h5,
 h6 {
+  @extend %font-industry--bold;
   clear: both;
   padding: 0;
-  @extend %font-industry--bold;
 }
 
 h1,
@@ -145,8 +145,8 @@ ol {
 }
 
 .lede {
-  @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
   @extend %font-industry--medium;
+  @include vertical-rhythm($h4-size, 0, $base-spacing-unit, 1.5);
 
   strong {
     @extend %font-industry--demi;
@@ -158,8 +158,8 @@ ol {
 }
 
 .question {
-  margin-bottom: 0;
   @extend %font-industry--demi__italic;
+  margin-bottom: 0;
 
   strong { // this seems counter-intuitive, but it’s to ensure feed readers emphasis the question text
     font-family: inherit;
@@ -201,13 +201,15 @@ ol {
   margin-left: #{$base-spacing-unit}rem;
 }
 
-.list-unstyled {
+.list-unstyled,
+%list-unstyled {
   margin-left: 0;
   list-style: none;
 }
 
 .list-inline {
-  @extend .list-unstyled;
+  @extend %list-unstyled;
+
   > li {
     display: inline-block;
     vertical-align: middle;
@@ -226,9 +228,11 @@ ul,
 ol,
 blockquote,
 pre {
+
   &:first-child {
     margin-top: 0;
   }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -236,6 +240,7 @@ pre {
 
 // No margins on nested elements
 li {
+
   p,
   ul,
   ol {
@@ -253,18 +258,22 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+
   &:focus {
+
     .siteHeader &,
     .sitePrimary &,
     .siteFooter & {
       transition: background-color 0.3s;
       background-color: $focus;
     }
+
     .siteSecondary & {
       transition: color 0.3s;
       color: $focus;
     }
   }
+
   &:hover,
   &:focus,
   &:active { // 1
@@ -297,9 +306,7 @@ i {
 // Corrects font family set oddly in IE6, S4/5, Chrome
 // en.wikipedia.org/wiki/User:Davidgothberg/Test59
 code,
-kbd,
-pre,
-samp {
+pre {
   font-family: monospace, serif;
   font-size: 1em;
 }
@@ -313,9 +320,7 @@ del {
 
 // Improves readability of pre-formatted text in all browsers
 pre {
-  white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word;
 }
 
 // Quote styles
@@ -341,26 +346,24 @@ blockquote {
   &:before,
   &:after {
     @include absolute(left 43.75%);
-    content : "";
+    content: '';
     width: 12.5%;
+
+    // start breakpoints
+    @include breakpoint(mobile-portrait-to-mobile-landscape) {
+      @include absolute(left 0);
+      width: 100%;
+    }
   }
+
   &:before {
     top: 0;
     border-top: 2px solid $white-darkest;
   }
+
   &:after {
     bottom: 0;
     border-bottom: 2px solid $white-darkest;
-  }
-
-  // start breakpoints
-  @include breakpoint(mobile-portrait-to-mobile-landscape) {
-
-    &:before,
-    &:after {
-      @include absolute(left 0);
-      width: 100%;
-    }
   }
 }
 
@@ -371,7 +374,7 @@ blockquote {
   // start breakpoints
   @include breakpoint(mobile-portrait-to-mobile-landscape) {
     padding: #{$base-spacing-unit}rem;
-    border-left: none;
+    border-left: 0;
 
     // copied from .quote-full
     text-align: center;
@@ -381,33 +384,23 @@ blockquote {
 }
 
 .citation-small {
-  @extend small;
+  @extend %small;
   @extend %font-industry--medium__italic;
 
   &:before {
-    content: "\2015\00A0";
+    content: '\2015\00A0';
   }
 }
 
-%citation-small--link,
-.citation-small--link {
+.citation-small--link,
+%citation-small--link {
   @extend %font-industry--medium;
-}
-
-// Set consistent quote types.
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-  &:before,
-  &:after { // Addresses quote property not supported in S4
-    content: '';
-    content: none;
-  }
 }
 
 // asides
 .aside {
-  width: 25%;
   @extend %font-industry--medium__italic;
+  width: 25%;
   color: $black-lightest;
 
   // start breakpoints
@@ -417,11 +410,18 @@ q {
 }
 
 .aside-marker {
-  display: none; // initially hide
   @extend %font-industry--bold;
+  display: none; // initially hide
+
+  // start breakpoints
+  @include breakpoint(all-mobile) { // and then display .aside-marker
+    display: inline;
+  }
+
   &:before {
     content: '\005B';
   }
+
   &:after {
     content: '\005D';
   }
@@ -453,10 +453,6 @@ q {
     }
   }
 
-  // start breakpoints
-  @include breakpoint(all-mobile) { // and then display .aside-marker
-    display: inline;
-  }
 }
 
 .aside-marker--link {
@@ -469,8 +465,8 @@ q {
 
 // at the bottom of the post
 .footnotes {
-  display: none; // initially hide
   @extend %font-industry--medium;
+  display: none; // initially hide
   color: $black-lightest;
 
   // start breakpoints
@@ -483,30 +479,28 @@ q {
   margin-bottom: #{$base-spacing-unit}rem;
 }
 
-.footnotes-link--wrapper {
-
-}
 .footnotes-link {
 
   .entryContent & { // for the sake of being more specific :(
     display: none; // initially hide
-    border-bottom: none;
+    border-bottom: 0;
     transition: color 0.3s;
-
-    &:hover,
-    &:focus {
-      color: $black-light;
-    }
 
     // start breakpoints
     @include breakpoint(all-mobile) { // and then display .footnotes-link
       display: inline;
     }
+
+    &:hover,
+    &:focus {
+      color: $black-light;
+    }
   }
 }
 
 // Address inconsistent and variable font size in all browsers.
-small {
+small,
+%small {
   font-size: 80%;
 }
 
