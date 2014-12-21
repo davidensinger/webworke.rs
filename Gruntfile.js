@@ -126,13 +126,13 @@ module.exports = function (grunt) {
       dist: {
         expand: true,
         cwd: '.tmp',
-        src: 'concat/styles/*.css',
+        src: 'concat/styles/application.css',
         dest: '.tmp'
       },
       server: {
         expand: true,
         cwd: '.tmp',
-        src: 'styles/*.css',
+        src: 'styles/application.css',
         dest: '.tmp'
       }
     },
@@ -143,6 +143,13 @@ module.exports = function (grunt) {
         url : 'http://localhost:3000',
         width : 480,
         height : 768
+      }
+    },
+    csscomb: {
+      dist: {
+        files: {
+          '.tmp/concat/styles/application.css': '.tmp/concat/styles/application.css'
+        }
       }
     },
     jekyll: {
@@ -408,6 +415,7 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concat',
     'autoprefixer:dist',
+    'csscomb',
     'cssmin',
     'uglify',
     'newer:imageoptim',
