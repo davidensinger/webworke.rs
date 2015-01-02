@@ -78,78 +78,78 @@
     },
     "bodySize": {
       "values": [
-        449105,
-        491341,
-        528244,
-        564744,
-        648140,
+        220171,
+        237986,
+        311275,
+        325862,
+        335061,
         null
       ],
-      "sum": 2681574,
-      "min": 449105,
-      "max": 648140,
-      "median": 528244,
-      "average": 536314.8
+      "sum": 1430355,
+      "min": 220171,
+      "max": 335061,
+      "median": 311275,
+      "average": 286071
     },
     "contentLength": {
       "values": [
-        615971,
-        615971,
-        616648,
-        626660,
-        664955,
+        359942,
+        360954,
+        361187,
+        361187,
+        369141,
         null
       ],
-      "sum": 3140205,
-      "min": 615971,
-      "max": 664955,
-      "median": 616648,
-      "average": 628041
+      "sum": 1812411,
+      "min": 359942,
+      "max": 369141,
+      "median": 361187,
+      "average": 362482.2
     },
     "httpTrafficCompleted": {
       "values": [
-        16717,
-        19853,
-        19903,
-        20030,
-        20142,
+        2776,
+        2982,
+        3014,
+        3254,
+        13188,
         null
       ],
-      "sum": 96645,
-      "min": 16717,
-      "max": 20142,
-      "median": 19903,
-      "average": 19329
+      "sum": 25214,
+      "min": 2776,
+      "max": 13188,
+      "median": 3014,
+      "average": 5042.8
     },
     "timeToFirstByte": {
       "values": [
-        83,
-        86,
-        93,
-        105,
-        116,
+        629,
+        638,
+        658,
+        706,
+        732,
         null
       ],
-      "sum": 483,
-      "min": 83,
-      "max": 116,
-      "median": 93,
-      "average": 96.6
+      "sum": 3363,
+      "min": 629,
+      "max": 732,
+      "median": 658,
+      "average": 672.6
     },
     "timeToLastByte": {
       "values": [
-        109,
-        110,
-        121,
-        143,
-        150,
+        683,
+        689,
+        694,
+        711,
+        757,
         null
       ],
-      "sum": 633,
-      "min": 109,
-      "max": 150,
-      "median": 121,
-      "average": 126.6
+      "sum": 3534,
+      "min": 683,
+      "max": 757,
+      "median": 694,
+      "average": 706.8
     },
     "ajaxRequests": {
       "values": [
@@ -183,18 +183,18 @@
     },
     "htmlSize": {
       "values": [
-        55150,
-        55150,
-        55827,
-        65839,
-        104134,
+        52425,
+        53437,
+        53670,
+        53670,
+        61624,
         null
       ],
-      "sum": 336100,
-      "min": 55150,
-      "max": 104134,
-      "median": 55827,
-      "average": 67220
+      "sum": 274826,
+      "min": 52425,
+      "max": 61624,
+      "median": 53670,
+      "average": 54965.2
     },
     "cssCount": {
       "values": [
@@ -288,33 +288,33 @@
     },
     "imageCount": {
       "values": [
-        6,
-        6,
-        6,
-        6,
-        6,
+        7,
+        7,
+        7,
+        7,
+        7,
         null
       ],
-      "sum": 30,
-      "min": 6,
-      "max": 6,
-      "median": 6,
-      "average": 6
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
     },
     "imageSize": {
       "values": [
-        326531,
-        326531,
-        326531,
-        326531,
-        326531,
+        110739,
+        110739,
+        110739,
+        110739,
+        110739,
         null
       ],
-      "sum": 1632655,
-      "min": 326531,
-      "max": 326531,
-      "median": 326531,
-      "average": 326531
+      "sum": 553695,
+      "min": 110739,
+      "max": 110739,
+      "median": 110739,
+      "average": 110739
     },
     "videoCount": {
       "values": [
@@ -348,33 +348,33 @@
     },
     "webfontCount": {
       "values": [
-        7,
-        7,
-        7,
-        7,
-        7,
+        6,
+        6,
+        6,
+        6,
+        6,
         null
       ],
-      "sum": 35,
-      "min": 7,
-      "max": 7,
-      "median": 7,
-      "average": 7
+      "sum": 30,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
     },
     "webfontSize": {
       "values": [
-        192016,
-        192016,
-        192016,
-        192016,
-        192016,
+        154504,
+        154504,
+        154504,
+        154504,
+        154504,
         null
       ],
-      "sum": 960080,
-      "min": 192016,
-      "max": 192016,
-      "median": 192016,
-      "average": 192016
+      "sum": 772520,
+      "min": 154504,
+      "max": 154504,
+      "median": 154504,
+      "average": 154504
     },
     "base64Count": {
       "values": [
@@ -633,18 +633,18 @@
     },
     "documentHeight": {
       "values": [
-        13627,
-        13627,
-        13627,
-        13627,
-        13627,
+        12561,
+        12561,
+        12561,
+        12561,
+        12561,
         null
       ],
-      "sum": 68135,
-      "min": 13627,
-      "max": 13627,
-      "median": 13627,
-      "average": 13627
+      "sum": 62805,
+      "min": 12561,
+      "max": 12561,
+      "median": 12561,
+      "average": 12561
     },
     "commentsSize": {
       "values": [
@@ -663,33 +663,33 @@
     },
     "whiteSpacesSize": {
       "values": [
-        19,
-        19,
-        19,
-        19,
-        19,
+        18,
+        18,
+        18,
+        18,
+        18,
         null
       ],
-      "sum": 95,
-      "min": 19,
-      "max": 19,
-      "median": 19,
-      "average": 19
+      "sum": 90,
+      "min": 18,
+      "max": 18,
+      "median": 18,
+      "average": 18
     },
     "DOMelementsCount": {
       "values": [
-        457,
-        457,
-        457,
-        457,
-        457,
+        398,
+        398,
+        398,
+        398,
+        398,
         null
       ],
-      "sum": 2285,
-      "min": 457,
-      "max": 457,
-      "median": 457,
-      "average": 457
+      "sum": 1990,
+      "min": 398,
+      "max": 398,
+      "median": 398,
+      "average": 398
     },
     "DOMelementMaxDepth": {
       "values": [
@@ -723,33 +723,33 @@
     },
     "imagesScaledDown": {
       "values": [
-        6,
-        6,
-        6,
-        6,
-        6,
+        8,
+        8,
+        8,
+        8,
+        8,
         null
       ],
-      "sum": 30,
-      "min": 6,
-      "max": 6,
-      "median": 6,
-      "average": 6
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
     },
     "imagesWithoutDimensions": {
       "values": [
-        7,
-        7,
-        7,
-        7,
-        7,
+        8,
+        8,
+        8,
+        8,
+        8,
         null
       ],
-      "sum": 35,
-      "min": 7,
-      "max": 7,
-      "median": 7,
-      "average": 7
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
     },
     "DOMidDuplicated": {
       "values": [
@@ -828,18 +828,18 @@
     },
     "DOMqueries": {
       "values": [
-        12,
-        12,
-        12,
-        12,
-        12,
+        13,
+        13,
+        13,
+        13,
+        13,
         null
       ],
-      "sum": 60,
-      "min": 12,
-      "max": 12,
-      "median": 12,
-      "average": 12
+      "sum": 65,
+      "min": 13,
+      "max": 13,
+      "median": 13,
+      "average": 13
     },
     "DOMqueriesById": {
       "values": [
@@ -873,18 +873,18 @@
     },
     "DOMqueriesByTagName": {
       "values": [
-        10,
-        10,
-        10,
-        10,
-        10,
+        11,
+        11,
+        11,
+        11,
+        11,
         null
       ],
-      "sum": 50,
-      "min": 10,
-      "max": 10,
-      "median": 10,
-      "average": 10
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
     },
     "DOMqueriesByQuerySelectorAll": {
       "values": [
@@ -918,33 +918,33 @@
     },
     "DOMqueriesDuplicated": {
       "values": [
-        2,
-        2,
-        2,
-        2,
-        2,
+        3,
+        3,
+        3,
+        3,
+        3,
         null
       ],
-      "sum": 10,
-      "min": 2,
-      "max": 2,
-      "median": 2,
-      "average": 2
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
     },
     "DOMqueriesAvoidable": {
       "values": [
-        2,
-        2,
-        2,
-        2,
-        2,
+        5,
+        5,
+        5,
+        5,
+        5,
         null
       ],
-      "sum": 10,
-      "min": 2,
-      "max": 2,
-      "median": 2,
-      "average": 2
+      "sum": 25,
+      "min": 5,
+      "max": 5,
+      "median": 5,
+      "average": 5
     },
     "domains": {
       "values": [
@@ -1083,18 +1083,18 @@
     },
     "headersSize": {
       "values": [
-        9620,
-        9620,
-        9620,
-        9620,
-        9620,
+        9596,
+        9596,
+        9596,
+        9596,
+        9596,
         null
       ],
-      "sum": 48100,
-      "min": 9620,
-      "max": 9620,
-      "median": 9620,
-      "average": 9620
+      "sum": 47980,
+      "min": 9596,
+      "max": 9596,
+      "median": 9596,
+      "average": 9596
     },
     "headersSentSize": {
       "values": [
@@ -1113,18 +1113,18 @@
     },
     "headersRecvSize": {
       "values": [
-        7943,
-        7943,
-        7943,
-        7943,
-        7943,
+        7919,
+        7919,
+        7919,
+        7919,
+        7919,
         null
       ],
-      "sum": 39715,
-      "min": 7943,
-      "max": 7943,
-      "median": 7943,
-      "average": 7943
+      "sum": 39595,
+      "min": 7919,
+      "max": 7919,
+      "median": 7919,
+      "average": 7919
     },
     "headersBiggerThanContent": {
       "values": [
@@ -1293,18 +1293,18 @@
     },
     "assetsWithCookies": {
       "values": [
-        8,
-        8,
-        8,
-        8,
-        8,
+        9,
+        9,
+        9,
+        9,
+        9,
         null
       ],
-      "sum": 40,
-      "min": 8,
-      "max": 8,
-      "median": 8,
-      "average": 8
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
     },
     "smallImages": {
       "values": [
@@ -1338,138 +1338,138 @@
     },
     "timeToFirstCss": {
       "values": [
-        119,
-        127,
-        164,
-        165,
-        177,
+        710,
+        716,
+        729,
+        749,
+        796,
         null
       ],
-      "sum": 752,
-      "min": 119,
-      "max": 177,
-      "median": 164,
-      "average": 150.4
+      "sum": 3700,
+      "min": 710,
+      "max": 796,
+      "median": 729,
+      "average": 740
     },
     "timeToFirstJs": {
       "values": [
-        154,
-        209,
-        255,
-        256,
-        267,
+        731,
+        749,
+        844,
+        984,
+        2995,
         null
       ],
-      "sum": 1141,
-      "min": 154,
-      "max": 267,
-      "median": 255,
-      "average": 228.2
+      "sum": 6303,
+      "min": 731,
+      "max": 2995,
+      "median": 844,
+      "average": 1260.6
     },
     "timeToFirstImage": {
       "values": [
-        517,
-        526,
-        528,
-        550,
-        575,
+        2785,
+        2993,
+        3021,
+        3266,
+        13199,
         null
       ],
-      "sum": 2696,
-      "min": 517,
-      "max": 575,
-      "median": 528,
-      "average": 539.2
+      "sum": 25264,
+      "min": 2785,
+      "max": 13199,
+      "median": 3021,
+      "average": 5052.8
     },
     "domInteractive": {
       "values": [
-        208,
-        289,
-        291,
-        312,
-        346,
+        84,
+        90,
+        119,
+        282,
+        2315,
         null
       ],
-      "sum": 1446,
-      "min": 208,
-      "max": 346,
-      "median": 291,
-      "average": 289.2
+      "sum": 2890,
+      "min": 84,
+      "max": 2315,
+      "median": 119,
+      "average": 578
     },
     "domContentLoaded": {
       "values": [
-        208,
-        290,
-        292,
-        312,
-        347,
+        84,
+        90,
+        119,
+        282,
+        2316,
         null
       ],
-      "sum": 1449,
-      "min": 208,
-      "max": 347,
-      "median": 292,
-      "average": 289.8
+      "sum": 2891,
+      "min": 84,
+      "max": 2316,
+      "median": 119,
+      "average": 578.2
     },
     "domContentLoadedEnd": {
       "values": [
-        308,
-        321,
-        422,
-        448,
-        472,
+        88,
+        94,
+        122,
+        285,
+        2326,
         null
       ],
-      "sum": 1971,
-      "min": 308,
-      "max": 472,
-      "median": 422,
-      "average": 394.2
+      "sum": 2915,
+      "min": 88,
+      "max": 2326,
+      "median": 122,
+      "average": 583
     },
     "domComplete": {
       "values": [
-        16646,
-        19788,
-        19836,
-        19903,
-        20028,
+        2098,
+        2290,
+        2346,
+        2514,
+        12517,
         null
       ],
-      "sum": 96201,
-      "min": 16646,
-      "max": 20028,
-      "median": 19836,
-      "average": 19240.2
+      "sum": 21765,
+      "min": 2098,
+      "max": 12517,
+      "median": 2346,
+      "average": 4353
     },
     "timeBackend": {
       "values": [
-        0,
-        0,
-        0,
-        1,
-        1,
+        5,
+        21,
+        23,
+        24,
+        24,
         null
       ],
-      "sum": 2,
-      "min": 0,
-      "max": 1,
-      "median": 0,
-      "average": 0.4
+      "sum": 97,
+      "min": 5,
+      "max": 24,
+      "median": 23,
+      "average": 19.4
     },
     "timeFrontend": {
       "values": [
-        99,
-        99,
-        100,
-        100,
-        100,
+        76,
+        76,
+        77,
+        79,
+        95,
         null
       ],
-      "sum": 498,
-      "min": 99,
-      "max": 100,
-      "median": 100,
-      "average": 99.6
+      "sum": 403,
+      "min": 76,
+      "max": 95,
+      "median": 77,
+      "average": 80.6
     },
     "blockedRequests": {
       "values": [
@@ -1533,18 +1533,18 @@
     },
     "bodyHTMLSize": {
       "values": [
-        100232,
-        100232,
-        100232,
-        100232,
-        100232,
+        102470,
+        102470,
+        102470,
+        102470,
+        102470,
         null
       ],
-      "sum": 501160,
-      "min": 100232,
-      "max": 100232,
-      "median": 100232,
-      "average": 100232
+      "sum": 512350,
+      "min": 102470,
+      "max": 102470,
+      "median": 102470,
+      "average": 102470
     },
     "iframesCount": {
       "values": [
@@ -1563,139 +1563,139 @@
     },
     "smallestResponse": {
       "values": [
-        10266,
-        10266,
-        10266,
-        10266,
-        10266,
+        4710,
+        4710,
+        4710,
+        4710,
+        4710,
         null
       ],
-      "sum": 51330,
-      "min": 10266,
-      "max": 10266,
-      "median": 10266,
-      "average": 10266
+      "sum": 23550,
+      "min": 4710,
+      "max": 4710,
+      "median": 4710,
+      "average": 4710
     },
     "biggestResponse": {
       "values": [
-        84262,
-        84262,
-        84262,
-        84262,
-        104134,
+        52425,
+        53437,
+        53670,
+        53670,
+        61624,
         null
       ],
-      "sum": 441182,
-      "min": 84262,
-      "max": 104134,
-      "median": 84262,
-      "average": 88236.4
+      "sum": 274826,
+      "min": 52425,
+      "max": 61624,
+      "median": 53670,
+      "average": 54965.2
     },
     "fastestResponse": {
       "values": [
-        30,
-        31,
-        41,
         44,
-        48,
+        52,
+        58,
+        64,
+        79,
         null
       ],
-      "sum": 194,
-      "min": 30,
-      "max": 48,
-      "median": 41,
-      "average": 38.8
+      "sum": 297,
+      "min": 44,
+      "max": 79,
+      "median": 58,
+      "average": 59.4
     },
     "slowestResponse": {
       "values": [
-        16316,
-        19472,
-        19537,
-        19607,
-        19726,
+        2043,
+        2049,
+        2301,
+        2459,
+        10200,
         null
       ],
-      "sum": 94658,
-      "min": 16316,
-      "max": 19726,
-      "median": 19537,
-      "average": 18931.6
+      "sum": 19052,
+      "min": 2043,
+      "max": 10200,
+      "median": 2301,
+      "average": 3810.4
     },
     "smallestLatency": {
       "values": [
-        29,
-        30,
         35,
+        36,
         44,
-        47,
+        45,
+        64,
         null
       ],
-      "sum": 185,
-      "min": 29,
-      "max": 47,
-      "median": 35,
-      "average": 37
+      "sum": 224,
+      "min": 35,
+      "max": 64,
+      "median": 44,
+      "average": 44.8
     },
     "biggestLatency": {
       "values": [
-        233,
-        255,
-        265,
-        16293,
-        19726,
+        2033,
+        2043,
+        2258,
+        2396,
+        10199,
         null
       ],
-      "sum": 36772,
-      "min": 233,
-      "max": 19726,
-      "median": 265,
-      "average": 7354.4
+      "sum": 18929,
+      "min": 2033,
+      "max": 10199,
+      "median": 2258,
+      "average": 3785.8
     },
     "medianResponse": {
       "values": [
-        153.5,
-        158.5,
-        170.5,
-        183,
-        195,
+        2004,
+        2004,
+        2213.5,
+        2257.5,
+        2391.5,
         null
       ],
-      "sum": 860.5,
-      "min": 153.5,
-      "max": 195,
-      "median": 170.5,
-      "average": 172.1
+      "sum": 10870.5,
+      "min": 2004,
+      "max": 2391.5,
+      "median": 2213.5,
+      "average": 2174.1
     },
     "medianLatency": {
       "values": [
-        110.5,
-        116.5,
-        143.5,
-        146.5,
-        152,
+        395.5,
+        1561,
+        2003,
+        2004,
+        2213.5,
         null
       ],
-      "sum": 669,
-      "min": 110.5,
-      "max": 152,
-      "median": 143.5,
-      "average": 133.8
+      "sum": 8177,
+      "min": 395.5,
+      "max": 2213.5,
+      "median": 2003,
+      "average": 1635.4
     }
   },
   "offenders": {
     "gzipRequests": [
-      "http://webworke.rs/ (gzip: 101.69 kB / uncompressed: 101.69 kB)",
+      "http://webworke.rs/ (gzip: 60.18 kB / uncompressed: 60.18 kB)",
       "http://webworke.rs/styles/application.2742.css (gzip: 31.26 kB / uncompressed: 31.26 kB)",
       "http://webworke.rs/scripts/application.697d.js (gzip: 10.03 kB / uncompressed: 10.03 kB)",
-      "http://webworke.rs/ (gzip: 54.52 kB / uncompressed: 54.52 kB)",
-      "http://webworke.rs/ (gzip: 64.30 kB / uncompressed: 64.30 kB)",
-      "http://webworke.rs/ (gzip: 53.86 kB / uncompressed: 53.86 kB)"
+      "http://webworke.rs/ (gzip: 51.20 kB / uncompressed: 51.20 kB)",
+      "http://webworke.rs/ (gzip: 52.41 kB / uncompressed: 52.41 kB)",
+      "http://webworke.rs/ (gzip: 52.18 kB / uncompressed: 52.18 kB)"
     ],
     "htmlCount": [
-      "http://webworke.rs/ (101.69 kB)",
-      "http://webworke.rs/ (54.52 kB)",
-      "http://webworke.rs/ (64.30 kB)",
-      "http://webworke.rs/ (53.86 kB)"
+      "http://webworke.rs/ (60.18 kB)",
+      "http://webworke.rs/ (51.20 kB)",
+      "http://webworke.rs/ (52.41 kB)",
+      "http://webworke.rs/ (52.18 kB)"
     ],
     "cssCount": [
       "http://webworke.rs/styles/application.2742.css (31.26 kB)"
@@ -1704,21 +1704,21 @@
       "http://webworke.rs/scripts/application.697d.js (10.03 kB)"
     ],
     "imageCount": [
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png (23.71 kB)",
-      "http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg (27.07 kB)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg (38.13 kB)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (67.82 kB)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg (79.86 kB)",
-      "http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg (82.29 kB)"
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (14.86 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (23.87 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (4.60 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (14.44 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png (10.59 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png (13.52 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg (26.27 kB)"
     ],
     "webfontCount": [
       "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (34.13 kB)",
-      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff (23.05 kB)",
-      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff (22.93 kB)",
       "http://webworke.rs/fonts/Industry-Medium-webfont.4a8d.woff (22.96 kB)",
       "http://webworke.rs/fonts/Industry-DemiItalic-webfont.256d.woff (23.96 kB)",
-      "http://webworke.rs/fonts/Vollkorn-Semibold-webfont.4104.woff (36.63 kB)",
-      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff (23.86 kB)"
+      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff (23.86 kB)",
+      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff (22.93 kB)",
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff (23.05 kB)"
     ],
     "cacheHits": [
       "http://webworke.rs/"
@@ -1727,68 +1727,72 @@
       "http://webworke.rs/styles/application.2742.css",
       "http://webworke.rs/scripts/application.697d.js",
       "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff",
-      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff",
-      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff",
       "http://webworke.rs/fonts/Industry-Medium-webfont.4a8d.woff",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg",
       "http://webworke.rs/fonts/Industry-DemiItalic-webfont.256d.woff",
-      "http://webworke.rs/fonts/Vollkorn-Semibold-webfont.4104.woff",
       "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png",
-      "http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg",
-      "http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg"
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg",
+      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png",
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg"
     ],
     "oldCachingHeaders": [
-      "http://webworke.rs/ - Expires: Sun, 07 Dec 2014 18:44:39 GMT",
-      "http://webworke.rs/styles/application.2742.css - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/scripts/application.697d.js - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Industry-Medium-webfont.4a8d.woff - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/fonts/Industry-DemiItalic-webfont.256d.woff - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/fonts/Vollkorn-Semibold-webfont.4104.woff - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/fonts/Industry-Medium-webfont.4a8d.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Industry-DemiItalic-webfont.256d.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Vollkorn-Semibold-webfont.4104.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg - Expires: Mon, 07 Dec 2015 20:11:49 GMT",
-      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff - Expires: Mon, 07 Dec 2015 20:11:50 GMT",
-      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff - Expires: Mon, 07 Dec 2015 20:11:50 GMT"
+      "http://webworke.rs/ - Expires: Tue, 09 Dec 2014 21:34:43 GMT",
+      "http://webworke.rs/styles/application.2742.css - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/scripts/application.697d.js - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/fonts/Industry-Medium-webfont.4a8d.woff - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/fonts/Industry-DemiItalic-webfont.256d.woff - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg - Expires: Wed, 09 Dec 2015 21:24:48 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg - Expires: Wed, 09 Dec 2015 21:24:50 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png - Expires: Wed, 09 Dec 2015 21:24:49 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png - Expires: Wed, 09 Dec 2015 21:24:49 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg - Expires: Wed, 09 Dec 2015 21:24:49 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png - Expires: Wed, 09 Dec 2015 21:24:49 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png - Expires: Wed, 09 Dec 2015 21:24:49 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg - Expires: Wed, 09 Dec 2015 21:24:49 GMT"
     ],
     "domainsWithCookies": [
       "webworke.rs: 1 cookie(s)"
     ],
     "imagesScaledDown": [
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (320x320 -> 253x253)",
-      "http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg (320x275 -> 251x215)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg (320x249 -> 251x195)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg (320x249 -> 251x195)",
-      "http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg (320x320 -> 253x253)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (320x320 -> 196x196)"
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (320x320 -> 253x253)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (320x249 -> 251x195)",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (320x53 -> 251x41)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (320x184 -> 251x144)",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png (320x261 -> 251x204)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png (320x160 -> 251x125)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg (320x198 -> 251x155)",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (320x320 -> 196x196)"
     ],
     "imagesWithoutDimensions": [
-      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg>",
-      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg>",
-      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png>",
-      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-250 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg>",
-      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-250 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg>",
-      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg>",
-      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image <http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg>",
-      "body> div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg>"
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg>",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image <http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg>"
     ],
     "DOMqueriesById": [
       "#js-footnotes (in #document)"
@@ -1799,11 +1803,9 @@
     "DOMqueriesByTagName": [
       "script (in #document)",
       "img (in #document)",
-      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0])",
       "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0])",
-      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left > a.media-image--link > picture[0])",
-      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-250 > a.media-image--link > picture[0])",
-      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-250 > a.media-image--link > picture[0])",
       "video (in body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0])"
     ],
     "DOMinserts": [
@@ -1811,8 +1813,9 @@
       "\"div\" appended to \"html\""
     ],
     "DOMqueriesDuplicated": [
-      "tag name \"img\" (in #document): 2 queries",
-      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > picture[0]): 2 queries"
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0]): 3 queries",
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0]): 3 queries",
+      "tag name \"img\" (in #document): 2 queries"
     ],
     "domains": [
       "webworke.rs: 16 request(s)"
@@ -1832,71 +1835,74 @@
     "assetsWithCookies": [
       "http://webworke.rs/styles/application.2742.css (CSS)",
       "http://webworke.rs/scripts/application.697d.js (JS)",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png (IMAGE)",
-      "http://webworke.rs/generated/03-angie-meeker-wordpress-marketing-320by275-7ad825.jpg (IMAGE)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-your-crime-site-320by249-b1919c.jpg (IMAGE)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (IMAGE)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg (IMAGE)",
-      "http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg (IMAGE)"
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg (IMAGE)"
     ],
     "timeToFirstCss": [
-      "http://webworke.rs/styles/application.2742.css received in 165 ms",
-      "http://webworke.rs/styles/application.2742.css received in 164 ms",
-      "http://webworke.rs/styles/application.2742.css received in 127 ms",
-      "http://webworke.rs/styles/application.2742.css received in 119 ms",
-      "http://webworke.rs/styles/application.2742.css received in 177 ms"
+      "http://webworke.rs/styles/application.2742.css received in 749 ms",
+      "http://webworke.rs/styles/application.2742.css received in 716 ms",
+      "http://webworke.rs/styles/application.2742.css received in 729 ms",
+      "http://webworke.rs/styles/application.2742.css received in 796 ms",
+      "http://webworke.rs/styles/application.2742.css received in 710 ms"
     ],
     "timeToFirstJs": [
-      "http://webworke.rs/scripts/application.697d.js received in 267 ms",
-      "http://webworke.rs/scripts/application.697d.js received in 256 ms",
-      "http://webworke.rs/scripts/application.697d.js received in 255 ms",
-      "http://webworke.rs/scripts/application.697d.js received in 209 ms",
-      "http://webworke.rs/scripts/application.697d.js received in 154 ms"
+      "http://webworke.rs/scripts/application.697d.js received in 984 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 2995 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 749 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 844 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 731 ms"
     ],
     "timeToFirstImage": [
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png received in 550 ms",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png received in 526 ms",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png received in 528 ms",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png received in 517 ms",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png received in 575 ms"
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg received in 2993 ms",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png received in 13199 ms",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg received in 2785 ms",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg received in 3266 ms",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg received in 3021 ms"
     ],
     "blockedRequests": [
       "http://www.google-analytics.com/analytics.js"
     ],
     "smallestResponse": [
-      "http://webworke.rs/scripts/application.697d.js (10.03 kB)"
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (4.60 kB)"
     ],
     "biggestResponse": [
-      "http://webworke.rs/ (101.69 kB)",
-      "http://webworke.rs/generated/03-angie-meeker-family-320by320-c4ad9b.jpg (82.29 kB)"
+      "http://webworke.rs/ (60.18 kB)",
+      "http://webworke.rs/ (51.20 kB)",
+      "http://webworke.rs/ (52.41 kB)",
+      "http://webworke.rs/ (52.18 kB)"
     ],
     "fastestResponse": [
-      "http://webworke.rs/styles/application.2742.css (30 ms)",
-      "http://webworke.rs/styles/application.2742.css (48 ms)",
       "http://webworke.rs/styles/application.2742.css (44 ms)",
-      "http://webworke.rs/styles/application.2742.css (41 ms)",
-      "http://webworke.rs/scripts/application.697d.js (31 ms)"
+      "http://webworke.rs/styles/application.2742.css (79 ms)",
+      "http://webworke.rs/scripts/application.697d.js (58 ms)",
+      "http://webworke.rs/styles/application.2742.css (64 ms)",
+      "http://webworke.rs/scripts/application.697d.js (52 ms)"
     ],
     "slowestResponse": [
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (19607 ms)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (19726 ms)",
-      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff (16316 ms)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (19537 ms)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (19472 ms)"
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff (2043 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (10200 ms)",
+      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (2049 ms)",
+      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (2459 ms)",
+      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (2301 ms)"
     ],
     "smallestLatency": [
-      "http://webworke.rs/styles/application.2742.css (29 ms)",
-      "http://webworke.rs/styles/application.2742.css (47 ms)",
       "http://webworke.rs/styles/application.2742.css (44 ms)",
-      "http://webworke.rs/generated/03-angie-meeker-wordcamp-columbus-184by185-8632bc.png (35 ms)",
-      "http://webworke.rs/scripts/application.697d.js (30 ms)"
+      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (36 ms)",
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff (45 ms)",
+      "http://webworke.rs/styles/application.2742.css (64 ms)",
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff (35 ms)"
     ],
     "biggestLatency": [
-      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (255 ms)",
-      "http://webworke.rs/generated/03-angie-meeker-portrait-320by320-9e1697.jpg (19726 ms)",
-      "http://webworke.rs/generated/03-angie-meeker-screenshot-angie-meeker-designs-320by249-976d12.jpg (16293 ms)",
-      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (265 ms)",
-      "http://webworke.rs/fonts/Vollkorn-Regular-webfont.4e69.woff (233 ms)"
+      "http://webworke.rs/fonts/Industry-Demi-webfont.8dab.woff (2043 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (10199 ms)",
+      "http://webworke.rs/fonts/Industry-Bold-webfont.cccb.woff (2033 ms)",
+      "http://webworke.rs/fonts/Industry-MediumItalic-webfont.92d6.woff (2396 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (2258 ms)"
     ]
   }
 }
