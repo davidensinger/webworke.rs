@@ -5,6 +5,7 @@
   "dependencies": {
     "loadCSS": "git://github.com/filamentgroup/loadCSS.git",
     "matchmedia": "~0.2.0",
+    "OptimizedWebfontLoading": "git://github.com/bdadam/OptimizedWebfontLoading.git",
     "picturefill": "~2.1.0",
     "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git"
   },

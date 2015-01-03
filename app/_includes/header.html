@@ -111,6 +111,11 @@
       <meta property="og:image:height" content="1024">
     {% endif %}
 
+    <script>
+      {% include fontloader.js %}
+      loadFont("optimizedWebFonts", "/styles/optimizedWebFonts.woff.css", "/styles/optimizedWebFonts.woff2.css");
+    </script>
+
     {% if site.environment == 'production' %}
       <style>{% include critical.css %}</style>
       <script>
