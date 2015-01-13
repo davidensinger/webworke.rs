@@ -1,0 +1,1906 @@
+{
+  "assertions": {},
+  "metrics": {
+    "requests": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "gzipRequests": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "postRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "notFound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        227077,
+        229650,
+        231028,
+        233636,
+        235772,
+        null
+      ],
+      "sum": 1157163,
+      "min": 227077,
+      "max": 235772,
+      "median": 231028,
+      "average": 231432.6
+    },
+    "contentLength": {
+      "values": [
+        227077,
+        229650,
+        231028,
+        233636,
+        235772,
+        null
+      ],
+      "sum": 1157163,
+      "min": 227077,
+      "max": 235772,
+      "median": 231028,
+      "average": 231432.6
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        14545,
+        14607,
+        14646,
+        14676,
+        14781,
+        null
+      ],
+      "sum": 73255,
+      "min": 14545,
+      "max": 14781,
+      "median": 14646,
+      "average": 14651
+    },
+    "timeToFirstByte": {
+      "values": [
+        151,
+        157,
+        159,
+        162,
+        165,
+        null
+      ],
+      "sum": 794,
+      "min": 151,
+      "max": 165,
+      "median": 159,
+      "average": 158.8
+    },
+    "timeToLastByte": {
+      "values": [
+        293,
+        301,
+        305,
+        310,
+        322,
+        null
+      ],
+      "sum": 1531,
+      "min": 293,
+      "max": 322,
+      "median": 305,
+      "average": 306.2
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "htmlSize": {
+      "values": [
+        50588,
+        53161,
+        54539,
+        57147,
+        70880,
+        null
+      ],
+      "sum": 286315,
+      "min": 50588,
+      "max": 70880,
+      "median": 54539,
+      "average": 57263
+    },
+    "cssCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cssSize": {
+      "values": [
+        30091,
+        30091,
+        30091,
+        30091,
+        30091,
+        null
+      ],
+      "sum": 150455,
+      "min": 30091,
+      "max": 30091,
+      "median": 30091,
+      "average": 30091
+    },
+    "jsCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "jsSize": {
+      "values": [
+        24062,
+        35659,
+        35659,
+        35659,
+        35659,
+        null
+      ],
+      "sum": 166698,
+      "min": 24062,
+      "max": 35659,
+      "median": 35659,
+      "average": 33339.6
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "imageSize": {
+      "values": [
+        110739,
+        110739,
+        110739,
+        110739,
+        110739,
+        null
+      ],
+      "sum": 553695,
+      "min": 110739,
+      "max": 110739,
+      "median": 110739,
+      "average": 110739
+    },
+    "videoCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Count": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "base64Size": {
+      "values": [
+        154882,
+        154882,
+        154882,
+        154882,
+        154882,
+        null
+      ],
+      "sum": 774410,
+      "min": 154882,
+      "max": 154882,
+      "median": 154882,
+      "average": 154882
+    },
+    "otherCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheHits": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "cacheMisses": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingTooShort": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cachingDisabled": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "oldCachingHeaders": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        null
+      ],
+      "sum": 640,
+      "min": 128,
+      "max": 128,
+      "median": 128,
+      "average": 128
+    },
+    "domainsWithCookies": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "documentCookiesLength": {
+      "values": [
+        37,
+        38,
+        39,
+        39,
+        39,
+        null
+      ],
+      "sum": 192,
+      "min": 37,
+      "max": 39,
+      "median": 39,
+      "average": 38.4
+    },
+    "documentCookiesCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "documentHeight": {
+      "values": [
+        10761,
+        10761,
+        10761,
+        10761,
+        10761,
+        null
+      ],
+      "sum": 53805,
+      "min": 10761,
+      "max": 10761,
+      "median": 10761,
+      "average": 10761
+    },
+    "commentsSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "whiteSpacesSize": {
+      "values": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        null
+      ],
+      "sum": 90,
+      "min": 18,
+      "max": 18,
+      "median": 18,
+      "average": 18
+    },
+    "DOMelementsCount": {
+      "values": [
+        401,
+        401,
+        401,
+        401,
+        401,
+        null
+      ],
+      "sum": 2005,
+      "min": 401,
+      "max": 401,
+      "median": 401,
+      "average": 401
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imagesScaledDown": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "DOMidDuplicated": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "hiddenContentSize": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        null
+      ],
+      "sum": 75,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "DOMqueriesById": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        null
+      ],
+      "sum": 65,
+      "min": 13,
+      "max": 13,
+      "median": 13,
+      "average": 13
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMinserts": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMqueriesAvoidable": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "domains": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        null
+      ],
+      "sum": 27.5,
+      "min": 5.5,
+      "max": 5.5,
+      "median": 5.5,
+      "average": 5.5
+    },
+    "eventsBound": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "globalVariables": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "headersCount": {
+      "values": [
+        215,
+        215,
+        215,
+        215,
+        215,
+        null
+      ],
+      "sum": 1075,
+      "min": 215,
+      "max": 215,
+      "median": 215,
+      "average": 215
+    },
+    "headersSentCount": {
+      "values": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        null
+      ],
+      "sum": 160,
+      "min": 32,
+      "max": 32,
+      "median": 32,
+      "average": 32
+    },
+    "headersRecvCount": {
+      "values": [
+        183,
+        183,
+        183,
+        183,
+        183,
+        null
+      ],
+      "sum": 915,
+      "min": 183,
+      "max": 183,
+      "median": 183,
+      "average": 183
+    },
+    "headersSize": {
+      "values": [
+        6494,
+        6494,
+        6494,
+        6494,
+        6494,
+        null
+      ],
+      "sum": 32470,
+      "min": 6494,
+      "max": 6494,
+      "median": 6494,
+      "average": 6494
+    },
+    "headersSentSize": {
+      "values": [
+        1167,
+        1167,
+        1167,
+        1167,
+        1167,
+        null
+      ],
+      "sum": 5835,
+      "min": 1167,
+      "max": 1167,
+      "median": 1167,
+      "average": 1167
+    },
+    "headersRecvSize": {
+      "values": [
+        5327,
+        5327,
+        5327,
+        5327,
+        5327,
+        null
+      ],
+      "sum": 26635,
+      "min": 5327,
+      "max": 5327,
+      "median": 5327,
+      "average": 5327
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "documentWriteCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "evalCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsErrors": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "localStorageEntries": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "redirects": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsNotGzipped": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "assetsWithQueryString": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsWithCookies": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "smallImages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        14566,
+        14634,
+        14664,
+        14697,
+        14810,
+        null
+      ],
+      "sum": 73371,
+      "min": 14566,
+      "max": 14810,
+      "median": 14664,
+      "average": 14674.2
+    },
+    "timeToFirstJs": {
+      "values": [
+        329,
+        339,
+        345,
+        359,
+        361,
+        null
+      ],
+      "sum": 1733,
+      "min": 329,
+      "max": 361,
+      "median": 345,
+      "average": 346.6
+    },
+    "timeToFirstImage": {
+      "values": [
+        14523,
+        14593,
+        14622,
+        14659,
+        14756,
+        null
+      ],
+      "sum": 73153,
+      "min": 14523,
+      "max": 14756,
+      "median": 14622,
+      "average": 14630.6
+    },
+    "domInteractive": {
+      "values": [
+        3348,
+        3352,
+        3370,
+        3386,
+        3391,
+        null
+      ],
+      "sum": 16847,
+      "min": 3348,
+      "max": 3391,
+      "median": 3370,
+      "average": 3369.4
+    },
+    "domContentLoaded": {
+      "values": [
+        3353,
+        3353,
+        3373,
+        3386,
+        3392,
+        null
+      ],
+      "sum": 16857,
+      "min": 3353,
+      "max": 3392,
+      "median": 3373,
+      "average": 3371.4
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        3362,
+        3393,
+        3402,
+        3420,
+        3446,
+        null
+      ],
+      "sum": 17023,
+      "min": 3362,
+      "max": 3446,
+      "median": 3402,
+      "average": 3404.6
+    },
+    "domComplete": {
+      "values": [
+        14589,
+        14671,
+        14686,
+        14723,
+        14849,
+        null
+      ],
+      "sum": 73518,
+      "min": 14589,
+      "max": 14849,
+      "median": 14686,
+      "average": 14703.6
+    },
+    "timeBackend": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "timeFrontend": {
+      "values": [
+        99,
+        99,
+        99,
+        99,
+        99,
+        null
+      ],
+      "sum": 495,
+      "min": 99,
+      "max": 99,
+      "median": 99,
+      "average": 99
+    },
+    "blockedRequests": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        102586,
+        102586,
+        102586,
+        102586,
+        102586,
+        null
+      ],
+      "sum": 512930,
+      "min": 102586,
+      "max": 102586,
+      "median": 102586,
+      "average": 102586
+    },
+    "iframesCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallestResponse": {
+      "values": [
+        4710,
+        4710,
+        4710,
+        4710,
+        4710,
+        null
+      ],
+      "sum": 23550,
+      "min": 4710,
+      "max": 4710,
+      "median": 4710,
+      "average": 4710
+    },
+    "biggestResponse": {
+      "values": [
+        50588,
+        53161,
+        54539,
+        57147,
+        70880,
+        null
+      ],
+      "sum": 286315,
+      "min": 50588,
+      "max": 70880,
+      "median": 54539,
+      "average": 57263
+    },
+    "fastestResponse": {
+      "values": [
+        32,
+        33,
+        34,
+        36,
+        38,
+        null
+      ],
+      "sum": 173,
+      "min": 32,
+      "max": 38,
+      "median": 34,
+      "average": 34.6
+    },
+    "slowestResponse": {
+      "values": [
+        11180,
+        11231,
+        11273,
+        11299,
+        11373,
+        null
+      ],
+      "sum": 56356,
+      "min": 11180,
+      "max": 11373,
+      "median": 11273,
+      "average": 11271.2
+    },
+    "smallestLatency": {
+      "values": [
+        31,
+        33,
+        33,
+        34,
+        37,
+        null
+      ],
+      "sum": 168,
+      "min": 31,
+      "max": 37,
+      "median": 33,
+      "average": 33.6
+    },
+    "biggestLatency": {
+      "values": [
+        11179,
+        11231,
+        11272,
+        11298,
+        11373,
+        null
+      ],
+      "sum": 56353,
+      "min": 11179,
+      "max": 11373,
+      "median": 11272,
+      "average": 11270.6
+    },
+    "medianResponse": {
+      "values": [
+        11175,
+        11226,
+        11254,
+        11291,
+        11365,
+        null
+      ],
+      "sum": 56311,
+      "min": 11175,
+      "max": 11365,
+      "median": 11254,
+      "average": 11262.2
+    },
+    "medianLatency": {
+      "values": [
+        11175,
+        11226,
+        11254,
+        11291,
+        11364,
+        null
+      ],
+      "sum": 56310,
+      "min": 11175,
+      "max": 11364,
+      "median": 11254,
+      "average": 11262
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://webworke.rs/ (gzip: 55.81 kB / uncompressed: 55.81 kB)",
+      "http://webworke.rs/scripts/application.697d.js (gzip: 10.03 kB / uncompressed: 10.03 kB)",
+      "http://webworke.rs/styles/application.76eb.css (gzip: 29.39 kB / uncompressed: 29.39 kB)",
+      "http://webworke.rs/ (gzip: 49.40 kB / uncompressed: 49.40 kB)",
+      "http://webworke.rs/ (gzip: 69.22 kB / uncompressed: 69.22 kB)",
+      "http://webworke.rs/ (gzip: 53.26 kB / uncompressed: 53.26 kB)",
+      "http://webworke.rs/ (gzip: 51.92 kB / uncompressed: 51.92 kB)"
+    ],
+    "htmlCount": [
+      "http://webworke.rs/ (55.81 kB)",
+      "http://webworke.rs/ (49.40 kB)",
+      "http://webworke.rs/ (69.22 kB)",
+      "http://webworke.rs/ (53.26 kB)",
+      "http://webworke.rs/ (51.92 kB)"
+    ],
+    "cssCount": [
+      "http://webworke.rs/styles/application.76eb.css (29.39 kB)"
+    ],
+    "jsCount": [
+      "http://webworke.rs/scripts/application.697d.js (10.03 kB)",
+      "http://www.google-analytics.com/analytics.js (24.80 kB)",
+      "http://www.google-analytics.com/analytics.js (13.47 kB)"
+    ],
+    "imageCount": [
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (4.60 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (14.86 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png (10.59 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png (13.52 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (23.87 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (14.44 kB)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg (26.27 kB)"
+    ],
+    "cacheHits": [
+      "http://webworke.rs/",
+      "http://www.google-analytics.com/analytics.js"
+    ],
+    "cacheMisses": [
+      "http://webworke.rs/scripts/application.697d.js",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg",
+      "http://webworke.rs/styles/application.76eb.css"
+    ],
+    "cachingTooShort": [
+      "http://www.google-analytics.com/analytics.js cached for 7200 s"
+    ],
+    "oldCachingHeaders": [
+      "http://webworke.rs/ - Expires: Tue, 13 Jan 2015 02:14:50 GMT",
+      "http://webworke.rs/scripts/application.697d.js - Expires: Wed, 13 Jan 2016 02:04:57 GMT",
+      "http://www.google-analytics.com/analytics.js - Expires: Tue, 13 Jan 2015 03:16:07 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg - Expires: Wed, 13 Jan 2016 02:05:00 GMT",
+      "http://webworke.rs/styles/application.76eb.css - Expires: Wed, 13 Jan 2016 02:05:11 GMT",
+      "http://webworke.rs/ - Expires: Tue, 13 Jan 2015 02:14:52 GMT",
+      "http://webworke.rs/styles/application.76eb.css - Expires: Wed, 13 Jan 2016 02:05:12 GMT"
+    ],
+    "domainsWithCookies": [
+      "webworke.rs: 1 cookie(s)"
+    ],
+    "imagesScaledDown": [
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (320x320 -> 253x253)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (320x249 -> 251x195)",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (320x53 -> 251x41)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (320x184 -> 251x144)",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png (320x261 -> 251x204)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png (320x160 -> 251x125)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg (320x198 -> 251x155)",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (320x320 -> 196x196)"
+    ],
+    "imagesWithoutDimensions": [
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg>",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image <http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg>"
+    ],
+    "DOMqueriesById": [
+      "#js-footnotes (in #document)"
+    ],
+    "DOMqueriesByClassName": [
+      ".aside-marker (in #document)"
+    ],
+    "DOMqueriesByTagName": [
+      "script (in #document)",
+      "img (in #document)",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0])"
+    ],
+    "DOMinserts": [
+      "\"style\" appended to \"head\"",
+      "\"link\" appended to \"head\"",
+      "\"script\" appended to \"head\"",
+      "\"div\" appended to \"html\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"script\" (in #document): 3 queries",
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0]): 3 queries",
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0]): 3 queries",
+      "tag name \"img\" (in #document): 2 queries"
+    ],
+    "domains": [
+      "webworke.rs: 10 request(s)",
+      "www.google-analytics.com: 1 request(s)"
+    ],
+    "eventsBound": [
+      "\"resize\" bound to \"window\"",
+      "\"DOMContentLoaded\" bound to \"#document\"",
+      "\"click\" bound to \"#document\""
+    ],
+    "globalVariables": [
+      "loadCSS",
+      "responsiveFootnotes",
+      "loadFont",
+      "GoogleAnalyticsObject",
+      "ga",
+      "picturefill",
+      "smoothScroll",
+      "gaplugins",
+      "gaGlobal"
+    ],
+    "localStorageEntries": [
+      "x-font-optimizedWebFontsurl",
+      "x-font-optimizedWebFontscss"
+    ],
+    "assetsNotGzipped": [
+      "http://www.google-analytics.com/analytics.js (JS)"
+    ],
+    "assetsWithCookies": [
+      "http://webworke.rs/scripts/application.697d.js (JS)",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-loan-calculator-app-320by160-412023.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-gdic-logo-320by261-4032c1.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-d3-weather-graph-app-320by184-246a17.png (IMAGE)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-color-palette-app-320by198-b388eb.jpg (IMAGE)",
+      "http://webworke.rs/styles/application.76eb.css (CSS)"
+    ],
+    "timeToFirstCss": [
+      "http://webworke.rs/styles/application.76eb.css received in 14566 ms",
+      "http://webworke.rs/styles/application.76eb.css received in 14664 ms",
+      "http://webworke.rs/styles/application.76eb.css received in 14810 ms",
+      "http://webworke.rs/styles/application.76eb.css received in 14697 ms",
+      "http://webworke.rs/styles/application.76eb.css received in 14634 ms"
+    ],
+    "timeToFirstJs": [
+      "http://webworke.rs/scripts/application.697d.js received in 361 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 329 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 339 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 359 ms",
+      "http://webworke.rs/scripts/application.697d.js received in 345 ms"
+    ],
+    "timeToFirstImage": [
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png received in 14523 ms",
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png received in 14622 ms",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg received in 14756 ms",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg received in 14659 ms",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg received in 14593 ms"
+    ],
+    "blockedRequests": [
+      "http://www.google-analytics.com/r/collect?v=1&_v=j31&a=2047637028&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=MEAAAEQAI~&jid=896576280&cid=1054785298.1421114701&tid=UA-48705944-1&_r=1&z=99047986",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j31&a=1181033348&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=MEAAAEQAI~&jid=670053055&cid=1598849921.1421114701&tid=UA-48705944-1&_r=1&z=774524270",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j31&a=533976998&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=MEAAAEQAI~&jid=649219604&cid=82410308.1421114701&tid=UA-48705944-1&_r=1&z=2043916779",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j31&a=1309226123&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=MEAAAEQAI~&jid=618554831&cid=1420828768.1421114701&tid=UA-48705944-1&_r=1&z=1940830279",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j31&a=1575746251&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=MEAAAEQAI~&jid=1048750354&cid=798192638.1421114701&tid=UA-48705944-1&_r=1&z=2126831037"
+    ],
+    "smallestResponse": [
+      "http://webworke.rs/generated/04-jan-milosh-covermymeds-logo-320by53-56d774.png (4.60 kB)"
+    ],
+    "biggestResponse": [
+      "http://webworke.rs/ (55.81 kB)",
+      "http://webworke.rs/ (49.40 kB)",
+      "http://webworke.rs/ (69.22 kB)",
+      "http://webworke.rs/ (53.26 kB)",
+      "http://webworke.rs/ (51.92 kB)"
+    ],
+    "fastestResponse": [
+      "http://webworke.rs/styles/application.76eb.css (38 ms)",
+      "http://webworke.rs/scripts/application.697d.js (34 ms)",
+      "http://webworke.rs/styles/application.76eb.css (36 ms)",
+      "http://webworke.rs/styles/application.76eb.css (32 ms)",
+      "http://webworke.rs/styles/application.76eb.css (33 ms)"
+    ],
+    "slowestResponse": [
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11180 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (11273 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11373 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11299 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11231 ms)"
+    ],
+    "smallestLatency": [
+      "http://webworke.rs/styles/application.76eb.css (37 ms)",
+      "http://webworke.rs/scripts/application.697d.js (33 ms)",
+      "http://webworke.rs/styles/application.76eb.css (34 ms)",
+      "http://webworke.rs/styles/application.76eb.css (31 ms)",
+      "http://webworke.rs/styles/application.76eb.css (33 ms)"
+    ],
+    "biggestLatency": [
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (11179 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-portrait-320by320-5877a6.jpg (11272 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11373 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11298 ms)",
+      "http://webworke.rs/generated/04-jan-milosh-screenshot-pykl-studios-320by249-9fd148.jpg (11231 ms)"
+    ]
+  }
+}
