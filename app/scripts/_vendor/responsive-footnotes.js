@@ -1,33 +1,25 @@
 var responsiveFootnotes = (function () {
-  var s; // private alias to settings
 
-  return {
-    settings: {
-      asideMarkers: document.getElementsByClassName('aside-marker'),
-      footnotes: document.getElementById('js-footnotes')
-    },
+  var asideMarkers = document.getElementsByClassName('aside-marker');
+  var footnoteContainer =  document.getElementById('js-footnotes');
 
-    init: function() {
-      s = this.settings;
-      this.createAsides();
-    },
+  var createAsides = function () {
 
-    createAsides: function() {
+    // Check that the footnotes and aside markers exist
+    if (footnoteContainer != null && asideMarkers != null) {
+      var footnotes = footnoteContainer.children;
 
-      // Check that the footnotes and aside markers exist
-      if (s.footnotes != null && s.asideMarkers != null) {
-        var markerArray = s.asideMarkers;
-        var footnoteArray = s.footnotes.children;
-
-        // Ensure that we have an equal number of footnotes and aside markers
-        if (footnoteArray.length === markerArray.length) {
-          for (var i = 0, n = markerArray.length; i < n; i++) {
-            var child = footnoteArray[i];
-
-            markerArray[i].insertAdjacentHTML('afterend', child.innerHTML);
-          }
+      // Ensure that we have an equal number of footnotes and aside markers
+      if (footnotes.length === asideMarkers.length) {
+        for (var i = 0, n = asideMarkers.length; i < n; i++) {
+          asideMarkers[i].insertAdjacentHTML('afterend', footnotes[i].innerHTML);
         }
       }
     }
   };
+
+  return {
+    createAsides: createAsides
+  };
+
 })();

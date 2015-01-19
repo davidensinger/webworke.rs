@@ -37,4 +37,4 @@ document.onkeydown = function(e) {
 smoothScroll.init();
 
 // Responsive footnotes
-responsiveFootnotes.init();
+responsiveFootnotes.createAsides();
