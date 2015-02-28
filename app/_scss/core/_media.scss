@@ -195,26 +195,29 @@ $min-widths--list: 100, 150, 200, 250, 300, 350, 400, 450, 500;
   display: block;
   padding-bottom: 100%;
   width: 100%;
-}
 
-// Modifier: 3:1 aspect ratio
-.FlexEmbed-ratio--3by1 {
-  padding-bottom: calc(100% / 3);
-}
+  // Update as of 02/28/2015 I am chaining the modifier classes to increase their specificity
+  // to trump the inline critical CSS.
 
-// Modifier: 2:1 aspect ratio
-.FlexEmbed-ratio--2by1 {
-  padding-bottom: 50%;
-}
+  // Modifier: 3:1 aspect ratio
+  &.FlexEmbed-ratio--3by1 {
+    padding-bottom: calc(100% / 3);
+  }
 
-// Modifier: 16:9 aspect ratio
-.FlexEmbed-ratio--16by9 {
-  padding-bottom: 56.25%;
-}
+  // Modifier: 2:1 aspect ratio
+  &.FlexEmbed-ratio--2by1 {
+    padding-bottom: 50%;
+  }
 
-// Modifier: 4:3 aspect ratio
-.FlexEmbed-ratio--4by3 {
-  padding-bottom: 75%;
+  // Modifier: 16:9 aspect ratio
+  &.FlexEmbed-ratio--16by9 {
+    padding-bottom: 56.25%;
+  }
+
+  // Modifier: 4:3 aspect ratio
+  &.FlexEmbed-ratio--4by3 {
+    padding-bottom: 75%;
+  }
 }
 
 // Fit the content to the aspect ratio
