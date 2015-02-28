@@ -136,12 +136,12 @@ module.exports = function (grunt) {
       }
     },
     penthouse: {
-      server : {
-        outfile : '<%= yeoman.app %>/_includes/critical.css',
-        css : '.tmp/styles/application.css',
-        url : 'http://localhost:3000',
-        width : 1300,
-        height : 900
+      server: {
+        outfile: '<%= yeoman.app %>/_includes/critical.css',
+        css: '.tmp/styles/application.css',
+        url: 'http://localhost:3000',
+        width: 1300,
+        height: 900
       }
     },
     csscomb: {
@@ -362,7 +362,7 @@ module.exports = function (grunt) {
       site: {
         options: {
           indexPath: '<%= yeoman.dist %>/perf/phantomas/',
-          options   : {
+          options: {
             'film-strip': false,
             'no-externals': true,
             'timeout': 60
