@@ -29,7 +29,7 @@
     "grunt-contrib-watch": "^0.6.0",
     "grunt-csscomb": "^3.0.0",
     "grunt-dev-update": "^1.1.0",
-    "grunt-filerev": "^2.1.2",
+    "grunt-filerev": "^2.2.0",
     "grunt-imageoptim": "^1.4.1",
     "grunt-jekyll": "^0.4.2",
     "grunt-newer": "^1.1.0",
@@ -40,9 +40,9 @@
     "grunt-svgmin": "^2.0.1",
     "grunt-usemin": "^3.0.0",
     "grunt-xmlmin": "^0.1.4",
-    "jshint-stylish": "^1.0.0",
+    "jshint-stylish": "^1.0.1",
     "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.0.0"
+    "time-grunt": "^1.1.0"
   },
   "private": true,
   "license": "MIT"
