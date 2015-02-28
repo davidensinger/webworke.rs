@@ -140,8 +140,8 @@ module.exports = function (grunt) {
         outfile : '<%= yeoman.app %>/_includes/critical.css',
         css : '.tmp/styles/application.css',
         url : 'http://localhost:3000',
-        width : 480,
-        height : 768
+        width : 1300,
+        height : 900
       }
     },
     csscomb: {
