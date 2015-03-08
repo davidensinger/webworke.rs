@@ -63,6 +63,8 @@
 // -------------------------------------
 
 .sidebar-heading {
+  @extend %gamma;
+  margin-top: 0;
   @extend %font-industry--demi;
   float: right;
   width: 75%;

@@ -18,7 +18,7 @@
   <footer class="entryMeta entryMeta-footer entryMeta-footer__post clearfix">
     {% if post.previous.url or post.next.url %}
       <nav class="entryMeta-navigation" role="navigation">
-        <h1 class="visuallyHidden">Post Navigation</h1>
+        <span class="visuallyHidden">Post Navigation</span>
       {% if post.previous.url %}
         <a id="js-navigation--previous" href="{{ post.previous.url }}" title="Link to {{ post.previous.title }}" class="entryMeta-navigation--link previous clearfix" rel="prev"><span class="entryMeta-navigation--link__arrow">&larr;&nbsp;</span> <span class="entryMeta-navigation--link__text">{{ post.previous.title }}</span></a>
       {% endif %}

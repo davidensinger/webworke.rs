@@ -9,7 +9,7 @@
 {% endif %}
 
 {% if secondary.title or secondary.organization %}
-  <h3 class="sidebar-heading">
+  <div class="sidebar-heading">
 
     {% if secondary.url %}
       <a class="sidebar-heading--link url" href="{{ secondary.url }}" itemprop="url">
@@ -35,7 +35,7 @@
       </a>
     {% endif %}
 
-  </h3>
+  </div>
 {% endif %}
 
 {% if secondary.image %}
