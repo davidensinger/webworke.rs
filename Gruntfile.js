@@ -186,6 +186,11 @@ module.exports = function (grunt) {
     usemin: {
       options: {
         assetsDirs: '<%= yeoman.dist %>',
+        blockReplacements: { // https://github.com/yeoman/grunt-usemin/issues/391
+          js: function (block){
+            return '<script src="' + block.dest + '" async><\/script>';
+          }
+        },
         patterns: {
           html: [
             [/loadCSS\(['"]([^"']+)['"]\)/gm, 'Replacing reference to CSS within loadCSS']
