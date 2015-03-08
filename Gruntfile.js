@@ -38,7 +38,7 @@ module.exports = function (grunt) {
       jekyll: {
         files: [
           '<%= yeoman.app %>/**/*.{html,rb,svg,xml,yml}',
-          '!<%= yeoman.app %>/_bower_components/**/*'
+          '!bower_components/**/*'
         ],
         tasks: ['jekyll:server']
       }
@@ -59,7 +59,10 @@ module.exports = function (grunt) {
               '.jekyll',
               '.tmp',
               '<%= yeoman.app %>'
-            ]
+            ],
+            routes: {
+             '/bower_components': './bower_components'
+            }
           },
           watchTask: true
         }
@@ -292,12 +295,12 @@ module.exports = function (grunt) {
       },
       stageLoadCSS: {
         files: {
-          '<%= yeoman.app %>/_includes/loadCSS.js': '<%= yeoman.app %>/_bower_components/loadCSS/loadCSS.js'
+          '<%= yeoman.app %>/_includes/loadCSS.js': 'bower_components/loadCSS/loadCSS.js'
         }
       },
       stageOptimizedWebfontLoading: {
         files: {
-          '<%= yeoman.app %>/_includes/fontloader.js': '<%= yeoman.app %>/_bower_components/OptimizedWebfontLoading/build/fontloader.js'
+          '<%= yeoman.app %>/_includes/fontloader.js': 'bower_components/OptimizedWebfontLoading/build/fontloader.js'
         }
       }
     },

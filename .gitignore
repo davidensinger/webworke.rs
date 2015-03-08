@@ -3,5 +3,5 @@
 dist
 node_modules
 .tmp
-/app/_bower_components/
+bower_components
 app/_includes/critical.css
