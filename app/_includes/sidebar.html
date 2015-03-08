@@ -43,7 +43,7 @@
     <figure class="sidebar-figure" itemscope itemtype="http://schema.org/ImageObject">
 
       <a class="sidebar-image--link" href="{{ secondary.url }}" itemprop="url">
-        {% picture sidebar {{ secondary.image }} alt="Photo of {{ title }}" %}
+        {% picture sidebar {{ secondary.image }} alt="{{ title }}" %}
       </a>
 
       {% if secondary.caption %}
