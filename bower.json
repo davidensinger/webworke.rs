@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "loadCSS": "git://github.com/filamentgroup/loadCSS.git",
+    "loadcss": "~0.1.5",
     "matchmedia": "~0.2.0",
     "OptimizedWebfontLoading": "git://github.com/bdadam/OptimizedWebfontLoading.git",
     "picturefill": "~2.2.0",
