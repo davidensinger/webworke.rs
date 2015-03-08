@@ -2,7 +2,7 @@
   <header class="entryHeader">
     <div class="entryMeta entryMeta-header">
       <small class="entryDate">
-        <time class="entryTime" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <time class="entryTime date updated" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       </small>
     </div> <!-- .entryMeta .entryMeta-header -->
     <h1 class="entryTitle">
@@ -10,6 +10,7 @@
         <span class="entry-title author vcard" itemprop="name">{{ post.title }}</span>&nbsp;<span class="entryLink-character">&rarr;</span>
       </a>
     </h1>
+    <span class="visuallyhidden author" aria-hidden="true">{{ site.author }}</span>
   </header>
   <div class="entryContent">
     {{ post.content }}
