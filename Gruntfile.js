@@ -224,10 +224,9 @@ module.exports = function (grunt) {
     uglify: {},
     // Usemin adds files to cssmin
     cssmin: {
-      dist: {
-        options: {
-          check: 'min'
-        }
+      options: {
+        check: 'min',
+        shorthandCompacting: false
       }
     },
     imageoptim: {

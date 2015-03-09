@@ -10,7 +10,7 @@
   padding: #{$triple-spacing-unit}rem 6%;
   color: $white;
   // scss-lint:disable DuplicateProperty
-  background: $black-light; // fallback for IE9
+  background-color: $black-light; // fallback for IE9
   background: linear-gradient(160deg, $black-light 50%, mix($black-light, $black, 95%) 50%);
 }
 
