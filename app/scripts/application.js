@@ -1,4 +1,4 @@
-/* global smoothScroll, responsiveFootnotes */
+/* global smoothScroll, responsiveFootnotes, eventTracking */
 
 var keyboardNavigation = (function () {
 
@@ -39,16 +39,5 @@ smoothScroll.init();
 // Responsive footnotes
 responsiveFootnotes.createAsides();
 
-// http://blog.gospodarets.com/track_javascript_angularjs_and_jquery_errors_with_google_analytics/
-window.addEventListener('error', function (err) {
-  var lineAndColumnInfo = err.colno ? ' line:' + err.lineno +', column:'+ err.colno : ' line:' + e.lineno;
-  ga(
-    'send',
-    'event',
-    'JavaScript Errors',
-    err.message,
-    err.filename + lineAndColumnInfo + ' -> ' +  navigator.userAgent,
-    0,
-    true
-  );
-});
+// Event tracking
+eventTracking.init();
