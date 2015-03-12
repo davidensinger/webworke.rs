@@ -1,4 +1,4 @@
-/* global smoothScroll, responsiveFootnotes, eventTracking */
+/* global smoothScroll, responsiveFootnotes, errorTracking */
 
 var keyboardNavigation = (function () {
 
@@ -39,5 +39,5 @@ smoothScroll.init();
 // Responsive footnotes
 responsiveFootnotes.createAsides();
 
-// Event tracking
-eventTracking.init();
+// Error tracking
+errorTracking.init();

@@ -1,6 +1,6 @@
 /* global ga */
 
-var eventTracking = (function() {
+var errorTracking = (function() {
 
   'use strict';
 
