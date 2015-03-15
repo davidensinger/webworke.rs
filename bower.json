@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "loadcss": "~0.1.5",
+    "loadcss": "~0.1.6",
     "OptimizedWebfontLoading": "git://github.com/bdadam/OptimizedWebfontLoading.git",
     "picturefill": "git://github.com/scottjehl/picturefill.git",
     "smooth-scroll": "git://github.com/cferdinandi/smooth-scroll.git"
