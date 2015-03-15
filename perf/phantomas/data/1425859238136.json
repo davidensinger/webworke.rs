@@ -3,33 +3,33 @@
   "metrics": {
     "requests": {
       "values": [
-        12,
-        12,
-        12,
-        12,
-        13,
+        11,
+        11,
+        11,
+        11,
+        11,
         null
       ],
-      "sum": 61,
-      "min": 12,
-      "max": 13,
-      "median": 12,
-      "average": 12.2
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
     },
     "gzipRequests": {
       "values": [
-        4,
-        4,
-        4,
-        4,
-        4,
+        3,
+        3,
+        3,
+        3,
+        3,
         null
       ],
-      "sum": 20,
-      "min": 4,
-      "max": 4,
-      "median": 4,
-      "average": 4
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
     },
     "postRequests": {
       "values": [
@@ -78,78 +78,78 @@
     },
     "bodySize": {
       "values": [
-        134850,
-        144840,
-        171535,
-        171627,
-        248592,
+        161180,
+        298967,
+        299803,
+        302528,
+        314863,
         null
       ],
-      "sum": 871444,
-      "min": 134850,
-      "max": 248592,
-      "median": 171535,
-      "average": 174288.8
+      "sum": 1377341,
+      "min": 161180,
+      "max": 314863,
+      "median": 299803,
+      "average": 275468.2
     },
     "contentLength": {
       "values": [
-        299104,
-        299280,
-        307754,
-        308648,
-        319124,
+        298967,
+        299496,
+        299803,
+        302528,
+        314863,
         null
       ],
-      "sum": 1533910,
-      "min": 299104,
-      "max": 319124,
-      "median": 307754,
-      "average": 306782
+      "sum": 1515657,
+      "min": 298967,
+      "max": 314863,
+      "median": 299803,
+      "average": 303131.4
     },
     "httpTrafficCompleted": {
       "values": [
-        15873,
-        16476,
-        17924,
-        18646,
-        18723,
+        13737,
+        14045,
+        14179,
+        14190,
+        19595,
         null
       ],
-      "sum": 87642,
-      "min": 15873,
-      "max": 18723,
-      "median": 17924,
-      "average": 17528.4
+      "sum": 75746,
+      "min": 13737,
+      "max": 19595,
+      "median": 14179,
+      "average": 15149.2
     },
     "timeToFirstByte": {
       "values": [
-        204,
-        215,
-        267,
-        294,
-        737,
+        106,
+        236,
+        327,
+        349,
+        406,
         null
       ],
-      "sum": 1717,
-      "min": 204,
-      "max": 737,
-      "median": 267,
-      "average": 343.4
+      "sum": 1424,
+      "min": 106,
+      "max": 406,
+      "median": 327,
+      "average": 284.8
     },
     "timeToLastByte": {
       "values": [
-        248,
-        270,
-        304,
-        676,
-        1913,
+        190,
+        322,
+        401,
+        491,
+        3041,
         null
       ],
-      "sum": 3411,
-      "min": 248,
-      "max": 1913,
-      "median": 304,
-      "average": 682.2
+      "sum": 4445,
+      "min": 190,
+      "max": 3041,
+      "median": 401,
+      "average": 889
     },
     "ajaxRequests": {
       "values": [
@@ -183,48 +183,48 @@
     },
     "htmlSize": {
       "values": [
-        50747,
-        51327,
-        51353,
-        51503,
-        52624,
+        50913,
+        51442,
+        51749,
+        54474,
+        66809,
         null
       ],
-      "sum": 257554,
-      "min": 50747,
-      "max": 52624,
-      "median": 51353,
-      "average": 51510.8
+      "sum": 275387,
+      "min": 50913,
+      "max": 66809,
+      "median": 51749,
+      "average": 55077.4
     },
     "cssCount": {
       "values": [
-        2,
-        2,
-        2,
-        2,
-        2,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
-      "sum": 10,
-      "min": 2,
-      "max": 2,
-      "median": 2,
-      "average": 2
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
     },
     "cssSize": {
       "values": [
-        51484,
-        51484,
-        58837,
-        58837,
-        71478,
+        27494,
+        27494,
+        27494,
+        27494,
+        27494,
         null
       ],
-      "sum": 292120,
-      "min": 51484,
-      "max": 71478,
-      "median": 58837,
-      "average": 58424
+      "sum": 137470,
+      "min": 27494,
+      "max": 27494,
+      "median": 27494,
+      "average": 27494
     },
     "jsCount": {
       "values": [
@@ -243,18 +243,18 @@
     },
     "jsSize": {
       "values": [
-        11924,
-        11924,
-        11924,
-        11924,
-        14660,
+        36191,
+        36191,
+        36191,
+        36191,
+        36191,
         null
       ],
-      "sum": 62356,
-      "min": 11924,
-      "max": 14660,
-      "median": 11924,
-      "average": 12471.2
+      "sum": 180955,
+      "min": 36191,
+      "max": 36191,
+      "median": 36191,
+      "average": 36191
     },
     "jsonCount": {
       "values": [
@@ -292,14 +292,14 @@
         7,
         7,
         7,
-        8,
+        7,
         null
       ],
-      "sum": 36,
+      "sum": 35,
       "min": 7,
-      "max": 8,
+      "max": 7,
       "median": 7,
-      "average": 7.2
+      "average": 7
     },
     "imageSize": {
       "values": [
@@ -307,14 +307,14 @@
         184369,
         184369,
         184369,
-        184404,
+        184369,
         null
       ],
-      "sum": 921880,
+      "sum": 921845,
       "min": 184369,
-      "max": 184404,
+      "max": 184369,
       "median": 184369,
-      "average": 184376
+      "average": 184369
     },
     "videoCount": {
       "values": [
@@ -438,33 +438,33 @@
     },
     "cacheHits": {
       "values": [
-        1,
+        2,
         2,
         2,
         2,
         2,
         null
       ],
-      "sum": 9,
-      "min": 1,
+      "sum": 10,
+      "min": 2,
       "max": 2,
       "median": 2,
-      "average": 1.8
+      "average": 2
     },
     "cacheMisses": {
       "values": [
-        10,
-        10,
-        10,
-        10,
-        11,
+        9,
+        9,
+        9,
+        9,
+        9,
         null
       ],
-      "sum": 51,
-      "min": 10,
-      "max": 11,
-      "median": 10,
-      "average": 10.2
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
     },
     "cachePasses": {
       "values": [
@@ -487,14 +487,14 @@
         0,
         0,
         0,
-        1,
+        0,
         null
       ],
-      "sum": 1,
+      "sum": 0,
       "min": 0,
-      "max": 1,
+      "max": 0,
       "median": 0,
-      "average": 0.2
+      "average": 0
     },
     "cachingTooShort": {
       "values": [
@@ -528,18 +528,18 @@
     },
     "oldCachingHeaders": {
       "values": [
-        12,
-        12,
-        12,
-        12,
-        14,
+        11,
+        11,
+        11,
+        11,
+        11,
         null
       ],
-      "sum": 62,
-      "min": 12,
-      "max": 14,
-      "median": 12,
-      "average": 12.4
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
     },
     "consoleMessages": {
       "values": [
@@ -605,16 +605,16 @@
       "values": [
         38,
         38,
-        38,
+        39,
         39,
         39,
         null
       ],
-      "sum": 192,
+      "sum": 193,
       "min": 38,
       "max": 39,
-      "median": 38,
-      "average": 38.4
+      "median": 39,
+      "average": 38.6
     },
     "documentCookiesCount": {
       "values": [
@@ -633,18 +633,18 @@
     },
     "documentHeight": {
       "values": [
-        10045,
-        10045,
-        10045,
-        10045,
-        10045,
+        10082,
+        10082,
+        10082,
+        10082,
+        10082,
         null
       ],
-      "sum": 50225,
-      "min": 10045,
-      "max": 10045,
-      "median": 10045,
-      "average": 10045
+      "sum": 50410,
+      "min": 10082,
+      "max": 10082,
+      "median": 10082,
+      "average": 10082
     },
     "commentsSize": {
       "values": [
@@ -663,33 +663,33 @@
     },
     "whiteSpacesSize": {
       "values": [
-        21,
-        21,
-        21,
-        21,
-        21,
+        20,
+        20,
+        20,
+        20,
+        20,
         null
       ],
-      "sum": 105,
-      "min": 21,
-      "max": 21,
-      "median": 21,
-      "average": 21
+      "sum": 100,
+      "min": 20,
+      "max": 20,
+      "median": 20,
+      "average": 20
     },
     "DOMelementsCount": {
       "values": [
-        399,
-        399,
-        399,
-        399,
-        399,
+        394,
+        394,
+        394,
+        394,
+        394,
         null
       ],
-      "sum": 1995,
-      "min": 399,
-      "max": 399,
-      "median": 399,
-      "average": 399
+      "sum": 1970,
+      "min": 394,
+      "max": 394,
+      "median": 394,
+      "average": 394
     },
     "DOMelementMaxDepth": {
       "values": [
@@ -753,6 +753,21 @@
     },
     "DOMidDuplicated": {
       "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "hiddenContentSize": {
+      "values": [
         1,
         1,
         1,
@@ -765,21 +780,6 @@
       "max": 1,
       "median": 1,
       "average": 1
-    },
-    "hiddenContentSize": {
-      "values": [
-        35,
-        35,
-        35,
-        35,
-        35,
-        null
-      ],
-      "sum": 175,
-      "min": 35,
-      "max": 35,
-      "median": 35,
-      "average": 35
     },
     "DOMmutationsInserts": {
       "values": [
@@ -828,18 +828,18 @@
     },
     "DOMqueries": {
       "values": [
-        15,
+        14,
         15,
         15,
         15,
         15,
         null
       ],
-      "sum": 75,
-      "min": 15,
+      "sum": 74,
+      "min": 14,
       "max": 15,
       "median": 15,
-      "average": 15
+      "average": 14.8
     },
     "DOMqueriesById": {
       "values": [
@@ -873,18 +873,18 @@
     },
     "DOMqueriesByTagName": {
       "values": [
-        13,
+        12,
         13,
         13,
         13,
         13,
         null
       ],
-      "sum": 65,
-      "min": 13,
+      "sum": 64,
+      "min": 12,
       "max": 13,
       "median": 13,
-      "average": 13
+      "average": 12.8
     },
     "DOMqueriesByQuerySelectorAll": {
       "values": [
@@ -918,33 +918,33 @@
     },
     "DOMqueriesDuplicated": {
       "values": [
-        4,
+        3,
         4,
         4,
         4,
         4,
         null
       ],
-      "sum": 20,
-      "min": 4,
+      "sum": 19,
+      "min": 3,
       "max": 4,
       "median": 4,
-      "average": 4
+      "average": 3.8
     },
     "DOMqueriesAvoidable": {
       "values": [
-        7,
+        6,
         7,
         7,
         7,
         7,
         null
       ],
-      "sum": 35,
-      "min": 7,
+      "sum": 34,
+      "min": 6,
       "max": 7,
       "median": 7,
-      "average": 7
+      "average": 6.8
     },
     "domains": {
       "values": [
@@ -963,48 +963,48 @@
     },
     "maxRequestsPerDomain": {
       "values": [
-        11,
-        11,
-        11,
-        11,
-        11,
+        10,
+        10,
+        10,
+        10,
+        10,
         null
       ],
-      "sum": 55,
-      "min": 11,
-      "max": 11,
-      "median": 11,
-      "average": 11
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
     },
     "medianRequestsPerDomain": {
       "values": [
-        6,
-        6,
-        6,
-        6,
-        6.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5,
         null
       ],
-      "sum": 30.5,
-      "min": 6,
-      "max": 6.5,
-      "median": 6,
-      "average": 6.1
+      "sum": 27.5,
+      "min": 5.5,
+      "max": 5.5,
+      "median": 5.5,
+      "average": 5.5
     },
     "eventsBound": {
       "values": [
-        3,
-        3,
-        3,
-        3,
-        3,
+        2,
+        2,
+        2,
+        2,
+        2,
         null
       ],
-      "sum": 15,
-      "min": 3,
-      "max": 3,
-      "median": 3,
-      "average": 3
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
     },
     "globalVariables": {
       "values": [
@@ -1038,93 +1038,93 @@
     },
     "headersCount": {
       "values": [
-        246,
-        246,
-        246,
-        246,
-        260,
+        220,
+        220,
+        220,
+        220,
+        220,
         null
       ],
-      "sum": 1244,
-      "min": 246,
-      "max": 260,
-      "median": 246,
-      "average": 248.8
+      "sum": 1100,
+      "min": 220,
+      "max": 220,
+      "median": 220,
+      "average": 220
     },
     "headersSentCount": {
       "values": [
-        35,
-        35,
-        35,
-        35,
-        38,
+        32,
+        32,
+        32,
+        32,
+        32,
         null
       ],
-      "sum": 178,
-      "min": 35,
-      "max": 38,
-      "median": 35,
-      "average": 35.6
+      "sum": 160,
+      "min": 32,
+      "max": 32,
+      "median": 32,
+      "average": 32
     },
     "headersRecvCount": {
       "values": [
-        211,
-        211,
-        211,
-        211,
-        222,
+        188,
+        188,
+        188,
+        188,
+        188,
         null
       ],
-      "sum": 1066,
-      "min": 211,
-      "max": 222,
-      "median": 211,
-      "average": 213.2
+      "sum": 940,
+      "min": 188,
+      "max": 188,
+      "median": 188,
+      "average": 188
     },
     "headersSize": {
       "values": [
-        7435,
-        7436,
-        7436,
-        7464,
-        7890,
+        6657,
+        6657,
+        6658,
+        6658,
+        6659,
         null
       ],
-      "sum": 37661,
-      "min": 7435,
-      "max": 7890,
-      "median": 7436,
-      "average": 7532.2
+      "sum": 33289,
+      "min": 6657,
+      "max": 6659,
+      "median": 6658,
+      "average": 6657.8
     },
     "headersSentSize": {
       "values": [
-        1269,
-        1269,
-        1269,
-        1269,
-        1371,
+        1167,
+        1167,
+        1167,
+        1167,
+        1167,
         null
       ],
-      "sum": 6447,
-      "min": 1269,
-      "max": 1371,
-      "median": 1269,
-      "average": 1289.4
+      "sum": 5835,
+      "min": 1167,
+      "max": 1167,
+      "median": 1167,
+      "average": 1167
     },
     "headersRecvSize": {
       "values": [
-        6166,
-        6167,
-        6167,
-        6195,
-        6519,
+        5490,
+        5490,
+        5491,
+        5491,
+        5492,
         null
       ],
-      "sum": 31214,
-      "min": 6166,
-      "max": 6519,
-      "median": 6167,
-      "average": 6242.8
+      "sum": 27454,
+      "min": 5490,
+      "max": 5492,
+      "median": 5491,
+      "average": 5490.8
     },
     "headersBiggerThanContent": {
       "values": [
@@ -1132,14 +1132,14 @@
         0,
         0,
         0,
-        1,
+        0,
         null
       ],
-      "sum": 1,
+      "sum": 0,
       "min": 0,
-      "max": 1,
+      "max": 0,
       "median": 0,
-      "average": 0.2
+      "average": 0
     },
     "jQueryOnDOMReadyFunctions": {
       "values": [
@@ -1218,18 +1218,18 @@
     },
     "localStorageEntries": {
       "values": [
-        2,
-        2,
-        2,
-        2,
-        2,
+        4,
+        4,
+        4,
+        4,
+        4,
         null
       ],
-      "sum": 10,
-      "min": 2,
-      "max": 2,
-      "median": 2,
-      "average": 2
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
     },
     "redirects": {
       "values": [
@@ -1282,29 +1282,29 @@
         0,
         0,
         0,
-        1,
+        0,
         null
       ],
-      "sum": 1,
+      "sum": 0,
       "min": 0,
-      "max": 1,
+      "max": 0,
       "median": 0,
-      "average": 0.2
+      "average": 0
     },
     "assetsWithCookies": {
       "values": [
-        10,
-        10,
-        10,
-        10,
-        10,
+        9,
+        9,
+        9,
+        9,
+        9,
         null
       ],
-      "sum": 50,
-      "min": 10,
-      "max": 10,
-      "median": 10,
-      "average": 10
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
     },
     "smallImages": {
       "values": [
@@ -1312,14 +1312,14 @@
         0,
         0,
         0,
-        1,
+        0,
         null
       ],
-      "sum": 1,
+      "sum": 0,
       "min": 0,
-      "max": 1,
+      "max": 0,
       "median": 0,
-      "average": 0.2
+      "average": 0
     },
     "multipleRequests": {
       "values": [
@@ -1338,138 +1338,138 @@
     },
     "timeToFirstCss": {
       "values": [
-        1076,
-        1350,
-        2409,
-        2966,
-        2997,
+        3138,
+        13759,
+        14065,
+        14198,
+        14214,
         null
       ],
-      "sum": 10798,
-      "min": 1076,
-      "max": 2997,
-      "median": 2409,
-      "average": 2159.6
+      "sum": 59374,
+      "min": 3138,
+      "max": 14214,
+      "median": 14065,
+      "average": 11874.8
     },
     "timeToFirstJs": {
       "values": [
-        385,
-        461,
-        543,
-        1237,
-        1395,
+        221,
+        368,
+        436,
+        523,
+        3043,
         null
       ],
-      "sum": 4021,
-      "min": 385,
-      "max": 1395,
-      "median": 543,
-      "average": 804.2
+      "sum": 4591,
+      "min": 221,
+      "max": 3043,
+      "median": 436,
+      "average": 918.2
     },
     "timeToFirstImage": {
       "values": [
-        1142,
-        1530,
-        1573,
-        1782,
-        16459,
+        13702,
+        14021,
+        14108,
+        14165,
+        19505,
         null
       ],
-      "sum": 22486,
-      "min": 1142,
-      "max": 16459,
-      "median": 1573,
-      "average": 4497.2
+      "sum": 75501,
+      "min": 13702,
+      "max": 19505,
+      "median": 14108,
+      "average": 15100.2
     },
     "domInteractive": {
       "values": [
-        255,
-        275,
-        312,
-        682,
-        1940,
+        2705,
+        3118,
+        3135,
+        3234,
+        19435,
         null
       ],
-      "sum": 3464,
-      "min": 255,
-      "max": 1940,
-      "median": 312,
-      "average": 692.8
+      "sum": 31627,
+      "min": 2705,
+      "max": 19435,
+      "median": 3135,
+      "average": 6325.4
     },
     "domContentLoaded": {
       "values": [
-        255,
-        275,
-        313,
-        682,
-        1940,
+        2706,
+        3118,
+        3135,
+        3234,
+        19435,
         null
       ],
-      "sum": 3465,
-      "min": 255,
-      "max": 1940,
-      "median": 313,
-      "average": 693
+      "sum": 31628,
+      "min": 2706,
+      "max": 19435,
+      "median": 3135,
+      "average": 6325.6
     },
     "domContentLoadedEnd": {
       "values": [
-        257,
-        277,
-        314,
-        684,
-        1941,
+        2717,
+        3126,
+        3243,
+        14124,
+        19442,
         null
       ],
-      "sum": 3473,
-      "min": 257,
-      "max": 1941,
-      "median": 314,
-      "average": 694.6
+      "sum": 42652,
+      "min": 2717,
+      "max": 19442,
+      "median": 3243,
+      "average": 8530.4
     },
     "domComplete": {
       "values": [
-        15958,
-        16525,
-        17989,
-        18722,
-        18789,
+        13778,
+        14088,
+        14217,
+        14235,
+        19628,
         null
       ],
-      "sum": 87983,
-      "min": 15958,
-      "max": 18789,
-      "median": 17989,
-      "average": 17596.6
+      "sum": 75946,
+      "min": 13778,
+      "max": 19628,
+      "median": 14217,
+      "average": 15189.2
     },
     "timeBackend": {
       "values": [
         1,
-        1,
-        1,
         2,
-        4,
+        2,
+        2,
+        3,
         null
       ],
-      "sum": 9,
+      "sum": 10,
       "min": 1,
-      "max": 4,
-      "median": 1,
-      "average": 1.8
+      "max": 3,
+      "median": 2,
+      "average": 2
     },
     "timeFrontend": {
       "values": [
-        96,
+        97,
         98,
-        99,
-        99,
+        98,
+        98,
         99,
         null
       ],
-      "sum": 491,
-      "min": 96,
+      "sum": 490,
+      "min": 97,
       "max": 99,
-      "median": 99,
-      "average": 98.2
+      "median": 98,
+      "average": 98
     },
     "blockedRequests": {
       "values": [
@@ -1477,9 +1477,10 @@
         1,
         1,
         1,
+        1,
         null
       ],
-      "sum": 4,
+      "sum": 5,
       "min": 1,
       "max": 1,
       "median": 1,
@@ -1532,18 +1533,18 @@
     },
     "bodyHTMLSize": {
       "values": [
-        103239,
-        103239,
-        103239,
-        103239,
-        103239,
+        102809,
+        102809,
+        102809,
+        102809,
+        102809,
         null
       ],
-      "sum": 516195,
-      "min": 103239,
-      "max": 103239,
-      "median": 103239,
-      "average": 103239
+      "sum": 514045,
+      "min": 102809,
+      "max": 102809,
+      "median": 102809,
+      "average": 102809
     },
     "iframesCount": {
       "values": [
@@ -1562,221 +1563,206 @@
     },
     "smallestResponse": {
       "values": [
-        35,
-        985,
-        985,
-        985,
-        985,
+        10729,
+        10729,
+        10729,
+        10729,
+        10729,
         null
       ],
-      "sum": 3975,
-      "min": 35,
-      "max": 985,
-      "median": 985,
-      "average": 795
+      "sum": 53645,
+      "min": 10729,
+      "max": 10729,
+      "median": 10729,
+      "average": 10729
     },
     "biggestResponse": {
       "values": [
-        50747,
-        51327,
-        51353,
-        51503,
-        52624,
+        50913,
+        51442,
+        51749,
+        54474,
+        66809,
         null
       ],
-      "sum": 257554,
-      "min": 50747,
-      "max": 52624,
-      "median": 51353,
-      "average": 51510.8
+      "sum": 275387,
+      "min": 50913,
+      "max": 66809,
+      "median": 51749,
+      "average": 55077.4
     },
     "fastestResponse": {
       "values": [
-        29,
-        43,
-        64,
-        188,
-        270,
+        33,
+        35,
+        37,
+        46,
+        81,
         null
       ],
-      "sum": 594,
-      "min": 29,
-      "max": 270,
-      "median": 64,
-      "average": 118.8
+      "sum": 232,
+      "min": 33,
+      "max": 81,
+      "median": 37,
+      "average": 46.4
     },
     "slowestResponse": {
       "values": [
-        15203,
-        15461,
-        15503,
-        15663,
-        16409,
+        5218,
+        10913,
+        10944,
+        10979,
+        11004,
         null
       ],
-      "sum": 78239,
-      "min": 15203,
-      "max": 16409,
-      "median": 15503,
-      "average": 15647.8
+      "sum": 49058,
+      "min": 5218,
+      "max": 11004,
+      "median": 10944,
+      "average": 9811.6
     },
     "smallestLatency": {
       "values": [
-        28,
+        33,
+        35,
+        37,
         43,
-        64,
-        71,
-        92,
+        46,
         null
       ],
-      "sum": 298,
-      "min": 28,
-      "max": 92,
-      "median": 64,
-      "average": 59.6
+      "sum": 194,
+      "min": 33,
+      "max": 46,
+      "median": 37,
+      "average": 38.8
     },
     "biggestLatency": {
       "values": [
-        15202,
-        15458,
-        15502,
-        15663,
-        16409,
+        5217,
+        10913,
+        10944,
+        10979,
+        11004,
         null
       ],
-      "sum": 78234,
-      "min": 15202,
-      "max": 16409,
-      "median": 15502,
-      "average": 15646.8
+      "sum": 49057,
+      "min": 5217,
+      "max": 11004,
+      "median": 10944,
+      "average": 9811.4
     },
     "medianResponse": {
       "values": [
-        405,
-        441,
-        605.5,
-        8164,
-        15198.5,
+        126,
+        10911,
+        10936,
+        10978,
+        11001,
         null
       ],
-      "sum": 24814,
-      "min": 405,
-      "max": 15198.5,
-      "median": 605.5,
-      "average": 4962.8
+      "sum": 43952,
+      "min": 126,
+      "max": 11001,
+      "median": 10936,
+      "average": 8790.4
     },
     "medianLatency": {
       "values": [
-        275,
-        296,
-        296.5,
-        301,
-        347,
+        94,
+        10911,
+        10936,
+        10977,
+        11001,
         null
       ],
-      "sum": 1515.5,
-      "min": 275,
-      "max": 347,
-      "median": 296.5,
-      "average": 303.1
+      "sum": 43919,
+      "min": 94,
+      "max": 11001,
+      "median": 10936,
+      "average": 8783.8
     }
   },
   "offenders": {
     "gzipRequests": [
-      "http://webworke.rs/ (gzip: 50.30 kB / uncompressed: 50.30 kB)",
-      "http://webworke.rs/scripts/application.c2fc.js (gzip: 10.68 kB / uncompressed: 10.68 kB)",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (gzip: 21.30 kB / uncompressed: 21.30 kB)",
-      "http://webworke.rs/styles/application.c9fb.css (gzip: 28.98 kB / uncompressed: 28.98 kB)",
-      "http://webworke.rs/ (gzip: 50.12 kB / uncompressed: 50.12 kB)",
-      "http://webworke.rs/ (gzip: 49.56 kB / uncompressed: 49.56 kB)",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (gzip: 28.48 kB / uncompressed: 28.48 kB)",
-      "http://webworke.rs/ (gzip: 50.15 kB / uncompressed: 50.15 kB)",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (gzip: 40.83 kB / uncompressed: 40.83 kB)",
-      "http://webworke.rs/ (gzip: 51.39 kB / uncompressed: 51.39 kB)"
+      "http://webworke.rs/ (gzip: 53.20 kB / uncompressed: 53.20 kB)",
+      "http://webworke.rs/scripts/application.2cb1.js (gzip: 10.48 kB / uncompressed: 10.48 kB)",
+      "http://webworke.rs/styles/application.45d6.css (gzip: 26.85 kB / uncompressed: 26.85 kB)",
+      "http://webworke.rs/ (gzip: 49.72 kB / uncompressed: 49.72 kB)",
+      "http://webworke.rs/ (gzip: 50.24 kB / uncompressed: 50.24 kB)",
+      "http://webworke.rs/ (gzip: 50.54 kB / uncompressed: 50.54 kB)",
+      "http://webworke.rs/ (gzip: 65.24 kB / uncompressed: 65.24 kB)"
     ],
     "htmlCount": [
-      "http://webworke.rs/ (50.30 kB)",
-      "http://webworke.rs/ (50.12 kB)",
-      "http://webworke.rs/ (49.56 kB)",
-      "http://webworke.rs/ (50.15 kB)",
-      "http://webworke.rs/ (51.39 kB)"
+      "http://webworke.rs/ (53.20 kB)",
+      "http://webworke.rs/ (49.72 kB)",
+      "http://webworke.rs/ (50.24 kB)",
+      "http://webworke.rs/ (50.54 kB)",
+      "http://webworke.rs/ (65.24 kB)"
     ],
     "cssCount": [
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (21.30 kB)",
-      "http://webworke.rs/styles/application.c9fb.css (28.98 kB)",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (28.48 kB)",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (40.83 kB)"
+      "http://webworke.rs/styles/application.45d6.css (26.85 kB)"
     ],
     "jsCount": [
-      "http://webworke.rs/scripts/application.c2fc.js (10.68 kB)",
-      "http://www.google-analytics.com/analytics.js (0.96 kB)",
-      "http://www.google-analytics.com/analytics.js (3.63 kB)"
+      "http://webworke.rs/scripts/application.2cb1.js (10.48 kB)",
+      "http://www.google-analytics.com/analytics.js (24.87 kB)"
     ],
     "imageCount": [
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (31.99 kB)",
       "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (18.75 kB)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (27.21 kB)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (23.33 kB)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (38.57 kB)",
       "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (18.77 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (31.99 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (38.57 kB)",
       "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (21.44 kB)",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 (0.03 kB)"
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (23.33 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (27.21 kB)"
     ],
     "cacheHits": [
-      "http://www.google-analytics.com/analytics.js",
-      "http://webworke.rs/"
+      "http://webworke.rs/",
+      "http://www.google-analytics.com/analytics.js"
     ],
     "cacheMisses": [
-      "http://webworke.rs/",
-      "http://webworke.rs/scripts/application.c2fc.js",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg",
+      "http://webworke.rs/scripts/application.2cb1.js",
       "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg",
       "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg",
       "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png",
-      "http://webworke.rs/styles/application.c9fb.css"
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg",
+      "http://webworke.rs/styles/application.45d6.css"
     ],
     "cachingTooShort": [
       "http://www.google-analytics.com/analytics.js cached for 7200 s"
     ],
     "oldCachingHeaders": [
-      "http://webworke.rs/ - Expires: Thu, 12 Mar 2015 20:40:25 GMT",
-      "http://webworke.rs/scripts/application.c2fc.js - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://www.google-analytics.com/analytics.js - Expires: Thu, 12 Mar 2015 22:11:37 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/styles/application.c9fb.css - Expires: Fri, 11 Mar 2016 20:30:42 GMT",
-      "http://webworke.rs/ - Expires: Thu, 12 Mar 2015 20:32:15 GMT",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css - Expires: Fri, 11 Mar 2016 20:30:25 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Fri, 11 Mar 2016 20:30:26 GMT",
-      "http://webworke.rs/styles/application.c9fb.css - Expires: Fri, 11 Mar 2016 20:30:41 GMT",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 - Pragma: no-cache",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 - Expires: Fri, 01 Jan 1990 00:00:00 GMT",
-      "http://webworke.rs/scripts/application.c2fc.js - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Fri, 11 Mar 2016 20:30:28 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Fri, 11 Mar 2016 20:30:28 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Fri, 11 Mar 2016 20:30:27 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Fri, 11 Mar 2016 20:30:28 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Fri, 11 Mar 2016 20:30:28 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Fri, 11 Mar 2016 20:30:28 GMT",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Fri, 11 Mar 2016 20:30:29 GMT",
-      "http://webworke.rs/styles/application.c9fb.css - Expires: Fri, 11 Mar 2016 20:30:44 GMT",
-      "http://webworke.rs/styles/application.c9fb.css - Expires: Fri, 11 Mar 2016 20:30:28 GMT",
-      "http://webworke.rs/ - Expires: Thu, 12 Mar 2015 19:56:25 GMT"
+      "http://webworke.rs/ - Expires: Sun, 08 Mar 2015 22:10:25 GMT",
+      "http://webworke.rs/scripts/application.2cb1.js - Expires: Tue, 08 Mar 2016 00:00:41 GMT",
+      "http://www.google-analytics.com/analytics.js - Expires: Mon, 09 Mar 2015 00:16:37 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/styles/application.45d6.css - Expires: Tue, 08 Mar 2016 00:00:55 GMT",
+      "http://webworke.rs/ - Expires: Sun, 08 Mar 2015 22:22:55 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Tue, 08 Mar 2016 00:00:43 GMT",
+      "http://webworke.rs/styles/application.45d6.css - Expires: Tue, 08 Mar 2016 00:00:54 GMT",
+      "http://webworke.rs/styles/application.45d6.css - Expires: Tue, 08 Mar 2016 00:00:44 GMT",
+      "http://webworke.rs/scripts/application.2cb1.js - Expires: Tue, 08 Mar 2016 00:00:55 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Tue, 08 Mar 2016 00:01:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Tue, 08 Mar 2016 00:01:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Tue, 08 Mar 2016 00:01:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Tue, 08 Mar 2016 00:01:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Tue, 08 Mar 2016 00:01:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Tue, 08 Mar 2016 00:01:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Tue, 08 Mar 2016 00:01:00 GMT"
     ],
     "domainsWithCookies": [
       "webworke.rs: 1 cookie(s)"
@@ -1785,8 +1771,7 @@
       "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] ()",
       "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] ()",
       "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] ()",
-      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image ()",
-      "body > div#page > main#main > div#primary > article.post.hentry> div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] ()"
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image ()"
     ],
     "imagesScaledDown": [
       "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (320x320 -> 253x253)",
@@ -1807,9 +1792,6 @@
       "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png>",
       "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg>",
       "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image <http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg>"
-    ],
-    "DOMidDuplicated": [
-      "title: 3 occurrences"
     ],
     "DOMqueriesById": [
       "#js-footnotes (in #document)"
@@ -1839,14 +1821,12 @@
       "tag name \"img\" (in #document): 2 queries"
     ],
     "domains": [
-      "webworke.rs: 11 request(s)",
-      "www.google-analytics.com: 1 request(s)",
-      "www.google-analytics.com: 2 request(s)"
+      "webworke.rs: 10 request(s)",
+      "www.google-analytics.com: 1 request(s)"
     ],
     "eventsBound": [
       "\"resize\" bound to \"window\"",
-      "\"click\" bound to \"#document\"",
-      "\"error\" bound to \"window\""
+      "\"click\" bound to \"#document\""
     ],
     "globalVariables": [
       "loadCSS",
@@ -1862,100 +1842,89 @@
     ],
     "localStorageEntries": [
       "font-optimizedWebFontsurl",
-      "font-optimizedWebFontscss"
+      "font-optimizedWebFontscss",
+      "x-font-optimizedWebFontsurl",
+      "x-font-optimizedWebFontscss"
     ],
     "assetsNotGzipped": [
       "http://www.google-analytics.com/analytics.js (JS)"
     ],
     "assetsWithCookies": [
-      "http://webworke.rs/scripts/application.c2fc.js (JS)",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css (CSS)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (IMAGE)",
+      "http://webworke.rs/scripts/application.2cb1.js (JS)",
       "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (IMAGE)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (IMAGE)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (IMAGE)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (IMAGE)",
       "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (IMAGE)",
       "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (IMAGE)",
-      "http://webworke.rs/styles/application.c9fb.css (CSS)"
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (IMAGE)",
+      "http://webworke.rs/styles/application.45d6.css (CSS)"
     ],
     "timeToFirstCss": [
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css received in 1350 ms",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css received in 1076 ms",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css received in 2997 ms",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css received in 2409 ms",
-      "http://webworke.rs/styles/optimizedWebFonts.woff.css received in 2966 ms"
+      "http://webworke.rs/styles/application.45d6.css received in 14065 ms",
+      "http://webworke.rs/styles/application.45d6.css received in 13759 ms",
+      "http://webworke.rs/styles/application.45d6.css received in 3138 ms",
+      "http://webworke.rs/styles/application.45d6.css received in 14214 ms",
+      "http://webworke.rs/styles/application.45d6.css received in 14198 ms"
     ],
     "timeToFirstJs": [
-      "http://webworke.rs/scripts/application.c2fc.js received in 1237 ms",
-      "http://webworke.rs/scripts/application.c2fc.js received in 385 ms",
-      "http://www.google-analytics.com/analytics.js received in 1395 ms",
-      "http://www.google-analytics.com/analytics.js received in 543 ms",
-      "http://www.google-analytics.com/analytics.js received in 461 ms"
+      "http://webworke.rs/scripts/application.2cb1.js received in 436 ms",
+      "http://webworke.rs/scripts/application.2cb1.js received in 221 ms",
+      "http://www.google-analytics.com/analytics.js received in 3043 ms",
+      "http://webworke.rs/scripts/application.2cb1.js received in 523 ms",
+      "http://webworke.rs/scripts/application.2cb1.js received in 368 ms"
     ],
     "timeToFirstImage": [
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg received in 16459 ms",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png received in 1142 ms",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 received in 1530 ms",
-      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 1573 ms",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg received in 1782 ms"
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 14021 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg received in 13702 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 19505 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 14165 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 14108 ms"
     ],
     "blockedRequests": [
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2064046071&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=442712259&cid=1876015229.1426192227&tid=UA-48705944-1&_r=1&z=1457188107",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=52896981&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=1622029867&cid=323240362.1426192226&tid=UA-48705944-1&_r=1&z=1340603856",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=110036469&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=1794497195&cid=841753538.1426192226&tid=UA-48705944-1&_r=1&z=647770528",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2001090536&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=487944167&cid=1926070912.1426192226&tid=UA-48705944-1&_r=1&z=683221180"
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=1637787604&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=1781186481&cid=1953794872.1425859245&tid=UA-48705944-1&_r=1&z=1469895825",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=1325216405&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=833245169&cid=1641682234.1425859244&tid=UA-48705944-1&_r=1&z=817964398",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=1941897677&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=311184652&cid=799857951.1425859245&tid=UA-48705944-1&_r=1&z=2009003278",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=703344395&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=854934851&cid=1197261874.1425859245&tid=UA-48705944-1&_r=1&z=156376561",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=142554887&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=1882090725&cid=206199816.1425859256&tid=UA-48705944-1&_r=1&z=1659313305"
     ],
     "smallestResponse": [
-      "http://www.google-analytics.com/analytics.js (0.96 kB)",
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 (0.03 kB)"
+      "http://webworke.rs/scripts/application.2cb1.js (10.48 kB)"
     ],
     "biggestResponse": [
-      "http://webworke.rs/ (50.30 kB)",
-      "http://webworke.rs/ (50.12 kB)",
-      "http://webworke.rs/ (49.56 kB)",
-      "http://webworke.rs/ (50.15 kB)",
-      "http://webworke.rs/ (51.39 kB)"
+      "http://webworke.rs/ (53.20 kB)",
+      "http://webworke.rs/ (49.72 kB)",
+      "http://webworke.rs/ (50.24 kB)",
+      "http://webworke.rs/ (50.54 kB)",
+      "http://webworke.rs/ (65.24 kB)"
     ],
     "fastestResponse": [
-      "http://webworke.rs/styles/application.c9fb.css (43 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (29 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (64 ms)",
-      "http://webworke.rs/ (270 ms)",
-      "http://www.google-analytics.com/analytics.js (188 ms)"
+      "http://webworke.rs/scripts/application.2cb1.js (37 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (35 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (81 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (33 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (46 ms)"
     ],
     "slowestResponse": [
-      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (15203 ms)",
-      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (15461 ms)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (16409 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (15503 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (15663 ms)"
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (10913 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (11004 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (5218 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (10944 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (10979 ms)"
     ],
     "smallestLatency": [
-      "http://webworke.rs/styles/application.c9fb.css (43 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (28 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (64 ms)",
-      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (71 ms)",
-      "http://www.google-analytics.com/analytics.js (92 ms)"
+      "http://webworke.rs/scripts/application.2cb1.js (37 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (35 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (43 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (33 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (46 ms)"
     ],
     "biggestLatency": [
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (15202 ms)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (15458 ms)",
-      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (16409 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (15502 ms)",
-      "http://webworke.rs/styles/application.c9fb.css (15663 ms)"
-    ],
-    "cachingNotSpecified": [
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413"
-    ],
-    "headersBiggerThanContent": [
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 (body: 0.03 kB / headers: 0.35 kB)"
-    ],
-    "assetsWithQueryString": [
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 (IMAGE)"
-    ],
-    "smallImages": [
-      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=2046402696&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=1440x900&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=950020541&cid=346836995.1426192227&tid=UA-48705944-1&_r=1&z=755760413 (0.03 kB)"
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (10913 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (11004 ms)",
+      "http://webworke.rs/scripts/application.2cb1.js (5217 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (10944 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (10979 ms)"
     ]
   }
 }
