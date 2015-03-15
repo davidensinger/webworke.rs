@@ -64,8 +64,8 @@
 
 .sidebar-heading {
   @extend %gamma;
-  margin-top: 0;
   @extend %font-industry--demi;
+  margin-top: 0;
   float: right;
   width: 75%;
   padding-bottom: #{$half-spacing-unit}rem;
