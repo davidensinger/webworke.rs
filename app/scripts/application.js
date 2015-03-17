@@ -1,4 +1,4 @@
-/* global errorTracking, ga, responsiveFootnotes, smoothScroll */
+/* global ga, responsiveFootnotes, smoothScroll */
 
 var keyboardNavigation = (function () {
 
@@ -38,9 +38,6 @@ smoothScroll.init();
 
 // Responsive footnotes
 responsiveFootnotes.createAsides();
-
-// Error tracking
-errorTracking.init();
 
 // Send pageview to Google Analytics
 ga('send', 'pageview');
