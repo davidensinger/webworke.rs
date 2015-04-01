@@ -434,7 +434,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'stage',
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
