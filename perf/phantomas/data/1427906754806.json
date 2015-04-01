@@ -1,0 +1,1926 @@
+{
+  "assertions": {},
+  "metrics": {
+    "requests": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "gzipRequests": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "postRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "notFound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        226688,
+        247051,
+        247171,
+        250073,
+        305312,
+        null
+      ],
+      "sum": 1276295,
+      "min": 226688,
+      "max": 305312,
+      "median": 247171,
+      "average": 255259
+    },
+    "contentLength": {
+      "values": [
+        278664,
+        285505,
+        293647,
+        304260,
+        305312,
+        null
+      ],
+      "sum": 1467388,
+      "min": 278664,
+      "max": 305312,
+      "median": 293647,
+      "average": 293477.6
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        13344,
+        18892,
+        18959,
+        19131,
+        19175,
+        null
+      ],
+      "sum": 89501,
+      "min": 13344,
+      "max": 19175,
+      "median": 18959,
+      "average": 17900.2
+    },
+    "timeToFirstByte": {
+      "values": [
+        245,
+        259,
+        338,
+        341,
+        349,
+        null
+      ],
+      "sum": 1532,
+      "min": 245,
+      "max": 349,
+      "median": 338,
+      "average": 306.4
+    },
+    "timeToLastByte": {
+      "values": [
+        390,
+        416,
+        447,
+        448,
+        452,
+        null
+      ],
+      "sum": 2153,
+      "min": 390,
+      "max": 452,
+      "median": 447,
+      "average": 430.6
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "htmlSize": {
+      "values": [
+        50972,
+        53559,
+        53559,
+        54611,
+        54611,
+        null
+      ],
+      "sum": 267312,
+      "min": 50972,
+      "max": 54611,
+      "median": 53559,
+      "average": 53462.4
+    },
+    "cssCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cssSize": {
+      "values": [
+        29672,
+        29672,
+        29672,
+        29672,
+        29672,
+        null
+      ],
+      "sum": 148360,
+      "min": 29672,
+      "max": 29672,
+      "median": 29672,
+      "average": 29672
+    },
+    "jsCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "jsSize": {
+      "values": [
+        13651,
+        17905,
+        24995,
+        36660,
+        36660,
+        null
+      ],
+      "sum": 129871,
+      "min": 13651,
+      "max": 36660,
+      "median": 24995,
+      "average": 25974.2
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "imageSize": {
+      "values": [
+        184369,
+        184369,
+        184369,
+        184369,
+        184369,
+        null
+      ],
+      "sum": 921845,
+      "min": 184369,
+      "max": 184369,
+      "median": 184369,
+      "average": 184369
+    },
+    "videoCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Count": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "base64Size": {
+      "values": [
+        194214,
+        194214,
+        194214,
+        194214,
+        194214,
+        null
+      ],
+      "sum": 971070,
+      "min": 194214,
+      "max": 194214,
+      "median": 194214,
+      "average": 194214
+    },
+    "otherCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheHits": {
+      "values": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 13,
+      "min": 2,
+      "max": 3,
+      "median": 3,
+      "average": 2.6
+    },
+    "cacheMisses": {
+      "values": [
+        8,
+        8,
+        8,
+        9,
+        9,
+        null
+      ],
+      "sum": 42,
+      "min": 8,
+      "max": 9,
+      "median": 8,
+      "average": 8.4
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingTooShort": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cachingDisabled": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "oldCachingHeaders": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        null
+      ],
+      "sum": 640,
+      "min": 128,
+      "max": 128,
+      "median": 128,
+      "average": 128
+    },
+    "domainsWithCookies": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "documentCookiesLength": {
+      "values": [
+        38,
+        38,
+        39,
+        39,
+        39,
+        null
+      ],
+      "sum": 193,
+      "min": 38,
+      "max": 39,
+      "median": 39,
+      "average": 38.6
+    },
+    "documentCookiesCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "documentHeight": {
+      "values": [
+        10100,
+        10100,
+        10100,
+        10100,
+        10100,
+        null
+      ],
+      "sum": 50500,
+      "min": 10100,
+      "max": 10100,
+      "median": 10100,
+      "average": 10100
+    },
+    "commentsSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "whiteSpacesSize": {
+      "values": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        null
+      ],
+      "sum": 105,
+      "min": 21,
+      "max": 21,
+      "median": 21,
+      "average": 21
+    },
+    "DOMelementsCount": {
+      "values": [
+        400,
+        400,
+        400,
+        400,
+        400,
+        null
+      ],
+      "sum": 2000,
+      "min": 400,
+      "max": 400,
+      "median": 400,
+      "average": 400
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "imagesScaledDown": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "DOMidDuplicated": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "hiddenContentSize": {
+      "values": [
+        36,
+        36,
+        36,
+        36,
+        36,
+        null
+      ],
+      "sum": 180,
+      "min": 36,
+      "max": 36,
+      "median": 36,
+      "average": 36
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        null
+      ],
+      "sum": 75,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "DOMqueriesById": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        null
+      ],
+      "sum": 60,
+      "min": 12,
+      "max": 12,
+      "median": 12,
+      "average": 12
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMinserts": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMqueriesAvoidable": {
+      "values": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        null
+      ],
+      "sum": 30,
+      "min": 6,
+      "max": 6,
+      "median": 6,
+      "average": 6
+    },
+    "domains": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        null
+      ],
+      "sum": 27.5,
+      "min": 5.5,
+      "max": 5.5,
+      "median": 5.5,
+      "average": 5.5
+    },
+    "eventsBound": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "globalVariables": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "headersCount": {
+      "values": [
+        225,
+        225,
+        225,
+        225,
+        225,
+        null
+      ],
+      "sum": 1125,
+      "min": 225,
+      "max": 225,
+      "median": 225,
+      "average": 225
+    },
+    "headersSentCount": {
+      "values": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        null
+      ],
+      "sum": 160,
+      "min": 32,
+      "max": 32,
+      "median": 32,
+      "average": 32
+    },
+    "headersRecvCount": {
+      "values": [
+        193,
+        193,
+        193,
+        193,
+        193,
+        null
+      ],
+      "sum": 965,
+      "min": 193,
+      "max": 193,
+      "median": 193,
+      "average": 193
+    },
+    "headersSize": {
+      "values": [
+        6815,
+        6815,
+        6816,
+        6817,
+        6824,
+        null
+      ],
+      "sum": 34087,
+      "min": 6815,
+      "max": 6824,
+      "median": 6816,
+      "average": 6817.4
+    },
+    "headersSentSize": {
+      "values": [
+        1167,
+        1167,
+        1167,
+        1167,
+        1167,
+        null
+      ],
+      "sum": 5835,
+      "min": 1167,
+      "max": 1167,
+      "median": 1167,
+      "average": 1167
+    },
+    "headersRecvSize": {
+      "values": [
+        5648,
+        5648,
+        5649,
+        5650,
+        5657,
+        null
+      ],
+      "sum": 28252,
+      "min": 5648,
+      "max": 5657,
+      "median": 5649,
+      "average": 5650.4
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "documentWriteCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "evalCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsErrors": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "localStorageEntries": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "redirects": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsNotGzipped": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "assetsWithQueryString": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsWithCookies": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "smallImages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        13232,
+        13299,
+        13368,
+        13472,
+        13531,
+        null
+      ],
+      "sum": 66902,
+      "min": 13232,
+      "max": 13531,
+      "median": 13368,
+      "average": 13380.4
+    },
+    "timeToFirstJs": {
+      "values": [
+        557,
+        2896,
+        2962,
+        3003,
+        3026,
+        null
+      ],
+      "sum": 12444,
+      "min": 557,
+      "max": 3026,
+      "median": 2962,
+      "average": 2488.8
+    },
+    "timeToFirstImage": {
+      "values": [
+        13295,
+        13332,
+        13394,
+        13568,
+        13633,
+        null
+      ],
+      "sum": 67222,
+      "min": 13295,
+      "max": 13633,
+      "median": 13394,
+      "average": 13444.4
+    },
+    "domInteractive": {
+      "values": [
+        398,
+        422,
+        456,
+        457,
+        461,
+        null
+      ],
+      "sum": 2194,
+      "min": 398,
+      "max": 461,
+      "median": 456,
+      "average": 438.8
+    },
+    "domContentLoaded": {
+      "values": [
+        398,
+        422,
+        456,
+        458,
+        462,
+        null
+      ],
+      "sum": 2196,
+      "min": 398,
+      "max": 462,
+      "median": 456,
+      "average": 439.2
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        411,
+        433,
+        474,
+        478,
+        479,
+        null
+      ],
+      "sum": 2275,
+      "min": 411,
+      "max": 479,
+      "median": 474,
+      "average": 455
+    },
+    "domComplete": {
+      "values": [
+        13392,
+        18922,
+        19014,
+        19157,
+        19227,
+        null
+      ],
+      "sum": 89712,
+      "min": 13392,
+      "max": 19227,
+      "median": 19014,
+      "average": 17942.4
+    },
+    "timeBackend": {
+      "values": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 8,
+      "min": 1,
+      "max": 2,
+      "median": 2,
+      "average": 1.6
+    },
+    "timeFrontend": {
+      "values": [
+        98,
+        98,
+        98,
+        99,
+        99,
+        null
+      ],
+      "sum": 492,
+      "min": 98,
+      "max": 99,
+      "median": 98,
+      "average": 98.4
+    },
+    "blockedRequests": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        103311,
+        103311,
+        103311,
+        103311,
+        103311,
+        null
+      ],
+      "sum": 516555,
+      "min": 103311,
+      "max": 103311,
+      "median": 103311,
+      "average": 103311
+    },
+    "iframesCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallestResponse": {
+      "values": [
+        2453,
+        6707,
+        11198,
+        11198,
+        11198,
+        null
+      ],
+      "sum": 42754,
+      "min": 2453,
+      "max": 11198,
+      "median": 11198,
+      "average": 8550.8
+    },
+    "biggestResponse": {
+      "values": [
+        50972,
+        53559,
+        53559,
+        54611,
+        54611,
+        null
+      ],
+      "sum": 267312,
+      "min": 50972,
+      "max": 54611,
+      "median": 53559,
+      "average": 53462.4
+    },
+    "fastestResponse": {
+      "values": [
+        31,
+        74,
+        78,
+        82,
+        84,
+        null
+      ],
+      "sum": 349,
+      "min": 31,
+      "max": 84,
+      "median": 78,
+      "average": 69.8
+    },
+    "slowestResponse": {
+      "values": [
+        10307,
+        10332,
+        10333,
+        10443,
+        10523,
+        null
+      ],
+      "sum": 51938,
+      "min": 10307,
+      "max": 10523,
+      "median": 10333,
+      "average": 10387.6
+    },
+    "smallestLatency": {
+      "values": [
+        30,
+        73,
+        75,
+        82,
+        82,
+        null
+      ],
+      "sum": 342,
+      "min": 30,
+      "max": 82,
+      "median": 75,
+      "average": 68.4
+    },
+    "biggestLatency": {
+      "values": [
+        10306,
+        10332,
+        10332,
+        10443,
+        10523,
+        null
+      ],
+      "sum": 51936,
+      "min": 10306,
+      "max": 10523,
+      "median": 10332,
+      "average": 10387.2
+    },
+    "medianResponse": {
+      "values": [
+        5652,
+        5652,
+        5656,
+        5657,
+        10299,
+        null
+      ],
+      "sum": 32916,
+      "min": 5652,
+      "max": 10299,
+      "median": 5656,
+      "average": 6583.2
+    },
+    "medianLatency": {
+      "values": [
+        77,
+        87,
+        126,
+        349,
+        10298,
+        null
+      ],
+      "sum": 10937,
+      "min": 77,
+      "max": 10298,
+      "median": 126,
+      "average": 2187.4
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://webworke.rs/ (gzip: 53.33 kB / uncompressed: 53.33 kB)",
+      "http://webworke.rs/scripts/application.c10b.js (gzip: 10.94 kB / uncompressed: 10.94 kB)",
+      "http://webworke.rs/styles/application.d726.css (gzip: 28.98 kB / uncompressed: 28.98 kB)",
+      "http://webworke.rs/ (gzip: 52.30 kB / uncompressed: 52.30 kB)",
+      "http://webworke.rs/ (gzip: 49.78 kB / uncompressed: 49.78 kB)"
+    ],
+    "htmlCount": [
+      "http://webworke.rs/ (53.33 kB)",
+      "http://webworke.rs/ (52.30 kB)",
+      "http://webworke.rs/ (49.78 kB)"
+    ],
+    "cssCount": [
+      "http://webworke.rs/styles/application.d726.css (28.98 kB)"
+    ],
+    "jsCount": [
+      "http://www.google-analytics.com/analytics.js (13.47 kB)",
+      "http://webworke.rs/scripts/application.c10b.js (10.94 kB)",
+      "http://www.google-analytics.com/analytics.js (24.87 kB)",
+      "http://www.google-analytics.com/analytics.js (2.40 kB)",
+      "http://www.google-analytics.com/analytics.js (6.55 kB)"
+    ],
+    "imageCount": [
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (18.75 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (27.21 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (23.33 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (18.77 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (21.44 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (38.57 kB)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (31.99 kB)"
+    ],
+    "cacheHits": [
+      "http://webworke.rs/",
+      "http://www.google-analytics.com/analytics.js",
+      "http://webworke.rs/scripts/application.c10b.js"
+    ],
+    "cacheMisses": [
+      "http://webworke.rs/styles/application.d726.css",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg",
+      "http://webworke.rs/",
+      "http://webworke.rs/scripts/application.c10b.js"
+    ],
+    "cachingTooShort": [
+      "http://www.google-analytics.com/analytics.js cached for 7200 s"
+    ],
+    "oldCachingHeaders": [
+      "http://webworke.rs/ - Expires: Wed, 01 Apr 2015 16:20:10 GMT",
+      "http://www.google-analytics.com/analytics.js - Expires: Wed, 01 Apr 2015 17:44:58 GMT",
+      "http://webworke.rs/scripts/application.c10b.js - Expires: Thu, 31 Mar 2016 16:45:59 GMT",
+      "http://webworke.rs/styles/application.d726.css - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Thu, 31 Mar 2016 16:46:11 GMT",
+      "http://webworke.rs/scripts/application.c10b.js - Expires: Thu, 31 Mar 2016 16:45:58 GMT",
+      "http://webworke.rs/styles/application.d726.css - Expires: Thu, 31 Mar 2016 16:46:01 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg - Expires: Thu, 31 Mar 2016 16:46:00 GMT",
+      "http://webworke.rs/styles/application.d726.css - Expires: Thu, 31 Mar 2016 16:46:11 GMT"
+    ],
+    "domainsWithCookies": [
+      "webworke.rs: 1 cookie(s)"
+    ],
+    "nodesWithInlineCSS": [
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] ()",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] ()",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] ()",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image ()"
+    ],
+    "imagesScaledDown": [
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (320x320 -> 253x253)",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (320x169 -> 251x132)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (320x249 -> 251x195)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (320x249 -> 251x195)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (320x249 -> 251x195)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (320x249 -> 251x195)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (320x215 -> 251x168)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (320x320 -> 196x196)"
+    ],
+    "imagesWithoutDimensions": [
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg>",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image <http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg>"
+    ],
+    "DOMidDuplicated": [
+      "title: 3 occurrences"
+    ],
+    "DOMqueriesById": [
+      "#js-footnotes (in #document)"
+    ],
+    "DOMqueriesByClassName": [
+      ".aside-marker (in #document)"
+    ],
+    "DOMqueriesByTagName": [
+      "script (in #document)",
+      "img (in #document)",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0])"
+    ],
+    "DOMqueriesByQuerySelectorAll": [
+      "[data-scroll-header] (in #document)"
+    ],
+    "DOMinserts": [
+      "\"style\" appended to \"head\"",
+      "\"link\" appended to \"head\"",
+      "\"div\" appended to \"body\"",
+      "\"div.helper-from-picturefill-js\" appended to \"body\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0]): 3 queries",
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent > div.media--left.media--1-4.media--min-200 > a.media-image--link > picture[0]): 3 queries",
+      "tag name \"script\" (in #document): 2 queries",
+      "tag name \"img\" (in #document): 2 queries"
+    ],
+    "domains": [
+      "webworke.rs: 10 request(s)",
+      "www.google-analytics.com: 1 request(s)"
+    ],
+    "eventsBound": [
+      "\"resize\" bound to \"window\"",
+      "\"click\" bound to \"#document\""
+    ],
+    "globalVariables": [
+      "loadCSS",
+      "keyboardNavigation",
+      "responsiveFootnotes",
+      "loadFont",
+      "ga",
+      "gaplugins",
+      "gaGlobal",
+      "picturefill",
+      "smoothScroll"
+    ],
+    "localStorageEntries": [
+      "font-optimizedWebFontsurl",
+      "font-optimizedWebFontscss",
+      "x-font-optimizedWebFontsurl",
+      "x-font-optimizedWebFontscss"
+    ],
+    "assetsNotGzipped": [
+      "http://www.google-analytics.com/analytics.js (JS)"
+    ],
+    "assetsWithCookies": [
+      "http://webworke.rs/scripts/application.c10b.js (JS)",
+      "http://webworke.rs/styles/application.d726.css (CSS)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-offsitestatus-320by249-ee5671.png (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-logo-highlights-320by169-84e467.jpg (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (IMAGE)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-chatterjet-320by249-d818da.jpg (IMAGE)"
+    ],
+    "timeToFirstCss": [
+      "http://webworke.rs/styles/application.d726.css received in 13472 ms",
+      "http://webworke.rs/styles/application.d726.css received in 13232 ms",
+      "http://webworke.rs/styles/application.d726.css received in 13531 ms",
+      "http://webworke.rs/styles/application.d726.css received in 13299 ms",
+      "http://webworke.rs/styles/application.d726.css received in 13368 ms"
+    ],
+    "timeToFirstJs": [
+      "http://www.google-analytics.com/analytics.js received in 3026 ms",
+      "http://www.google-analytics.com/analytics.js received in 2896 ms",
+      "http://www.google-analytics.com/analytics.js received in 3003 ms",
+      "http://www.google-analytics.com/analytics.js received in 2962 ms",
+      "http://webworke.rs/scripts/application.c10b.js received in 557 ms"
+    ],
+    "timeToFirstImage": [
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 13568 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 13332 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 13633 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 13394 ms",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg received in 13295 ms"
+    ],
+    "blockedRequests": [
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=1869986129&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=CEAAAEQAI~&jid=354804785&cid=2013956296.1427906761&tid=UA-48705944-1&_r=1&z=1405531752",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=829882676&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=CEAAAEQAI~&jid=1293273956&cid=1838750931.1427906761&tid=UA-48705944-1&_r=1&z=1485024150",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=1180491386&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=CEAAAEQAI~&jid=130503603&cid=712861874.1427906761&tid=UA-48705944-1&_r=1&z=879077615",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=876390774&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=CEAAAEQAI~&jid=1407763346&cid=1182053849.1427906761&tid=UA-48705944-1&_r=1&z=1150205714",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j33&a=1937644726&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1280x1024&je=0&_u=AEAAAEQAI~&jid=867274363&cid=462576606.1427906771&tid=UA-48705944-1&_r=1&z=729131444"
+    ],
+    "smallestResponse": [
+      "http://webworke.rs/scripts/application.c10b.js (10.94 kB)",
+      "http://www.google-analytics.com/analytics.js (2.40 kB)",
+      "http://www.google-analytics.com/analytics.js (6.55 kB)"
+    ],
+    "biggestResponse": [
+      "http://webworke.rs/ (53.33 kB)",
+      "http://webworke.rs/ (52.30 kB)",
+      "http://webworke.rs/ (49.78 kB)"
+    ],
+    "fastestResponse": [
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (74 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (82 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (84 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (78 ms)",
+      "http://webworke.rs/styles/application.d726.css (31 ms)"
+    ],
+    "slowestResponse": [
+      "http://webworke.rs/styles/application.d726.css (10443 ms)",
+      "http://webworke.rs/styles/application.d726.css (10332 ms)",
+      "http://webworke.rs/styles/application.d726.css (10523 ms)",
+      "http://webworke.rs/styles/application.d726.css (10333 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (10307 ms)"
+    ],
+    "smallestLatency": [
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-benfordslaw-320by215-d56fa9.jpg (73 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-freshnews-320by249-167077.png (82 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-portrait-320by320-123f22.jpg (82 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (75 ms)",
+      "http://webworke.rs/styles/application.d726.css (30 ms)"
+    ],
+    "biggestLatency": [
+      "http://webworke.rs/styles/application.d726.css (10443 ms)",
+      "http://webworke.rs/styles/application.d726.css (10332 ms)",
+      "http://webworke.rs/styles/application.d726.css (10523 ms)",
+      "http://webworke.rs/generated/06-bryce-thornton-screenshot-whichwayusa-320by249-155277.jpg (10306 ms)"
+    ]
+  }
+}
