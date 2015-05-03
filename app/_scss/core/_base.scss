@@ -159,7 +159,7 @@ ol {
 }
 
 .question {
-  @extend %font-industry--demi__italic;
+  @extend %font-industry--demi;
   margin-bottom: 0;
 
   strong { // this seems counter-intuitive, but it’s to ensure feed readers emphasis the question text
