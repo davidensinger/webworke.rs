@@ -33,9 +33,6 @@ author:
 
 exclude: ['images', 'scripts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.svg', '**.ico']
 keep_files: ['perf']
-
-# Publish posts with future date.
-# _config.build.yml sets this to false on `grunt build`
 future: true
 
 # Compile posts in the _drafts directory.
