@@ -5,7 +5,7 @@ title: Steve Grunwell
 description: An interview with Steve Grunwell, Senior Web Engineer at 10up.
 categories: ['Development']
 secondary:
-  image: 10-steven-grunwell-portrait.jpg
+  image: 10-steve-grunwell-portrait.jpg
   title: Senior Web Engineer
   preposition: at
   organization: 10up
@@ -33,6 +33,10 @@ social-share:
 <p class="lede"><span class="lede-location">Upper Cup Coffee. &mdash;</span> Steve Grunwell is a Senior Web Engineer at <a href="http://10up.com/">10up</a>, a world-class WordPress development company. He specializes in WordPress and application development and has released several plugins, including <a href="https://wordpress.org/plugins/we-the-people/">one</a> from the grounds of The White House</a> during the <a href="https://buckeyeinteractive.com/blog/national-day-of-civic-hacking-at-the-white-house/">first annual National Day of Civic Hacking in 2013</a>. When he’s not writing software he enjoys hiking, music, and writing about writing software on <a href="https://stevegrunwell.com/">his blog</a>.<p>
 <p class="question"><strong>An introduction is in order. Who are you and what you do?</strong></p>
 <p>My name is Steve Grunwell and I’m a Senior Web Engineer at 10up. We are a completely distributed company that does work with a lot of major publishers. I do a lot of backend work as part of my nine-to-five, but I also enjoying hacking around the frontend.</p>
+<div class="media--left media--1-4 media--min-200">
+  {% picture image--1-4 10-steve-grunwell-portrait.jpg alt="Steve Grunwell" %}
+  <div class="media-caption">Steve Grunwell is a Senior Web Engineer at <a href="http://10up.com/" class="media-link">10up</a>, a world-class WordPress development company.</div>
+</div>
 <p class="question"><strong>What’s a typical day like for you at 10up?</strong></p>
 <p>Since 10up is distributed, everyone is able to work wherever they want, whether that’s at home, a coworking space, or a coffee shop. It’s not your typical employer where you get up, drive to work, and wait around the watercooler while the coffee is brewed.</p>
 <p>I wake up and usually eat a bowl of cereal while I check my email. I’ll then hop onto HipChat to check for messages, which could either be for my current project or in our special interest rooms, like for craft beer enthusiasts or internet memes. From there, I’ll log into Basecamp to see the progress we’re making in our project work.</p>
@@ -40,6 +44,9 @@ social-share:
 <p>I typically work from 8:30 until 5:30 or so. If I decide to work through lunch I can do that. I still try to go out for lunch every once in awhile, but it’s nice to be able to cook something that I can actually enjoy, instead of a refrigerated peanut butter and jelly sandwich. I could also use that hour and go watch some TV, take a nap, or even mow the lawn. It feels less like a work environment, although I’m just as productive as when I was working in an office.</p>
 <p class="question"><strong>How many people work for 10up and how is the company organized?</strong></p>
 <p>It’s just over one hundred, and again we’re all over the world and across different time zones.</p>
+<div class="media--right media--1-4 media--min-200">
+  <a href="http://10up.com/" class="media-image--link">{% picture image--1-4 10-steve-grunwell-10up-logo.png alt="10up logo" %}</a>
+</div>
 <p>We’re organized into pods, which are teams of six to ten-ish people. The pod that I’m on, Omicron, has people from all over the world, so we’re all in different time zones. Our pod has people from the United States, Canada, Mexico, India, and Brazil. It’s fun to have that cultural diversity and be able to say, “I have friends on four different continents!”</p>
 <p>Each pod has an engineering manager who’s responsible for the overall code quality and technical direction of the pod. There’s also a pod leader, who is typically a project manager or web strategist who acts as the general spokesperson for the team.</p>
 <p class="question"><strong>How was the transition to working remotely?</strong></p>
@@ -54,6 +61,10 @@ social-share:
 <p>The more time I spent with the code the better I understood it. It was really cool to tweak the code to see what it would do, and it was great being able to build something interactive instead of just assembling videos.</p>
 <p class="question"><strong>How did you come to specialize in WordPress development?</strong></p>
 <p>When I moved back to Columbus I started working at <a href="https://www.fahlgrenmortine.com/">Fahlgren Mortine</a>. We did a lot of work for larger clients, both nonprofits and businesses. We built a community news site for <a href="http://denison.edu/">Denison University</a> called <a href="https://news.denison.edu/">TheDEN</a>, which was the second WordPress site I had ever worked on. The first was a customization of the Twenty Ten theme for WordPress 3.0 and we had edited styles.css directly, which was embarrassing since we broke the upgrade path.</p>
+<div class="media--left media--1-3 media--min-200">
+  <a href="https://news.denison.edu/" class="media-image--link">{% picture image--1-3 10-steve-grunwell-screenshot-theden.jpg alt="TheDEN" %}</a>
+  <div class="media-caption">Screenshot from <a href="https://news.denison.edu/" class="media-link">TheDEN</a>.</div>
+</div>
 <p>For TheDEN there were issues with the implementation in that a lot of plugins had been directly edited. I was asked to sort that out in order to get the project to the finish line. I did an audit to find the affected plugins and then abstracted the custom functionality into either feature plugins or the theme itself.</p>
 <p>The more that I worked on TheDEN the more I realized how great WordPress was. It was so nice to not need to write my own authentication system or build the content management functionality over and over again. I was able to focus on customizing the site for the client, instead of building everything from scratch.</p>
 <p>With every WordPress site that we built I set a personal goal to try something new or improve upon some previous work. I have code snippets from those days that were a quick copy-and-paste jobs into functions.php. When I look at them now I think, “Oh that is so bad,” but it was how I learned and worked to improve my skills.</p>
@@ -72,10 +83,18 @@ social-share:
 <p>I’d love to see WordPress drop support for deprecated version of PHP for the sake of performance and security, but I respect that the core team doesn’t want to alienate users who are using poor hosting. Your average user won’t recognize that PHP 5.3 is, for all intents and purposes, defunct. They also wouldn’t understand if their blog went down due to WordPress dropping support for deprecated functions and methods. They’d think, “I don’t know what that means, but WordPress changed and now my site doesn’t work,” then switch to a different platform.</p>
 <p class="question"><strong>I was peeking at <a href="https://profiles.wordpress.org/stevegrunwell">your profile on WordPress.org</a>, and I saw that you’ve written a handful of plugins. Do you have a favorite?</strong></p>
 <p>I have two favorites. The first is <a href="https://wordpress.org/plugins/wp-password-generator/">WP Password Generator</a>, which was my first WordPress contribution. It adds a little button to the Create User screen that says, “Generate Password,” that when clicked fills in the password and updates the strength meter. In a later version we added a button to reveal the password, if you wanted to see it.</p>
+<div class="media--right media--1-4 media--min-200">
+  <a href="https://wordpress.org/plugins/wp-password-generator/" class="media-image--link">{% picture image--1-4 10-steve-grunwell-screenshot-wp-password-generator.jpg alt="WP Password Generator" %}</a>
+  <div class="media-caption">One of Steve’s plugins, <a href="https://wordpress.org/plugins/wp-password-generator/">WP Password Generator</a>.</div>
+</div>
 <p>I built it while working on TheDen because they wanted to add new users without having to come up with passwords for them. That would then lead to emails like, “Here’s your password that you should now change,” which was a pain. It’s also a good way to generate secure passwords instead of “password123”.</p>
 <p>The plugin is very hands off. It’s basically an Ajax call for the function that WordPress uses to generate passwords. It was my first plugin in the repository and it was great to watch the download count grow and see the feedback.</p>
 <p>Some people have suggested that the functionality be added to WordPress. There’s <a href="https://core.trac.wordpress.org/ticket/24633">a ticket in Trac</a> by <a href="https://pippinsplugins.com/">Pippin Williamson</a> that proposes to do just that, although he cites a similar plugin, <a href="https://wordpress.org/plugins/simple-user-password-generator/">Simple User Password Generator</a>, which was coincidentally developed by some of my co-workers at 10up. Fate, maybe?</p>
 <p>My other favorite plugin is <a href="https://wordpress.org/plugins/son-of-clippy/">Son of Clippy</a>, which was developed after a conversation about adding more advanced tools to the back of a client site. The client wanted a better way to check for grammar and clichés and it was jokingly suggested, “Like Clippy, but for WordPress.” That just stuck with me, so I decided to build it.</p>
+<div class="media--left media--1-3 media--min-200">
+  <a href="https://wordpress.org/plugins/son-of-clippy/" class="media-image--link">{% picture image--1-3 10-steve-grunwell-screenshot-son-of-clippy.jpg alt="Son of Clippy" %}</a>
+  <div class="media-caption">Another of Steve’s plugins, <a href="https://wordpress.org/plugins/son-of-clippy/">Son of Clippy</a>.</div>
+</div>
 <p>I had seen <a href="https://www.smore.com/clippy-js">ClippyJS</a>, so I wrote a WordPress wrapper around it with a little bit of WordPress-specific functionality. The save animation is triggered when a post is being auto-saved. There’s also an option screen where you can select one of Clippy’s friends, like the dog or the gorilla, too.</p>
 <p>So I released the plugin and put my colleague <a href="https://eamann.com/">Eric Mann’s</a> name on it, even though he had nothing to do with it, other than being in on the original conversation. After it got approved, Eric got <a href="https://twitter.com/ryancduff/status/539155777928564736">@-mentioned on Twitter</a> and completely disavowed any contribution to the plugin. Thankfully he has an excellent sense of humor, so he hasn’t removed his name, even though he could. He’s been a good friend and teammate.</p>
 <p class="question"><strong>At <a href="https://columbus.wordcamp.org/2015/">WordCamp Columbus</a> you spoke about “5 Things You Can Do to Become Your Agency’s Favorite Client.” Would you tell us one of those things?</strong></p>
@@ -85,6 +104,10 @@ social-share:
 <p>There’s a whole spectrum between implementation versus innovation. Tell us your problem and we’ll build you a solution that will be easy-to-update, scale well, and won’t introduce a whole lot of technical debt. Ideally, even after our engagement you’ll be able to maintain the project, either in-house or with a freelance developer if you don’t want an agency retainer.</p>
 <p class="question"><strong>Do you have any suggestions for people who want to speak at conferences?</strong></p>
 <p>The application process can be nerve-racking, especially for conferences that pay their speakers or reimburse their travel. It’s much easier to get started speaking at a local <a href="https://central.wordcamp.org/">WordCamp</a> than at bigger conferences like <a href="https://world.phparch.com/">php[world]</a> or <a href="https://tek.phparch.com/">php[tek]</a>. I’ve applied to speak at <a href="http://www.codemash.org/">CodeMash</a> three times, but have yet to be accepted; I guess they’re kind of my White Whale right now.</p>
+<div class="media--right media--1-3 media--min-200">
+  <a href="http://wordpress.tv/2015/01/31/steve-grunwell-keeping-wordpress-under-version-control-with-git/" class="media-image--link">{% picture image--1-3 10-steve-grunwell-speaking.jpg alt="Steve Grunwell speaking" %}</a>
+  <div class="media-caption">Steve’s talk, <a href="http://wordpress.tv/2015/01/31/steve-grunwell-keeping-wordpress-under-version-control-with-git/" class="media-link">Keeping WordPress Under [Version] Control with Git</a>, at WordCamp Grand Rapids.</div>
+</div>
 <p>When I first decided that I wanted to speak at WordCamp Columbus, I started going to the <a href="http://www.meetup.com/wp-columbus/">monthly Meetup</a>. The content usually skews more towards beginners and it’s a smaller audience, so it’s an absolutely low pressure way to get started. No one is going to think less of you if you mess up or if you just read from your slides, they’re just happy to have people presenting.</p>
 <p>Local WordCamps also ensure that they have speakers who haven’t spoken before, just so the same six people don’t run every session. There are different topic tracks, for businesses, for developers, for users, so that opens up a lot of opportunities to speak. You don’t need to be a WordPress encyclopedia to teach someone something. You also don’t need to be super involved in the WordPress community to benefit from attending.</p>
 <p class="question"><strong>Obviously you do a lot of work with PHP and WordPress, but what other languages or technologies are you interested in?</strong></p>
@@ -93,6 +116,9 @@ social-share:
 <p class="question"><strong>How do you decide on what to learn next?</strong></p>
 <p>A lot of it is dictated by client needs, like if they need a particular feature. If I need to learn a new language or framework, I do it. At 10up we do a lot of WordPress work, so instead of going for breadth, I go for depth.</p>
 <p>I’ve been doing a lot of unit testing, admittedly due to some peer pressure from Eric. He is really big into it, so I want to be able to speak competently about it. Testing talks also tend to be in-demand at conferences, so there’s a lot of opportunity there to then teach what I’ve learned; testing is a lot like diet and exercise: people know they should be doing it, but very few actually are.</p>
+<blockquote class="quote quote-full">
+  <p class="quote-text">Testing is a lot like diet and exercise: people know they should be doing it, but very few actually are.</p>
+</blockquote>
 <p>Now that my work is more focused on WordPress, I want to expand and pick up the periphery of WordPress, while continuing to grow my skills as an engineer.</p>
 <p class="question"><strong>Is it hard keeping your work separate from your home life?</strong></p>
 <p>It isn’t that difficult for me because 10up puts a lot of focus on having a work-life balance. Of course, it’s up to each employee to make that happen. <a href="http://www.ivanlopezdeveloper.com/">Ivan</a>, my engineering manager, takes time off around 5:00 PM to pick up his girls from daycare. He’ll then go back to work at 7:30 PM and I’ll sometimes get emails from him. I get my work email on my phone, so I see his messages, but I still try not to respond until the following day since it’s my evening.</p>
@@ -104,6 +130,10 @@ social-share:
 <p>Well, I have a baby girl on the way, due in September, so the last few months have been all sorts of baby prep. We’ve been taking baby classes, getting the nursery in order, researching the best cribs, the best strollers, so that’s been eating up a lot of my time. It’s been exciting, getting to share this life change with my wife.</p>
 <p>I’m really into music. I played guitar in a band in high school and in college I taught myself piano. Last year I got a deal on an electric drum set at Guitar Center, so now when I get off a really tense client call, I can put up an away message for fifteen minutes and pound away on the drums with my headphones on.</p>
 <p>I also enjoy listening to music. I got a turntable for Christmas, finally, so I’ve been going to some of the local record stores to look for records. I don’t go with any particular album in mind, it’s more like, “Oh, cool. An old Roy Orbison album,” and then I pick it up.</p>
+<div class="media--left media--1-3 media--min-200">
+  {% picture image--1-3 10-steve-grunwell-coffee-roast.jpg alt="Steve’s roasted coffee" %}
+  <div class="media-caption">Some of Steve’s home roasted coffee beans.</div>
+</div>
 <p>Since I’ve started working from home I’ve gotten really into coffee. Buying fresh-roasted coffee from local roasters is expensive, so I started roasting my own coffee in a popcorn popper. It’s really simple to do and I can get green coffee locally or online, so I’ll roast once or twice a week and always have fresh coffee in the morning.</p>
 <p>The home-roasted coffee makes a good gift for friends and family. I love being able to say, “Hey we’re coming to visit and I’m bringing you a half pound of coffee, which was only roasted two days ago.” I put the roasted coffee in these little paper coffee bags and I’ll draw something on them, maybe come up with a pun for the name; my favorite has been “Heisenbuzz” for my bourbon-infused roasts.</p>
 <p class="question"><strong>What was your last roast?</strong></p>
