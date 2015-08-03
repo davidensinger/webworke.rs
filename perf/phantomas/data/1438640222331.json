@@ -1,0 +1,2206 @@
+{
+  "assertions": {},
+  "metrics": {
+    "requests": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "gzipRequests": {
+      "values": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        null
+      ],
+      "sum": 15,
+      "min": 3,
+      "max": 3,
+      "median": 3,
+      "average": 3
+    },
+    "postRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "httpsRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "notFound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodySize": {
+      "values": [
+        265286,
+        272258,
+        274637,
+        287431,
+        310956,
+        null
+      ],
+      "sum": 1410568,
+      "min": 265286,
+      "max": 310956,
+      "median": 274637,
+      "average": 282113.6
+    },
+    "contentLength": {
+      "values": [
+        265286,
+        272258,
+        274637,
+        287431,
+        310956,
+        null
+      ],
+      "sum": 1410568,
+      "min": 265286,
+      "max": 310956,
+      "median": 274637,
+      "average": 282113.6
+    },
+    "httpTrafficCompleted": {
+      "values": [
+        4437,
+        4452,
+        4534,
+        4687,
+        4735,
+        null
+      ],
+      "sum": 22845,
+      "min": 4437,
+      "max": 4735,
+      "median": 4534,
+      "average": 4569
+    },
+    "timeToFirstByte": {
+      "values": [
+        68,
+        82,
+        150,
+        268,
+        295,
+        null
+      ],
+      "sum": 863,
+      "min": 68,
+      "max": 295,
+      "median": 150,
+      "average": 172.6
+    },
+    "timeToLastByte": {
+      "values": [
+        122,
+        132,
+        203,
+        318,
+        376,
+        null
+      ],
+      "sum": 1151,
+      "min": 122,
+      "max": 376,
+      "median": 203,
+      "average": 230.2
+    },
+    "ajaxRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "htmlCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "htmlSize": {
+      "values": [
+        48008,
+        54980,
+        57359,
+        70153,
+        93678,
+        null
+      ],
+      "sum": 324178,
+      "min": 48008,
+      "max": 93678,
+      "median": 57359,
+      "average": 64835.6
+    },
+    "cssCount": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cssSize": {
+      "values": [
+        28442,
+        28442,
+        28442,
+        28442,
+        28442,
+        null
+      ],
+      "sum": 142210,
+      "min": 28442,
+      "max": 28442,
+      "median": 28442,
+      "average": 28442
+    },
+    "jsCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "jsSize": {
+      "values": [
+        36511,
+        36511,
+        36511,
+        36511,
+        36511,
+        null
+      ],
+      "sum": 182555,
+      "min": 36511,
+      "max": 36511,
+      "median": 36511,
+      "average": 36511
+    },
+    "jsonCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsonSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imageCount": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "imageSize": {
+      "values": [
+        152325,
+        152325,
+        152325,
+        152325,
+        152325,
+        null
+      ],
+      "sum": 761625,
+      "min": 152325,
+      "max": 152325,
+      "median": 152325,
+      "average": 152325
+    },
+    "videoCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "videoSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "webfontSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "base64Count": {
+      "values": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        null
+      ],
+      "sum": 35,
+      "min": 7,
+      "max": 7,
+      "median": 7,
+      "average": 7
+    },
+    "base64Size": {
+      "values": [
+        130384,
+        130384,
+        130384,
+        130384,
+        130384,
+        null
+      ],
+      "sum": 651920,
+      "min": 130384,
+      "max": 130384,
+      "median": 130384,
+      "average": 130384
+    },
+    "otherCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "otherSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cacheHits": {
+      "values": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 8,
+      "min": 1,
+      "max": 2,
+      "median": 2,
+      "average": 1.6
+    },
+    "cacheMisses": {
+      "values": [
+        9,
+        9,
+        9,
+        10,
+        10,
+        null
+      ],
+      "sum": 47,
+      "min": 9,
+      "max": 10,
+      "median": 9,
+      "average": 9.4
+    },
+    "cachePasses": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingNotSpecified": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cachingTooShort": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "cachingDisabled": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "oldCachingHeaders": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "consoleMessages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesSent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "cookiesRecv": {
+      "values": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        null
+      ],
+      "sum": 640,
+      "min": 128,
+      "max": 128,
+      "median": 128,
+      "average": 128
+    },
+    "domainsWithCookies": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "documentCookiesLength": {
+      "values": [
+        37,
+        38,
+        39,
+        39,
+        39,
+        null
+      ],
+      "sum": 192,
+      "min": 37,
+      "max": 39,
+      "median": 39,
+      "average": 38.4
+    },
+    "documentCookiesCount": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "documentHeight": {
+      "values": [
+        10832,
+        10832,
+        10832,
+        10832,
+        10832,
+        null
+      ],
+      "sum": 54160,
+      "min": 10832,
+      "max": 10832,
+      "median": 10832,
+      "average": 10832
+    },
+    "commentsSize": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "whiteSpacesSize": {
+      "values": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        null
+      ],
+      "sum": 70,
+      "min": 14,
+      "max": 14,
+      "median": 14,
+      "average": 14
+    },
+    "DOMelementsCount": {
+      "values": [
+        369,
+        369,
+        369,
+        369,
+        369,
+        null
+      ],
+      "sum": 1845,
+      "min": 369,
+      "max": 369,
+      "median": 369,
+      "average": 369
+    },
+    "DOMelementMaxDepth": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "nodesWithInlineCSS": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "imagesScaledDown": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "imagesWithoutDimensions": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "DOMidDuplicated": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "hiddenContentSize": {
+      "values": [
+        36,
+        36,
+        36,
+        36,
+        36,
+        null
+      ],
+      "sum": 180,
+      "min": 36,
+      "max": 36,
+      "median": 36,
+      "average": 36
+    },
+    "DOMmutationsInserts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsRemoves": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMmutationsAttributes": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMqueries": {
+      "values": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        null
+      ],
+      "sum": 75,
+      "min": 15,
+      "max": 15,
+      "median": 15,
+      "average": 15
+    },
+    "DOMqueriesWithoutResults": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "DOMqueriesById": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMqueriesByClassName": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "DOMqueriesByTagName": {
+      "values": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        null
+      ],
+      "sum": 65,
+      "min": 13,
+      "max": 13,
+      "median": 13,
+      "average": 13
+    },
+    "DOMqueriesByQuerySelectorAll": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "DOMinserts": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "DOMqueriesDuplicated": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "DOMqueriesAvoidable": {
+      "values": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        null
+      ],
+      "sum": 25,
+      "min": 5,
+      "max": 5,
+      "median": 5,
+      "average": 5
+    },
+    "domains": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "maxRequestsPerDomain": {
+      "values": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        null
+      ],
+      "sum": 50,
+      "min": 10,
+      "max": 10,
+      "median": 10,
+      "average": 10
+    },
+    "medianRequestsPerDomain": {
+      "values": [
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        null
+      ],
+      "sum": 27.5,
+      "min": 5.5,
+      "max": 5.5,
+      "median": 5.5,
+      "average": 5.5
+    },
+    "eventsBound": {
+      "values": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "sum": 10,
+      "min": 2,
+      "max": 2,
+      "median": 2,
+      "average": 2
+    },
+    "eventsDispatched": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "eventsScrollBound": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "globalVariables": {
+      "values": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        null
+      ],
+      "sum": 40,
+      "min": 8,
+      "max": 8,
+      "median": 8,
+      "average": 8
+    },
+    "globalVariablesFalsy": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "headersCount": {
+      "values": [
+        225,
+        225,
+        225,
+        225,
+        225,
+        null
+      ],
+      "sum": 1125,
+      "min": 225,
+      "max": 225,
+      "median": 225,
+      "average": 225
+    },
+    "headersSentCount": {
+      "values": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        null
+      ],
+      "sum": 160,
+      "min": 32,
+      "max": 32,
+      "median": 32,
+      "average": 32
+    },
+    "headersRecvCount": {
+      "values": [
+        193,
+        193,
+        193,
+        193,
+        193,
+        null
+      ],
+      "sum": 965,
+      "min": 193,
+      "max": 193,
+      "median": 193,
+      "average": 193
+    },
+    "headersSize": {
+      "values": [
+        6813,
+        6814,
+        6814,
+        6815,
+        6887,
+        null
+      ],
+      "sum": 34143,
+      "min": 6813,
+      "max": 6887,
+      "median": 6814,
+      "average": 6828.6
+    },
+    "headersSentSize": {
+      "values": [
+        1178,
+        1178,
+        1178,
+        1178,
+        1178,
+        null
+      ],
+      "sum": 5890,
+      "min": 1178,
+      "max": 1178,
+      "median": 1178,
+      "average": 1178
+    },
+    "headersRecvSize": {
+      "values": [
+        5635,
+        5636,
+        5636,
+        5637,
+        5709,
+        null
+      ],
+      "sum": 28253,
+      "min": 5635,
+      "max": 5709,
+      "median": 5636,
+      "average": 5650.6
+    },
+    "headersBiggerThanContent": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryVersionsLoaded": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryOnDOMReadyFunctions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryWindowOnLoadFunctions": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQuerySizzleCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryEventTriggers": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryDOMReads": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryDOMWrites": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jQueryDOMWriteReadSwitches": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "documentWriteCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "evalCalls": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "jsErrors": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "closedConnections": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "localStorageEntries": {
+      "values": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ],
+      "sum": 20,
+      "min": 4,
+      "max": 4,
+      "median": 4,
+      "average": 4
+    },
+    "redirects": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "redirectsTime": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "repaints": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "firstPaint": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "requestsToDomContentLoaded": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "requestsToDomComplete": {
+      "values": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        null
+      ],
+      "sum": 55,
+      "min": 11,
+      "max": 11,
+      "median": 11,
+      "average": 11
+    },
+    "assetsNotGzipped": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "assetsWithQueryString": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "assetsWithCookies": {
+      "values": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        null
+      ],
+      "sum": 45,
+      "min": 9,
+      "max": 9,
+      "median": 9,
+      "average": 9
+    },
+    "smallImages": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallCssFiles": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallJsFiles": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "multipleRequests": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "timeToFirstCss": {
+      "values": [
+        4450,
+        4466,
+        4551,
+        4701,
+        4750,
+        null
+      ],
+      "sum": 22918,
+      "min": 4450,
+      "max": 4750,
+      "median": 4551,
+      "average": 4583.6
+    },
+    "timeToFirstJs": {
+      "values": [
+        140,
+        154,
+        222,
+        367,
+        425,
+        null
+      ],
+      "sum": 1308,
+      "min": 140,
+      "max": 425,
+      "median": 222,
+      "average": 261.6
+    },
+    "timeToFirstImage": {
+      "values": [
+        4394,
+        4418,
+        4487,
+        4637,
+        4672,
+        null
+      ],
+      "sum": 22608,
+      "min": 4394,
+      "max": 4672,
+      "median": 4487,
+      "average": 4521.6
+    },
+    "domInteractive": {
+      "values": [
+        127,
+        137,
+        208,
+        323,
+        381,
+        null
+      ],
+      "sum": 1176,
+      "min": 127,
+      "max": 381,
+      "median": 208,
+      "average": 235.2
+    },
+    "domContentLoaded": {
+      "values": [
+        127,
+        138,
+        209,
+        324,
+        382,
+        null
+      ],
+      "sum": 1180,
+      "min": 127,
+      "max": 382,
+      "median": 209,
+      "average": 236
+    },
+    "domContentLoadedEnd": {
+      "values": [
+        134,
+        143,
+        214,
+        330,
+        388,
+        null
+      ],
+      "sum": 1209,
+      "min": 134,
+      "max": 388,
+      "median": 214,
+      "average": 241.8
+    },
+    "domComplete": {
+      "values": [
+        4464,
+        4479,
+        4565,
+        4718,
+        4765,
+        null
+      ],
+      "sum": 22991,
+      "min": 4464,
+      "max": 4765,
+      "median": 4565,
+      "average": 4598.2
+    },
+    "timeBackend": {
+      "values": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        null
+      ],
+      "sum": 17,
+      "min": 1,
+      "max": 6,
+      "median": 3,
+      "average": 3.4
+    },
+    "timeFrontend": {
+      "values": [
+        94,
+        95,
+        97,
+        98,
+        99,
+        null
+      ],
+      "sum": 483,
+      "min": 94,
+      "max": 99,
+      "median": 97,
+      "average": 96.6
+    },
+    "blockedRequests": {
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "sum": 5,
+      "min": 1,
+      "max": 1,
+      "median": 1,
+      "average": 1
+    },
+    "windowAlerts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowConfirms": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "windowPrompts": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "bodyHTMLSize": {
+      "values": [
+        96246,
+        96246,
+        96246,
+        96246,
+        96246,
+        null
+      ],
+      "sum": 481230,
+      "min": 96246,
+      "max": 96246,
+      "median": 96246,
+      "average": 96246
+    },
+    "iframesCount": {
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null
+      ],
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "median": 0,
+      "average": 0
+    },
+    "smallestResponse": {
+      "values": [
+        2109,
+        2109,
+        2109,
+        2109,
+        2109,
+        null
+      ],
+      "sum": 10545,
+      "min": 2109,
+      "max": 2109,
+      "median": 2109,
+      "average": 2109
+    },
+    "biggestResponse": {
+      "values": [
+        59381,
+        59381,
+        59381,
+        70153,
+        93678,
+        null
+      ],
+      "sum": 341974,
+      "min": 59381,
+      "max": 93678,
+      "median": 59381,
+      "average": 68394.8
+    },
+    "fastestResponse": {
+      "values": [
+        23,
+        23,
+        27,
+        35,
+        54,
+        null
+      ],
+      "sum": 162,
+      "min": 23,
+      "max": 54,
+      "median": 27,
+      "average": 32.4
+    },
+    "slowestResponse": {
+      "values": [
+        3152,
+        3153,
+        3158,
+        3182,
+        3187,
+        null
+      ],
+      "sum": 15832,
+      "min": 3152,
+      "max": 3187,
+      "median": 3158,
+      "average": 3166.4
+    },
+    "smallestLatency": {
+      "values": [
+        23,
+        23,
+        26,
+        34,
+        53,
+        null
+      ],
+      "sum": 159,
+      "min": 23,
+      "max": 53,
+      "median": 26,
+      "average": 31.8
+    },
+    "biggestLatency": {
+      "values": [
+        3152,
+        3153,
+        3158,
+        3181,
+        3187,
+        null
+      ],
+      "sum": 15831,
+      "min": 3152,
+      "max": 3187,
+      "median": 3158,
+      "average": 3166.2
+    },
+    "medianResponse": {
+      "values": [
+        3148,
+        3149,
+        3156,
+        3179,
+        3183,
+        null
+      ],
+      "sum": 15815,
+      "min": 3148,
+      "max": 3183,
+      "median": 3156,
+      "average": 3163
+    },
+    "medianLatency": {
+      "values": [
+        3148,
+        3149,
+        3155,
+        3179,
+        3183,
+        null
+      ],
+      "sum": 15814,
+      "min": 3148,
+      "max": 3183,
+      "median": 3155,
+      "average": 3162.8
+    }
+  },
+  "offenders": {
+    "gzipRequests": [
+      "http://webworke.rs/ (gzip: 68.51 kB / uncompressed: 68.51 kB)",
+      "http://webworke.rs/scripts/application.9372.js (gzip: 11.00 kB / uncompressed: 11.00 kB)",
+      "http://webworke.rs/styles/application.c522.css (gzip: 27.78 kB / uncompressed: 27.78 kB)",
+      "http://webworke.rs/ (gzip: 56.01 kB / uncompressed: 56.01 kB)",
+      "http://webworke.rs/ (gzip: 46.88 kB / uncompressed: 46.88 kB)",
+      "http://webworke.rs/ (gzip: 53.69 kB / uncompressed: 53.69 kB)",
+      "http://webworke.rs/ (gzip: 91.48 kB / uncompressed: 91.48 kB)"
+    ],
+    "htmlCount": [
+      "http://webworke.rs/ (68.51 kB)",
+      "http://webworke.rs/ (56.01 kB)",
+      "http://webworke.rs/ (46.88 kB)",
+      "http://webworke.rs/ (53.69 kB)",
+      "http://webworke.rs/ (91.48 kB)"
+    ],
+    "cssCount": [
+      "http://webworke.rs/styles/application.c522.css (27.78 kB)"
+    ],
+    "jsCount": [
+      "http://webworke.rs/scripts/application.9372.js (11.00 kB)",
+      "http://www.google-analytics.com/analytics.js (24.66 kB)"
+    ],
+    "imageCount": [
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg (15.40 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg (26.16 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg (13.24 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg (16.39 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg (17.52 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (57.99 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png (2.06 kB)"
+    ],
+    "cacheHits": [
+      "http://www.google-analytics.com/analytics.js",
+      "http://webworke.rs/"
+    ],
+    "cacheMisses": [
+      "http://webworke.rs/",
+      "http://webworke.rs/scripts/application.9372.js",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png",
+      "http://webworke.rs/styles/application.c522.css"
+    ],
+    "cachingTooShort": [
+      "http://www.google-analytics.com/analytics.js cached for 7200 s"
+    ],
+    "oldCachingHeaders": [
+      "http://webworke.rs/ - Expires: Mon, 03 Aug 2015 22:27:04 GMT",
+      "http://webworke.rs/scripts/application.9372.js - Expires: Tue, 02 Aug 2016 22:17:04 GMT",
+      "http://www.google-analytics.com/analytics.js - Expires: Mon, 03 Aug 2015 22:44:09 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png - Expires: Tue, 02 Aug 2016 22:17:05 GMT",
+      "http://webworke.rs/styles/application.c522.css - Expires: Tue, 02 Aug 2016 22:17:08 GMT",
+      "http://webworke.rs/scripts/application.9372.js - Expires: Tue, 02 Aug 2016 22:17:11 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg - Expires: Tue, 02 Aug 2016 22:17:12 GMT",
+      "http://webworke.rs/styles/application.c522.css - Expires: Tue, 02 Aug 2016 22:17:15 GMT",
+      "http://webworke.rs/ - Expires: Mon, 03 Aug 2015 22:27:18 GMT",
+      "http://webworke.rs/scripts/application.9372.js - Expires: Tue, 02 Aug 2016 22:17:18 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg - Expires: Tue, 02 Aug 2016 22:17:19 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png - Expires: Tue, 02 Aug 2016 22:17:19 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg - Expires: Tue, 02 Aug 2016 22:17:19 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg - Expires: Tue, 02 Aug 2016 22:17:19 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg - Expires: Tue, 02 Aug 2016 22:17:19 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg - Expires: Tue, 02 Aug 2016 22:17:19 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg - Expires: Tue, 02 Aug 2016 22:17:20 GMT",
+      "http://webworke.rs/styles/application.c522.css - Expires: Tue, 02 Aug 2016 22:17:23 GMT",
+      "http://webworke.rs/scripts/application.9372.js - Expires: Tue, 02 Aug 2016 22:17:25 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg - Expires: Tue, 02 Aug 2016 22:17:26 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png - Expires: Tue, 02 Aug 2016 22:17:26 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg - Expires: Tue, 02 Aug 2016 22:17:26 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg - Expires: Tue, 02 Aug 2016 22:17:26 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg - Expires: Tue, 02 Aug 2016 22:17:26 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg - Expires: Tue, 02 Aug 2016 22:17:26 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg - Expires: Tue, 02 Aug 2016 22:17:27 GMT",
+      "http://webworke.rs/styles/application.c522.css - Expires: Tue, 02 Aug 2016 22:17:30 GMT",
+      "http://webworke.rs/scripts/application.9372.js - Expires: Tue, 02 Aug 2016 22:17:32 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg - Expires: Tue, 02 Aug 2016 22:17:33 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png - Expires: Tue, 02 Aug 2016 22:17:33 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg - Expires: Tue, 02 Aug 2016 22:17:33 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg - Expires: Tue, 02 Aug 2016 22:17:33 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg - Expires: Tue, 02 Aug 2016 22:17:33 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg - Expires: Tue, 02 Aug 2016 22:17:33 GMT",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg - Expires: Tue, 02 Aug 2016 22:17:34 GMT",
+      "http://webworke.rs/styles/application.c522.css - Expires: Tue, 02 Aug 2016 22:17:37 GMT"
+    ],
+    "domainsWithCookies": [
+      "webworke.rs: 1 cookie(s)"
+    ],
+    "DOMelementMaxDepth": [
+      "body > div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[0] > title#title",
+      "body > div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[0] > path[0]",
+      "body > div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[0] > polygon[0]",
+      "body > div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[1] > title#title",
+      "body > div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[1] > path[0]",
+      "body > div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[1] > polygon[0]",
+      "body> div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[1] > line[0]",
+      "body > div#page > main#main > div#primary > article.post.hentry > footer.entryMeta.entryMeta-footer.entryMeta-footer__post.clearfix > ul.socialShare-icons--list.list-inline.text-center > li.socialShare-icons--item > a.socialShare-icons--link.icon-twitter--link > svg[0] > path[0]",
+      "body > div#page > main#main > div#primary > article.post.hentry > footer.entryMeta.entryMeta-footer.entryMeta-footer__post.clearfix > ul.socialShare-icons--list.list-inline.text-center > li.socialShare-icons--item > a.socialShare-icons--link.icon-facebook--link > svg[0] > path[0]",
+      "body > div#page > main#main > div#primary > article.post.hentry > footer.entryMeta.entryMeta-footer.entryMeta-footer__post.clearfix > ul.socialShare-icons--list.list-inline.text-center > li.socialShare-icons--item > a.socialShare-icons--link.icon-pinterest--link > svg[0] > path[0]",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarPrimary > ul.sidebar-links--list.list-inline > li.sidebar-links--item > a.sidebar-links--link.url.linkedin > svg[0] > path[0]",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarPrimary > ul.sidebar-links--list.list-inline > li.sidebar-links--item > a.sidebar-links--link.url.github > svg[0] > path[0]",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarPrimary > ul.sidebar-links--list.list-inline > li.sidebar-links--item > a.sidebar-links--link.url.twitter > svg[0] > path[0]",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarPrimary > ul.sidebar-links--list.list-inline > li.sidebar-links--item > a.sidebar-links--link.url.website > svg[0] > path[0]",
+      "body >div#page > header#masthead > div.siteScaffolding > div.siteHeader-inner > div.siteHeader-primary > a.siteLogo > div.FlexEmbed > div.FlexEmbed-content > svg[1] > line[0]"
+    ],
+    "nodesWithInlineCSS": [
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] ()",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] ()",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > a.media-image--link > picture[0] > img[8] ()",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-3.media--min-200 > a.media-image--link > picture[0] > img[8] ()",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > picture[0] > img[8] ()",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image ()"
+    ],
+    "imagesWithoutDimensions": [
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-4.media--min-200 > picture[0] > img[6] <http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > a.media-image--link > picture[0] > img[8] <http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0] > img[6] <http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > a.media-image--link > picture[0] > img[8] <http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-3.media--min-200 > a.media-image--link > picture[0] > img[8] <http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg>",
+      "body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > picture[0] > img[8] <http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg>",
+      "body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0] > img.image.sidebar-image <http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg>"
+    ],
+    "DOMidDuplicated": [
+      "title: 3 occurrences"
+    ],
+    "DOMqueriesWithoutResults": [
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-4.media--min-200 > picture[0]) using getElementsByTagName",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0]) using getElementsByTagName",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > a.media-image--link > picture[0]) using getElementsByTagName",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-3.media--min-200 > a.media-image--link > picture[0]) using getElementsByTagName",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > picture[0]) using getElementsByTagName",
+      "video (in body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0]) using getElementsByTagName",
+      ".aside-marker (in #document) using getElementsByClassName",
+      "#js-footnotes (in #document) using getElementById"
+    ],
+    "DOMqueriesById": [
+      "#js-footnotes (in #document)"
+    ],
+    "DOMqueriesByClassName": [
+      ".aside-marker (in #document)"
+    ],
+    "DOMqueriesByTagName": [
+      "script (in #document)",
+      "img (in #document)",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-4.media--min-200 > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-3.media--min-200 > a.media-image--link > picture[0])",
+      "video (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > picture[0])",
+      "video (in body > div#page > main#main > div#secondary > div.site-sidebar.clearfix.vcard > div.sidebarSecondary > figure.sidebar-figure > a.sidebar-image--link > picture[0])"
+    ],
+    "DOMinserts": [
+      "\"head > style[45]\" appended to \"head\"",
+      "\"head > link[44]\" appended to \"head\"",
+      "\"body > div.helper-from-picturefill-js\" appended to \"body\""
+    ],
+    "DOMqueriesDuplicated": [
+      "tag name \"img\" (in #document): 3 queries",
+      "tag name \"script\" (in #document): 2 queries",
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--right.media--1-4.media--min-200 > a.media-image--link > picture[0]): 2 queries",
+      "tag name \"video\" (in body > div#page > main#main > div#primary > article.post.hentry > div.entryContent.clearfix > div.media--left.media--1-3.media--min-200 > a.media-image--link > picture[0]): 2 queries"
+    ],
+    "domains": [
+      "webworke.rs: 10 request(s)",
+      "www.google-analytics.com: 1 request(s)"
+    ],
+    "eventsBound": [
+      "\"resize\" bound to \"window\"",
+      "\"click\" bound to \"#document\""
+    ],
+    "globalVariables": [
+      "loadCSS",
+      "responsiveFootnotes",
+      "loadFont",
+      "ga",
+      "picturefill",
+      "smoothScroll",
+      "gaplugins",
+      "gaGlobal"
+    ],
+    "localStorageEntries": [
+      "font-optimizedWebFontsurl",
+      "font-optimizedWebFontscss",
+      "x-font-optimizedWebFontsurl",
+      "x-font-optimizedWebFontscss"
+    ],
+    "assetsNotGzipped": [
+      "http://www.google-analytics.com/analytics.js (JS)"
+    ],
+    "assetsWithCookies": [
+      "http://webworke.rs/scripts/application.9372.js (JS)",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg (IMAGE)",
+      "http://webworke.rs/generated/10-steve-grunwell-coffee-roast-480by360-08a8d4.jpg (IMAGE)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-wp-password-generator-280by180-968eba.jpg (IMAGE)",
+      "http://webworke.rs/generated/10-steve-grunwell-speaking-480by270-98b0ca.jpg (IMAGE)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg (IMAGE)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (IMAGE)",
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png (IMAGE)",
+      "http://webworke.rs/styles/application.c522.css (CSS)"
+    ],
+    "timeToFirstCss": [
+      "http://webworke.rs/styles/application.c522.css received in 4750 ms",
+      "http://webworke.rs/styles/application.c522.css received in 4701 ms",
+      "http://webworke.rs/styles/application.c522.css received in 4551 ms",
+      "http://webworke.rs/styles/application.c522.css received in 4466 ms",
+      "http://webworke.rs/styles/application.c522.css received in 4450 ms"
+    ],
+    "timeToFirstJs": [
+      "http://webworke.rs/scripts/application.9372.js received in 425 ms",
+      "http://webworke.rs/scripts/application.9372.js received in 367 ms",
+      "http://webworke.rs/scripts/application.9372.js received in 222 ms",
+      "http://webworke.rs/scripts/application.9372.js received in 140 ms",
+      "http://webworke.rs/scripts/application.9372.js received in 154 ms"
+    ],
+    "timeToFirstImage": [
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg received in 4672 ms",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg received in 4637 ms",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg received in 4487 ms",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg received in 4418 ms",
+      "http://webworke.rs/generated/10-steve-grunwell-portrait-320by320-1b751a.jpg received in 4394 ms"
+    ],
+    "blockedRequests": [
+      "http://www.google-analytics.com/r/collect?v=1&_v=j37&a=2020965149&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1366x768&je=0&_u=AEAAAEQAI~&jid=1075554579&cid=1114406946.1438640229&tid=UA-48705944-1&_r=1&z=721839027",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j37&a=915335436&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1366x768&je=0&_u=AEAAAEQAI~&jid=2061595631&cid=323612806.1438640236&tid=UA-48705944-1&_r=1&z=2020551522",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j37&a=222088789&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1366x768&je=0&_u=AEAAAEQAI~&jid=1827218351&cid=29773865.1438640243&tid=UA-48705944-1&_r=1&z=1605092490",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j37&a=1349866506&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1366x768&je=0&_u=AEAAAEQAI~&jid=1285076221&cid=1149043603.1438640250&tid=UA-48705944-1&_r=1&z=1936793670",
+      "http://www.google-analytics.com/r/collect?v=1&_v=j37&a=1875821964&t=pageview&_s=1&dl=http%3A%2F%2Fwebworke.rs%2F&ul=en-us&de=UTF-8&dt=Webworke.rs%20%E2%80%94%20Life%20and%20Craft%20in%20Columbus%2C%20OH&sd=32-bit&sr=2560x1440&vp=1366x768&je=0&_u=AEAAAEQAI~&jid=136386927&cid=1720301255.1438640257&tid=UA-48705944-1&_r=1&z=1057982113"
+    ],
+    "smallestResponse": [
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png (2.06 kB)"
+    ],
+    "biggestResponse": [
+      "http://webworke.rs/ (68.51 kB)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (57.99 kB)",
+      "http://webworke.rs/ (91.48 kB)"
+    ],
+    "fastestResponse": [
+      "http://webworke.rs/scripts/application.9372.js (54 ms)",
+      "http://webworke.rs/styles/application.c522.css (35 ms)",
+      "http://webworke.rs/scripts/application.9372.js (23 ms)",
+      "http://webworke.rs/scripts/application.9372.js (27 ms)"
+    ],
+    "slowestResponse": [
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png (3153 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3187 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3158 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-son-of-clippy-480by252-c420fc.jpg (3182 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3152 ms)"
+    ],
+    "smallestLatency": [
+      "http://webworke.rs/scripts/application.9372.js (53 ms)",
+      "http://webworke.rs/styles/application.c522.css (34 ms)",
+      "http://webworke.rs/scripts/application.9372.js (23 ms)",
+      "http://webworke.rs/scripts/application.9372.js (26 ms)"
+    ],
+    "biggestLatency": [
+      "http://webworke.rs/generated/10-steve-grunwell-10up-logo-241by275-c059e0.png (3153 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3187 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3158 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3181 ms)",
+      "http://webworke.rs/generated/10-steve-grunwell-screenshot-theden-480by374-b445b3.jpg (3152 ms)"
+    ]
+  }
+}
