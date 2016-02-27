@@ -5,7 +5,7 @@
   "author": "David Ensinger <david@webworke.rs>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidensinger/webworke.rs"
+    "url": "https://github.com/davidensinger/webworke.rs.git"
   },
   "bugs": {
     "url": "https://github.com/davidensinger/webworke.rs/issues"
