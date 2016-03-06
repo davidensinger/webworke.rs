@@ -30,14 +30,14 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 html {
   overflow-y: scroll;
-  font: #{($base-font-size/16px)*118.75%}/#{$line-height-ratio} $base-font-family; // 19px
+  font: #{($base-font-size / 16px) * 118.75%}/#{$line-height-ratio} $base-font-family; // 19px
   // Prevents iOS text size adjust after orientation change, without disabling user zoom
   // www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
   text-size-adjust: 100%; // scss-lint:disable PropertySpelling
@@ -344,8 +344,8 @@ blockquote {
   padding: #{$base-spacing-unit}rem;
   text-align: center;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     @include absolute(left 43.75%);
     content: '';
     width: 12.5%;
@@ -357,12 +357,12 @@ blockquote {
     }
   }
 
-  &:before {
+  &::before {
     top: 0;
     border-top: 2px solid $white-darkest;
   }
 
-  &:after {
+  &::after {
     bottom: 0;
     border-bottom: 2px solid $white-darkest;
   }
@@ -388,7 +388,7 @@ blockquote {
   @extend %small;
   @extend %font-industry--medium__italic;
 
-  &:before {
+  &::before {
     content: '\2015\00A0';
   }
 }
@@ -419,11 +419,11 @@ blockquote {
     display: inline;
   }
 
-  &:before {
+  &::before {
     content: '\005B';
   }
 
-  &:after {
+  &::after {
     content: '\005D';
   }
 

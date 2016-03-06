@@ -91,7 +91,7 @@
     @extend %font-industry--demi;
     margin-right: #{$half-spacing-unit}rem;
 
-    &:before {
+    &::before {
       content: '\0023';
     }
 
