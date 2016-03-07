@@ -21,11 +21,11 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: ['<%= yeoman.app %>/_scss/**/*.scss'],
-        tasks: ['sass', 'autoprefixer:server', 'penthouse']
+        tasks: ['sass', 'postcss:server', 'penthouse']
       },
-      autoprefixer: {
+      postcss: {
         files: ['<%= yeoman.app %>/styles/application.css'],
-        tasks: ['copy:stageCss', 'autoprefixer:server']
+        tasks: ['copy:stageCss', 'postcss:server']
       },
       jekyll: {
         files: [
@@ -106,15 +106,10 @@ module.exports = function (grunt) {
         }
       },
     },
-    autoprefixer: {
+    postcss: {
       options: {
-        browsers: [
-          'last 2 version',
-          'safari 6',
-          'ie 9',
-          'opera 12.1',
-          'ios 6',
-          'android 4'
+        processors: [
+          require('autoprefixer')({browsers: 'last 2 versions, safari 6, ie 9, opera 12.1, ios 6, android 4'})
         ]
       },
       dist: {
@@ -160,7 +155,8 @@ module.exports = function (grunt) {
       server: {
         options: {
           config: '_config.yml',
-          dest: '.jekyll'
+          dest: '.jekyll',
+          incremental: true
         }
       },
       check: {
@@ -221,18 +217,6 @@ module.exports = function (grunt) {
         shorthandCompacting: false
       }
     },
-    imageoptim: {
-      options: {
-        quitAfter: true
-      },
-      dist: {
-        options: {
-          jpegMini: false,
-          imageAlpha: true
-        },
-        src: ['<%= yeoman.dist %>/*.{gif,jpg,jpeg,png}','<%= yeoman.dist %>/generated/*.{gif,jpg,jpeg,png}']
-      },
-    },
     svgmin: {
       dist: {
         files: [{
@@ -272,7 +256,7 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }]
       },
-      // Copy CSS into .tmp directory for Autoprefixer processing
+      // Copy CSS into .tmp directory for postcss processing
       stageCss: {
         files: [{
           expand: true,
@@ -385,7 +369,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'concurrent:server',
-      'autoprefixer:server',
+      'postcss:server',
       'browserSync:server',
       'watch'
     ]);
@@ -422,11 +406,10 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'useminPrepare',
     'concat',
-    'autoprefixer:dist',
+    'postcss:dist',
     'csscomb',
     'cssmin',
     'uglify',
-    'newer:imageoptim',
     'svgmin',
     'filerev',
     'usemin',

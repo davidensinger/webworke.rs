@@ -39,14 +39,8 @@ relative_permalinks: false
 category_title_prefix: ''
 category_dir: /
 
-paginate: 999
-paginate_path: 'page:num'
-
 # disable this with ''
 excerpt_separator: ''
-
-# Use Pygments to highlight code blocks
-highlighter: pygments
 
 # Use redcarpet for jekyll-picture-tag plugin
 markdown: redcarpet
